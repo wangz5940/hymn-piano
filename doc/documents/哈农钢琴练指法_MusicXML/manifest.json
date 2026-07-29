@@ -1,0 +1,1417 @@
+{
+  "schema_version": "1.0",
+  "dataset_id": "hanon-book",
+  "title": "哈农钢琴练指法结构化资源",
+  "description": "OCR metadata joined with OMR-derived MusicXML segments. MusicXML is candidate data until manual review is complete.",
+  "language": [
+    "zh-CN",
+    "en"
+  ],
+  "source": {
+    "pdf": "../../pdf/哈农钢琴练指法 (Hanon) (z-library.sk, 1lib.sk, z-lib.sk).pdf",
+    "pdf_page_count": 119,
+    "ocr": "../哈农钢琴练指法_OCR文本.txt",
+    "musicxml_directory": "."
+  },
+  "format": {
+    "manifest": "manifest.json",
+    "records": "segments.jsonl",
+    "ocr_records": "ocr_pages.jsonl",
+    "schema": "schema.json",
+    "join_key": "segment_id"
+  },
+  "processing": {
+    "ocr_engine": "macOS Vision OCR",
+    "musicxml_engine": "Audiveris 5.11.0 + ProxyMusic 4.0.3",
+    "generated_at": "2026-07-18",
+    "realtime_judgement_allowed": false
+  },
+  "sections": [
+    {
+      "id": "part_1",
+      "title": "第一部分：准备练习",
+      "pdf_pages": [
+        6,
+        25
+      ]
+    },
+    {
+      "id": "part_2",
+      "title": "第二部分：高级练习",
+      "pdf_pages": [
+        26,
+        75
+      ]
+    },
+    {
+      "id": "part_3",
+      "title": "第三部分：专门练习",
+      "pdf_pages": [
+        76,
+        119
+      ]
+    }
+  ],
+  "segments": [
+    {
+      "segment_id": "hanon.segment.001",
+      "sequence": 1,
+      "musicxml_path": "哈农钢琴练指法_乐章_001.musicxml",
+      "source_pages": [
+        6,
+        7
+      ],
+      "ocr_labels": [
+        "练习一"
+      ],
+      "ocr_exercise_numbers": [
+        1
+      ],
+      "section": {
+        "id": "part_1",
+        "title": "第一部分：准备练习"
+      },
+      "measure_count": 29,
+      "pitched_note_count": 425,
+      "status": "needs_review"
+    },
+    {
+      "segment_id": "hanon.segment.002",
+      "sequence": 2,
+      "musicxml_path": "哈农钢琴练指法_乐章_002.musicxml",
+      "source_pages": [
+        7
+      ],
+      "ocr_labels": [],
+      "ocr_exercise_numbers": [],
+      "section": {
+        "id": "part_1",
+        "title": "第一部分：准备练习"
+      },
+      "measure_count": 29,
+      "pitched_note_count": 449,
+      "status": "needs_review"
+    },
+    {
+      "segment_id": "hanon.segment.003",
+      "sequence": 3,
+      "musicxml_path": "哈农钢琴练指法_乐章_003.musicxml",
+      "source_pages": [
+        8
+      ],
+      "ocr_labels": [
+        "练习三"
+      ],
+      "ocr_exercise_numbers": [
+        3
+      ],
+      "section": {
+        "id": "part_1",
+        "title": "第一部分：准备练习"
+      },
+      "measure_count": 29,
+      "pitched_note_count": 383,
+      "status": "needs_review"
+    },
+    {
+      "segment_id": "hanon.segment.004",
+      "sequence": 4,
+      "musicxml_path": "哈农钢琴练指法_乐章_004.musicxml",
+      "source_pages": [
+        9
+      ],
+      "ocr_labels": [
+        "练习四"
+      ],
+      "ocr_exercise_numbers": [
+        4
+      ],
+      "section": {
+        "id": "part_1",
+        "title": "第一部分：准备练习"
+      },
+      "measure_count": 29,
+      "pitched_note_count": 495,
+      "status": "needs_review"
+    },
+    {
+      "segment_id": "hanon.segment.005",
+      "sequence": 5,
+      "musicxml_path": "哈农钢琴练指法_乐章_005.musicxml",
+      "source_pages": [
+        10
+      ],
+      "ocr_labels": [
+        "练习五"
+      ],
+      "ocr_exercise_numbers": [
+        5
+      ],
+      "section": {
+        "id": "part_1",
+        "title": "第一部分：准备练习"
+      },
+      "measure_count": 29,
+      "pitched_note_count": 445,
+      "status": "needs_review"
+    },
+    {
+      "segment_id": "hanon.segment.006",
+      "sequence": 6,
+      "musicxml_path": "哈农钢琴练指法_乐章_006.musicxml",
+      "source_pages": [
+        11
+      ],
+      "ocr_labels": [
+        "练习六"
+      ],
+      "ocr_exercise_numbers": [
+        6
+      ],
+      "section": {
+        "id": "part_1",
+        "title": "第一部分：准备练习"
+      },
+      "measure_count": 29,
+      "pitched_note_count": 427,
+      "status": "needs_review"
+    },
+    {
+      "segment_id": "hanon.segment.007",
+      "sequence": 7,
+      "musicxml_path": "哈农钢琴练指法_乐章_007.musicxml",
+      "source_pages": [
+        12
+      ],
+      "ocr_labels": [
+        "练习七"
+      ],
+      "ocr_exercise_numbers": [
+        7
+      ],
+      "section": {
+        "id": "part_1",
+        "title": "第一部分：准备练习"
+      },
+      "measure_count": 29,
+      "pitched_note_count": 427,
+      "status": "needs_review"
+    },
+    {
+      "segment_id": "hanon.segment.008",
+      "sequence": 8,
+      "musicxml_path": "哈农钢琴练指法_乐章_008.musicxml",
+      "source_pages": [
+        13
+      ],
+      "ocr_labels": [
+        "练习八"
+      ],
+      "ocr_exercise_numbers": [
+        8
+      ],
+      "section": {
+        "id": "part_1",
+        "title": "第一部分：准备练习"
+      },
+      "measure_count": 29,
+      "pitched_note_count": 457,
+      "status": "needs_review"
+    },
+    {
+      "segment_id": "hanon.segment.009",
+      "sequence": 9,
+      "musicxml_path": "哈农钢琴练指法_乐章_009.musicxml",
+      "source_pages": [
+        14
+      ],
+      "ocr_labels": [
+        "练习九"
+      ],
+      "ocr_exercise_numbers": [
+        9
+      ],
+      "section": {
+        "id": "part_1",
+        "title": "第一部分：准备练习"
+      },
+      "measure_count": 29,
+      "pitched_note_count": 450,
+      "status": "needs_review"
+    },
+    {
+      "segment_id": "hanon.segment.010",
+      "sequence": 10,
+      "musicxml_path": "哈农钢琴练指法_乐章_010.musicxml",
+      "source_pages": [
+        15
+      ],
+      "ocr_labels": [
+        "练习十"
+      ],
+      "ocr_exercise_numbers": [
+        10
+      ],
+      "section": {
+        "id": "part_1",
+        "title": "第一部分：准备练习"
+      },
+      "measure_count": 29,
+      "pitched_note_count": 461,
+      "status": "needs_review"
+    },
+    {
+      "segment_id": "hanon.segment.011",
+      "sequence": 11,
+      "musicxml_path": "哈农钢琴练指法_乐章_011.musicxml",
+      "source_pages": [
+        16
+      ],
+      "ocr_labels": [
+        "练习十一"
+      ],
+      "ocr_exercise_numbers": [
+        11
+      ],
+      "section": {
+        "id": "part_1",
+        "title": "第一部分：准备练习"
+      },
+      "measure_count": 29,
+      "pitched_note_count": 455,
+      "status": "needs_review"
+    },
+    {
+      "segment_id": "hanon.segment.012",
+      "sequence": 12,
+      "musicxml_path": "哈农钢琴练指法_乐章_012.musicxml",
+      "source_pages": [
+        17
+      ],
+      "ocr_labels": [
+        "练习十二"
+      ],
+      "ocr_exercise_numbers": [
+        12
+      ],
+      "section": {
+        "id": "part_1",
+        "title": "第一部分：准备练习"
+      },
+      "measure_count": 30,
+      "pitched_note_count": 476,
+      "status": "needs_review"
+    },
+    {
+      "segment_id": "hanon.segment.013",
+      "sequence": 13,
+      "musicxml_path": "哈农钢琴练指法_乐章_013.musicxml",
+      "source_pages": [
+        18
+      ],
+      "ocr_labels": [
+        "练习十三"
+      ],
+      "ocr_exercise_numbers": [
+        13
+      ],
+      "section": {
+        "id": "part_1",
+        "title": "第一部分：准备练习"
+      },
+      "measure_count": 29,
+      "pitched_note_count": 485,
+      "status": "needs_review"
+    },
+    {
+      "segment_id": "hanon.segment.014",
+      "sequence": 14,
+      "musicxml_path": "哈农钢琴练指法_乐章_014.musicxml",
+      "source_pages": [
+        19
+      ],
+      "ocr_labels": [
+        "练习十四"
+      ],
+      "ocr_exercise_numbers": [
+        14
+      ],
+      "section": {
+        "id": "part_1",
+        "title": "第一部分：准备练习"
+      },
+      "measure_count": 29,
+      "pitched_note_count": 432,
+      "status": "needs_review"
+    },
+    {
+      "segment_id": "hanon.segment.015",
+      "sequence": 15,
+      "musicxml_path": "哈农钢琴练指法_乐章_015.musicxml",
+      "source_pages": [
+        20
+      ],
+      "ocr_labels": [
+        "练习十五"
+      ],
+      "ocr_exercise_numbers": [
+        15
+      ],
+      "section": {
+        "id": "part_1",
+        "title": "第一部分：准备练习"
+      },
+      "measure_count": 29,
+      "pitched_note_count": 402,
+      "status": "needs_review"
+    },
+    {
+      "segment_id": "hanon.segment.016",
+      "sequence": 16,
+      "musicxml_path": "哈农钢琴练指法_乐章_016.musicxml",
+      "source_pages": [
+        21
+      ],
+      "ocr_labels": [
+        "练习十六"
+      ],
+      "ocr_exercise_numbers": [
+        16
+      ],
+      "section": {
+        "id": "part_1",
+        "title": "第一部分：准备练习"
+      },
+      "measure_count": 29,
+      "pitched_note_count": 439,
+      "status": "needs_review"
+    },
+    {
+      "segment_id": "hanon.segment.017",
+      "sequence": 17,
+      "musicxml_path": "哈农钢琴练指法_乐章_017.musicxml",
+      "source_pages": [
+        22
+      ],
+      "ocr_labels": [
+        "练习十七"
+      ],
+      "ocr_exercise_numbers": [
+        17
+      ],
+      "section": {
+        "id": "part_1",
+        "title": "第一部分：准备练习"
+      },
+      "measure_count": 28,
+      "pitched_note_count": 401,
+      "status": "needs_review"
+    },
+    {
+      "segment_id": "hanon.segment.018",
+      "sequence": 18,
+      "musicxml_path": "哈农钢琴练指法_乐章_018.musicxml",
+      "source_pages": [
+        23
+      ],
+      "ocr_labels": [
+        "练习十八"
+      ],
+      "ocr_exercise_numbers": [
+        18
+      ],
+      "section": {
+        "id": "part_1",
+        "title": "第一部分：准备练习"
+      },
+      "measure_count": 29,
+      "pitched_note_count": 453,
+      "status": "needs_review"
+    },
+    {
+      "segment_id": "hanon.segment.019",
+      "sequence": 19,
+      "musicxml_path": "哈农钢琴练指法_乐章_019.musicxml",
+      "source_pages": [
+        24
+      ],
+      "ocr_labels": [
+        "练习十九"
+      ],
+      "ocr_exercise_numbers": [
+        19
+      ],
+      "section": {
+        "id": "part_1",
+        "title": "第一部分：准备练习"
+      },
+      "measure_count": 29,
+      "pitched_note_count": 455,
+      "status": "needs_review"
+    },
+    {
+      "segment_id": "hanon.segment.020",
+      "sequence": 20,
+      "musicxml_path": "哈农钢琴练指法_乐章_020.musicxml",
+      "source_pages": [
+        25
+      ],
+      "ocr_labels": [
+        "练习二十"
+      ],
+      "ocr_exercise_numbers": [
+        20
+      ],
+      "section": {
+        "id": "part_1",
+        "title": "第一部分：准备练习"
+      },
+      "measure_count": 31,
+      "pitched_note_count": 481,
+      "status": "needs_review"
+    },
+    {
+      "segment_id": "hanon.segment.021",
+      "sequence": 21,
+      "musicxml_path": "哈农钢琴练指法_乐章_021.musicxml",
+      "source_pages": [
+        26,
+        27
+      ],
+      "ocr_labels": [
+        "练习二十一"
+      ],
+      "ocr_exercise_numbers": [
+        21
+      ],
+      "section": {
+        "id": "part_2",
+        "title": "第二部分：高级练习"
+      },
+      "measure_count": 28,
+      "pitched_note_count": 862,
+      "status": "needs_review"
+    },
+    {
+      "segment_id": "hanon.segment.022",
+      "sequence": 22,
+      "musicxml_path": "哈农钢琴练指法_乐章_022.musicxml",
+      "source_pages": [
+        28,
+        29
+      ],
+      "ocr_labels": [
+        "练习二十二"
+      ],
+      "ocr_exercise_numbers": [
+        22
+      ],
+      "section": {
+        "id": "part_2",
+        "title": "第二部分：高级练习"
+      },
+      "measure_count": 29,
+      "pitched_note_count": 903,
+      "status": "needs_review"
+    },
+    {
+      "segment_id": "hanon.segment.023",
+      "sequence": 23,
+      "musicxml_path": "哈农钢琴练指法_乐章_023.musicxml",
+      "source_pages": [
+        30,
+        31
+      ],
+      "ocr_labels": [],
+      "ocr_exercise_numbers": [],
+      "section": {
+        "id": "part_2",
+        "title": "第二部分：高级练习"
+      },
+      "measure_count": 29,
+      "pitched_note_count": 985,
+      "status": "needs_review"
+    },
+    {
+      "segment_id": "hanon.segment.024",
+      "sequence": 24,
+      "musicxml_path": "哈农钢琴练指法_乐章_024.musicxml",
+      "source_pages": [
+        32,
+        33
+      ],
+      "ocr_labels": [
+        "练习二十四"
+      ],
+      "ocr_exercise_numbers": [
+        24
+      ],
+      "section": {
+        "id": "part_2",
+        "title": "第二部分：高级练习"
+      },
+      "measure_count": 29,
+      "pitched_note_count": 992,
+      "status": "needs_review"
+    },
+    {
+      "segment_id": "hanon.segment.025",
+      "sequence": 25,
+      "musicxml_path": "哈农钢琴练指法_乐章_025.musicxml",
+      "source_pages": [
+        34,
+        35
+      ],
+      "ocr_labels": [
+        "练习二十五"
+      ],
+      "ocr_exercise_numbers": [
+        25
+      ],
+      "section": {
+        "id": "part_2",
+        "title": "第二部分：高级练习"
+      },
+      "measure_count": 29,
+      "pitched_note_count": 975,
+      "status": "needs_review"
+    },
+    {
+      "segment_id": "hanon.segment.026",
+      "sequence": 26,
+      "musicxml_path": "哈农钢琴练指法_乐章_026.musicxml",
+      "source_pages": [
+        36,
+        37
+      ],
+      "ocr_labels": [
+        "练习二十六"
+      ],
+      "ocr_exercise_numbers": [
+        26
+      ],
+      "section": {
+        "id": "part_2",
+        "title": "第二部分：高级练习"
+      },
+      "measure_count": 29,
+      "pitched_note_count": 921,
+      "status": "needs_review"
+    },
+    {
+      "segment_id": "hanon.segment.027",
+      "sequence": 27,
+      "musicxml_path": "哈农钢琴练指法_乐章_027.musicxml",
+      "source_pages": [
+        38,
+        39
+      ],
+      "ocr_labels": [
+        "练习二十七"
+      ],
+      "ocr_exercise_numbers": [
+        27
+      ],
+      "section": {
+        "id": "part_2",
+        "title": "第二部分：高级练习"
+      },
+      "measure_count": 29,
+      "pitched_note_count": 872,
+      "status": "needs_review"
+    },
+    {
+      "segment_id": "hanon.segment.028",
+      "sequence": 28,
+      "musicxml_path": "哈农钢琴练指法_乐章_028.musicxml",
+      "source_pages": [
+        40,
+        41
+      ],
+      "ocr_labels": [
+        "练习二十八"
+      ],
+      "ocr_exercise_numbers": [
+        28
+      ],
+      "section": {
+        "id": "part_2",
+        "title": "第二部分：高级练习"
+      },
+      "measure_count": 29,
+      "pitched_note_count": 898,
+      "status": "needs_review"
+    },
+    {
+      "segment_id": "hanon.segment.029",
+      "sequence": 29,
+      "musicxml_path": "哈农钢琴练指法_乐章_029.musicxml",
+      "source_pages": [
+        42,
+        43
+      ],
+      "ocr_labels": [
+        "练习二十九"
+      ],
+      "ocr_exercise_numbers": [
+        29
+      ],
+      "section": {
+        "id": "part_2",
+        "title": "第二部分：高级练习"
+      },
+      "measure_count": 29,
+      "pitched_note_count": 950,
+      "status": "needs_review"
+    },
+    {
+      "segment_id": "hanon.segment.030",
+      "sequence": 30,
+      "musicxml_path": "哈农钢琴练指法_乐章_030.musicxml",
+      "source_pages": [
+        44,
+        45
+      ],
+      "ocr_labels": [
+        "练习三十"
+      ],
+      "ocr_exercise_numbers": [
+        30
+      ],
+      "section": {
+        "id": "part_2",
+        "title": "第二部分：高级练习"
+      },
+      "measure_count": 28,
+      "pitched_note_count": 809,
+      "status": "needs_review"
+    },
+    {
+      "segment_id": "hanon.segment.031",
+      "sequence": 31,
+      "musicxml_path": "哈农钢琴练指法_乐章_031.musicxml",
+      "source_pages": [
+        46,
+        47
+      ],
+      "ocr_labels": [
+        "练习三十一",
+        "练习三十二"
+      ],
+      "ocr_exercise_numbers": [
+        31,
+        32
+      ],
+      "section": {
+        "id": "part_2",
+        "title": "第二部分：高级练习"
+      },
+      "measure_count": 30,
+      "pitched_note_count": 663,
+      "status": "needs_review"
+    },
+    {
+      "segment_id": "hanon.segment.032",
+      "sequence": 32,
+      "musicxml_path": "哈农钢琴练指法_乐章_032.musicxml",
+      "source_pages": [
+        47
+      ],
+      "ocr_labels": [
+        "练习三十二"
+      ],
+      "ocr_exercise_numbers": [
+        32
+      ],
+      "section": {
+        "id": "part_2",
+        "title": "第二部分：高级练习"
+      },
+      "measure_count": 13,
+      "pitched_note_count": 290,
+      "status": "needs_review"
+    },
+    {
+      "segment_id": "hanon.segment.033",
+      "sequence": 33,
+      "musicxml_path": "哈农钢琴练指法_乐章_033.musicxml",
+      "source_pages": [
+        48
+      ],
+      "ocr_labels": [
+        "练习三十三"
+      ],
+      "ocr_exercise_numbers": [
+        33
+      ],
+      "section": {
+        "id": "part_2",
+        "title": "第二部分：高级练习"
+      },
+      "measure_count": 25,
+      "pitched_note_count": 566,
+      "status": "needs_review"
+    },
+    {
+      "segment_id": "hanon.segment.034",
+      "sequence": 34,
+      "musicxml_path": "哈农钢琴练指法_乐章_034.musicxml",
+      "source_pages": [
+        49
+      ],
+      "ocr_labels": [],
+      "ocr_exercise_numbers": [],
+      "section": {
+        "id": "part_2",
+        "title": "第二部分：高级练习"
+      },
+      "measure_count": 30,
+      "pitched_note_count": 509,
+      "status": "needs_review"
+    },
+    {
+      "segment_id": "hanon.segment.035",
+      "sequence": 35,
+      "musicxml_path": "哈农钢琴练指法_乐章_035.musicxml",
+      "source_pages": [
+        50
+      ],
+      "ocr_labels": [
+        "练习三十五"
+      ],
+      "ocr_exercise_numbers": [
+        35
+      ],
+      "section": {
+        "id": "part_2",
+        "title": "第二部分：高级练习"
+      },
+      "measure_count": 29,
+      "pitched_note_count": 664,
+      "status": "needs_review"
+    },
+    {
+      "segment_id": "hanon.segment.036",
+      "sequence": 36,
+      "musicxml_path": "哈农钢琴练指法_乐章_036.musicxml",
+      "source_pages": [
+        51
+      ],
+      "ocr_labels": [],
+      "ocr_exercise_numbers": [],
+      "section": {
+        "id": "part_2",
+        "title": "第二部分：高级练习"
+      },
+      "measure_count": 17,
+      "pitched_note_count": 183,
+      "status": "needs_review"
+    },
+    {
+      "segment_id": "hanon.segment.037",
+      "sequence": 37,
+      "musicxml_path": "哈农钢琴练指法_乐章_037.musicxml",
+      "source_pages": [
+        51
+      ],
+      "ocr_labels": [],
+      "ocr_exercise_numbers": [],
+      "section": {
+        "id": "part_2",
+        "title": "第二部分：高级练习"
+      },
+      "measure_count": 11,
+      "pitched_note_count": 126,
+      "status": "needs_review"
+    },
+    {
+      "segment_id": "hanon.segment.038",
+      "sequence": 38,
+      "musicxml_path": "哈农钢琴练指法_乐章_038.musicxml",
+      "source_pages": [
+        52,
+        53
+      ],
+      "ocr_labels": [],
+      "ocr_exercise_numbers": [],
+      "section": {
+        "id": "part_2",
+        "title": "第二部分：高级练习"
+      },
+      "measure_count": 63,
+      "pitched_note_count": 771,
+      "status": "needs_review"
+    },
+    {
+      "segment_id": "hanon.segment.039",
+      "sequence": 39,
+      "musicxml_path": "哈农钢琴练指法_乐章_039.musicxml",
+      "source_pages": [
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65
+      ],
+      "ocr_labels": [],
+      "ocr_exercise_numbers": [],
+      "section": {
+        "id": "part_2",
+        "title": "第二部分：高级练习"
+      },
+      "measure_count": 352,
+      "pitched_note_count": 4302,
+      "status": "needs_review"
+    },
+    {
+      "segment_id": "hanon.segment.040",
+      "sequence": 40,
+      "musicxml_path": "哈农钢琴练指法_乐章_040.musicxml",
+      "source_pages": [
+        66,
+        67,
+        68
+      ],
+      "ocr_labels": [],
+      "ocr_exercise_numbers": [],
+      "section": {
+        "id": "part_2",
+        "title": "第二部分：高级练习"
+      },
+      "measure_count": 55,
+      "pitched_note_count": 967,
+      "status": "needs_review"
+    },
+    {
+      "segment_id": "hanon.segment.041",
+      "sequence": 41,
+      "musicxml_path": "哈农钢琴练指法_乐章_041.musicxml",
+      "source_pages": [
+        69,
+        70,
+        71,
+        72
+      ],
+      "ocr_labels": [],
+      "ocr_exercise_numbers": [],
+      "section": {
+        "id": "part_2",
+        "title": "第二部分：高级练习"
+      },
+      "measure_count": 72,
+      "pitched_note_count": 1132,
+      "status": "needs_review"
+    },
+    {
+      "segment_id": "hanon.segment.042",
+      "sequence": 42,
+      "musicxml_path": "哈农钢琴练指法_乐章_042.musicxml",
+      "source_pages": [
+        73,
+        74
+      ],
+      "ocr_labels": [],
+      "ocr_exercise_numbers": [],
+      "section": {
+        "id": "part_2",
+        "title": "第二部分：高级练习"
+      },
+      "measure_count": 31,
+      "pitched_note_count": 381,
+      "status": "needs_review"
+    },
+    {
+      "segment_id": "hanon.segment.043",
+      "sequence": 43,
+      "musicxml_path": "哈农钢琴练指法_乐章_043.musicxml",
+      "source_pages": [
+        74,
+        75
+      ],
+      "ocr_labels": [],
+      "ocr_exercise_numbers": [],
+      "section": {
+        "id": "part_2",
+        "title": "第二部分：高级练习"
+      },
+      "measure_count": 33,
+      "pitched_note_count": 430,
+      "status": "needs_review"
+    },
+    {
+      "segment_id": "hanon.segment.044",
+      "sequence": 44,
+      "musicxml_path": "哈农钢琴练指法_乐章_044.musicxml",
+      "source_pages": [
+        76,
+        77
+      ],
+      "ocr_labels": [
+        "练习三"
+      ],
+      "ocr_exercise_numbers": [
+        3
+      ],
+      "section": {
+        "id": "part_3",
+        "title": "第三部分：专门练习"
+      },
+      "measure_count": 35,
+      "pitched_note_count": 688,
+      "status": "needs_review"
+    },
+    {
+      "segment_id": "hanon.segment.045",
+      "sequence": 45,
+      "musicxml_path": "哈农钢琴练指法_乐章_045.musicxml",
+      "source_pages": [
+        78
+      ],
+      "ocr_labels": [
+        "练习五"
+      ],
+      "ocr_exercise_numbers": [
+        5
+      ],
+      "section": {
+        "id": "part_3",
+        "title": "第三部分：专门练习"
+      },
+      "measure_count": 4,
+      "pitched_note_count": 109,
+      "status": "needs_review"
+    },
+    {
+      "segment_id": "hanon.segment.046",
+      "sequence": 46,
+      "musicxml_path": "哈农钢琴练指法_乐章_046.musicxml",
+      "source_pages": [
+        78
+      ],
+      "ocr_labels": [
+        "练习五"
+      ],
+      "ocr_exercise_numbers": [
+        5
+      ],
+      "section": {
+        "id": "part_3",
+        "title": "第三部分：专门练习"
+      },
+      "measure_count": 4,
+      "pitched_note_count": 122,
+      "status": "needs_review"
+    },
+    {
+      "segment_id": "hanon.segment.047",
+      "sequence": 47,
+      "musicxml_path": "哈农钢琴练指法_乐章_047.musicxml",
+      "source_pages": [
+        78
+      ],
+      "ocr_labels": [
+        "练习五"
+      ],
+      "ocr_exercise_numbers": [
+        5
+      ],
+      "section": {
+        "id": "part_3",
+        "title": "第三部分：专门练习"
+      },
+      "measure_count": 4,
+      "pitched_note_count": 96,
+      "status": "needs_review"
+    },
+    {
+      "segment_id": "hanon.segment.048",
+      "sequence": 48,
+      "musicxml_path": "哈农钢琴练指法_乐章_048.musicxml",
+      "source_pages": [
+        79
+      ],
+      "ocr_labels": [],
+      "ocr_exercise_numbers": [],
+      "section": {
+        "id": "part_3",
+        "title": "第三部分：专门练习"
+      },
+      "measure_count": 4,
+      "pitched_note_count": 96,
+      "status": "needs_review"
+    },
+    {
+      "segment_id": "hanon.segment.049",
+      "sequence": 49,
+      "musicxml_path": "哈农钢琴练指法_乐章_049.musicxml",
+      "source_pages": [
+        79
+      ],
+      "ocr_labels": [],
+      "ocr_exercise_numbers": [],
+      "section": {
+        "id": "part_3",
+        "title": "第三部分：专门练习"
+      },
+      "measure_count": 4,
+      "pitched_note_count": 104,
+      "status": "needs_review"
+    },
+    {
+      "segment_id": "hanon.segment.050",
+      "sequence": 50,
+      "musicxml_path": "哈农钢琴练指法_乐章_050.musicxml",
+      "source_pages": [
+        79
+      ],
+      "ocr_labels": [],
+      "ocr_exercise_numbers": [],
+      "section": {
+        "id": "part_3",
+        "title": "第三部分：专门练习"
+      },
+      "measure_count": 4,
+      "pitched_note_count": 103,
+      "status": "needs_review"
+    },
+    {
+      "segment_id": "hanon.segment.051",
+      "sequence": 51,
+      "musicxml_path": "哈农钢琴练指法_乐章_051.musicxml",
+      "source_pages": [
+        80,
+        81
+      ],
+      "ocr_labels": [],
+      "ocr_exercise_numbers": [],
+      "section": {
+        "id": "part_3",
+        "title": "第三部分：专门练习"
+      },
+      "measure_count": 38,
+      "pitched_note_count": 927,
+      "status": "needs_review"
+    },
+    {
+      "segment_id": "hanon.segment.052",
+      "sequence": 52,
+      "musicxml_path": "哈农钢琴练指法_乐章_052.musicxml",
+      "source_pages": [
+        82
+      ],
+      "ocr_labels": [],
+      "ocr_exercise_numbers": [],
+      "section": {
+        "id": "part_3",
+        "title": "第三部分：专门练习"
+      },
+      "measure_count": 22,
+      "pitched_note_count": 611,
+      "status": "needs_review"
+    },
+    {
+      "segment_id": "hanon.segment.053",
+      "sequence": 53,
+      "musicxml_path": "哈农钢琴练指法_乐章_053.musicxml",
+      "source_pages": [
+        83
+      ],
+      "ocr_labels": [],
+      "ocr_exercise_numbers": [],
+      "section": {
+        "id": "part_3",
+        "title": "第三部分：专门练习"
+      },
+      "measure_count": 10,
+      "pitched_note_count": 362,
+      "status": "needs_review"
+    },
+    {
+      "segment_id": "hanon.segment.054",
+      "sequence": 54,
+      "musicxml_path": "哈农钢琴练指法_乐章_054.musicxml",
+      "source_pages": [
+        84
+      ],
+      "ocr_labels": [],
+      "ocr_exercise_numbers": [],
+      "section": {
+        "id": "part_3",
+        "title": "第三部分：专门练习"
+      },
+      "measure_count": 11,
+      "pitched_note_count": 223,
+      "status": "needs_review"
+    },
+    {
+      "segment_id": "hanon.segment.055",
+      "sequence": 55,
+      "musicxml_path": "哈农钢琴练指法_乐章_055.musicxml",
+      "source_pages": [
+        85
+      ],
+      "ocr_labels": [],
+      "ocr_exercise_numbers": [],
+      "section": {
+        "id": "part_3",
+        "title": "第三部分：专门练习"
+      },
+      "measure_count": 9,
+      "pitched_note_count": 259,
+      "status": "needs_review"
+    },
+    {
+      "segment_id": "hanon.segment.056",
+      "sequence": 56,
+      "musicxml_path": "哈农钢琴练指法_乐章_056.musicxml",
+      "source_pages": [
+        85
+      ],
+      "ocr_labels": [],
+      "ocr_exercise_numbers": [],
+      "section": {
+        "id": "part_3",
+        "title": "第三部分：专门练习"
+      },
+      "measure_count": 9,
+      "pitched_note_count": 240,
+      "status": "needs_review"
+    },
+    {
+      "segment_id": "hanon.segment.057",
+      "sequence": 57,
+      "musicxml_path": "哈农钢琴练指法_乐章_057.musicxml",
+      "source_pages": [
+        86,
+        87
+      ],
+      "ocr_labels": [],
+      "ocr_exercise_numbers": [],
+      "section": {
+        "id": "part_3",
+        "title": "第三部分：专门练习"
+      },
+      "measure_count": 25,
+      "pitched_note_count": 1226,
+      "status": "needs_review"
+    },
+    {
+      "segment_id": "hanon.segment.058",
+      "sequence": 58,
+      "musicxml_path": "哈农钢琴练指法_乐章_058.musicxml",
+      "source_pages": [
+        88,
+        89
+      ],
+      "ocr_labels": [],
+      "ocr_exercise_numbers": [],
+      "section": {
+        "id": "part_3",
+        "title": "第三部分：专门练习"
+      },
+      "measure_count": 28,
+      "pitched_note_count": 1109,
+      "status": "needs_review"
+    },
+    {
+      "segment_id": "hanon.segment.059",
+      "sequence": 59,
+      "musicxml_path": "哈农钢琴练指法_乐章_059.musicxml",
+      "source_pages": [
+        91,
+        92,
+        93,
+        94
+      ],
+      "ocr_labels": [],
+      "ocr_exercise_numbers": [],
+      "section": {
+        "id": "part_3",
+        "title": "第三部分：专门练习"
+      },
+      "measure_count": 96,
+      "pitched_note_count": 2185,
+      "status": "needs_review"
+    },
+    {
+      "segment_id": "hanon.segment.060",
+      "sequence": 60,
+      "musicxml_path": "哈农钢琴练指法_乐章_060.musicxml",
+      "source_pages": [
+        95,
+        96,
+        97,
+        98
+      ],
+      "ocr_labels": [],
+      "ocr_exercise_numbers": [],
+      "section": {
+        "id": "part_3",
+        "title": "第三部分：专门练习"
+      },
+      "measure_count": 44,
+      "pitched_note_count": 1125,
+      "status": "needs_review"
+    },
+    {
+      "segment_id": "hanon.segment.061",
+      "sequence": 61,
+      "musicxml_path": "哈农钢琴练指法_乐章_061.musicxml",
+      "source_pages": [
+        99,
+        100
+      ],
+      "ocr_labels": [],
+      "ocr_exercise_numbers": [],
+      "section": {
+        "id": "part_3",
+        "title": "第三部分：专门练习"
+      },
+      "measure_count": 25,
+      "pitched_note_count": 1406,
+      "status": "needs_review"
+    },
+    {
+      "segment_id": "hanon.segment.062",
+      "sequence": 62,
+      "musicxml_path": "哈农钢琴练指法_乐章_062.musicxml",
+      "source_pages": [
+        100,
+        101,
+        102
+      ],
+      "ocr_labels": [],
+      "ocr_exercise_numbers": [],
+      "section": {
+        "id": "part_3",
+        "title": "第三部分：专门练习"
+      },
+      "measure_count": 24,
+      "pitched_note_count": 1149,
+      "status": "needs_review"
+    },
+    {
+      "segment_id": "hanon.segment.063",
+      "sequence": 63,
+      "musicxml_path": "哈农钢琴练指法_乐章_063.musicxml",
+      "source_pages": [
+        102,
+        103,
+        104,
+        105,
+        106,
+        107
+      ],
+      "ocr_labels": [],
+      "ocr_exercise_numbers": [],
+      "section": {
+        "id": "part_3",
+        "title": "第三部分：专门练习"
+      },
+      "measure_count": 96,
+      "pitched_note_count": 2918,
+      "status": "needs_review"
+    },
+    {
+      "segment_id": "hanon.segment.064",
+      "sequence": 64,
+      "musicxml_path": "哈农钢琴练指法_乐章_064.musicxml",
+      "source_pages": [
+        107,
+        108,
+        109
+      ],
+      "ocr_labels": [],
+      "ocr_exercise_numbers": [],
+      "section": {
+        "id": "part_3",
+        "title": "第三部分：专门练习"
+      },
+      "measure_count": 48,
+      "pitched_note_count": 1709,
+      "status": "needs_review"
+    },
+    {
+      "segment_id": "hanon.segment.065",
+      "sequence": 65,
+      "musicxml_path": "哈农钢琴练指法_乐章_065.musicxml",
+      "source_pages": [
+        110,
+        111
+      ],
+      "ocr_labels": [],
+      "ocr_exercise_numbers": [],
+      "section": {
+        "id": "part_3",
+        "title": "第三部分：专门练习"
+      },
+      "measure_count": 18,
+      "pitched_note_count": 837,
+      "status": "needs_review"
+    },
+    {
+      "segment_id": "hanon.segment.066",
+      "sequence": 66,
+      "musicxml_path": "哈农钢琴练指法_乐章_066.musicxml",
+      "source_pages": [
+        112,
+        113
+      ],
+      "ocr_labels": [],
+      "ocr_exercise_numbers": [],
+      "section": {
+        "id": "part_3",
+        "title": "第三部分：专门练习"
+      },
+      "measure_count": 16,
+      "pitched_note_count": 921,
+      "status": "needs_review"
+    },
+    {
+      "segment_id": "hanon.segment.067",
+      "sequence": 67,
+      "musicxml_path": "哈农钢琴练指法_乐章_067.musicxml",
+      "source_pages": [
+        113
+      ],
+      "ocr_labels": [],
+      "ocr_exercise_numbers": [],
+      "section": {
+        "id": "part_3",
+        "title": "第三部分：专门练习"
+      },
+      "measure_count": 9,
+      "pitched_note_count": 456,
+      "status": "needs_review"
+    },
+    {
+      "segment_id": "hanon.segment.068",
+      "sequence": 68,
+      "musicxml_path": "哈农钢琴练指法_乐章_068.musicxml",
+      "source_pages": [
+        114,
+        115,
+        116,
+        117,
+        118,
+        119
+      ],
+      "ocr_labels": [],
+      "ocr_exercise_numbers": [],
+      "section": {
+        "id": "part_3",
+        "title": "第三部分：专门练习"
+      },
+      "measure_count": 53,
+      "pitched_note_count": 4387,
+      "status": "needs_review"
+    }
+  ]
+}

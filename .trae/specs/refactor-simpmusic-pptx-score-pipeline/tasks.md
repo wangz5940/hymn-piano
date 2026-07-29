@@ -1,0 +1,248 @@
+# Tasks
+
+**Goal:** 将 712 份 SimpMusic PPTX 转换为可追溯的语义谱面和逐曲教学编配，并以按需加载的 SVG 替换 JPG + OCR 百分比标记主链。
+
+**Architecture:** 构建时执行 `PPTX -> Source AST -> Score AST -> Arrangement AST -> 分曲 JSON`。运行时只加载目录和当前曲目的 JSON，由纯 TypeScript Layout Engine 生成 SVG；图片、OCR 和系统字体分别承担回退、校对和字形职责。
+
+**Tech Stack:** TypeScript、Node.js、React 18、Vite、Vitest、OOXML、`fflate`、`fast-xml-parser`、SVG。
+
+---
+
+- [x] Task 1: 固化语料清单和三层数据契约
+  - **Files:**
+    - Create: `src/features/score/contracts.ts`
+    - Create: `src/features/score/contracts.test.ts`
+    - Create: `scripts/score-pipeline/corpus-manifest.ts`
+    - Modify: `src/features/hymns/types.ts`
+    - Modify: `package.json`
+    - Modify: `package-lock.json`
+  - [x] 定义 `shiqin-pptx-source/v1`、`shiqin-score/v1`、`shiqin-arrangement/v1` 和轻量 catalog entry 的 TypeScript 判别联合，明确稳定 ID、source reference、事件、歌词、诊断、来源状态与内容哈希字段。
+  - [x] 在清单中固定 712 份 PPTX、2658 张幻灯片、709 份 Base、173 份 Accent、3 份无 Base 异常、747 张 JPG 和 35 个第二调基线。
+  - [x] 将 060、063、444 的文件名和回退原因写入显式 allowlist；第二调使用独立版本键，不得继承原调资产 URL。
+  - [x] 增加 `fflate`、`fast-xml-parser` 和 `tsx`，使构建脚本可直接复用 TypeScript 契约。
+  - [x] 为合法文档、悬空 `eventId`、非法手指、缺失来源、原调/第二调串用编写契约测试。
+  - [x] Run: `npm run test:run -- src/features/score/contracts.test.ts`
+  - [x] Expected: 契约测试全部通过，非法引用和跨版本引用被拒绝。
+
+- [x] Task 2: 实现保真的 PPTX/OOXML Source AST 解析
+  - **Files:**
+    - Create: `scripts/score-pipeline/pptx-reader.ts`
+    - Create: `scripts/score-pipeline/pptx-reader.test.ts`
+    - Create: `scripts/score-pipeline/source-ast.ts`
+    - Create: `scripts/score-pipeline/fixtures/`
+  - [x] 移植 `poetry_parser/ppt.py` 中 ZIP、OOXML、relationship、EMU 换算和字体发现的必要思路，不导入或调用外部项目代码。
+  - [x] 解析 presentation 尺寸、slide 顺序、shape z-order、文本框变换、段落、run 文本、字体族、字号、样式、颜色、旋转和媒体 relationship。
+  - [x] 同时保存原始 EMU 与标准化页面坐标，生成稳定 source reference，并将不支持的 OOXML 节点写入诊断而非静默忽略。
+  - [x] 从 001、154、712 和无 Base 的 060 提取最小 XML fixture，覆盖多 run、Base/Accent、中文歌词、媒体和无谱面异常。
+  - [x] Run: `npm run test:run -- scripts/score-pipeline/pptx-reader.test.ts`
+  - [x] Expected: fixture 的 slide、shape、run、字体、坐标和诊断与黄金结果一致。
+
+- [x] Task 3: 建立完整 SimpMusic 映射并生成 Piano Score AST
+  - **Files:**
+    - Create: `scripts/score-pipeline/simpmusic-map.ts`
+    - Create: `scripts/score-pipeline/simpmusic-decoder.ts`
+    - Create: `scripts/score-pipeline/simpmusic-decoder.test.ts`
+    - Create: `scripts/score-pipeline/score-builder.ts`
+    - Create: `scripts/score-pipeline/score-builder.test.ts`
+  - [x] 扫描 709 份结构化 PPTX 中实际出现的 Base/Accent 字符、字符组合、字体和空间关系，形成版本化 inventory。
+  - [x] 为 inventory 建立显式语义映射，覆盖音符、休止、临时升降、八度点、时值线、附点、小节、反复、延音、连音和装饰符。
+  - [x] 按 run 顺序与空间邻近关系把 Accent 附着到目标 Base 事件，同时保留各自 source reference。
+  - [x] 生成 page、system、phrase、measure、event 的确定性 ID；调号、拍号和歌词均保留来源和解析诊断。
+  - [x] 未知字符生成 `unknown` 事件，禁止赋予音高、指法或和弦；非 allowlist 的未知 SimpMusic 字符使语料校验失败。
+  - [x] 为 `eod`、`Qiiy`、`tieiq`、`3-eiw qos` 等真实组合和 Base/Accent 叠加建立黄金测试。
+  - [x] Run: `npm run test:run -- scripts/score-pipeline/simpmusic-decoder.test.ts scripts/score-pipeline/score-builder.test.ts`
+  - [x] Expected: 黄金样例语义、来源引用和稳定 ID 一致，未知字符路径可复现且不会伪造音符。
+
+- [x] Task 4: 实现谱面去重、歌词分层和批量资产生成
+  - **Files:**
+    - Create: `scripts/score-pipeline/dedupe.ts`
+    - Create: `scripts/score-pipeline/dedupe.test.ts`
+    - Create: `scripts/score-pipeline/import-corpus.ts`
+    - Create: `scripts/score-pipeline/import-corpus.test.ts`
+    - Create: `scripts/generate-score-assets.ts`
+    - Modify: `scripts/generate-hymn-catalog.mjs`
+    - Modify: `src/data/hymns.generated.ts`
+    - Generate: `data/generated/hymn-sources/<hymn-key>.json`
+    - Generate: `public/materials/hymns/catalog.json`
+    - Generate: `public/materials/hymns/<hymn-key>/score.json`
+    - Generate: `public/materials/hymns/import-report.json`
+    - Modify: `package.json`
+  - [x] 使用标准化 SimpMusic run、相对坐标和谱面样式计算指纹；相同谱面只保留一个 score page，不同歌词保留 slide reference 和顺序。
+  - [x] 对真实不同的谱面页保留独立 page/system，不以歌词或标题相似度强行合并。
+  - [x] 按编号关联 PPTX 与 JPG，目录记录 `score_source`、资产 URL、schema 版本和回退原因；标题差异只记录诊断。
+  - [x] 为每首可结构化基础曲调输出构建期 `source.json` 审计资产和前端 `score.json`；确保 Score AST 的 source reference 可回溯，浏览器目录不暴露 Source AST 加载入口。
+  - [x] 为第二调及 060、063、444 输出 image source 目录项，不生成伪造 Source/Score AST。
+  - [x] 生成机器可读导入报告，包含语料计数、去重统计、未知字形、异常、schema、生成器版本和内容哈希。
+  - [x] 将 `generate:scores` 接入脚本，但此阶段暂不移除旧 `generate:guides`，以便 UI 迁移前保持现有页面可用。
+  - [x] Run: `npm run generate:scores`
+  - [x] Expected: 712 个基础编号全部入册，709 首有结构化 score 资产，3 首明确回退，35 个第二调无原调资产 URL，2658 张 slide 全部有处理记录。
+
+- [x] Task 5: 生成逐曲指法、手位、和声和左手手指
+  - **Files:**
+    - Create: `scripts/score-pipeline/fingering-engine.ts`
+    - Create: `scripts/score-pipeline/fingering-engine.test.ts`
+    - Create: `scripts/score-pipeline/harmony-engine.ts`
+    - Create: `scripts/score-pipeline/harmony-engine.test.ts`
+    - Create: `scripts/score-pipeline/arrangement-builder.ts`
+    - Create: `scripts/score-pipeline/arrangement-builder.test.ts`
+    - Create: `data/arrangements/manual/118.json`
+    - Generate: `public/materials/hymns/<hymn-key>/arrangement.json`
+  - [x] 以乐句为求解单元，为每个候选手位和手指路径计算成本：固定手位优先、黑键优先 2/3/4 指、限制不合理伸展、在乐句边界换位、重复音稳定、为下一句预留手指。
+  - [x] 为每个可解码音符输出 finger assignment，为连续事件输出 position segment，为手位切换输出 move action 和教学理由。
+  - [x] 依据调性、节拍重音、旋律和弦音、经过音、乐句终止和前后和弦连接生成逐小节 `auto_candidate` 和声，不得复用全曲固定 `I-V7-I` 模板。
+  - [x] 为实际和弦 voicing 计算低音、转位、各音音名和左手逐音手指，并对前后和弦连接计入换位成本。
+  - [x] 生成适合曲目拍号和句法的伴奏型、前奏、衔接和尾奏候选，每项附依据与可信度。
+  - [x] 将当前 118 人工方案迁移为只属于版本 `118` 的 event/measure 覆盖；不得继续自动应用到 `118b`。
+  - [x] 校验所有 arrangement reference 均指向同曲同版本 Score AST；人工确认覆盖候选但不删除审计记录。
+  - [x] Run: `npm run test:run -- scripts/score-pipeline/fingering-engine.test.ts scripts/score-pipeline/harmony-engine.test.ts scripts/score-pipeline/arrangement-builder.test.ts`
+  - [x] Expected: 至少 C、F、D、降 E 调样例产生不同且可解释的指法、手位与和声；黑键、换位、转位和人工覆盖用例通过。
+
+- [x] Task 6: 实现纯 TypeScript SVG Layout Engine
+  - **Files:**
+    - Create: `src/features/score/layout.ts`
+    - Create: `src/features/score/layout.test.ts`
+    - Create: `src/features/score/ScoreSvg.tsx`
+    - Create: `src/features/score/ScoreSvg.test.tsx`
+  - [x] 将 Score AST 排成确定性的 page、system、measure 和 beat 坐标，使用时值权重分配小节宽度并保留稳定 `viewBox`。
+  - [x] 为音符、休止、八度点、时值线、小节线、反复、连线和歌词生成独立 SVG layer；SimpMusic 仅出现在文本字形节点。
+  - [x] 通过 `eventId` 将指法放在音符上方，将 position segment 渲染为色带，并在 move action 处显示目标手位。
+  - [x] 将和弦、左手音名及手指锚定 measure/beat；为指法、手位和和弦分配教学轨道并执行基础碰撞避让。
+  - [x] 为 SVG 增加曲名、调号、拍号、页面说明和可访问文本摘要。
+  - [x] Run: `npm run test:run -- src/features/score/layout.test.ts src/features/score/ScoreSvg.test.tsx`
+  - [x] Expected: 布局坐标确定、教学标记与事件对齐、碰撞轨道不覆盖目标音符、SVG 可访问结构完整。
+
+- [x] Task 7: 增加字体发现、哈希校验和授权门禁
+  - **Files:**
+    - Create: `scripts/score-pipeline/fonts.ts`
+    - Create: `scripts/score-pipeline/fonts.test.ts`
+    - Create: `scripts/check-simpmusic-fonts.ts`
+    - Create: `src/features/score/fontAvailability.ts`
+    - Create: `src/features/score/fontAvailability.test.ts`
+    - Modify: `src/styles/global.css`
+    - Modify: `package.json`
+  - [x] 搜索显式配置目录、项目字体目录、`~/Library/Fonts`、`/Library/Fonts` 和常见 Linux 字体目录。
+  - [x] 校验 Base/Accent 的已知 SHA-256，区分“本地可用”“允许公开分发”“字体不可用”三种状态。
+  - [x] 默认仅声明系统字体，不复制、内嵌、子集化或轮廓化 TTF。
+  - [x] 只有授权开关显式启用且哈希匹配时才允许生成可分发 `@font-face` 资产；同名字体哈希异常时构建失败。
+  - [x] 运行时通过 `document.fonts` 检查字形可用性，不可用时向查看器返回 image fallback 决策。
+  - [x] Run: `npm run test:run -- scripts/score-pipeline/fonts.test.ts src/features/score/fontAvailability.test.ts`
+  - [x] Expected: 已知字体通过、未知哈希失败、未授权构建不产生字体文件、无字体环境选择图片回退。
+
+- [x] Task 8: 接入按曲目加载器并迁移练习页到 SVG
+  - **Files:**
+    - Create: `src/features/score/loadHymnAssets.ts`
+    - Create: `src/features/score/loadHymnAssets.test.ts`
+    - Create: `src/hooks/useHymnAssets.ts`
+    - Create: `src/hooks/useHymnAssets.test.tsx`
+    - Create: `src/components/ScoreViewer.test.tsx`
+    - Modify: `src/components/ScoreViewer.tsx`
+    - Modify: `src/components/HymnPreparationGuide.tsx`
+    - Modify: `src/components/ServiceSimulation.tsx`
+    - Modify: `src/pages/PracticePage.tsx`
+    - Modify: `src/features/hymns/guidance.ts`
+    - Modify: `src/features/hymns/guidance.test.ts`
+    - Modify: `src/styles/components.css`
+    - Modify: `src/App.test.tsx`
+  - [x] 按 catalog URL 只请求当前曲目的 `score.json` 和 `arrangement.json`，校验 schema、曲目键、内容哈希和引用完整性。
+  - [x] 为加载中、成功、无字体、image source、网络失败、schema 不兼容和重试建立明确状态。
+  - [x] `ScoreViewer` 在结构化资产和字体可用时显示 `ScoreSvg`，否则显示同版本 JPG；保留缩放、旋转、适合宽度和全屏。
+  - [x] `HymnPreparationGuide` 从 Arrangement AST 展示逐音指法、手位、换位、和声来源、左手逐音手指与理由，区分人工确认和算法候选。
+  - [x] 060、063、444 和全部第二调显示来源明确的图片回退；`118b` 不再展示 `118` 的人工方案。
+  - [x] 更新 service simulation，使其复用同一加载与回退路径，不额外下载全曲库谱面。
+  - [x] Run: `npm run test:run -- src/features/score/loadHymnAssets.test.ts src/hooks/useHymnAssets.test.tsx src/components/ScoreViewer.test.tsx src/App.test.tsx`
+  - [x] Expected: 结构化 SVG、图片回退、失败重试、状态文案、第二调隔离和现有查看控制均通过测试。
+
+- [x] Task 9: 切换构建主链并移除旧集中候选
+  - **Files:**
+    - Modify: `package.json`
+    - Modify: `vite.config.ts`
+    - Delete: `src/data/hymn-guides.generated.ts`
+    - Modify or Delete: `scripts/generate-hymn-guide-candidates.mjs`
+    - Retain: `scripts/ocr-hymn-images.swift`
+    - Retain: `data/hymn-ocr.jsonl`
+  - [x] 将 `predev`、`prebuild` 改为生成轻量曲库目录和分曲 score/arrangement 资产，不再执行 OCR guide 生成。
+  - [x] 删除运行时对 `autoHymnGuideSeeds`、`ScoreMark` 和百分比 overlay 的导入与类型依赖。
+  - [x] 删除集中式生成文件；旧候选生成器若保留，必须更名或明确为离线 OCR fallback 工具，且不得写入 `src/data`。
+  - [x] OCR Swift 脚本和 JSONL 仅保留为 35 个第二调、3 个异常曲目及视觉校对工具，不参与基础曲调默认 Score AST。
+  - [x] 恢复合理的 Vite chunk 告警阈值，并验证主包不包含任意曲目的完整 score/arrangement JSON。
+  - [x] Run: `npm run build`
+  - [x] Expected: 构建成功，产物按曲目拆分，主 JavaScript 中不存在 `autoHymnGuideSeeds` 或全曲库 finger mark 数组。
+
+- [x] Task 10: 执行全语料、回归和发布前验证
+  - **Files:**
+    - Modify: `scripts/score-pipeline/import-corpus.test.ts`
+    - Modify: `src/features/hymns/catalog.test.ts`
+    - Modify: `.trae/specs/refactor-simpmusic-pptx-score-pipeline/checklist.md`
+  - [x] 连续执行两次 `npm run generate:scores`，比较生成文件清单和 SHA-256，确认确定性。
+  - [x] 验证 712/2658/709/173/3/747/35 全部基线、全部 Score/Arrangement 引用、全部未知字形和全部回退原因。
+  - [x] 抽查至少 001、060、063、118、118b、154、444、712：覆盖普通 Base、无 Base、人工覆盖、第二调隔离、Accent 和末号曲目。
+  - [x] 验证单曲页面网络请求只包含当前曲目的结构化资产，切换曲目后按需加载新资产。
+  - [x] Run: `npm run test:run`
+  - [x] Run: `npm run check`
+  - [x] Run: `npm run lint`
+  - [x] Run: `npm run build`
+  - [x] Expected: 所有命令通过，导入报告无未解释异常，checklist 中全部验收项有证据并勾选。
+
+- [x] Task 11: 修复独立验收发现的语义、字体与 UI 缺口
+  - **Files:**
+    - Modify: `scripts/score-pipeline/simpmusic-map.ts`
+    - Modify: `scripts/score-pipeline/simpmusic-decoder.ts`
+    - Modify: `scripts/score-pipeline/score-builder.ts`
+    - Modify: `scripts/score-pipeline/fingering-engine.ts`
+    - Modify: `scripts/check-simpmusic-fonts.ts`
+    - Modify: `src/features/score/fontAvailability.ts`
+    - Modify: `src/components/HymnPreparationGuide.tsx`
+    - Modify: `src/components/ScoreViewer.test.tsx`
+    - Modify: `src/styles/components.css`
+    - Modify: `package.json`
+    - Test: corresponding `*.test.ts` and `*.test.tsx`
+  - [x] 基于字体轮廓和真实 PPTX 上下文确认可证明的临时升降、反复、终止和装饰符映射；不能证明的继续保留 allowlist unknown，禁止为通过验收而猜测。
+  - [x] 为临时升降、反复、终止或装饰符中已确认的语义增加黄金测试，并确保 Score AST 使用对应事件类型。
+  - [x] 黑键使用 1 或 5 指时记录其相对 2/3/4 指的上下文成本与例外原因。
+  - [x] 增加乐谱打印样式和测试，打印时移除滚动裁切并保持 SVG 分页可读。
+  - [x] 将字体完整性与授权策略检查接入 `prebuild`；字体缺失允许图片回退，同名字体错误哈希或非法授权配置必须使构建失败。
+  - [x] 使用不可由普通 fallback 字体满足的探针或等价可靠方法判断 SimpMusic 字体真实可用，并测试真实缺字决策。
+  - [x] 为歌谱加载中状态增加明确测试。
+  - [x] 教学面板增加按乐句或系统折叠的逐音指法明细，显示音符、手指和理由，同时避免默认展开海量记录。
+  - [x] Run: focused tests, `npm run test:run`, `npm run check`, `npm run lint`, `npm run build`
+  - [x] Expected: 所有失败验收项修复并重新验证通过。
+
+- [ ] Task 12: 以 PPT 原坐标谱面替换默认语义重排视图
+  - **Files:**
+    - Create: `src/features/score/render-contracts.ts`
+    - Create: `src/features/score/SourceScoreSvg.tsx`
+    - Create: `src/features/score/SourceScoreSvg.test.tsx`
+    - Create: `scripts/score-pipeline/render-builder.ts`
+    - Create: `scripts/score-pipeline/render-builder.test.ts`
+    - Modify: `scripts/score-pipeline/dedupe.ts`
+    - Modify: `scripts/generate-score-assets.ts`
+    - Modify: `scripts/score-pipeline/import-corpus.ts`
+    - Modify: `src/features/hymns/types.ts`
+    - Modify: `src/features/score/loadHymnAssets.ts`
+    - Modify: `src/components/ScoreViewer.tsx`
+    - Modify: `src/styles/components.css`
+  - [ ] 生成按曲目的 `render.json`，保留 canonical PPT slide 的原始 `viewBox`、谱行、Accent、歌词段落、字体、字号、颜色、旋转和 bbox。
+  - [ ] 谱面去重忽略 shape order、无语义空格和 run 分段差异；第 1 首合并为一个谱面布局，第 118 首识别为两套独立谱面而不是五个重复页面。
+  - [ ] 默认 SVG 使用 PPT 原坐标和文本框布局，不再用固定 system 高度和时值权重重排原谱。
+  - [ ] 同谱不同歌词保存为歌词版本；歌词按原 paragraph 和 bbox 渲染，不再把整段歌词居中绑定到单个 system。
+  - [ ] 有第二调图片且 PPT 内含第二套独立谱面时，为 `b` 版本选择第二套 render variant，不复用第一套调。
+  - [ ] 教学层通过稳定 event/source anchor 叠加；默认显示逐音指法，自动手位与自动和弦改为可选层，人工确认标记可默认显示。
+  - [ ] 修复缩放：移除 SVG 固定最小宽度与百分比外框冲突，50%/100%/200% 均按同一坐标系缩放且不裁切。
+  - [ ] 保留现有 semantic `ScoreSvg` 作为“分析谱”可选视图，不再作为默认谱面。
+  - [ ] 为 1、118、118b、154、712 添加结构和视觉回归测试，验证页数、谱行数、歌词版本、多调隔离和图层默认状态。
+  - [ ] Run: `npm run generate:scores`, focused tests, `npm run test:run`, `npm run check`, `npm run lint`, `npm run build`
+  - [ ] Expected: 默认谱面忠实保留 PPT 布局，第 1 首不重复，第 118/118b 各显示正确独立谱面，自动教学标记不再淹没原谱。
+
+# Task Dependencies
+
+- Task 2 depends on Task 1.
+- Task 3 depends on Task 1 and Task 2.
+- Task 4 depends on Task 2 and Task 3.
+- Task 5 depends on Task 1, Task 3 and Task 4.
+- Task 6 depends on Task 1；可与 Task 2、Task 3、Task 7 并行，使用契约 fixture 开发。
+- Task 7 depends on Task 1；可与 Task 2 至 Task 6 并行。
+- Task 8 depends on Task 4, Task 5, Task 6 and Task 7.
+- Task 9 depends on Task 8.
+- Task 10 depends on Task 1 through Task 9.
+- Task 11 depends on Task 10 and independent verification findings.
+- Task 12 depends on Task 11 and the visual/source comparison findings.

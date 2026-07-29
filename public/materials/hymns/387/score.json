@@ -1,0 +1,4394 @@
+{
+  "content_hash": "ce32b1129244a0d041ffdda300ff2ff91102b668b3ae542d0d616c6f15ca4ab8",
+  "diagnostics": [
+    {
+      "code": "conservative_pua_mapping",
+      "message": "私用区字形 U+F0A8 使用保守音符映射",
+      "severity": "warning",
+      "sources": [
+        {
+          "asset": "data/generated/hymn-sources/387.json",
+          "paragraph": 0,
+          "run": 2,
+          "shape_id": "slide-1-shape-8",
+          "slide": 1
+        }
+      ]
+    },
+    {
+      "code": "conservative_pua_mapping",
+      "message": "私用区字形 U+F0A7 使用保守音符映射",
+      "severity": "warning",
+      "sources": [
+        {
+          "asset": "data/generated/hymn-sources/387.json",
+          "paragraph": 0,
+          "run": 4,
+          "shape_id": "slide-1-shape-8",
+          "slide": 1
+        }
+      ]
+    },
+    {
+      "code": "metadata_fallback",
+      "message": "调号、拍号来自图片 OCR 顶层元数据；音符仍只来自 PPTX。",
+      "severity": "info",
+      "sources": [
+        {
+          "asset": "data/hymn-ocr.jsonl",
+          "shape_id": "387 你看你看耶稣背着十字架.jpg",
+          "slide": 1
+        }
+      ]
+    }
+  ],
+  "hymn_key": "387",
+  "key_signature": {
+    "sources": [
+      {
+        "asset": "data/hymn-ocr.jsonl",
+        "shape_id": "387 你看你看耶稣背着十字架.jpg",
+        "slide": 1
+      }
+    ],
+    "value": "G"
+  },
+  "meter": {
+    "sources": [
+      {
+        "asset": "data/hymn-ocr.jsonl",
+        "shape_id": "387 你看你看耶稣背着十字架.jpg",
+        "slide": 1
+      }
+    ],
+    "value": "4/4"
+  },
+  "pages": [
+    {
+      "id": "h387-p1",
+      "source_slides": [
+        1
+      ],
+      "systems": [
+        {
+          "id": "h387-p1-s1",
+          "lyrics": [],
+          "measures": [
+            {
+              "events": [
+                {
+                  "accidental": null,
+                  "augmentation_dots": 0,
+                  "beams": 0,
+                  "beat": 0,
+                  "degree": 3,
+                  "duration": 1,
+                  "id": "h387-p1-s1-m1-e1",
+                  "kind": "note",
+                  "measure_id": "h387-p1-s1-m1",
+                  "octave": 0,
+                  "raw_glyphs": "3",
+                  "source_anchor": {
+                    "slide": 1,
+                    "x": 19.457473684210527,
+                    "y": 96.594
+                  },
+                  "sources": [
+                    {
+                      "asset": "data/generated/hymn-sources/387.json",
+                      "paragraph": 0,
+                      "run": 0,
+                      "shape_id": "slide-1-shape-5",
+                      "slide": 1
+                    }
+                  ]
+                },
+                {
+                  "beat": 1,
+                  "duration": 0,
+                  "id": "h387-p1-s1-m1-e2",
+                  "kind": "barline",
+                  "measure_id": "h387-p1-s1-m1",
+                  "raw_glyphs": "|",
+                  "source_anchor": {
+                    "slide": 1,
+                    "x": 35.798421052631575,
+                    "y": 96.594
+                  },
+                  "sources": [
+                    {
+                      "asset": "data/generated/hymn-sources/387.json",
+                      "paragraph": 0,
+                      "run": 1,
+                      "shape_id": "slide-1-shape-5",
+                      "slide": 1
+                    }
+                  ],
+                  "style": "single"
+                }
+              ],
+              "id": "h387-p1-s1-m1",
+              "number": 1
+            },
+            {
+              "events": [
+                {
+                  "accidental": null,
+                  "augmentation_dots": 0,
+                  "beams": 0,
+                  "beat": 0,
+                  "degree": 6,
+                  "duration": 1,
+                  "id": "h387-p1-s1-m2-e1",
+                  "kind": "note",
+                  "measure_id": "h387-p1-s1-m2",
+                  "octave": 0,
+                  "raw_glyphs": "6",
+                  "source_anchor": {
+                    "slide": 1,
+                    "x": 52.13936842105263,
+                    "y": 96.594
+                  },
+                  "sources": [
+                    {
+                      "asset": "data/generated/hymn-sources/387.json",
+                      "paragraph": 0,
+                      "run": 2,
+                      "shape_id": "slide-1-shape-5",
+                      "slide": 1
+                    }
+                  ]
+                },
+                {
+                  "augmentation_dots": 0,
+                  "beams": 0,
+                  "beat": 1,
+                  "duration": 1,
+                  "id": "h387-p1-s1-m2-e2",
+                  "kind": "rest",
+                  "measure_id": "h387-p1-s1-m2",
+                  "raw_glyphs": "0",
+                  "source_anchor": {
+                    "slide": 1,
+                    "x": 68.48031578947368,
+                    "y": 96.594
+                  },
+                  "sources": [
+                    {
+                      "asset": "data/generated/hymn-sources/387.json",
+                      "paragraph": 0,
+                      "run": 2,
+                      "shape_id": "slide-1-shape-5",
+                      "slide": 1
+                    }
+                  ]
+                },
+                {
+                  "augmentation_dots": 0,
+                  "beams": 0,
+                  "beat": 2,
+                  "duration": 1,
+                  "id": "h387-p1-s1-m2-e3",
+                  "kind": "rest",
+                  "measure_id": "h387-p1-s1-m2",
+                  "raw_glyphs": "0",
+                  "source_anchor": {
+                    "slide": 1,
+                    "x": 84.82126315789473,
+                    "y": 96.594
+                  },
+                  "sources": [
+                    {
+                      "asset": "data/generated/hymn-sources/387.json",
+                      "paragraph": 0,
+                      "run": 2,
+                      "shape_id": "slide-1-shape-5",
+                      "slide": 1
+                    }
+                  ]
+                },
+                {
+                  "accidental": null,
+                  "augmentation_dots": 0,
+                  "beams": 0,
+                  "beat": 3,
+                  "degree": 3,
+                  "duration": 1,
+                  "id": "h387-p1-s1-m2-e4",
+                  "kind": "note",
+                  "measure_id": "h387-p1-s1-m2",
+                  "octave": 0,
+                  "raw_glyphs": "3",
+                  "source_anchor": {
+                    "slide": 1,
+                    "x": 101.16221052631579,
+                    "y": 96.594
+                  },
+                  "sources": [
+                    {
+                      "asset": "data/generated/hymn-sources/387.json",
+                      "paragraph": 0,
+                      "run": 3,
+                      "shape_id": "slide-1-shape-5",
+                      "slide": 1
+                    }
+                  ]
+                },
+                {
+                  "beat": 4,
+                  "duration": 0,
+                  "id": "h387-p1-s1-m2-e5",
+                  "kind": "barline",
+                  "measure_id": "h387-p1-s1-m2",
+                  "raw_glyphs": "|",
+                  "source_anchor": {
+                    "slide": 1,
+                    "x": 117.50315789473684,
+                    "y": 96.594
+                  },
+                  "sources": [
+                    {
+                      "asset": "data/generated/hymn-sources/387.json",
+                      "paragraph": 0,
+                      "run": 4,
+                      "shape_id": "slide-1-shape-5",
+                      "slide": 1
+                    }
+                  ],
+                  "style": "single"
+                }
+              ],
+              "id": "h387-p1-s1-m2",
+              "number": 2
+            },
+            {
+              "events": [
+                {
+                  "accidental": null,
+                  "augmentation_dots": 0,
+                  "beams": 0,
+                  "beat": 0,
+                  "degree": 7,
+                  "duration": 1,
+                  "id": "h387-p1-s1-m3-e1",
+                  "kind": "note",
+                  "measure_id": "h387-p1-s1-m3",
+                  "octave": 0,
+                  "raw_glyphs": "7",
+                  "source_anchor": {
+                    "slide": 1,
+                    "x": 133.84410526315787,
+                    "y": 96.594
+                  },
+                  "sources": [
+                    {
+                      "asset": "data/generated/hymn-sources/387.json",
+                      "paragraph": 0,
+                      "run": 5,
+                      "shape_id": "slide-1-shape-5",
+                      "slide": 1
+                    }
+                  ]
+                },
+                {
+                  "augmentation_dots": 0,
+                  "beams": 0,
+                  "beat": 1,
+                  "duration": 1,
+                  "id": "h387-p1-s1-m3-e2",
+                  "kind": "rest",
+                  "measure_id": "h387-p1-s1-m3",
+                  "raw_glyphs": "0",
+                  "source_anchor": {
+                    "slide": 1,
+                    "x": 150.18505263157894,
+                    "y": 96.594
+                  },
+                  "sources": [
+                    {
+                      "asset": "data/generated/hymn-sources/387.json",
+                      "paragraph": 0,
+                      "run": 5,
+                      "shape_id": "slide-1-shape-5",
+                      "slide": 1
+                    }
+                  ]
+                },
+                {
+                  "augmentation_dots": 0,
+                  "beams": 0,
+                  "beat": 2,
+                  "duration": 1,
+                  "id": "h387-p1-s1-m3-e3",
+                  "kind": "rest",
+                  "measure_id": "h387-p1-s1-m3",
+                  "raw_glyphs": "0",
+                  "source_anchor": {
+                    "slide": 1,
+                    "x": 166.52599999999998,
+                    "y": 96.594
+                  },
+                  "sources": [
+                    {
+                      "asset": "data/generated/hymn-sources/387.json",
+                      "paragraph": 0,
+                      "run": 5,
+                      "shape_id": "slide-1-shape-5",
+                      "slide": 1
+                    }
+                  ]
+                },
+                {
+                  "accidental": null,
+                  "augmentation_dots": 0,
+                  "beams": 1,
+                  "beat": 3,
+                  "degree": 6,
+                  "duration": 0.5,
+                  "id": "h387-p1-s1-m3-e4",
+                  "kind": "note",
+                  "measure_id": "h387-p1-s1-m3",
+                  "octave": 0,
+                  "raw_glyphs": "y",
+                  "source_anchor": {
+                    "slide": 1,
+                    "x": 182.86694736842105,
+                    "y": 96.594
+                  },
+                  "sources": [
+                    {
+                      "asset": "data/generated/hymn-sources/387.json",
+                      "paragraph": 0,
+                      "run": 6,
+                      "shape_id": "slide-1-shape-5",
+                      "slide": 1
+                    }
+                  ]
+                },
+                {
+                  "accidental": null,
+                  "augmentation_dots": 0,
+                  "beams": 1,
+                  "beat": 3.5,
+                  "degree": 5,
+                  "duration": 0.5,
+                  "id": "h387-p1-s1-m3-e5",
+                  "kind": "note",
+                  "measure_id": "h387-p1-s1-m3",
+                  "octave": 0,
+                  "raw_glyphs": "t",
+                  "source_anchor": {
+                    "slide": 1,
+                    "x": 231.8897894736842,
+                    "y": 96.594
+                  },
+                  "sources": [
+                    {
+                      "asset": "data/generated/hymn-sources/387.json",
+                      "paragraph": 0,
+                      "run": 6,
+                      "shape_id": "slide-1-shape-5",
+                      "slide": 1
+                    }
+                  ]
+                },
+                {
+                  "beat": 4,
+                  "duration": 0,
+                  "id": "h387-p1-s1-m3-e6",
+                  "kind": "barline",
+                  "measure_id": "h387-p1-s1-m3",
+                  "raw_glyphs": "|",
+                  "source_anchor": {
+                    "slide": 1,
+                    "x": 248.23073684210527,
+                    "y": 96.594
+                  },
+                  "sources": [
+                    {
+                      "asset": "data/generated/hymn-sources/387.json",
+                      "paragraph": 0,
+                      "run": 7,
+                      "shape_id": "slide-1-shape-5",
+                      "slide": 1
+                    }
+                  ],
+                  "style": "single"
+                }
+              ],
+              "id": "h387-p1-s1-m3",
+              "number": 3
+            },
+            {
+              "events": [
+                {
+                  "accidental": null,
+                  "augmentation_dots": 0,
+                  "beams": 0,
+                  "beat": 0,
+                  "degree": 6,
+                  "duration": 1,
+                  "id": "h387-p1-s1-m4-e1",
+                  "kind": "note",
+                  "measure_id": "h387-p1-s1-m4",
+                  "octave": 0,
+                  "raw_glyphs": "6",
+                  "source_anchor": {
+                    "slide": 1,
+                    "x": 264.5716842105263,
+                    "y": 96.594
+                  },
+                  "sources": [
+                    {
+                      "asset": "data/generated/hymn-sources/387.json",
+                      "paragraph": 0,
+                      "run": 8,
+                      "shape_id": "slide-1-shape-5",
+                      "slide": 1
+                    }
+                  ]
+                },
+                {
+                  "accidental": null,
+                  "augmentation_dots": 0,
+                  "beams": 0,
+                  "beat": 1,
+                  "degree": 1,
+                  "duration": 1,
+                  "id": "h387-p1-s1-m4-e2",
+                  "kind": "note",
+                  "measure_id": "h387-p1-s1-m4",
+                  "octave": 0,
+                  "raw_glyphs": "1",
+                  "source_anchor": {
+                    "slide": 1,
+                    "x": 313.59452631578944,
+                    "y": 96.594
+                  },
+                  "sources": [
+                    {
+                      "asset": "data/generated/hymn-sources/387.json",
+                      "paragraph": 0,
+                      "run": 8,
+                      "shape_id": "slide-1-shape-5",
+                      "slide": 1
+                    }
+                  ]
+                },
+                {
+                  "accidental": null,
+                  "augmentation_dots": 1,
+                  "beams": 0,
+                  "beat": 2,
+                  "degree": 1,
+                  "duration": 1.5,
+                  "id": "h387-p1-s1-m4-e3",
+                  "kind": "note",
+                  "measure_id": "h387-p1-s1-m4",
+                  "octave": 0,
+                  "raw_glyphs": "19",
+                  "source_anchor": {
+                    "slide": 1,
+                    "x": 370.7878421052631,
+                    "y": 96.594
+                  },
+                  "sources": [
+                    {
+                      "asset": "data/generated/hymn-sources/387.json",
+                      "paragraph": 0,
+                      "run": 8,
+                      "shape_id": "slide-1-shape-5",
+                      "slide": 1
+                    }
+                  ]
+                },
+                {
+                  "accidental": null,
+                  "augmentation_dots": 0,
+                  "beams": 1,
+                  "beat": 3.5,
+                  "degree": 2,
+                  "duration": 0.5,
+                  "id": "h387-p1-s1-m4-e4",
+                  "kind": "note",
+                  "measure_id": "h387-p1-s1-m4",
+                  "octave": 0,
+                  "raw_glyphs": "w",
+                  "source_anchor": {
+                    "slide": 1,
+                    "x": 395.2992631578947,
+                    "y": 96.594
+                  },
+                  "sources": [
+                    {
+                      "asset": "data/generated/hymn-sources/387.json",
+                      "paragraph": 0,
+                      "run": 8,
+                      "shape_id": "slide-1-shape-5",
+                      "slide": 1
+                    }
+                  ]
+                },
+                {
+                  "beat": 4,
+                  "duration": 0,
+                  "id": "h387-p1-s1-m4-e5",
+                  "kind": "barline",
+                  "measure_id": "h387-p1-s1-m4",
+                  "raw_glyphs": "|",
+                  "source_anchor": {
+                    "slide": 1,
+                    "x": 411.64021052631574,
+                    "y": 96.594
+                  },
+                  "sources": [
+                    {
+                      "asset": "data/generated/hymn-sources/387.json",
+                      "paragraph": 0,
+                      "run": 9,
+                      "shape_id": "slide-1-shape-5",
+                      "slide": 1
+                    }
+                  ],
+                  "style": "single"
+                }
+              ],
+              "id": "h387-p1-s1-m4",
+              "number": 4
+            },
+            {
+              "events": [
+                {
+                  "accidental": null,
+                  "augmentation_dots": 0,
+                  "beams": 0,
+                  "beat": 0,
+                  "degree": 3,
+                  "duration": 3,
+                  "id": "h387-p1-s1-m5-e1",
+                  "kind": "note",
+                  "measure_id": "h387-p1-s1-m5",
+                  "octave": 0,
+                  "raw_glyphs": "3--",
+                  "source_anchor": {
+                    "slide": 1,
+                    "x": 444.3221052631579,
+                    "y": 96.594
+                  },
+                  "sources": [
+                    {
+                      "asset": "data/generated/hymn-sources/387.json",
+                      "paragraph": 0,
+                      "run": 10,
+                      "shape_id": "slide-1-shape-5",
+                      "slide": 1
+                    }
+                  ]
+                },
+                {
+                  "accidental": null,
+                  "augmentation_dots": 0,
+                  "beams": 0,
+                  "beat": 3,
+                  "degree": 3,
+                  "duration": 1,
+                  "id": "h387-p1-s1-m5-e2",
+                  "kind": "note",
+                  "measure_id": "h387-p1-s1-m5",
+                  "octave": 0,
+                  "raw_glyphs": "3",
+                  "source_anchor": {
+                    "slide": 1,
+                    "x": 477.00399999999996,
+                    "y": 96.594
+                  },
+                  "sources": [
+                    {
+                      "asset": "data/generated/hymn-sources/387.json",
+                      "paragraph": 0,
+                      "run": 10,
+                      "shape_id": "slide-1-shape-5",
+                      "slide": 1
+                    }
+                  ]
+                },
+                {
+                  "beat": 4,
+                  "duration": 0,
+                  "id": "h387-p1-s1-m5-e3",
+                  "kind": "barline",
+                  "measure_id": "h387-p1-s1-m5",
+                  "raw_glyphs": "|",
+                  "source_anchor": {
+                    "slide": 1,
+                    "x": 493.34494736842106,
+                    "y": 96.594
+                  },
+                  "sources": [
+                    {
+                      "asset": "data/generated/hymn-sources/387.json",
+                      "paragraph": 0,
+                      "run": 11,
+                      "shape_id": "slide-1-shape-5",
+                      "slide": 1
+                    }
+                  ],
+                  "style": "single"
+                }
+              ],
+              "id": "h387-p1-s1-m5",
+              "number": 5
+            },
+            {
+              "events": [
+                {
+                  "accidental": null,
+                  "augmentation_dots": 0,
+                  "beams": 0,
+                  "beat": 0,
+                  "degree": 6,
+                  "duration": 1,
+                  "id": "h387-p1-s1-m6-e1",
+                  "kind": "note",
+                  "measure_id": "h387-p1-s1-m6",
+                  "octave": 0,
+                  "raw_glyphs": "6",
+                  "source_anchor": {
+                    "slide": 1,
+                    "x": 509.68589473684204,
+                    "y": 96.594
+                  },
+                  "sources": [
+                    {
+                      "asset": "data/generated/hymn-sources/387.json",
+                      "paragraph": 0,
+                      "run": 12,
+                      "shape_id": "slide-1-shape-5",
+                      "slide": 1
+                    }
+                  ]
+                },
+                {
+                  "augmentation_dots": 0,
+                  "beams": 0,
+                  "beat": 1,
+                  "duration": 1,
+                  "id": "h387-p1-s1-m6-e2",
+                  "kind": "rest",
+                  "measure_id": "h387-p1-s1-m6",
+                  "raw_glyphs": "0",
+                  "source_anchor": {
+                    "slide": 1,
+                    "x": 526.0268421052632,
+                    "y": 96.594
+                  },
+                  "sources": [
+                    {
+                      "asset": "data/generated/hymn-sources/387.json",
+                      "paragraph": 0,
+                      "run": 12,
+                      "shape_id": "slide-1-shape-5",
+                      "slide": 1
+                    }
+                  ]
+                },
+                {
+                  "augmentation_dots": 0,
+                  "beams": 0,
+                  "beat": 2,
+                  "duration": 1,
+                  "id": "h387-p1-s1-m6-e3",
+                  "kind": "rest",
+                  "measure_id": "h387-p1-s1-m6",
+                  "raw_glyphs": "0",
+                  "source_anchor": {
+                    "slide": 1,
+                    "x": 542.3677894736842,
+                    "y": 96.594
+                  },
+                  "sources": [
+                    {
+                      "asset": "data/generated/hymn-sources/387.json",
+                      "paragraph": 0,
+                      "run": 12,
+                      "shape_id": "slide-1-shape-5",
+                      "slide": 1
+                    }
+                  ]
+                },
+                {
+                  "accidental": null,
+                  "augmentation_dots": 0,
+                  "beams": 0,
+                  "beat": 3,
+                  "degree": 3,
+                  "duration": 1,
+                  "id": "h387-p1-s1-m6-e4",
+                  "kind": "note",
+                  "measure_id": "h387-p1-s1-m6",
+                  "octave": 0,
+                  "raw_glyphs": "3",
+                  "source_anchor": {
+                    "slide": 1,
+                    "x": 558.7087368421053,
+                    "y": 96.594
+                  },
+                  "sources": [
+                    {
+                      "asset": "data/generated/hymn-sources/387.json",
+                      "paragraph": 0,
+                      "run": 13,
+                      "shape_id": "slide-1-shape-5",
+                      "slide": 1
+                    }
+                  ]
+                },
+                {
+                  "beat": 4,
+                  "duration": 0,
+                  "id": "h387-p1-s1-m6-e5",
+                  "kind": "barline",
+                  "measure_id": "h387-p1-s1-m6",
+                  "raw_glyphs": "|",
+                  "source_anchor": {
+                    "slide": 1,
+                    "x": 575.0496842105264,
+                    "y": 96.594
+                  },
+                  "sources": [
+                    {
+                      "asset": "data/generated/hymn-sources/387.json",
+                      "paragraph": 0,
+                      "run": 14,
+                      "shape_id": "slide-1-shape-5",
+                      "slide": 1
+                    }
+                  ],
+                  "style": "single"
+                }
+              ],
+              "id": "h387-p1-s1-m6",
+              "number": 6
+            },
+            {
+              "events": [
+                {
+                  "accidental": null,
+                  "augmentation_dots": 0,
+                  "beams": 0,
+                  "beat": 0,
+                  "degree": 7,
+                  "duration": 1,
+                  "id": "h387-p1-s1-m7-e1",
+                  "kind": "note",
+                  "measure_id": "h387-p1-s1-m7",
+                  "octave": 0,
+                  "raw_glyphs": "7",
+                  "source_anchor": {
+                    "slide": 1,
+                    "x": 591.3906315789475,
+                    "y": 96.594
+                  },
+                  "sources": [
+                    {
+                      "asset": "data/generated/hymn-sources/387.json",
+                      "paragraph": 0,
+                      "run": 15,
+                      "shape_id": "slide-1-shape-5",
+                      "slide": 1
+                    }
+                  ]
+                },
+                {
+                  "augmentation_dots": 0,
+                  "beams": 0,
+                  "beat": 1,
+                  "duration": 1,
+                  "id": "h387-p1-s1-m7-e2",
+                  "kind": "rest",
+                  "measure_id": "h387-p1-s1-m7",
+                  "raw_glyphs": "0",
+                  "source_anchor": {
+                    "slide": 1,
+                    "x": 607.7315789473685,
+                    "y": 96.594
+                  },
+                  "sources": [
+                    {
+                      "asset": "data/generated/hymn-sources/387.json",
+                      "paragraph": 0,
+                      "run": 15,
+                      "shape_id": "slide-1-shape-5",
+                      "slide": 1
+                    }
+                  ]
+                },
+                {
+                  "augmentation_dots": 0,
+                  "beams": 0,
+                  "beat": 2,
+                  "duration": 1,
+                  "id": "h387-p1-s1-m7-e3",
+                  "kind": "rest",
+                  "measure_id": "h387-p1-s1-m7",
+                  "raw_glyphs": "0",
+                  "source_anchor": {
+                    "slide": 1,
+                    "x": 624.0725263157896,
+                    "y": 96.594
+                  },
+                  "sources": [
+                    {
+                      "asset": "data/generated/hymn-sources/387.json",
+                      "paragraph": 0,
+                      "run": 15,
+                      "shape_id": "slide-1-shape-5",
+                      "slide": 1
+                    }
+                  ]
+                },
+                {
+                  "accidental": null,
+                  "augmentation_dots": 0,
+                  "beams": 1,
+                  "beat": 3,
+                  "degree": 6,
+                  "duration": 0.5,
+                  "id": "h387-p1-s1-m7-e4",
+                  "kind": "note",
+                  "measure_id": "h387-p1-s1-m7",
+                  "octave": 0,
+                  "raw_glyphs": "y",
+                  "source_anchor": {
+                    "slide": 1,
+                    "x": 640.4134736842105,
+                    "y": 96.594
+                  },
+                  "sources": [
+                    {
+                      "asset": "data/generated/hymn-sources/387.json",
+                      "paragraph": 0,
+                      "run": 16,
+                      "shape_id": "slide-1-shape-5",
+                      "slide": 1
+                    }
+                  ]
+                },
+                {
+                  "accidental": null,
+                  "augmentation_dots": 0,
+                  "beams": 1,
+                  "beat": 3.5,
+                  "degree": 7,
+                  "duration": 0.5,
+                  "id": "h387-p1-s1-m7-e5",
+                  "kind": "note",
+                  "measure_id": "h387-p1-s1-m7",
+                  "octave": 0,
+                  "raw_glyphs": "u",
+                  "source_anchor": {
+                    "slide": 1,
+                    "x": 689.4363157894737,
+                    "y": 96.594
+                  },
+                  "sources": [
+                    {
+                      "asset": "data/generated/hymn-sources/387.json",
+                      "paragraph": 0,
+                      "run": 16,
+                      "shape_id": "slide-1-shape-5",
+                      "slide": 1
+                    }
+                  ]
+                },
+                {
+                  "beat": 4,
+                  "duration": 0,
+                  "id": "h387-p1-s1-m7-e6",
+                  "kind": "barline",
+                  "measure_id": "h387-p1-s1-m7",
+                  "raw_glyphs": "|",
+                  "source_anchor": {
+                    "slide": 1,
+                    "x": 705.7772631578947,
+                    "y": 96.594
+                  },
+                  "sources": [
+                    {
+                      "asset": "data/generated/hymn-sources/387.json",
+                      "paragraph": 0,
+                      "run": 17,
+                      "shape_id": "slide-1-shape-5",
+                      "slide": 1
+                    }
+                  ],
+                  "style": "single"
+                }
+              ],
+              "id": "h387-p1-s1-m7",
+              "number": 7
+            },
+            {
+              "events": [
+                {
+                  "accidental": null,
+                  "augmentation_dots": 0,
+                  "beams": 0,
+                  "beat": 0,
+                  "degree": 1,
+                  "duration": 1,
+                  "id": "h387-p1-s1-m8-e1",
+                  "kind": "note",
+                  "measure_id": "h387-p1-s1-m8",
+                  "octave": 1,
+                  "raw_glyphs": "!",
+                  "source_anchor": {
+                    "slide": 1,
+                    "x": 722.1182105263158,
+                    "y": 96.594
+                  },
+                  "sources": [
+                    {
+                      "asset": "data/generated/hymn-sources/387.json",
+                      "paragraph": 0,
+                      "run": 18,
+                      "shape_id": "slide-1-shape-5",
+                      "slide": 1
+                    }
+                  ]
+                },
+                {
+                  "accidental": null,
+                  "augmentation_dots": 0,
+                  "beams": 0,
+                  "beat": 1,
+                  "degree": 7,
+                  "duration": 1,
+                  "id": "h387-p1-s1-m8-e2",
+                  "kind": "note",
+                  "measure_id": "h387-p1-s1-m8",
+                  "octave": 0,
+                  "raw_glyphs": "7",
+                  "source_anchor": {
+                    "slide": 1,
+                    "x": 771.141052631579,
+                    "y": 96.594
+                  },
+                  "sources": [
+                    {
+                      "asset": "data/generated/hymn-sources/387.json",
+                      "paragraph": 0,
+                      "run": 18,
+                      "shape_id": "slide-1-shape-5",
+                      "slide": 1
+                    }
+                  ]
+                },
+                {
+                  "accidental": null,
+                  "augmentation_dots": 0,
+                  "beams": 0,
+                  "beat": 2,
+                  "degree": 6,
+                  "duration": 1,
+                  "id": "h387-p1-s1-m8-e3",
+                  "kind": "note",
+                  "measure_id": "h387-p1-s1-m8",
+                  "octave": 0,
+                  "raw_glyphs": "6",
+                  "source_anchor": {
+                    "slide": 1,
+                    "x": 820.1638947368422,
+                    "y": 96.594
+                  },
+                  "sources": [
+                    {
+                      "asset": "data/generated/hymn-sources/387.json",
+                      "paragraph": 0,
+                      "run": 18,
+                      "shape_id": "slide-1-shape-5",
+                      "slide": 1
+                    }
+                  ]
+                },
+                {
+                  "accidental": null,
+                  "augmentation_dots": 0,
+                  "beams": 0,
+                  "beat": 3,
+                  "degree": 1,
+                  "duration": 1,
+                  "id": "h387-p1-s1-m8-e4",
+                  "kind": "note",
+                  "measure_id": "h387-p1-s1-m8",
+                  "octave": 1,
+                  "raw_glyphs": "!",
+                  "source_anchor": {
+                    "slide": 1,
+                    "x": 869.1867368421052,
+                    "y": 96.594
+                  },
+                  "sources": [
+                    {
+                      "asset": "data/generated/hymn-sources/387.json",
+                      "paragraph": 0,
+                      "run": 18,
+                      "shape_id": "slide-1-shape-5",
+                      "slide": 1
+                    }
+                  ]
+                },
+                {
+                  "beat": 4,
+                  "duration": 0,
+                  "id": "h387-p1-s1-m8-e5",
+                  "kind": "barline",
+                  "measure_id": "h387-p1-s1-m8",
+                  "raw_glyphs": "|",
+                  "source_anchor": {
+                    "slide": 1,
+                    "x": 885.5276842105263,
+                    "y": 96.594
+                  },
+                  "sources": [
+                    {
+                      "asset": "data/generated/hymn-sources/387.json",
+                      "paragraph": 0,
+                      "run": 19,
+                      "shape_id": "slide-1-shape-5",
+                      "slide": 1
+                    }
+                  ],
+                  "style": "single"
+                }
+              ],
+              "id": "h387-p1-s1-m8",
+              "number": 8
+            },
+            {
+              "events": [
+                {
+                  "accidental": null,
+                  "augmentation_dots": 0,
+                  "beams": 0,
+                  "beat": 0,
+                  "degree": 7,
+                  "duration": 3,
+                  "id": "h387-p1-s1-m9-e1",
+                  "kind": "note",
+                  "measure_id": "h387-p1-s1-m9",
+                  "octave": 0,
+                  "raw_glyphs": "7--",
+                  "source_anchor": {
+                    "slide": 1,
+                    "x": 918.2095789473684,
+                    "y": 96.594
+                  },
+                  "sources": [
+                    {
+                      "asset": "data/generated/hymn-sources/387.json",
+                      "paragraph": 0,
+                      "run": 20,
+                      "shape_id": "slide-1-shape-5",
+                      "slide": 1
+                    }
+                  ]
+                }
+              ],
+              "id": "h387-p1-s1-m9",
+              "number": 9
+            }
+          ],
+          "phrases": [
+            {
+              "id": "h387-p1-s1-phrase-1",
+              "measure_ids": [
+                "h387-p1-s1-m1",
+                "h387-p1-s1-m2",
+                "h387-p1-s1-m3",
+                "h387-p1-s1-m4",
+                "h387-p1-s1-m5",
+                "h387-p1-s1-m6",
+                "h387-p1-s1-m7",
+                "h387-p1-s1-m8",
+                "h387-p1-s1-m9"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "h387-p1-s2",
+          "lyrics": [],
+          "measures": [
+            {
+              "events": [
+                {
+                  "accidental": null,
+                  "augmentation_dots": 0,
+                  "beams": 1,
+                  "beat": 0,
+                  "degree": 6,
+                  "duration": 0.5,
+                  "id": "h387-p1-s2-m1-e1",
+                  "kind": "note",
+                  "measure_id": "h387-p1-s2-m1",
+                  "octave": 0,
+                  "raw_glyphs": "y",
+                  "source_anchor": {
+                    "slide": 1,
+                    "x": 19.51223636363636,
+                    "y": 184.78300000000002
+                  },
+                  "sources": [
+                    {
+                      "asset": "data/generated/hymn-sources/387.json",
+                      "paragraph": 0,
+                      "run": 0,
+                      "shape_id": "slide-1-shape-6",
+                      "slide": 1
+                    }
+                  ]
+                },
+                {
+                  "accidental": null,
+                  "augmentation_dots": 0,
+                  "beams": 1,
+                  "beat": 0.5,
+                  "degree": 7,
+                  "duration": 0.5,
+                  "id": "h387-p1-s2-m1-e2",
+                  "kind": "note",
+                  "measure_id": "h387-p1-s2-m1",
+                  "octave": 0,
+                  "raw_glyphs": "u",
+                  "source_anchor": {
+                    "slide": 1,
+                    "x": 68.86365454545454,
+                    "y": 184.78300000000002
+                  },
+                  "sources": [
+                    {
+                      "asset": "data/generated/hymn-sources/387.json",
+                      "paragraph": 0,
+                      "run": 0,
+                      "shape_id": "slide-1-shape-6",
+                      "slide": 1
+                    }
+                  ]
+                },
+                {
+                  "beat": 1,
+                  "duration": 0,
+                  "id": "h387-p1-s2-m1-e3",
+                  "kind": "barline",
+                  "measure_id": "h387-p1-s2-m1",
+                  "raw_glyphs": "|",
+                  "source_anchor": {
+                    "slide": 1,
+                    "x": 85.31412727272728,
+                    "y": 184.78300000000002
+                  },
+                  "sources": [
+                    {
+                      "asset": "data/generated/hymn-sources/387.json",
+                      "paragraph": 0,
+                      "run": 1,
+                      "shape_id": "slide-1-shape-6",
+                      "slide": 1
+                    }
+                  ],
+                  "style": "single"
+                }
+              ],
+              "id": "h387-p1-s2-m1",
+              "number": 1
+            },
+            {
+              "events": [
+                {
+                  "accidental": null,
+                  "augmentation_dots": 0,
+                  "beams": 0,
+                  "beat": 0,
+                  "degree": 1,
+                  "duration": 1,
+                  "id": "h387-p1-s2-m2-e1",
+                  "kind": "note",
+                  "measure_id": "h387-p1-s2-m2",
+                  "octave": 1,
+                  "raw_glyphs": "!",
+                  "source_anchor": {
+                    "slide": 1,
+                    "x": 101.7646,
+                    "y": 184.78300000000002
+                  },
+                  "sources": [
+                    {
+                      "asset": "data/generated/hymn-sources/387.json",
+                      "paragraph": 0,
+                      "run": 2,
+                      "shape_id": "slide-1-shape-6",
+                      "slide": 1
+                    }
+                  ]
+                },
+                {
+                  "augmentation_dots": 0,
+                  "beams": 0,
+                  "beat": 1,
+                  "duration": 1,
+                  "id": "h387-p1-s2-m2-e2",
+                  "kind": "rest",
+                  "measure_id": "h387-p1-s2-m2",
+                  "raw_glyphs": "0",
+                  "source_anchor": {
+                    "slide": 1,
+                    "x": 118.21507272727273,
+                    "y": 184.78300000000002
+                  },
+                  "sources": [
+                    {
+                      "asset": "data/generated/hymn-sources/387.json",
+                      "paragraph": 0,
+                      "run": 2,
+                      "shape_id": "slide-1-shape-6",
+                      "slide": 1
+                    }
+                  ]
+                },
+                {
+                  "augmentation_dots": 0,
+                  "beams": 0,
+                  "beat": 2,
+                  "duration": 1,
+                  "id": "h387-p1-s2-m2-e3",
+                  "kind": "rest",
+                  "measure_id": "h387-p1-s2-m2",
+                  "raw_glyphs": "0",
+                  "source_anchor": {
+                    "slide": 1,
+                    "x": 134.66554545454545,
+                    "y": 184.78300000000002
+                  },
+                  "sources": [
+                    {
+                      "asset": "data/generated/hymn-sources/387.json",
+                      "paragraph": 0,
+                      "run": 2,
+                      "shape_id": "slide-1-shape-6",
+                      "slide": 1
+                    }
+                  ]
+                },
+                {
+                  "accidental": null,
+                  "augmentation_dots": 0,
+                  "beams": 1,
+                  "beat": 3,
+                  "degree": 7,
+                  "duration": 0.5,
+                  "id": "h387-p1-s2-m2-e4",
+                  "kind": "note",
+                  "measure_id": "h387-p1-s2-m2",
+                  "octave": 0,
+                  "raw_glyphs": "u",
+                  "source_anchor": {
+                    "slide": 1,
+                    "x": 151.1160181818182,
+                    "y": 184.78300000000002
+                  },
+                  "sources": [
+                    {
+                      "asset": "data/generated/hymn-sources/387.json",
+                      "paragraph": 0,
+                      "run": 3,
+                      "shape_id": "slide-1-shape-6",
+                      "slide": 1
+                    }
+                  ]
+                },
+                {
+                  "accidental": null,
+                  "augmentation_dots": 0,
+                  "beams": 1,
+                  "beat": 3.5,
+                  "degree": 1,
+                  "duration": 0.5,
+                  "id": "h387-p1-s2-m2-e5",
+                  "kind": "note",
+                  "measure_id": "h387-p1-s2-m2",
+                  "octave": 1,
+                  "raw_glyphs": "Q",
+                  "source_anchor": {
+                    "slide": 1,
+                    "x": 200.46743636363635,
+                    "y": 184.78300000000002
+                  },
+                  "sources": [
+                    {
+                      "asset": "data/generated/hymn-sources/387.json",
+                      "paragraph": 0,
+                      "run": 3,
+                      "shape_id": "slide-1-shape-6",
+                      "slide": 1
+                    }
+                  ]
+                },
+                {
+                  "beat": 4,
+                  "duration": 0,
+                  "id": "h387-p1-s2-m2-e6",
+                  "kind": "barline",
+                  "measure_id": "h387-p1-s2-m2",
+                  "raw_glyphs": "|",
+                  "source_anchor": {
+                    "slide": 1,
+                    "x": 216.9179090909091,
+                    "y": 184.78300000000002
+                  },
+                  "sources": [
+                    {
+                      "asset": "data/generated/hymn-sources/387.json",
+                      "paragraph": 0,
+                      "run": 4,
+                      "shape_id": "slide-1-shape-6",
+                      "slide": 1
+                    }
+                  ],
+                  "style": "single"
+                }
+              ],
+              "id": "h387-p1-s2-m2",
+              "number": 2
+            },
+            {
+              "events": [
+                {
+                  "accidental": null,
+                  "augmentation_dots": 0,
+                  "beams": 0,
+                  "beat": 0,
+                  "degree": 2,
+                  "duration": 1,
+                  "id": "h387-p1-s2-m3-e1",
+                  "kind": "note",
+                  "measure_id": "h387-p1-s2-m3",
+                  "octave": 1,
+                  "raw_glyphs": "@",
+                  "source_anchor": {
+                    "slide": 1,
+                    "x": 233.3683818181818,
+                    "y": 184.78300000000002
+                  },
+                  "sources": [
+                    {
+                      "asset": "data/generated/hymn-sources/387.json",
+                      "paragraph": 0,
+                      "run": 5,
+                      "shape_id": "slide-1-shape-6",
+                      "slide": 1
+                    }
+                  ]
+                },
+                {
+                  "augmentation_dots": 0,
+                  "beams": 0,
+                  "beat": 1,
+                  "duration": 1,
+                  "id": "h387-p1-s2-m3-e2",
+                  "kind": "rest",
+                  "measure_id": "h387-p1-s2-m3",
+                  "raw_glyphs": "0",
+                  "source_anchor": {
+                    "slide": 1,
+                    "x": 249.8188545454545,
+                    "y": 184.78300000000002
+                  },
+                  "sources": [
+                    {
+                      "asset": "data/generated/hymn-sources/387.json",
+                      "paragraph": 0,
+                      "run": 5,
+                      "shape_id": "slide-1-shape-6",
+                      "slide": 1
+                    }
+                  ]
+                },
+                {
+                  "augmentation_dots": 0,
+                  "beams": 0,
+                  "beat": 2,
+                  "duration": 1,
+                  "id": "h387-p1-s2-m3-e3",
+                  "kind": "rest",
+                  "measure_id": "h387-p1-s2-m3",
+                  "raw_glyphs": "0",
+                  "source_anchor": {
+                    "slide": 1,
+                    "x": 266.26932727272725,
+                    "y": 184.78300000000002
+                  },
+                  "sources": [
+                    {
+                      "asset": "data/generated/hymn-sources/387.json",
+                      "paragraph": 0,
+                      "run": 5,
+                      "shape_id": "slide-1-shape-6",
+                      "slide": 1
+                    }
+                  ]
+                },
+                {
+                  "accidental": null,
+                  "augmentation_dots": 0,
+                  "beams": 1,
+                  "beat": 3,
+                  "degree": 1,
+                  "duration": 0.5,
+                  "id": "h387-p1-s2-m3-e4",
+                  "kind": "note",
+                  "measure_id": "h387-p1-s2-m3",
+                  "octave": 1,
+                  "raw_glyphs": "Q",
+                  "source_anchor": {
+                    "slide": 1,
+                    "x": 282.71979999999996,
+                    "y": 184.78300000000002
+                  },
+                  "sources": [
+                    {
+                      "asset": "data/generated/hymn-sources/387.json",
+                      "paragraph": 0,
+                      "run": 6,
+                      "shape_id": "slide-1-shape-6",
+                      "slide": 1
+                    }
+                  ]
+                },
+                {
+                  "accidental": null,
+                  "augmentation_dots": 0,
+                  "beams": 1,
+                  "beat": 3.5,
+                  "degree": 2,
+                  "duration": 0.5,
+                  "id": "h387-p1-s2-m3-e5",
+                  "kind": "note",
+                  "measure_id": "h387-p1-s2-m3",
+                  "octave": 1,
+                  "raw_glyphs": "W",
+                  "source_anchor": {
+                    "slide": 1,
+                    "x": 332.07121818181815,
+                    "y": 184.78300000000002
+                  },
+                  "sources": [
+                    {
+                      "asset": "data/generated/hymn-sources/387.json",
+                      "paragraph": 0,
+                      "run": 6,
+                      "shape_id": "slide-1-shape-6",
+                      "slide": 1
+                    }
+                  ]
+                },
+                {
+                  "beat": 4,
+                  "duration": 0,
+                  "id": "h387-p1-s2-m3-e6",
+                  "kind": "barline",
+                  "measure_id": "h387-p1-s2-m3",
+                  "raw_glyphs": "|",
+                  "source_anchor": {
+                    "slide": 1,
+                    "x": 348.52169090909086,
+                    "y": 184.78300000000002
+                  },
+                  "sources": [
+                    {
+                      "asset": "data/generated/hymn-sources/387.json",
+                      "paragraph": 0,
+                      "run": 7,
+                      "shape_id": "slide-1-shape-6",
+                      "slide": 1
+                    }
+                  ],
+                  "style": "single"
+                }
+              ],
+              "id": "h387-p1-s2-m3",
+              "number": 3
+            },
+            {
+              "events": [
+                {
+                  "accidental": null,
+                  "augmentation_dots": 0,
+                  "beams": 0,
+                  "beat": 0,
+                  "degree": 3,
+                  "duration": 3,
+                  "id": "h387-p1-s2-m4-e1",
+                  "kind": "note",
+                  "measure_id": "h387-p1-s2-m4",
+                  "octave": 1,
+                  "raw_glyphs": "#--",
+                  "source_anchor": {
+                    "slide": 1,
+                    "x": 381.42263636363634,
+                    "y": 184.78300000000002
+                  },
+                  "sources": [
+                    {
+                      "asset": "data/generated/hymn-sources/387.json",
+                      "paragraph": 0,
+                      "run": 8,
+                      "shape_id": "slide-1-shape-6",
+                      "slide": 1
+                    }
+                  ]
+                },
+                {
+                  "accidental": null,
+                  "augmentation_dots": 0,
+                  "beams": 0,
+                  "beat": 3,
+                  "degree": 1,
+                  "duration": 1,
+                  "id": "h387-p1-s2-m4-e2",
+                  "kind": "note",
+                  "measure_id": "h387-p1-s2-m4",
+                  "octave": 1,
+                  "raw_glyphs": "!",
+                  "source_anchor": {
+                    "slide": 1,
+                    "x": 414.32358181818176,
+                    "y": 184.78300000000002
+                  },
+                  "sources": [
+                    {
+                      "asset": "data/generated/hymn-sources/387.json",
+                      "paragraph": 0,
+                      "run": 9,
+                      "shape_id": "slide-1-shape-6",
+                      "slide": 1
+                    }
+                  ]
+                },
+                {
+                  "beat": 4,
+                  "duration": 0,
+                  "id": "h387-p1-s2-m4-e3",
+                  "kind": "barline",
+                  "measure_id": "h387-p1-s2-m4",
+                  "raw_glyphs": "|",
+                  "source_anchor": {
+                    "slide": 1,
+                    "x": 430.7740545454545,
+                    "y": 184.78300000000002
+                  },
+                  "sources": [
+                    {
+                      "asset": "data/generated/hymn-sources/387.json",
+                      "paragraph": 0,
+                      "run": 10,
+                      "shape_id": "slide-1-shape-6",
+                      "slide": 1
+                    }
+                  ],
+                  "style": "single"
+                }
+              ],
+              "id": "h387-p1-s2-m4",
+              "number": 4
+            },
+            {
+              "events": [
+                {
+                  "accidental": null,
+                  "augmentation_dots": 0,
+                  "beams": 0,
+                  "beat": 0,
+                  "degree": 2,
+                  "duration": 2,
+                  "id": "h387-p1-s2-m5-e1",
+                  "kind": "note",
+                  "measure_id": "h387-p1-s2-m5",
+                  "octave": 1,
+                  "raw_glyphs": "@-",
+                  "source_anchor": {
+                    "slide": 1,
+                    "x": 463.67499999999995,
+                    "y": 184.78300000000002
+                  },
+                  "sources": [
+                    {
+                      "asset": "data/generated/hymn-sources/387.json",
+                      "paragraph": 0,
+                      "run": 11,
+                      "shape_id": "slide-1-shape-6",
+                      "slide": 1
+                    }
+                  ]
+                },
+                {
+                  "augmentation_dots": 0,
+                  "beams": 0,
+                  "beat": 2,
+                  "duration": 1,
+                  "id": "h387-p1-s2-m5-e2",
+                  "kind": "rest",
+                  "measure_id": "h387-p1-s2-m5",
+                  "raw_glyphs": "0",
+                  "source_anchor": {
+                    "slide": 1,
+                    "x": 513.0264181818181,
+                    "y": 184.78300000000002
+                  },
+                  "sources": [
+                    {
+                      "asset": "data/generated/hymn-sources/387.json",
+                      "paragraph": 0,
+                      "run": 11,
+                      "shape_id": "slide-1-shape-6",
+                      "slide": 1
+                    }
+                  ]
+                },
+                {
+                  "accidental": null,
+                  "augmentation_dots": 0,
+                  "beams": 1,
+                  "beat": 3,
+                  "degree": 1,
+                  "duration": 0.5,
+                  "id": "h387-p1-s2-m5-e3",
+                  "kind": "note",
+                  "measure_id": "h387-p1-s2-m5",
+                  "octave": 1,
+                  "raw_glyphs": "Q",
+                  "source_anchor": {
+                    "slide": 1,
+                    "x": 545.9273636363637,
+                    "y": 184.78300000000002
+                  },
+                  "sources": [
+                    {
+                      "asset": "data/generated/hymn-sources/387.json",
+                      "paragraph": 0,
+                      "run": 12,
+                      "shape_id": "slide-1-shape-6",
+                      "slide": 1
+                    }
+                  ]
+                },
+                {
+                  "accidental": null,
+                  "augmentation_dots": 0,
+                  "beams": 1,
+                  "beat": 3.5,
+                  "degree": 7,
+                  "duration": 0.5,
+                  "id": "h387-p1-s2-m5-e4",
+                  "kind": "note",
+                  "measure_id": "h387-p1-s2-m5",
+                  "octave": 0,
+                  "raw_glyphs": "u",
+                  "source_anchor": {
+                    "slide": 1,
+                    "x": 578.8283090909091,
+                    "y": 184.78300000000002
+                  },
+                  "sources": [
+                    {
+                      "asset": "data/generated/hymn-sources/387.json",
+                      "paragraph": 0,
+                      "run": 12,
+                      "shape_id": "slide-1-shape-6",
+                      "slide": 1
+                    }
+                  ]
+                },
+                {
+                  "beat": 4,
+                  "duration": 0,
+                  "id": "h387-p1-s2-m5-e5",
+                  "kind": "barline",
+                  "measure_id": "h387-p1-s2-m5",
+                  "raw_glyphs": "|",
+                  "source_anchor": {
+                    "slide": 1,
+                    "x": 595.2787818181819,
+                    "y": 184.78300000000002
+                  },
+                  "sources": [
+                    {
+                      "asset": "data/generated/hymn-sources/387.json",
+                      "paragraph": 0,
+                      "run": 13,
+                      "shape_id": "slide-1-shape-6",
+                      "slide": 1
+                    }
+                  ],
+                  "style": "single"
+                }
+              ],
+              "id": "h387-p1-s2-m5",
+              "number": 5
+            },
+            {
+              "events": [
+                {
+                  "accidental": null,
+                  "augmentation_dots": 0,
+                  "beams": 0,
+                  "beat": 0,
+                  "degree": 1,
+                  "duration": 3,
+                  "id": "h387-p1-s2-m6-e1",
+                  "kind": "note",
+                  "measure_id": "h387-p1-s2-m6",
+                  "octave": 1,
+                  "raw_glyphs": "!--",
+                  "source_anchor": {
+                    "slide": 1,
+                    "x": 628.1797272727272,
+                    "y": 184.78300000000002
+                  },
+                  "sources": [
+                    {
+                      "asset": "data/generated/hymn-sources/387.json",
+                      "paragraph": 0,
+                      "run": 14,
+                      "shape_id": "slide-1-shape-6",
+                      "slide": 1
+                    }
+                  ]
+                },
+                {
+                  "accidental": null,
+                  "augmentation_dots": 0,
+                  "beams": 1,
+                  "beat": 3,
+                  "degree": 7,
+                  "duration": 0.5,
+                  "id": "h387-p1-s2-m6-e2",
+                  "kind": "note",
+                  "measure_id": "h387-p1-s2-m6",
+                  "octave": 0,
+                  "raw_glyphs": "u",
+                  "source_anchor": {
+                    "slide": 1,
+                    "x": 661.0806727272727,
+                    "y": 184.78300000000002
+                  },
+                  "sources": [
+                    {
+                      "asset": "data/generated/hymn-sources/387.json",
+                      "paragraph": 0,
+                      "run": 15,
+                      "shape_id": "slide-1-shape-6",
+                      "slide": 1
+                    }
+                  ]
+                },
+                {
+                  "accidental": null,
+                  "augmentation_dots": 0,
+                  "beams": 1,
+                  "beat": 3.5,
+                  "degree": 6,
+                  "duration": 0.5,
+                  "id": "h387-p1-s2-m6-e3",
+                  "kind": "note",
+                  "measure_id": "h387-p1-s2-m6",
+                  "octave": 0,
+                  "raw_glyphs": "y",
+                  "source_anchor": {
+                    "slide": 1,
+                    "x": 710.4320909090909,
+                    "y": 184.78300000000002
+                  },
+                  "sources": [
+                    {
+                      "asset": "data/generated/hymn-sources/387.json",
+                      "paragraph": 0,
+                      "run": 15,
+                      "shape_id": "slide-1-shape-6",
+                      "slide": 1
+                    }
+                  ]
+                },
+                {
+                  "beat": 4,
+                  "duration": 0,
+                  "id": "h387-p1-s2-m6-e4",
+                  "kind": "barline",
+                  "measure_id": "h387-p1-s2-m6",
+                  "raw_glyphs": "|",
+                  "source_anchor": {
+                    "slide": 1,
+                    "x": 726.8825636363637,
+                    "y": 184.78300000000002
+                  },
+                  "sources": [
+                    {
+                      "asset": "data/generated/hymn-sources/387.json",
+                      "paragraph": 0,
+                      "run": 16,
+                      "shape_id": "slide-1-shape-6",
+                      "slide": 1
+                    }
+                  ],
+                  "style": "single"
+                }
+              ],
+              "id": "h387-p1-s2-m6",
+              "number": 6
+            },
+            {
+              "events": [
+                {
+                  "accidental": null,
+                  "augmentation_dots": 0,
+                  "beams": 0,
+                  "beat": 0,
+                  "degree": 7,
+                  "duration": 3,
+                  "id": "h387-p1-s2-m7-e1",
+                  "kind": "note",
+                  "measure_id": "h387-p1-s2-m7",
+                  "octave": 0,
+                  "raw_glyphs": "7--",
+                  "source_anchor": {
+                    "slide": 1,
+                    "x": 759.7835090909091,
+                    "y": 184.78300000000002
+                  },
+                  "sources": [
+                    {
+                      "asset": "data/generated/hymn-sources/387.json",
+                      "paragraph": 0,
+                      "run": 17,
+                      "shape_id": "slide-1-shape-6",
+                      "slide": 1
+                    }
+                  ]
+                },
+                {
+                  "accidental": null,
+                  "augmentation_dots": 0,
+                  "beams": 1,
+                  "beat": 3,
+                  "degree": 6,
+                  "duration": 0.5,
+                  "id": "h387-p1-s2-m7-e2",
+                  "kind": "note",
+                  "measure_id": "h387-p1-s2-m7",
+                  "octave": 0,
+                  "raw_glyphs": "y",
+                  "source_anchor": {
+                    "slide": 1,
+                    "x": 792.6844545454545,
+                    "y": 184.78300000000002
+                  },
+                  "sources": [
+                    {
+                      "asset": "data/generated/hymn-sources/387.json",
+                      "paragraph": 0,
+                      "run": 18,
+                      "shape_id": "slide-1-shape-6",
+                      "slide": 1
+                    }
+                  ]
+                },
+                {
+                  "accidental": null,
+                  "augmentation_dots": 0,
+                  "beams": 1,
+                  "beat": 3.5,
+                  "degree": 5,
+                  "duration": 0.5,
+                  "id": "h387-p1-s2-m7-e3",
+                  "kind": "note",
+                  "measure_id": "h387-p1-s2-m7",
+                  "octave": 0,
+                  "raw_glyphs": "t",
+                  "source_anchor": {
+                    "slide": 1,
+                    "x": 842.0358727272727,
+                    "y": 184.78300000000002
+                  },
+                  "sources": [
+                    {
+                      "asset": "data/generated/hymn-sources/387.json",
+                      "paragraph": 0,
+                      "run": 18,
+                      "shape_id": "slide-1-shape-6",
+                      "slide": 1
+                    }
+                  ]
+                },
+                {
+                  "beat": 4,
+                  "duration": 0,
+                  "id": "h387-p1-s2-m7-e4",
+                  "kind": "barline",
+                  "measure_id": "h387-p1-s2-m7",
+                  "raw_glyphs": "|",
+                  "source_anchor": {
+                    "slide": 1,
+                    "x": 858.4863454545455,
+                    "y": 184.78300000000002
+                  },
+                  "sources": [
+                    {
+                      "asset": "data/generated/hymn-sources/387.json",
+                      "paragraph": 0,
+                      "run": 19,
+                      "shape_id": "slide-1-shape-6",
+                      "slide": 1
+                    }
+                  ],
+                  "style": "single"
+                }
+              ],
+              "id": "h387-p1-s2-m7",
+              "number": 7
+            },
+            {
+              "events": [
+                {
+                  "accidental": null,
+                  "augmentation_dots": 0,
+                  "beams": 0,
+                  "beat": 0,
+                  "degree": 6,
+                  "duration": 2,
+                  "id": "h387-p1-s2-m8-e1",
+                  "kind": "note",
+                  "measure_id": "h387-p1-s2-m8",
+                  "octave": 0,
+                  "raw_glyphs": "6-",
+                  "source_anchor": {
+                    "slide": 1,
+                    "x": 891.3872909090909,
+                    "y": 184.78300000000002
+                  },
+                  "sources": [
+                    {
+                      "asset": "data/generated/hymn-sources/387.json",
+                      "paragraph": 0,
+                      "run": 20,
+                      "shape_id": "slide-1-shape-6",
+                      "slide": 1
+                    }
+                  ]
+                }
+              ],
+              "id": "h387-p1-s2-m8",
+              "number": 8
+            }
+          ],
+          "phrases": [
+            {
+              "id": "h387-p1-s2-phrase-1",
+              "measure_ids": [
+                "h387-p1-s2-m1",
+                "h387-p1-s2-m2",
+                "h387-p1-s2-m3",
+                "h387-p1-s2-m4",
+                "h387-p1-s2-m5",
+                "h387-p1-s2-m6",
+                "h387-p1-s2-m7",
+                "h387-p1-s2-m8"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "h387-p1-s3",
+          "lyrics": [
+            {
+              "event_ids": [
+                "h387-p1-s3-m1-e2",
+                "h387-p1-s3-m1-e3",
+                "h387-p1-s3-m1-e4",
+                "h387-p1-s3-m2-e1",
+                "h387-p1-s3-m2-e2",
+                "h387-p1-s3-m2-e3",
+                "h387-p1-s3-m3-e1",
+                "h387-p1-s3-m3-e2",
+                "h387-p1-s3-m3-e3",
+                "h387-p1-s3-m3-e4",
+                "h387-p1-s3-m4-e1",
+                "h387-p1-s3-m4-e2",
+                "h387-p1-s3-m4-e3",
+                "h387-p1-s3-m5-e1",
+                "h387-p1-s3-m5-e2"
+              ],
+              "id": "h387-p1-s3-lyric-1",
+              "sources": [
+                {
+                  "asset": "data/generated/hymn-sources/387.json",
+                  "paragraph": 0,
+                  "run": 0,
+                  "shape_id": "slide-1-shape-4",
+                  "slide": 1
+                },
+                {
+                  "asset": "data/generated/hymn-sources/387.json",
+                  "paragraph": 0,
+                  "run": 1,
+                  "shape_id": "slide-1-shape-4",
+                  "slide": 1
+                },
+                {
+                  "asset": "data/generated/hymn-sources/387.json",
+                  "paragraph": 0,
+                  "run": 2,
+                  "shape_id": "slide-1-shape-4",
+                  "slide": 1
+                },
+                {
+                  "asset": "data/generated/hymn-sources/387.json",
+                  "paragraph": 0,
+                  "run": 3,
+                  "shape_id": "slide-1-shape-4",
+                  "slide": 1
+                },
+                {
+                  "asset": "data/generated/hymn-sources/387.json",
+                  "paragraph": 0,
+                  "run": 4,
+                  "shape_id": "slide-1-shape-4",
+                  "slide": 1
+                },
+                {
+                  "asset": "data/generated/hymn-sources/387.json",
+                  "paragraph": 0,
+                  "run": 5,
+                  "shape_id": "slide-1-shape-4",
+                  "slide": 1
+                },
+                {
+                  "asset": "data/generated/hymn-sources/387.json",
+                  "paragraph": 0,
+                  "run": 6,
+                  "shape_id": "slide-1-shape-4",
+                  "slide": 1
+                },
+                {
+                  "asset": "data/generated/hymn-sources/387.json",
+                  "paragraph": 0,
+                  "run": 7,
+                  "shape_id": "slide-1-shape-4",
+                  "slide": 1
+                },
+                {
+                  "asset": "data/generated/hymn-sources/387.json",
+                  "paragraph": 0,
+                  "run": 8,
+                  "shape_id": "slide-1-shape-4",
+                  "slide": 1
+                },
+                {
+                  "asset": "data/generated/hymn-sources/387.json",
+                  "paragraph": 0,
+                  "run": 9,
+                  "shape_id": "slide-1-shape-4",
+                  "slide": 1
+                },
+                {
+                  "asset": "data/generated/hymn-sources/387.json",
+                  "paragraph": 0,
+                  "run": 10,
+                  "shape_id": "slide-1-shape-4",
+                  "slide": 1
+                },
+                {
+                  "asset": "data/generated/hymn-sources/387.json",
+                  "paragraph": 0,
+                  "run": 11,
+                  "shape_id": "slide-1-shape-4",
+                  "slide": 1
+                },
+                {
+                  "asset": "data/generated/hymn-sources/387.json",
+                  "paragraph": 2,
+                  "run": 0,
+                  "shape_id": "slide-1-shape-4",
+                  "slide": 1
+                },
+                {
+                  "asset": "data/generated/hymn-sources/387.json",
+                  "paragraph": 2,
+                  "run": 1,
+                  "shape_id": "slide-1-shape-4",
+                  "slide": 1
+                },
+                {
+                  "asset": "data/generated/hymn-sources/387.json",
+                  "paragraph": 2,
+                  "run": 2,
+                  "shape_id": "slide-1-shape-4",
+                  "slide": 1
+                },
+                {
+                  "asset": "data/generated/hymn-sources/387.json",
+                  "paragraph": 2,
+                  "run": 3,
+                  "shape_id": "slide-1-shape-4",
+                  "slide": 1
+                },
+                {
+                  "asset": "data/generated/hymn-sources/387.json",
+                  "paragraph": 2,
+                  "run": 4,
+                  "shape_id": "slide-1-shape-4",
+                  "slide": 1
+                },
+                {
+                  "asset": "data/generated/hymn-sources/387.json",
+                  "paragraph": 2,
+                  "run": 5,
+                  "shape_id": "slide-1-shape-4",
+                  "slide": 1
+                },
+                {
+                  "asset": "data/generated/hymn-sources/387.json",
+                  "paragraph": 2,
+                  "run": 6,
+                  "shape_id": "slide-1-shape-4",
+                  "slide": 1
+                },
+                {
+                  "asset": "data/generated/hymn-sources/387.json",
+                  "paragraph": 2,
+                  "run": 7,
+                  "shape_id": "slide-1-shape-4",
+                  "slide": 1
+                },
+                {
+                  "asset": "data/generated/hymn-sources/387.json",
+                  "paragraph": 2,
+                  "run": 8,
+                  "shape_id": "slide-1-shape-4",
+                  "slide": 1
+                },
+                {
+                  "asset": "data/generated/hymn-sources/387.json",
+                  "paragraph": 2,
+                  "run": 9,
+                  "shape_id": "slide-1-shape-4",
+                  "slide": 1
+                },
+                {
+                  "asset": "data/generated/hymn-sources/387.json",
+                  "paragraph": 2,
+                  "run": 10,
+                  "shape_id": "slide-1-shape-4",
+                  "slide": 1
+                },
+                {
+                  "asset": "data/generated/hymn-sources/387.json",
+                  "paragraph": 2,
+                  "run": 11,
+                  "shape_id": "slide-1-shape-4",
+                  "slide": 1
+                },
+                {
+                  "asset": "data/generated/hymn-sources/387.json",
+                  "paragraph": 2,
+                  "run": 12,
+                  "shape_id": "slide-1-shape-4",
+                  "slide": 1
+                },
+                {
+                  "asset": "data/generated/hymn-sources/387.json",
+                  "paragraph": 4,
+                  "run": 0,
+                  "shape_id": "slide-1-shape-4",
+                  "slide": 1
+                },
+                {
+                  "asset": "data/generated/hymn-sources/387.json",
+                  "paragraph": 4,
+                  "run": 1,
+                  "shape_id": "slide-1-shape-4",
+                  "slide": 1
+                },
+                {
+                  "asset": "data/generated/hymn-sources/387.json",
+                  "paragraph": 4,
+                  "run": 2,
+                  "shape_id": "slide-1-shape-4",
+                  "slide": 1
+                },
+                {
+                  "asset": "data/generated/hymn-sources/387.json",
+                  "paragraph": 4,
+                  "run": 3,
+                  "shape_id": "slide-1-shape-4",
+                  "slide": 1
+                },
+                {
+                  "asset": "data/generated/hymn-sources/387.json",
+                  "paragraph": 4,
+                  "run": 4,
+                  "shape_id": "slide-1-shape-4",
+                  "slide": 1
+                },
+                {
+                  "asset": "data/generated/hymn-sources/387.json",
+                  "paragraph": 4,
+                  "run": 5,
+                  "shape_id": "slide-1-shape-4",
+                  "slide": 1
+                },
+                {
+                  "asset": "data/generated/hymn-sources/387.json",
+                  "paragraph": 4,
+                  "run": 6,
+                  "shape_id": "slide-1-shape-4",
+                  "slide": 1
+                },
+                {
+                  "asset": "data/generated/hymn-sources/387.json",
+                  "paragraph": 4,
+                  "run": 7,
+                  "shape_id": "slide-1-shape-4",
+                  "slide": 1
+                },
+                {
+                  "asset": "data/generated/hymn-sources/387.json",
+                  "paragraph": 4,
+                  "run": 8,
+                  "shape_id": "slide-1-shape-4",
+                  "slide": 1
+                },
+                {
+                  "asset": "data/generated/hymn-sources/387.json",
+                  "paragraph": 4,
+                  "run": 9,
+                  "shape_id": "slide-1-shape-4",
+                  "slide": 1
+                },
+                {
+                  "asset": "data/generated/hymn-sources/387.json",
+                  "paragraph": 4,
+                  "run": 10,
+                  "shape_id": "slide-1-shape-4",
+                  "slide": 1
+                },
+                {
+                  "asset": "data/generated/hymn-sources/387.json",
+                  "paragraph": 6,
+                  "run": 0,
+                  "shape_id": "slide-1-shape-4",
+                  "slide": 1
+                },
+                {
+                  "asset": "data/generated/hymn-sources/387.json",
+                  "paragraph": 6,
+                  "run": 1,
+                  "shape_id": "slide-1-shape-4",
+                  "slide": 1
+                },
+                {
+                  "asset": "data/generated/hymn-sources/387.json",
+                  "paragraph": 6,
+                  "run": 2,
+                  "shape_id": "slide-1-shape-4",
+                  "slide": 1
+                },
+                {
+                  "asset": "data/generated/hymn-sources/387.json",
+                  "paragraph": 6,
+                  "run": 3,
+                  "shape_id": "slide-1-shape-4",
+                  "slide": 1
+                },
+                {
+                  "asset": "data/generated/hymn-sources/387.json",
+                  "paragraph": 6,
+                  "run": 4,
+                  "shape_id": "slide-1-shape-4",
+                  "slide": 1
+                },
+                {
+                  "asset": "data/generated/hymn-sources/387.json",
+                  "paragraph": 6,
+                  "run": 5,
+                  "shape_id": "slide-1-shape-4",
+                  "slide": 1
+                },
+                {
+                  "asset": "data/generated/hymn-sources/387.json",
+                  "paragraph": 6,
+                  "run": 6,
+                  "shape_id": "slide-1-shape-4",
+                  "slide": 1
+                },
+                {
+                  "asset": "data/generated/hymn-sources/387.json",
+                  "paragraph": 6,
+                  "run": 7,
+                  "shape_id": "slide-1-shape-4",
+                  "slide": 1
+                },
+                {
+                  "asset": "data/generated/hymn-sources/387.json",
+                  "paragraph": 6,
+                  "run": 8,
+                  "shape_id": "slide-1-shape-4",
+                  "slide": 1
+                },
+                {
+                  "asset": "data/generated/hymn-sources/387.json",
+                  "paragraph": 6,
+                  "run": 9,
+                  "shape_id": "slide-1-shape-4",
+                  "slide": 1
+                },
+                {
+                  "asset": "data/generated/hymn-sources/387.json",
+                  "paragraph": 8,
+                  "run": 0,
+                  "shape_id": "slide-1-shape-4",
+                  "slide": 1
+                },
+                {
+                  "asset": "data/generated/hymn-sources/387.json",
+                  "paragraph": 8,
+                  "run": 1,
+                  "shape_id": "slide-1-shape-4",
+                  "slide": 1
+                },
+                {
+                  "asset": "data/generated/hymn-sources/387.json",
+                  "paragraph": 8,
+                  "run": 2,
+                  "shape_id": "slide-1-shape-4",
+                  "slide": 1
+                },
+                {
+                  "asset": "data/generated/hymn-sources/387.json",
+                  "paragraph": 8,
+                  "run": 3,
+                  "shape_id": "slide-1-shape-4",
+                  "slide": 1
+                },
+                {
+                  "asset": "data/generated/hymn-sources/387.json",
+                  "paragraph": 8,
+                  "run": 4,
+                  "shape_id": "slide-1-shape-4",
+                  "slide": 1
+                },
+                {
+                  "asset": "data/generated/hymn-sources/387.json",
+                  "paragraph": 8,
+                  "run": 5,
+                  "shape_id": "slide-1-shape-4",
+                  "slide": 1
+                },
+                {
+                  "asset": "data/generated/hymn-sources/387.json",
+                  "paragraph": 8,
+                  "run": 6,
+                  "shape_id": "slide-1-shape-4",
+                  "slide": 1
+                },
+                {
+                  "asset": "data/generated/hymn-sources/387.json",
+                  "paragraph": 8,
+                  "run": 7,
+                  "shape_id": "slide-1-shape-4",
+                  "slide": 1
+                },
+                {
+                  "asset": "data/generated/hymn-sources/387.json",
+                  "paragraph": 8,
+                  "run": 8,
+                  "shape_id": "slide-1-shape-4",
+                  "slide": 1
+                },
+                {
+                  "asset": "data/generated/hymn-sources/387.json",
+                  "paragraph": 8,
+                  "run": 9,
+                  "shape_id": "slide-1-shape-4",
+                  "slide": 1
+                }
+              ],
+              "text": "你看，你看，耶稣背着十字架；你看，你听，祂为什么不说话？一步步走向那名叫各各他，甘心为我们钉十架。哦，耶稣，我的主，祢宝血为我流出，我真知这全是为了爱。哦，耶稣，我的主，因着爱，祢忍受痛苦，因着爱，我被祢救赎！",
+              "verse": "1"
+            }
+          ],
+          "measures": [
+            {
+              "events": [
+                {
+                  "augmentation_dots": 0,
+                  "beams": 1,
+                  "beat": 0,
+                  "duration": 0.5,
+                  "id": "h387-p1-s3-m1-e1",
+                  "kind": "rest",
+                  "measure_id": "h387-p1-s3-m1",
+                  "raw_glyphs": "p",
+                  "source_anchor": {
+                    "slide": 1,
+                    "x": 17.892009433962265,
+                    "y": 272.972
+                  },
+                  "sources": [
+                    {
+                      "asset": "data/generated/hymn-sources/387.json",
+                      "paragraph": 0,
+                      "run": 0,
+                      "shape_id": "slide-1-shape-7",
+                      "slide": 1
+                    }
+                  ]
+                },
+                {
+                  "accidental": null,
+                  "augmentation_dots": 0,
+                  "beams": 1,
+                  "beat": 0.5,
+                  "degree": 5,
+                  "duration": 0.5,
+                  "id": "h387-p1-s3-m1-e2",
+                  "kind": "note",
+                  "measure_id": "h387-p1-s3-m1",
+                  "octave": 0,
+                  "raw_glyphs": "t",
+                  "source_anchor": {
+                    "slide": 1,
+                    "x": 57.52206603773585,
+                    "y": 272.972
+                  },
+                  "sources": [
+                    {
+                      "asset": "data/generated/hymn-sources/387.json",
+                      "paragraph": 0,
+                      "run": 0,
+                      "shape_id": "slide-1-shape-7",
+                      "slide": 1
+                    }
+                  ]
+                },
+                {
+                  "accidental": null,
+                  "augmentation_dots": 0,
+                  "beams": 1,
+                  "beat": 1,
+                  "degree": 1,
+                  "duration": 0.5,
+                  "id": "h387-p1-s3-m1-e3",
+                  "kind": "note",
+                  "measure_id": "h387-p1-s3-m1",
+                  "octave": 1,
+                  "raw_glyphs": "Q",
+                  "source_anchor": {
+                    "slide": 1,
+                    "x": 123.57216037735849,
+                    "y": 272.972
+                  },
+                  "sources": [
+                    {
+                      "asset": "data/generated/hymn-sources/387.json",
+                      "paragraph": 0,
+                      "run": 2,
+                      "shape_id": "slide-1-shape-7",
+                      "slide": 1
+                    }
+                  ]
+                },
+                {
+                  "accidental": null,
+                  "augmentation_dots": 0,
+                  "beams": 1,
+                  "beat": 1.5,
+                  "degree": 2,
+                  "duration": 0.5,
+                  "id": "h387-p1-s3-m1-e4",
+                  "kind": "note",
+                  "measure_id": "h387-p1-s3-m1",
+                  "octave": 1,
+                  "raw_glyphs": "W",
+                  "source_anchor": {
+                    "slide": 1,
+                    "x": 163.20221698113207,
+                    "y": 272.972
+                  },
+                  "sources": [
+                    {
+                      "asset": "data/generated/hymn-sources/387.json",
+                      "paragraph": 0,
+                      "run": 2,
+                      "shape_id": "slide-1-shape-7",
+                      "slide": 1
+                    }
+                  ]
+                },
+                {
+                  "beat": 2,
+                  "duration": 0,
+                  "id": "h387-p1-s3-m1-e5",
+                  "kind": "barline",
+                  "measure_id": "h387-p1-s3-m1",
+                  "raw_glyphs": "|",
+                  "source_anchor": {
+                    "slide": 1,
+                    "x": 176.4122358490566,
+                    "y": 272.972
+                  },
+                  "sources": [
+                    {
+                      "asset": "data/generated/hymn-sources/387.json",
+                      "paragraph": 0,
+                      "run": 3,
+                      "shape_id": "slide-1-shape-7",
+                      "slide": 1
+                    }
+                  ],
+                  "style": "single"
+                }
+              ],
+              "id": "h387-p1-s3-m1",
+              "number": 1
+            },
+            {
+              "events": [
+                {
+                  "accidental": null,
+                  "augmentation_dots": 0,
+                  "beams": 0,
+                  "beat": 0,
+                  "degree": 3,
+                  "duration": 3,
+                  "id": "h387-p1-s3-m2-e1",
+                  "kind": "note",
+                  "measure_id": "h387-p1-s3-m2",
+                  "octave": 1,
+                  "raw_glyphs": "#--",
+                  "source_anchor": {
+                    "slide": 1,
+                    "x": 216.04229245283017,
+                    "y": 272.972
+                  },
+                  "sources": [
+                    {
+                      "asset": "data/generated/hymn-sources/387.json",
+                      "paragraph": 0,
+                      "run": 4,
+                      "shape_id": "slide-1-shape-7",
+                      "slide": 1
+                    }
+                  ]
+                },
+                {
+                  "accidental": null,
+                  "augmentation_dots": 0,
+                  "beams": 1,
+                  "beat": 3,
+                  "degree": 2,
+                  "duration": 0.5,
+                  "id": "h387-p1-s3-m2-e2",
+                  "kind": "note",
+                  "measure_id": "h387-p1-s3-m2",
+                  "octave": 1,
+                  "raw_glyphs": "W",
+                  "source_anchor": {
+                    "slide": 1,
+                    "x": 268.88236792452824,
+                    "y": 272.972
+                  },
+                  "sources": [
+                    {
+                      "asset": "data/generated/hymn-sources/387.json",
+                      "paragraph": 0,
+                      "run": 5,
+                      "shape_id": "slide-1-shape-7",
+                      "slide": 1
+                    }
+                  ]
+                },
+                {
+                  "accidental": null,
+                  "augmentation_dots": 0,
+                  "beams": 1,
+                  "beat": 3.5,
+                  "degree": 1,
+                  "duration": 0.5,
+                  "id": "h387-p1-s3-m2-e3",
+                  "kind": "note",
+                  "measure_id": "h387-p1-s3-m2",
+                  "octave": 1,
+                  "raw_glyphs": "Q",
+                  "source_anchor": {
+                    "slide": 1,
+                    "x": 308.5124245283019,
+                    "y": 272.972
+                  },
+                  "sources": [
+                    {
+                      "asset": "data/generated/hymn-sources/387.json",
+                      "paragraph": 0,
+                      "run": 5,
+                      "shape_id": "slide-1-shape-7",
+                      "slide": 1
+                    }
+                  ]
+                },
+                {
+                  "beat": 4,
+                  "duration": 0,
+                  "id": "h387-p1-s3-m2-e4",
+                  "kind": "barline",
+                  "measure_id": "h387-p1-s3-m2",
+                  "raw_glyphs": "|",
+                  "source_anchor": {
+                    "slide": 1,
+                    "x": 321.72244339622637,
+                    "y": 272.972
+                  },
+                  "sources": [
+                    {
+                      "asset": "data/generated/hymn-sources/387.json",
+                      "paragraph": 0,
+                      "run": 6,
+                      "shape_id": "slide-1-shape-7",
+                      "slide": 1
+                    }
+                  ],
+                  "style": "single"
+                }
+              ],
+              "id": "h387-p1-s3-m2",
+              "number": 2
+            },
+            {
+              "events": [
+                {
+                  "accidental": null,
+                  "augmentation_dots": 0,
+                  "beams": 0,
+                  "beat": 0,
+                  "degree": 2,
+                  "duration": 1,
+                  "id": "h387-p1-s3-m3-e1",
+                  "kind": "note",
+                  "measure_id": "h387-p1-s3-m3",
+                  "octave": 1,
+                  "raw_glyphs": "@",
+                  "source_anchor": {
+                    "slide": 1,
+                    "x": 334.9324622641509,
+                    "y": 272.972
+                  },
+                  "sources": [
+                    {
+                      "asset": "data/generated/hymn-sources/387.json",
+                      "paragraph": 0,
+                      "run": 7,
+                      "shape_id": "slide-1-shape-7",
+                      "slide": 1
+                    }
+                  ]
+                },
+                {
+                  "accidental": null,
+                  "augmentation_dots": 0,
+                  "beams": 0,
+                  "beat": 1,
+                  "degree": 5,
+                  "duration": 2,
+                  "id": "h387-p1-s3-m3-e2",
+                  "kind": "note",
+                  "measure_id": "h387-p1-s3-m3",
+                  "octave": 0,
+                  "raw_glyphs": "5-",
+                  "source_anchor": {
+                    "slide": 1,
+                    "x": 387.772537735849,
+                    "y": 272.972
+                  },
+                  "sources": [
+                    {
+                      "asset": "data/generated/hymn-sources/387.json",
+                      "paragraph": 0,
+                      "run": 7,
+                      "shape_id": "slide-1-shape-7",
+                      "slide": 1
+                    }
+                  ]
+                },
+                {
+                  "accidental": null,
+                  "augmentation_dots": 0,
+                  "beams": 1,
+                  "beat": 3,
+                  "degree": 2,
+                  "duration": 0.5,
+                  "id": "h387-p1-s3-m3-e3",
+                  "kind": "note",
+                  "measure_id": "h387-p1-s3-m3",
+                  "octave": 1,
+                  "raw_glyphs": "W",
+                  "source_anchor": {
+                    "slide": 1,
+                    "x": 427.40259433962257,
+                    "y": 272.972
+                  },
+                  "sources": [
+                    {
+                      "asset": "data/generated/hymn-sources/387.json",
+                      "paragraph": 0,
+                      "run": 8,
+                      "shape_id": "slide-1-shape-7",
+                      "slide": 1
+                    }
+                  ]
+                },
+                {
+                  "accidental": null,
+                  "augmentation_dots": 0,
+                  "beams": 1,
+                  "beat": 3.5,
+                  "degree": 3,
+                  "duration": 0.5,
+                  "id": "h387-p1-s3-m3-e4",
+                  "kind": "note",
+                  "measure_id": "h387-p1-s3-m3",
+                  "octave": 1,
+                  "raw_glyphs": "E",
+                  "source_anchor": {
+                    "slide": 1,
+                    "x": 467.03265094339616,
+                    "y": 272.972
+                  },
+                  "sources": [
+                    {
+                      "asset": "data/generated/hymn-sources/387.json",
+                      "paragraph": 0,
+                      "run": 8,
+                      "shape_id": "slide-1-shape-7",
+                      "slide": 1
+                    }
+                  ]
+                },
+                {
+                  "beat": 4,
+                  "duration": 0,
+                  "id": "h387-p1-s3-m3-e5",
+                  "kind": "barline",
+                  "measure_id": "h387-p1-s3-m3",
+                  "raw_glyphs": "|",
+                  "source_anchor": {
+                    "slide": 1,
+                    "x": 480.2426698113207,
+                    "y": 272.972
+                  },
+                  "sources": [
+                    {
+                      "asset": "data/generated/hymn-sources/387.json",
+                      "paragraph": 0,
+                      "run": 9,
+                      "shape_id": "slide-1-shape-7",
+                      "slide": 1
+                    }
+                  ],
+                  "style": "single"
+                }
+              ],
+              "id": "h387-p1-s3-m3",
+              "number": 3
+            },
+            {
+              "events": [
+                {
+                  "accidental": null,
+                  "augmentation_dots": 0,
+                  "beams": 0,
+                  "beat": 0,
+                  "degree": 4,
+                  "duration": 3,
+                  "id": "h387-p1-s3-m4-e1",
+                  "kind": "note",
+                  "measure_id": "h387-p1-s3-m4",
+                  "octave": 1,
+                  "raw_glyphs": "$--",
+                  "source_anchor": {
+                    "slide": 1,
+                    "x": 519.8727264150942,
+                    "y": 272.972
+                  },
+                  "sources": [
+                    {
+                      "asset": "data/generated/hymn-sources/387.json",
+                      "paragraph": 0,
+                      "run": 10,
+                      "shape_id": "slide-1-shape-7",
+                      "slide": 1
+                    }
+                  ]
+                },
+                {
+                  "accidental": null,
+                  "augmentation_dots": 0,
+                  "beams": 1,
+                  "beat": 3,
+                  "degree": 3,
+                  "duration": 0.5,
+                  "id": "h387-p1-s3-m4-e2",
+                  "kind": "note",
+                  "measure_id": "h387-p1-s3-m4",
+                  "octave": 1,
+                  "raw_glyphs": "E",
+                  "source_anchor": {
+                    "slide": 1,
+                    "x": 572.7128018867925,
+                    "y": 272.972
+                  },
+                  "sources": [
+                    {
+                      "asset": "data/generated/hymn-sources/387.json",
+                      "paragraph": 0,
+                      "run": 11,
+                      "shape_id": "slide-1-shape-7",
+                      "slide": 1
+                    }
+                  ]
+                },
+                {
+                  "accidental": null,
+                  "augmentation_dots": 0,
+                  "beams": 1,
+                  "beat": 3.5,
+                  "degree": 2,
+                  "duration": 0.5,
+                  "id": "h387-p1-s3-m4-e3",
+                  "kind": "note",
+                  "measure_id": "h387-p1-s3-m4",
+                  "octave": 1,
+                  "raw_glyphs": "W",
+                  "source_anchor": {
+                    "slide": 1,
+                    "x": 612.3428584905661,
+                    "y": 272.972
+                  },
+                  "sources": [
+                    {
+                      "asset": "data/generated/hymn-sources/387.json",
+                      "paragraph": 0,
+                      "run": 11,
+                      "shape_id": "slide-1-shape-7",
+                      "slide": 1
+                    }
+                  ]
+                },
+                {
+                  "beat": 4,
+                  "duration": 0,
+                  "id": "h387-p1-s3-m4-e4",
+                  "kind": "barline",
+                  "measure_id": "h387-p1-s3-m4",
+                  "raw_glyphs": "|",
+                  "source_anchor": {
+                    "slide": 1,
+                    "x": 625.5528773584906,
+                    "y": 272.972
+                  },
+                  "sources": [
+                    {
+                      "asset": "data/generated/hymn-sources/387.json",
+                      "paragraph": 0,
+                      "run": 12,
+                      "shape_id": "slide-1-shape-7",
+                      "slide": 1
+                    }
+                  ],
+                  "style": "single"
+                }
+              ],
+              "id": "h387-p1-s3-m4",
+              "number": 4
+            },
+            {
+              "events": [
+                {
+                  "accidental": null,
+                  "augmentation_dots": 0,
+                  "beams": 0,
+                  "beat": 0,
+                  "degree": 3,
+                  "duration": 1,
+                  "id": "h387-p1-s3-m5-e1",
+                  "kind": "note",
+                  "measure_id": "h387-p1-s3-m5",
+                  "octave": 1,
+                  "raw_glyphs": "#",
+                  "source_anchor": {
+                    "slide": 1,
+                    "x": 638.7628962264151,
+                    "y": 272.972
+                  },
+                  "sources": [
+                    {
+                      "asset": "data/generated/hymn-sources/387.json",
+                      "paragraph": 0,
+                      "run": 13,
+                      "shape_id": "slide-1-shape-7",
+                      "slide": 1
+                    }
+                  ]
+                },
+                {
+                  "accidental": null,
+                  "augmentation_dots": 0,
+                  "beams": 0,
+                  "beat": 1,
+                  "degree": 6,
+                  "duration": 2,
+                  "id": "h387-p1-s3-m5-e2",
+                  "kind": "note",
+                  "measure_id": "h387-p1-s3-m5",
+                  "octave": 0,
+                  "raw_glyphs": "6-",
+                  "source_anchor": {
+                    "slide": 1,
+                    "x": 691.6029716981133,
+                    "y": 272.972
+                  },
+                  "sources": [
+                    {
+                      "asset": "data/generated/hymn-sources/387.json",
+                      "paragraph": 0,
+                      "run": 13,
+                      "shape_id": "slide-1-shape-7",
+                      "slide": 1
+                    }
+                  ]
+                }
+              ],
+              "id": "h387-p1-s3-m5",
+              "number": 5
+            }
+          ],
+          "phrases": [
+            {
+              "id": "h387-p1-s3-phrase-1",
+              "measure_ids": [
+                "h387-p1-s3-m1",
+                "h387-p1-s3-m2",
+                "h387-p1-s3-m3",
+                "h387-p1-s3-m4",
+                "h387-p1-s3-m5"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "h387-p1-s4",
+          "lyrics": [],
+          "measures": [
+            {
+              "events": [
+                {
+                  "accidental": null,
+                  "augmentation_dots": 0,
+                  "beams": 0,
+                  "beat": 0,
+                  "degree": 6,
+                  "duration": 1,
+                  "id": "h387-p1-s4-m1-e1",
+                  "kind": "note",
+                  "measure_id": "h387-p1-s4-m1",
+                  "octave": 0,
+                  "raw_glyphs": "6",
+                  "source_anchor": {
+                    "slide": 1,
+                    "x": 19.146596153846154,
+                    "y": 361.15999999999997
+                  },
+                  "sources": [
+                    {
+                      "asset": "data/generated/hymn-sources/387.json",
+                      "paragraph": 0,
+                      "run": 0,
+                      "shape_id": "slide-1-shape-8",
+                      "slide": 1
+                    }
+                  ]
+                },
+                {
+                  "beat": 1,
+                  "duration": 0,
+                  "id": "h387-p1-s4-m1-e2",
+                  "kind": "barline",
+                  "measure_id": "h387-p1-s4-m1",
+                  "raw_glyphs": "|",
+                  "source_anchor": {
+                    "slide": 1,
+                    "x": 34.865788461538465,
+                    "y": 361.15999999999997
+                  },
+                  "sources": [
+                    {
+                      "asset": "data/generated/hymn-sources/387.json",
+                      "paragraph": 0,
+                      "run": 1,
+                      "shape_id": "slide-1-shape-8",
+                      "slide": 1
+                    }
+                  ],
+                  "style": "single"
+                }
+              ],
+              "id": "h387-p1-s4-m1",
+              "number": 1
+            },
+            {
+              "events": [
+                {
+                  "accidental": null,
+                  "augmentation_dots": 0,
+                  "beams": 0,
+                  "beat": 0,
+                  "degree": 6,
+                  "duration": 1,
+                  "id": "h387-p1-s4-m2-e1",
+                  "kind": "note",
+                  "measure_id": "h387-p1-s4-m2",
+                  "octave": 1,
+                  "raw_glyphs": "",
+                  "source_anchor": {
+                    "slide": 1,
+                    "x": 50.584980769230775,
+                    "y": 361.15999999999997
+                  },
+                  "sources": [
+                    {
+                      "asset": "data/generated/hymn-sources/387.json",
+                      "paragraph": 0,
+                      "run": 2,
+                      "shape_id": "slide-1-shape-8",
+                      "slide": 1
+                    }
+                  ]
+                },
+                {
+                  "accidental": null,
+                  "augmentation_dots": 0,
+                  "beams": 0,
+                  "beat": 1,
+                  "degree": 5,
+                  "duration": 1,
+                  "id": "h387-p1-s4-m2-e2",
+                  "kind": "note",
+                  "measure_id": "h387-p1-s4-m2",
+                  "octave": 1,
+                  "raw_glyphs": "",
+                  "source_anchor": {
+                    "slide": 1,
+                    "x": 97.7425576923077,
+                    "y": 361.15999999999997
+                  },
+                  "sources": [
+                    {
+                      "asset": "data/generated/hymn-sources/387.json",
+                      "paragraph": 0,
+                      "run": 4,
+                      "shape_id": "slide-1-shape-8",
+                      "slide": 1
+                    }
+                  ]
+                },
+                {
+                  "accidental": null,
+                  "augmentation_dots": 0,
+                  "beams": 0,
+                  "beat": 2,
+                  "degree": 4,
+                  "duration": 1,
+                  "id": "h387-p1-s4-m2-e3",
+                  "kind": "note",
+                  "measure_id": "h387-p1-s4-m2",
+                  "octave": 1,
+                  "raw_glyphs": "$",
+                  "source_anchor": {
+                    "slide": 1,
+                    "x": 144.90013461538462,
+                    "y": 361.15999999999997
+                  },
+                  "sources": [
+                    {
+                      "asset": "data/generated/hymn-sources/387.json",
+                      "paragraph": 0,
+                      "run": 5,
+                      "shape_id": "slide-1-shape-8",
+                      "slide": 1
+                    }
+                  ]
+                },
+                {
+                  "accidental": null,
+                  "augmentation_dots": 0,
+                  "beams": 0,
+                  "beat": 3,
+                  "degree": 3,
+                  "duration": 1,
+                  "id": "h387-p1-s4-m2-e4",
+                  "kind": "note",
+                  "measure_id": "h387-p1-s4-m2",
+                  "octave": 1,
+                  "raw_glyphs": "#",
+                  "source_anchor": {
+                    "slide": 1,
+                    "x": 192.05771153846155,
+                    "y": 361.15999999999997
+                  },
+                  "sources": [
+                    {
+                      "asset": "data/generated/hymn-sources/387.json",
+                      "paragraph": 0,
+                      "run": 5,
+                      "shape_id": "slide-1-shape-8",
+                      "slide": 1
+                    }
+                  ]
+                },
+                {
+                  "beat": 4,
+                  "duration": 0,
+                  "id": "h387-p1-s4-m2-e5",
+                  "kind": "barline",
+                  "measure_id": "h387-p1-s4-m2",
+                  "raw_glyphs": "|",
+                  "source_anchor": {
+                    "slide": 1,
+                    "x": 207.77690384615386,
+                    "y": 361.15999999999997
+                  },
+                  "sources": [
+                    {
+                      "asset": "data/generated/hymn-sources/387.json",
+                      "paragraph": 0,
+                      "run": 6,
+                      "shape_id": "slide-1-shape-8",
+                      "slide": 1
+                    }
+                  ],
+                  "style": "single"
+                }
+              ],
+              "id": "h387-p1-s4-m2",
+              "number": 2
+            },
+            {
+              "events": [
+                {
+                  "accidental": null,
+                  "augmentation_dots": 0,
+                  "beams": 0,
+                  "beat": 0,
+                  "degree": 2,
+                  "duration": 3,
+                  "id": "h387-p1-s4-m3-e1",
+                  "kind": "note",
+                  "measure_id": "h387-p1-s4-m3",
+                  "octave": 1,
+                  "raw_glyphs": "@--",
+                  "source_anchor": {
+                    "slide": 1,
+                    "x": 239.21528846153848,
+                    "y": 361.15999999999997
+                  },
+                  "sources": [
+                    {
+                      "asset": "data/generated/hymn-sources/387.json",
+                      "paragraph": 0,
+                      "run": 7,
+                      "shape_id": "slide-1-shape-8",
+                      "slide": 1
+                    }
+                  ]
+                },
+                {
+                  "accidental": null,
+                  "augmentation_dots": 0,
+                  "beams": 1,
+                  "beat": 3,
+                  "degree": 1,
+                  "duration": 0.5,
+                  "id": "h387-p1-s4-m3-e2",
+                  "kind": "note",
+                  "measure_id": "h387-p1-s4-m3",
+                  "octave": 1,
+                  "raw_glyphs": "Q",
+                  "source_anchor": {
+                    "slide": 1,
+                    "x": 270.65367307692304,
+                    "y": 361.15999999999997
+                  },
+                  "sources": [
+                    {
+                      "asset": "data/generated/hymn-sources/387.json",
+                      "paragraph": 0,
+                      "run": 8,
+                      "shape_id": "slide-1-shape-8",
+                      "slide": 1
+                    }
+                  ]
+                },
+                {
+                  "accidental": null,
+                  "augmentation_dots": 0,
+                  "beams": 1,
+                  "beat": 3.5,
+                  "degree": 2,
+                  "duration": 0.5,
+                  "id": "h387-p1-s4-m3-e3",
+                  "kind": "note",
+                  "measure_id": "h387-p1-s4-m3",
+                  "octave": 1,
+                  "raw_glyphs": "W",
+                  "source_anchor": {
+                    "slide": 1,
+                    "x": 317.81125,
+                    "y": 361.15999999999997
+                  },
+                  "sources": [
+                    {
+                      "asset": "data/generated/hymn-sources/387.json",
+                      "paragraph": 0,
+                      "run": 8,
+                      "shape_id": "slide-1-shape-8",
+                      "slide": 1
+                    }
+                  ]
+                },
+                {
+                  "beat": 4,
+                  "duration": 0,
+                  "id": "h387-p1-s4-m3-e4",
+                  "kind": "barline",
+                  "measure_id": "h387-p1-s4-m3",
+                  "raw_glyphs": "|",
+                  "source_anchor": {
+                    "slide": 1,
+                    "x": 333.5304423076923,
+                    "y": 361.15999999999997
+                  },
+                  "sources": [
+                    {
+                      "asset": "data/generated/hymn-sources/387.json",
+                      "paragraph": 0,
+                      "run": 9,
+                      "shape_id": "slide-1-shape-8",
+                      "slide": 1
+                    }
+                  ],
+                  "style": "single"
+                }
+              ],
+              "id": "h387-p1-s4-m3",
+              "number": 3
+            },
+            {
+              "events": [
+                {
+                  "accidental": null,
+                  "augmentation_dots": 0,
+                  "beams": 0,
+                  "beat": 0,
+                  "degree": 3,
+                  "duration": 4,
+                  "id": "h387-p1-s4-m4-e1",
+                  "kind": "note",
+                  "measure_id": "h387-p1-s4-m4",
+                  "octave": 1,
+                  "raw_glyphs": "#---",
+                  "source_anchor": {
+                    "slide": 1,
+                    "x": 372.82842307692306,
+                    "y": 361.15999999999997
+                  },
+                  "sources": [
+                    {
+                      "asset": "data/generated/hymn-sources/387.json",
+                      "paragraph": 0,
+                      "run": 10,
+                      "shape_id": "slide-1-shape-8",
+                      "slide": 1
+                    }
+                  ]
+                },
+                {
+                  "beat": 4,
+                  "duration": 0,
+                  "id": "h387-p1-s4-m4-e2",
+                  "kind": "barline",
+                  "measure_id": "h387-p1-s4-m4",
+                  "raw_glyphs": "|",
+                  "source_anchor": {
+                    "slide": 1,
+                    "x": 412.12640384615383,
+                    "y": 361.15999999999997
+                  },
+                  "sources": [
+                    {
+                      "asset": "data/generated/hymn-sources/387.json",
+                      "paragraph": 0,
+                      "run": 11,
+                      "shape_id": "slide-1-shape-8",
+                      "slide": 1
+                    }
+                  ],
+                  "style": "single"
+                }
+              ],
+              "id": "h387-p1-s4-m4",
+              "number": 4
+            },
+            {
+              "events": [
+                {
+                  "accidental": null,
+                  "augmentation_dots": 0,
+                  "beams": 0,
+                  "beat": 0,
+                  "degree": 3,
+                  "duration": 2,
+                  "id": "h387-p1-s4-m5-e1",
+                  "kind": "note",
+                  "measure_id": "h387-p1-s4-m5",
+                  "octave": 1,
+                  "raw_glyphs": "#-",
+                  "source_anchor": {
+                    "slide": 1,
+                    "x": 435.70519230769236,
+                    "y": 361.15999999999997
+                  },
+                  "sources": [
+                    {
+                      "asset": "data/generated/hymn-sources/387.json",
+                      "paragraph": 0,
+                      "run": 12,
+                      "shape_id": "slide-1-shape-8",
+                      "slide": 1
+                    }
+                  ]
+                },
+                {
+                  "augmentation_dots": 0,
+                  "beams": 1,
+                  "beat": 2,
+                  "duration": 0.5,
+                  "id": "h387-p1-s4-m5-e2",
+                  "kind": "rest",
+                  "measure_id": "h387-p1-s4-m5",
+                  "raw_glyphs": "p",
+                  "source_anchor": {
+                    "slide": 1,
+                    "x": 459.2839807692308,
+                    "y": 361.15999999999997
+                  },
+                  "sources": [
+                    {
+                      "asset": "data/generated/hymn-sources/387.json",
+                      "paragraph": 0,
+                      "run": 13,
+                      "shape_id": "slide-1-shape-8",
+                      "slide": 1
+                    }
+                  ]
+                },
+                {
+                  "accidental": null,
+                  "augmentation_dots": 0,
+                  "beams": 1,
+                  "beat": 2.5,
+                  "degree": 5,
+                  "duration": 0.5,
+                  "id": "h387-p1-s4-m5-e3",
+                  "kind": "note",
+                  "measure_id": "h387-p1-s4-m5",
+                  "octave": 0,
+                  "raw_glyphs": "t",
+                  "source_anchor": {
+                    "slide": 1,
+                    "x": 490.7223653846154,
+                    "y": 361.15999999999997
+                  },
+                  "sources": [
+                    {
+                      "asset": "data/generated/hymn-sources/387.json",
+                      "paragraph": 0,
+                      "run": 13,
+                      "shape_id": "slide-1-shape-8",
+                      "slide": 1
+                    }
+                  ]
+                },
+                {
+                  "accidental": null,
+                  "augmentation_dots": 0,
+                  "beams": 1,
+                  "beat": 3,
+                  "degree": 1,
+                  "duration": 0.5,
+                  "id": "h387-p1-s4-m5-e4",
+                  "kind": "note",
+                  "measure_id": "h387-p1-s4-m5",
+                  "octave": 1,
+                  "raw_glyphs": "Q",
+                  "source_anchor": {
+                    "slide": 1,
+                    "x": 569.3183269230769,
+                    "y": 361.15999999999997
+                  },
+                  "sources": [
+                    {
+                      "asset": "data/generated/hymn-sources/387.json",
+                      "paragraph": 0,
+                      "run": 14,
+                      "shape_id": "slide-1-shape-8",
+                      "slide": 1
+                    }
+                  ]
+                },
+                {
+                  "accidental": null,
+                  "augmentation_dots": 0,
+                  "beams": 1,
+                  "beat": 3.5,
+                  "degree": 2,
+                  "duration": 0.5,
+                  "id": "h387-p1-s4-m5-e5",
+                  "kind": "note",
+                  "measure_id": "h387-p1-s4-m5",
+                  "octave": 1,
+                  "raw_glyphs": "W",
+                  "source_anchor": {
+                    "slide": 1,
+                    "x": 600.7567115384616,
+                    "y": 361.15999999999997
+                  },
+                  "sources": [
+                    {
+                      "asset": "data/generated/hymn-sources/387.json",
+                      "paragraph": 0,
+                      "run": 14,
+                      "shape_id": "slide-1-shape-8",
+                      "slide": 1
+                    }
+                  ]
+                },
+                {
+                  "beat": 4,
+                  "duration": 0,
+                  "id": "h387-p1-s4-m5-e6",
+                  "kind": "barline",
+                  "measure_id": "h387-p1-s4-m5",
+                  "raw_glyphs": "|",
+                  "source_anchor": {
+                    "slide": 1,
+                    "x": 616.475903846154,
+                    "y": 361.15999999999997
+                  },
+                  "sources": [
+                    {
+                      "asset": "data/generated/hymn-sources/387.json",
+                      "paragraph": 0,
+                      "run": 15,
+                      "shape_id": "slide-1-shape-8",
+                      "slide": 1
+                    }
+                  ],
+                  "style": "single"
+                }
+              ],
+              "id": "h387-p1-s4-m5",
+              "number": 5
+            },
+            {
+              "events": [
+                {
+                  "accidental": null,
+                  "augmentation_dots": 0,
+                  "beams": 0,
+                  "beat": 0,
+                  "degree": 3,
+                  "duration": 3,
+                  "id": "h387-p1-s4-m6-e1",
+                  "kind": "note",
+                  "measure_id": "h387-p1-s4-m6",
+                  "octave": 1,
+                  "raw_glyphs": "#--",
+                  "source_anchor": {
+                    "slide": 1,
+                    "x": 647.9142884615385,
+                    "y": 361.15999999999997
+                  },
+                  "sources": [
+                    {
+                      "asset": "data/generated/hymn-sources/387.json",
+                      "paragraph": 0,
+                      "run": 16,
+                      "shape_id": "slide-1-shape-8",
+                      "slide": 1
+                    }
+                  ]
+                },
+                {
+                  "accidental": null,
+                  "augmentation_dots": 0,
+                  "beams": 1,
+                  "beat": 3,
+                  "degree": 2,
+                  "duration": 0.5,
+                  "id": "h387-p1-s4-m6-e2",
+                  "kind": "note",
+                  "measure_id": "h387-p1-s4-m6",
+                  "octave": 1,
+                  "raw_glyphs": "W",
+                  "source_anchor": {
+                    "slide": 1,
+                    "x": 679.3526730769231,
+                    "y": 361.15999999999997
+                  },
+                  "sources": [
+                    {
+                      "asset": "data/generated/hymn-sources/387.json",
+                      "paragraph": 0,
+                      "run": 17,
+                      "shape_id": "slide-1-shape-8",
+                      "slide": 1
+                    }
+                  ]
+                },
+                {
+                  "accidental": null,
+                  "augmentation_dots": 0,
+                  "beams": 1,
+                  "beat": 3.5,
+                  "degree": 1,
+                  "duration": 0.5,
+                  "id": "h387-p1-s4-m6-e3",
+                  "kind": "note",
+                  "measure_id": "h387-p1-s4-m6",
+                  "octave": 1,
+                  "raw_glyphs": "Q",
+                  "source_anchor": {
+                    "slide": 1,
+                    "x": 726.51025,
+                    "y": 361.15999999999997
+                  },
+                  "sources": [
+                    {
+                      "asset": "data/generated/hymn-sources/387.json",
+                      "paragraph": 0,
+                      "run": 17,
+                      "shape_id": "slide-1-shape-8",
+                      "slide": 1
+                    }
+                  ]
+                },
+                {
+                  "beat": 4,
+                  "duration": 0,
+                  "id": "h387-p1-s4-m6-e4",
+                  "kind": "barline",
+                  "measure_id": "h387-p1-s4-m6",
+                  "raw_glyphs": "|",
+                  "source_anchor": {
+                    "slide": 1,
+                    "x": 742.2294423076924,
+                    "y": 361.15999999999997
+                  },
+                  "sources": [
+                    {
+                      "asset": "data/generated/hymn-sources/387.json",
+                      "paragraph": 0,
+                      "run": 18,
+                      "shape_id": "slide-1-shape-8",
+                      "slide": 1
+                    }
+                  ],
+                  "style": "single"
+                }
+              ],
+              "id": "h387-p1-s4-m6",
+              "number": 6
+            },
+            {
+              "events": [
+                {
+                  "accidental": null,
+                  "augmentation_dots": 0,
+                  "beams": 0,
+                  "beat": 0,
+                  "degree": 2,
+                  "duration": 1,
+                  "id": "h387-p1-s4-m7-e1",
+                  "kind": "note",
+                  "measure_id": "h387-p1-s4-m7",
+                  "octave": 1,
+                  "raw_glyphs": "@",
+                  "source_anchor": {
+                    "slide": 1,
+                    "x": 757.9486346153847,
+                    "y": 361.15999999999997
+                  },
+                  "sources": [
+                    {
+                      "asset": "data/generated/hymn-sources/387.json",
+                      "paragraph": 0,
+                      "run": 19,
+                      "shape_id": "slide-1-shape-8",
+                      "slide": 1
+                    }
+                  ]
+                },
+                {
+                  "accidental": null,
+                  "augmentation_dots": 0,
+                  "beams": 0,
+                  "beat": 1,
+                  "degree": 5,
+                  "duration": 2,
+                  "id": "h387-p1-s4-m7-e2",
+                  "kind": "note",
+                  "measure_id": "h387-p1-s4-m7",
+                  "octave": 0,
+                  "raw_glyphs": "5-",
+                  "source_anchor": {
+                    "slide": 1,
+                    "x": 805.1062115384616,
+                    "y": 361.15999999999997
+                  },
+                  "sources": [
+                    {
+                      "asset": "data/generated/hymn-sources/387.json",
+                      "paragraph": 0,
+                      "run": 19,
+                      "shape_id": "slide-1-shape-8",
+                      "slide": 1
+                    }
+                  ]
+                }
+              ],
+              "id": "h387-p1-s4-m7",
+              "number": 7
+            }
+          ],
+          "phrases": [
+            {
+              "id": "h387-p1-s4-phrase-1",
+              "measure_ids": [
+                "h387-p1-s4-m1",
+                "h387-p1-s4-m2",
+                "h387-p1-s4-m3",
+                "h387-p1-s4-m4",
+                "h387-p1-s4-m5",
+                "h387-p1-s4-m6",
+                "h387-p1-s4-m7"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "h387-p1-s5",
+          "lyrics": [],
+          "measures": [
+            {
+              "events": [
+                {
+                  "accidental": null,
+                  "augmentation_dots": 0,
+                  "beams": 1,
+                  "beat": 0,
+                  "degree": 2,
+                  "duration": 0.5,
+                  "id": "h387-p1-s5-m1-e1",
+                  "kind": "note",
+                  "measure_id": "h387-p1-s5-m1",
+                  "octave": 1,
+                  "raw_glyphs": "W",
+                  "source_anchor": {
+                    "slide": 1,
+                    "x": 18.27292105263158,
+                    "y": 447.56
+                  },
+                  "sources": [
+                    {
+                      "asset": "data/generated/hymn-sources/387.json",
+                      "paragraph": 0,
+                      "run": 0,
+                      "shape_id": "slide-1-shape-9",
+                      "slide": 1
+                    }
+                  ]
+                },
+                {
+                  "accidental": null,
+                  "augmentation_dots": 0,
+                  "beams": 1,
+                  "beat": 0.5,
+                  "degree": 3,
+                  "duration": 0.5,
+                  "id": "h387-p1-s5-m1-e2",
+                  "kind": "note",
+                  "measure_id": "h387-p1-s5-m1",
+                  "octave": 1,
+                  "raw_glyphs": "E",
+                  "source_anchor": {
+                    "slide": 1,
+                    "x": 60.188447368421045,
+                    "y": 447.56
+                  },
+                  "sources": [
+                    {
+                      "asset": "data/generated/hymn-sources/387.json",
+                      "paragraph": 0,
+                      "run": 0,
+                      "shape_id": "slide-1-shape-9",
+                      "slide": 1
+                    }
+                  ]
+                },
+                {
+                  "beat": 1,
+                  "duration": 0,
+                  "id": "h387-p1-s5-m1-e3",
+                  "kind": "barline",
+                  "measure_id": "h387-p1-s5-m1",
+                  "raw_glyphs": "|",
+                  "source_anchor": {
+                    "slide": 1,
+                    "x": 74.1602894736842,
+                    "y": 447.56
+                  },
+                  "sources": [
+                    {
+                      "asset": "data/generated/hymn-sources/387.json",
+                      "paragraph": 0,
+                      "run": 1,
+                      "shape_id": "slide-1-shape-9",
+                      "slide": 1
+                    }
+                  ],
+                  "style": "single"
+                }
+              ],
+              "id": "h387-p1-s5-m1",
+              "number": 1
+            },
+            {
+              "events": [
+                {
+                  "accidental": null,
+                  "augmentation_dots": 0,
+                  "beams": 0,
+                  "beat": 0,
+                  "degree": 4,
+                  "duration": 2,
+                  "id": "h387-p1-s5-m2-e1",
+                  "kind": "note",
+                  "measure_id": "h387-p1-s5-m2",
+                  "octave": 1,
+                  "raw_glyphs": "$-",
+                  "source_anchor": {
+                    "slide": 1,
+                    "x": 95.11805263157895,
+                    "y": 447.56
+                  },
+                  "sources": [
+                    {
+                      "asset": "data/generated/hymn-sources/387.json",
+                      "paragraph": 0,
+                      "run": 2,
+                      "shape_id": "slide-1-shape-9",
+                      "slide": 1
+                    }
+                  ]
+                },
+                {
+                  "accidental": null,
+                  "augmentation_dots": 0,
+                  "beams": 1,
+                  "beat": 2,
+                  "degree": 4,
+                  "duration": 0.5,
+                  "id": "h387-p1-s5-m2-e2",
+                  "kind": "note",
+                  "measure_id": "h387-p1-s5-m2",
+                  "octave": 1,
+                  "raw_glyphs": "R",
+                  "source_anchor": {
+                    "slide": 1,
+                    "x": 116.07581578947368,
+                    "y": 447.56
+                  },
+                  "sources": [
+                    {
+                      "asset": "data/generated/hymn-sources/387.json",
+                      "paragraph": 0,
+                      "run": 3,
+                      "shape_id": "slide-1-shape-9",
+                      "slide": 1
+                    }
+                  ]
+                },
+                {
+                  "accidental": null,
+                  "augmentation_dots": 0,
+                  "beams": 1,
+                  "beat": 2.5,
+                  "degree": 4,
+                  "duration": 0.5,
+                  "id": "h387-p1-s5-m2-e3",
+                  "kind": "note",
+                  "measure_id": "h387-p1-s5-m2",
+                  "octave": 1,
+                  "raw_glyphs": "R",
+                  "source_anchor": {
+                    "slide": 1,
+                    "x": 144.0195,
+                    "y": 447.56
+                  },
+                  "sources": [
+                    {
+                      "asset": "data/generated/hymn-sources/387.json",
+                      "paragraph": 0,
+                      "run": 3,
+                      "shape_id": "slide-1-shape-9",
+                      "slide": 1
+                    }
+                  ]
+                },
+                {
+                  "accidental": null,
+                  "augmentation_dots": 0,
+                  "beams": 1,
+                  "beat": 3,
+                  "degree": 3,
+                  "duration": 0.5,
+                  "id": "h387-p1-s5-m2-e4",
+                  "kind": "note",
+                  "measure_id": "h387-p1-s5-m2",
+                  "octave": 1,
+                  "raw_glyphs": "E",
+                  "source_anchor": {
+                    "slide": 1,
+                    "x": 185.93502631578946,
+                    "y": 447.56
+                  },
+                  "sources": [
+                    {
+                      "asset": "data/generated/hymn-sources/387.json",
+                      "paragraph": 0,
+                      "run": 5,
+                      "shape_id": "slide-1-shape-9",
+                      "slide": 1
+                    }
+                  ]
+                },
+                {
+                  "accidental": null,
+                  "augmentation_dots": 0,
+                  "beams": 1,
+                  "beat": 3.5,
+                  "degree": 2,
+                  "duration": 0.5,
+                  "id": "h387-p1-s5-m2-e5",
+                  "kind": "note",
+                  "measure_id": "h387-p1-s5-m2",
+                  "octave": 1,
+                  "raw_glyphs": "W",
+                  "source_anchor": {
+                    "slide": 1,
+                    "x": 227.85055263157895,
+                    "y": 447.56
+                  },
+                  "sources": [
+                    {
+                      "asset": "data/generated/hymn-sources/387.json",
+                      "paragraph": 0,
+                      "run": 5,
+                      "shape_id": "slide-1-shape-9",
+                      "slide": 1
+                    }
+                  ]
+                },
+                {
+                  "beat": 4,
+                  "duration": 0,
+                  "id": "h387-p1-s5-m2-e6",
+                  "kind": "barline",
+                  "measure_id": "h387-p1-s5-m2",
+                  "raw_glyphs": "|",
+                  "source_anchor": {
+                    "slide": 1,
+                    "x": 241.8223947368421,
+                    "y": 447.56
+                  },
+                  "sources": [
+                    {
+                      "asset": "data/generated/hymn-sources/387.json",
+                      "paragraph": 0,
+                      "run": 6,
+                      "shape_id": "slide-1-shape-9",
+                      "slide": 1
+                    }
+                  ],
+                  "style": "single"
+                }
+              ],
+              "id": "h387-p1-s5-m2",
+              "number": 2
+            },
+            {
+              "events": [
+                {
+                  "accidental": null,
+                  "augmentation_dots": 0,
+                  "beams": 0,
+                  "beat": 0,
+                  "degree": 3,
+                  "duration": 1,
+                  "id": "h387-p1-s5-m3-e1",
+                  "kind": "note",
+                  "measure_id": "h387-p1-s5-m3",
+                  "octave": 1,
+                  "raw_glyphs": "#",
+                  "source_anchor": {
+                    "slide": 1,
+                    "x": 255.79423684210528,
+                    "y": 447.56
+                  },
+                  "sources": [
+                    {
+                      "asset": "data/generated/hymn-sources/387.json",
+                      "paragraph": 0,
+                      "run": 7,
+                      "shape_id": "slide-1-shape-9",
+                      "slide": 1
+                    }
+                  ]
+                },
+                {
+                  "accidental": null,
+                  "augmentation_dots": 0,
+                  "beams": 0,
+                  "beat": 1,
+                  "degree": 6,
+                  "duration": 2,
+                  "id": "h387-p1-s5-m3-e2",
+                  "kind": "note",
+                  "measure_id": "h387-p1-s5-m3",
+                  "octave": 0,
+                  "raw_glyphs": "6-",
+                  "source_anchor": {
+                    "slide": 1,
+                    "x": 311.68160526315785,
+                    "y": 447.56
+                  },
+                  "sources": [
+                    {
+                      "asset": "data/generated/hymn-sources/387.json",
+                      "paragraph": 0,
+                      "run": 7,
+                      "shape_id": "slide-1-shape-9",
+                      "slide": 1
+                    }
+                  ]
+                },
+                {
+                  "accidental": null,
+                  "augmentation_dots": 0,
+                  "beams": 1,
+                  "beat": 3,
+                  "degree": 6,
+                  "duration": 0.5,
+                  "id": "h387-p1-s5-m3-e3",
+                  "kind": "note",
+                  "measure_id": "h387-p1-s5-m3",
+                  "octave": 0,
+                  "raw_glyphs": "y",
+                  "source_anchor": {
+                    "slide": 1,
+                    "x": 353.59713157894737,
+                    "y": 447.56
+                  },
+                  "sources": [
+                    {
+                      "asset": "data/generated/hymn-sources/387.json",
+                      "paragraph": 0,
+                      "run": 8,
+                      "shape_id": "slide-1-shape-9",
+                      "slide": 1
+                    }
+                  ]
+                },
+                {
+                  "accidental": null,
+                  "augmentation_dots": 0,
+                  "beams": 1,
+                  "beat": 3.5,
+                  "degree": 7,
+                  "duration": 0.5,
+                  "id": "h387-p1-s5-m3-e4",
+                  "kind": "note",
+                  "measure_id": "h387-p1-s5-m3",
+                  "octave": 0,
+                  "raw_glyphs": "u",
+                  "source_anchor": {
+                    "slide": 1,
+                    "x": 395.51265789473683,
+                    "y": 447.56
+                  },
+                  "sources": [
+                    {
+                      "asset": "data/generated/hymn-sources/387.json",
+                      "paragraph": 0,
+                      "run": 8,
+                      "shape_id": "slide-1-shape-9",
+                      "slide": 1
+                    }
+                  ]
+                },
+                {
+                  "beat": 4,
+                  "duration": 0,
+                  "id": "h387-p1-s5-m3-e5",
+                  "kind": "barline",
+                  "measure_id": "h387-p1-s5-m3",
+                  "raw_glyphs": "|",
+                  "source_anchor": {
+                    "slide": 1,
+                    "x": 409.48449999999997,
+                    "y": 447.56
+                  },
+                  "sources": [
+                    {
+                      "asset": "data/generated/hymn-sources/387.json",
+                      "paragraph": 0,
+                      "run": 9,
+                      "shape_id": "slide-1-shape-9",
+                      "slide": 1
+                    }
+                  ],
+                  "style": "single"
+                }
+              ],
+              "id": "h387-p1-s5-m3",
+              "number": 3
+            },
+            {
+              "events": [
+                {
+                  "accidental": null,
+                  "augmentation_dots": 0,
+                  "beams": 0,
+                  "beat": 0,
+                  "degree": 1,
+                  "duration": 3,
+                  "id": "h387-p1-s5-m4-e1",
+                  "kind": "note",
+                  "measure_id": "h387-p1-s5-m4",
+                  "octave": 1,
+                  "raw_glyphs": "!--",
+                  "source_anchor": {
+                    "slide": 1,
+                    "x": 451.4000263157895,
+                    "y": 447.56
+                  },
+                  "sources": [
+                    {
+                      "asset": "data/generated/hymn-sources/387.json",
+                      "paragraph": 0,
+                      "run": 10,
+                      "shape_id": "slide-1-shape-9",
+                      "slide": 1
+                    }
+                  ]
+                },
+                {
+                  "accidental": null,
+                  "augmentation_dots": 0,
+                  "beams": 1,
+                  "beat": 3,
+                  "degree": 7,
+                  "duration": 0.5,
+                  "id": "h387-p1-s5-m4-e2",
+                  "kind": "note",
+                  "measure_id": "h387-p1-s5-m4",
+                  "octave": 0,
+                  "raw_glyphs": "u",
+                  "source_anchor": {
+                    "slide": 1,
+                    "x": 507.2873947368421,
+                    "y": 447.56
+                  },
+                  "sources": [
+                    {
+                      "asset": "data/generated/hymn-sources/387.json",
+                      "paragraph": 0,
+                      "run": 11,
+                      "shape_id": "slide-1-shape-9",
+                      "slide": 1
+                    }
+                  ]
+                },
+                {
+                  "accidental": null,
+                  "augmentation_dots": 0,
+                  "beams": 1,
+                  "beat": 3.5,
+                  "degree": 1,
+                  "duration": 0.5,
+                  "id": "h387-p1-s5-m4-e3",
+                  "kind": "note",
+                  "measure_id": "h387-p1-s5-m4",
+                  "octave": 1,
+                  "raw_glyphs": "Q",
+                  "source_anchor": {
+                    "slide": 1,
+                    "x": 549.2029210526316,
+                    "y": 447.56
+                  },
+                  "sources": [
+                    {
+                      "asset": "data/generated/hymn-sources/387.json",
+                      "paragraph": 0,
+                      "run": 11,
+                      "shape_id": "slide-1-shape-9",
+                      "slide": 1
+                    }
+                  ]
+                },
+                {
+                  "beat": 4,
+                  "duration": 0,
+                  "id": "h387-p1-s5-m4-e4",
+                  "kind": "barline",
+                  "measure_id": "h387-p1-s5-m4",
+                  "raw_glyphs": "|",
+                  "source_anchor": {
+                    "slide": 1,
+                    "x": 563.1747631578947,
+                    "y": 447.56
+                  },
+                  "sources": [
+                    {
+                      "asset": "data/generated/hymn-sources/387.json",
+                      "paragraph": 0,
+                      "run": 12,
+                      "shape_id": "slide-1-shape-9",
+                      "slide": 1
+                    }
+                  ],
+                  "style": "single"
+                }
+              ],
+              "id": "h387-p1-s5-m4",
+              "number": 4
+            },
+            {
+              "events": [
+                {
+                  "accidental": null,
+                  "augmentation_dots": 0,
+                  "beams": 0,
+                  "beat": 0,
+                  "degree": 2,
+                  "duration": 3,
+                  "id": "h387-p1-s5-m5-e1",
+                  "kind": "note",
+                  "measure_id": "h387-p1-s5-m5",
+                  "octave": 1,
+                  "raw_glyphs": "@--",
+                  "source_anchor": {
+                    "slide": 1,
+                    "x": 605.0902894736843,
+                    "y": 447.56
+                  },
+                  "sources": [
+                    {
+                      "asset": "data/generated/hymn-sources/387.json",
+                      "paragraph": 0,
+                      "run": 13,
+                      "shape_id": "slide-1-shape-9",
+                      "slide": 1
+                    }
+                  ]
+                },
+                {
+                  "accidental": null,
+                  "augmentation_dots": 0,
+                  "beams": 1,
+                  "beat": 3,
+                  "degree": 1,
+                  "duration": 0.5,
+                  "id": "h387-p1-s5-m5-e2",
+                  "kind": "note",
+                  "measure_id": "h387-p1-s5-m5",
+                  "octave": 1,
+                  "raw_glyphs": "Q",
+                  "source_anchor": {
+                    "slide": 1,
+                    "x": 660.9776578947368,
+                    "y": 447.56
+                  },
+                  "sources": [
+                    {
+                      "asset": "data/generated/hymn-sources/387.json",
+                      "paragraph": 0,
+                      "run": 13,
+                      "shape_id": "slide-1-shape-9",
+                      "slide": 1
+                    }
+                  ]
+                },
+                {
+                  "accidental": null,
+                  "augmentation_dots": 0,
+                  "beams": 1,
+                  "beat": 3.5,
+                  "degree": 7,
+                  "duration": 0.5,
+                  "id": "h387-p1-s5-m5-e3",
+                  "kind": "note",
+                  "measure_id": "h387-p1-s5-m5",
+                  "octave": 0,
+                  "raw_glyphs": "u",
+                  "source_anchor": {
+                    "slide": 1,
+                    "x": 688.9213421052632,
+                    "y": 447.56
+                  },
+                  "sources": [
+                    {
+                      "asset": "data/generated/hymn-sources/387.json",
+                      "paragraph": 0,
+                      "run": 13,
+                      "shape_id": "slide-1-shape-9",
+                      "slide": 1
+                    }
+                  ]
+                },
+                {
+                  "beat": 4,
+                  "duration": 0,
+                  "id": "h387-p1-s5-m5-e4",
+                  "kind": "barline",
+                  "measure_id": "h387-p1-s5-m5",
+                  "raw_glyphs": "|",
+                  "source_anchor": {
+                    "slide": 1,
+                    "x": 702.8931842105263,
+                    "y": 447.56
+                  },
+                  "sources": [
+                    {
+                      "asset": "data/generated/hymn-sources/387.json",
+                      "paragraph": 0,
+                      "run": 14,
+                      "shape_id": "slide-1-shape-9",
+                      "slide": 1
+                    }
+                  ],
+                  "style": "single"
+                }
+              ],
+              "id": "h387-p1-s5-m5",
+              "number": 5
+            },
+            {
+              "events": [
+                {
+                  "accidental": null,
+                  "augmentation_dots": 0,
+                  "beams": 0,
+                  "beat": 0,
+                  "degree": 6,
+                  "duration": 3,
+                  "id": "h387-p1-s5-m6-e1",
+                  "kind": "note",
+                  "measure_id": "h387-p1-s5-m6",
+                  "octave": 0,
+                  "raw_glyphs": "6--",
+                  "source_anchor": {
+                    "slide": 1,
+                    "x": 744.8087105263157,
+                    "y": 447.56
+                  },
+                  "sources": [
+                    {
+                      "asset": "data/generated/hymn-sources/387.json",
+                      "paragraph": 0,
+                      "run": 15,
+                      "shape_id": "slide-1-shape-9",
+                      "slide": 1
+                    }
+                  ]
+                },
+                {
+                  "beat": 3,
+                  "duration": 0,
+                  "id": "h387-p1-s5-m6-e2",
+                  "kind": "barline",
+                  "measure_id": "h387-p1-s5-m6",
+                  "raw_glyphs": "\\",
+                  "source_anchor": {
+                    "slide": 1,
+                    "x": 800.6960789473684,
+                    "y": 447.56
+                  },
+                  "sources": [
+                    {
+                      "asset": "data/generated/hymn-sources/387.json",
+                      "paragraph": 0,
+                      "run": 16,
+                      "shape_id": "slide-1-shape-9",
+                      "slide": 1
+                    }
+                  ],
+                  "style": "final"
+                }
+              ],
+              "id": "h387-p1-s5-m6",
+              "number": 6
+            }
+          ],
+          "phrases": [
+            {
+              "id": "h387-p1-s5-phrase-1",
+              "measure_ids": [
+                "h387-p1-s5-m1",
+                "h387-p1-s5-m2",
+                "h387-p1-s5-m3",
+                "h387-p1-s5-m4",
+                "h387-p1-s5-m5",
+                "h387-p1-s5-m6"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "schema": "shiqin-score/v1",
+  "source": {
+    "asset": "data/generated/hymn-sources/387.json",
+    "decoder_version": "simpmusic-decoder/v3",
+    "source_hash": "54dae6a48bfbdc98ceef76369a6fe303aad9d54818681b63d2c9a344f7c8f9b0"
+  },
+  "title": "各各他的爱"
+}

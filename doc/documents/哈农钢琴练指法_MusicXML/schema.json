@@ -1,0 +1,57 @@
+{
+  "schema_version": "1.0",
+  "record_types": {
+    "ocr_page": {
+      "required": [
+        "schema_version",
+        "record_type",
+        "source_document_id",
+        "pdf_page",
+        "text"
+      ],
+      "description": "OCR text and human-readable/numeric exercise labels keyed by PDF page."
+    },
+    "score_segment": {
+      "required": [
+        "schema_version",
+        "record_type",
+        "segment_id",
+        "source",
+        "musicxml",
+        "music",
+        "quality",
+        "note_events"
+      ],
+      "description": "One MusicXML segment joined to OCR page references and normalized note events.",
+      "quality_status": [
+        "needs_review",
+        "verified",
+        "published",
+        "rejected"
+      ],
+      "note_event_fields": [
+        "measure_index",
+        "measure_number",
+        "event_id",
+        "onset_divisions",
+        "duration_divisions",
+        "divisions",
+        "onset_beats",
+        "duration_beats",
+        "voice",
+        "staff",
+        "is_chord_tone",
+        "is_rest",
+        "pitch"
+      ]
+    }
+  },
+  "join_contract": {
+    "segment_id": "Stable key shared by manifest summaries and segments.jsonl records.",
+    "source.pdf_pages": "Authoritative PDF page mapping from 索引.md.",
+    "source.ocr_page_refs": "Lookup keys in ocr_pages.jsonl.",
+    "source.ocr_exercise_numbers": "Numbers extracted only from explicit OCR labels; may be incomplete.",
+    "musicxml.path": "Relative path from the dataset directory.",
+    "musicxml.sha256": "Content hash required for derived assets."
+  }
+}

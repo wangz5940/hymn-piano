@@ -1,0 +1,2594 @@
+{
+  "accompaniment": {
+    "reason": "第一拍低音清楚，第二、三拍和弦轻，目标是把诗歌带稳。",
+    "status": "manual_confirmed",
+    "text": "三拍子“低音、和弦、和弦”"
+  },
+  "chords": [
+    {
+      "alternatives": [
+        "自动候选:F"
+      ],
+      "bass": "F",
+      "beat": 0,
+      "confidence": 1,
+      "display_default": true,
+      "evidence": [
+        "人工按 F 调起句与主音确认",
+        "人工确认覆盖自动候选 F"
+      ],
+      "function": "I",
+      "id": "h118-p1-s1-m1-chord-1",
+      "inversion": "root",
+      "measure_id": "h118-p1-s1-m1",
+      "reason": "起句以 F 主和弦建立调性，左手 5-3-1 分别弹 F-A-C。",
+      "status": "manual_confirmed",
+      "symbol": "F",
+      "tones": [
+        {
+          "finger": 5,
+          "note": "F"
+        },
+        {
+          "finger": 3,
+          "note": "A"
+        },
+        {
+          "finger": 1,
+          "note": "C"
+        }
+      ]
+    },
+    {
+      "alternatives": [
+        "自动候选:F"
+      ],
+      "bass": "C",
+      "beat": 0,
+      "confidence": 1,
+      "display_default": true,
+      "evidence": [
+        "人工按乐句趋向与回主功能确认",
+        "人工确认覆盖自动候选 F"
+      ],
+      "function": "V7",
+      "id": "h118-p1-s1-m2-chord-1",
+      "inversion": "root",
+      "measure_id": "h118-p1-s1-m2",
+      "reason": "C7 使用 5-3-2-1，最高 B♭ 由 1 指承担，随后解决回 F。",
+      "status": "manual_confirmed",
+      "symbol": "C7",
+      "tones": [
+        {
+          "finger": 5,
+          "note": "C"
+        },
+        {
+          "finger": 3,
+          "note": "E"
+        },
+        {
+          "finger": 2,
+          "note": "G"
+        },
+        {
+          "finger": 1,
+          "note": "B♭"
+        }
+      ]
+    },
+    {
+      "alternatives": [
+        "自动候选:F"
+      ],
+      "bass": "F",
+      "beat": 0,
+      "confidence": 1,
+      "display_default": true,
+      "evidence": [
+        "人工确认属七解决回主和弦",
+        "人工确认覆盖自动候选 F"
+      ],
+      "function": "I",
+      "id": "h118-p1-s1-m3-chord-1",
+      "inversion": "root",
+      "measure_id": "h118-p1-s1-m3",
+      "reason": "回到 F 主和弦，为会众提供清楚的调性落点。",
+      "status": "manual_confirmed",
+      "symbol": "F",
+      "tones": [
+        {
+          "finger": 5,
+          "note": "F"
+        },
+        {
+          "finger": 3,
+          "note": "A"
+        },
+        {
+          "finger": 1,
+          "note": "C"
+        }
+      ]
+    },
+    {
+      "alternatives": [
+        "自动候选:Gm"
+      ],
+      "bass": "B♭",
+      "beat": 0,
+      "confidence": 1,
+      "display_default": true,
+      "evidence": [
+        "旋律 4-3-2 展开并连接下一句",
+        "人工确认覆盖自动候选 Gm"
+      ],
+      "function": "IV",
+      "id": "h118-p1-s1-m4-chord-1",
+      "inversion": "root",
+      "measure_id": "h118-p1-s1-m4",
+      "reason": "IV 级托住旋律展开，左手保持 5-3-1 三和弦手型。",
+      "status": "manual_confirmed",
+      "symbol": "B♭",
+      "tones": [
+        {
+          "finger": 5,
+          "note": "B♭"
+        },
+        {
+          "finger": 3,
+          "note": "D"
+        },
+        {
+          "finger": 1,
+          "note": "F"
+        }
+      ]
+    },
+    {
+      "alternatives": [
+        "vi",
+        "ii"
+      ],
+      "bass": "F",
+      "beat": 0,
+      "confidence": 0.73,
+      "display_default": false,
+      "evidence": [
+        "强拍旋律 3 属于 I"
+      ],
+      "function": "I",
+      "id": "h118-p1-s1-m5-chord-1",
+      "inversion": "root",
+      "measure_id": "h118-p1-s1-m5",
+      "reason": "I 覆盖本小节主要旋律音；采用 root 转位以缩短与前一和弦的移动。",
+      "status": "auto_candidate",
+      "symbol": "F",
+      "tones": [
+        {
+          "finger": 5,
+          "note": "F"
+        },
+        {
+          "finger": 3,
+          "note": "A"
+        },
+        {
+          "finger": 1,
+          "note": "C"
+        }
+      ]
+    },
+    {
+      "alternatives": [
+        "V",
+        "V7"
+      ],
+      "bass": "G",
+      "beat": 0,
+      "confidence": 0.73,
+      "display_default": false,
+      "evidence": [
+        "强拍旋律 2 属于 ii"
+      ],
+      "function": "ii",
+      "id": "h118-p1-s1-m6-chord-1",
+      "inversion": "root",
+      "measure_id": "h118-p1-s1-m6",
+      "reason": "ii 覆盖本小节主要旋律音；采用 root 转位以缩短与前一和弦的移动。",
+      "status": "auto_candidate",
+      "symbol": "Gm",
+      "tones": [
+        {
+          "finger": 5,
+          "note": "G"
+        },
+        {
+          "finger": 2,
+          "note": "B♭"
+        },
+        {
+          "finger": 1,
+          "note": "D"
+        }
+      ]
+    },
+    {
+      "alternatives": [
+        "IV",
+        "vi"
+      ],
+      "bass": "F",
+      "beat": 0,
+      "confidence": 0.73,
+      "display_default": false,
+      "evidence": [
+        "强拍旋律 1 属于 I"
+      ],
+      "function": "I",
+      "id": "h118-p1-s1-m7-chord-1",
+      "inversion": "root",
+      "measure_id": "h118-p1-s1-m7",
+      "reason": "I 覆盖本小节主要旋律音；采用 root 转位以缩短与前一和弦的移动。",
+      "status": "auto_candidate",
+      "symbol": "F",
+      "tones": [
+        {
+          "finger": 5,
+          "note": "F"
+        },
+        {
+          "finger": 3,
+          "note": "A"
+        },
+        {
+          "finger": 1,
+          "note": "C"
+        }
+      ]
+    },
+    {
+      "alternatives": [
+        "IV",
+        "vi"
+      ],
+      "bass": "G",
+      "beat": 0,
+      "confidence": 0.73,
+      "display_default": false,
+      "evidence": [
+        "强拍旋律 6 属于 ii"
+      ],
+      "function": "ii",
+      "id": "h118-p1-s1-m8-chord-1",
+      "inversion": "root",
+      "measure_id": "h118-p1-s1-m8",
+      "reason": "ii 覆盖本小节主要旋律音；采用 root 转位以缩短与前一和弦的移动。",
+      "status": "auto_candidate",
+      "symbol": "Gm",
+      "tones": [
+        {
+          "finger": 5,
+          "note": "G"
+        },
+        {
+          "finger": 2,
+          "note": "B♭"
+        },
+        {
+          "finger": 1,
+          "note": "D"
+        }
+      ]
+    },
+    {
+      "alternatives": [
+        "自动候选:C"
+      ],
+      "bass": "C",
+      "beat": 0,
+      "confidence": 1,
+      "display_default": true,
+      "evidence": [
+        "句尾 7 音需要属功能带回下一句",
+        "人工确认覆盖自动候选 C"
+      ],
+      "function": "V7",
+      "id": "h118-p1-s1-m9-chord-1",
+      "inversion": "root",
+      "measure_id": "h118-p1-s1-m9",
+      "reason": "属七和弦明确下一句的回主方向。",
+      "status": "manual_confirmed",
+      "symbol": "C7",
+      "tones": [
+        {
+          "finger": 5,
+          "note": "C"
+        },
+        {
+          "finger": 3,
+          "note": "E"
+        },
+        {
+          "finger": 2,
+          "note": "G"
+        },
+        {
+          "finger": 1,
+          "note": "B♭"
+        }
+      ]
+    },
+    {
+      "alternatives": [
+        "V",
+        "V7"
+      ],
+      "bass": "G",
+      "beat": 0,
+      "confidence": 0.67,
+      "display_default": false,
+      "evidence": [
+        "强拍旋律 2 属于 ii"
+      ],
+      "function": "ii",
+      "id": "h118-p1-s2-m1-chord-1",
+      "inversion": "root",
+      "measure_id": "h118-p1-s2-m1",
+      "reason": "ii 覆盖本小节主要旋律音；采用 root 转位以缩短与前一和弦的移动。",
+      "status": "auto_candidate",
+      "symbol": "Gm",
+      "tones": [
+        {
+          "finger": 5,
+          "note": "G"
+        },
+        {
+          "finger": 2,
+          "note": "B♭"
+        },
+        {
+          "finger": 1,
+          "note": "D"
+        }
+      ]
+    },
+    {
+      "alternatives": [
+        "V7",
+        "vi"
+      ],
+      "bass": "F",
+      "beat": 0,
+      "confidence": 0.73,
+      "display_default": false,
+      "evidence": [
+        "强拍旋律 3 属于 I"
+      ],
+      "function": "I",
+      "id": "h118-p1-s2-m2-chord-1",
+      "inversion": "root",
+      "measure_id": "h118-p1-s2-m2",
+      "reason": "I 覆盖本小节主要旋律音；采用 root 转位以缩短与前一和弦的移动。",
+      "status": "auto_candidate",
+      "symbol": "F",
+      "tones": [
+        {
+          "finger": 5,
+          "note": "F"
+        },
+        {
+          "finger": 3,
+          "note": "A"
+        },
+        {
+          "finger": 1,
+          "note": "C"
+        }
+      ]
+    },
+    {
+      "alternatives": [
+        "I",
+        "V"
+      ],
+      "bass": "E",
+      "beat": 0,
+      "confidence": 0.79,
+      "display_default": false,
+      "evidence": [
+        "强拍旋律 5 属于 V7"
+      ],
+      "function": "V7",
+      "id": "h118-p1-s2-m3-chord-1",
+      "inversion": "first",
+      "measure_id": "h118-p1-s2-m3",
+      "reason": "V7 覆盖本小节主要旋律音；采用 first 转位以缩短与前一和弦的移动。",
+      "status": "auto_candidate",
+      "symbol": "C7",
+      "tones": [
+        {
+          "finger": 5,
+          "note": "E"
+        },
+        {
+          "finger": 4,
+          "note": "G"
+        },
+        {
+          "finger": 2,
+          "note": "B♭"
+        },
+        {
+          "finger": 1,
+          "note": "C"
+        }
+      ]
+    },
+    {
+      "alternatives": [
+        "V",
+        "V7"
+      ],
+      "bass": "F",
+      "beat": 0,
+      "confidence": 0.73,
+      "display_default": false,
+      "evidence": [
+        "强拍旋律 5 属于 I"
+      ],
+      "function": "I",
+      "id": "h118-p1-s2-m4-chord-1",
+      "inversion": "root",
+      "measure_id": "h118-p1-s2-m4",
+      "reason": "I 覆盖本小节主要旋律音；采用 root 转位以缩短与前一和弦的移动。",
+      "status": "auto_candidate",
+      "symbol": "F",
+      "tones": [
+        {
+          "finger": 5,
+          "note": "F"
+        },
+        {
+          "finger": 3,
+          "note": "A"
+        },
+        {
+          "finger": 1,
+          "note": "C"
+        }
+      ]
+    },
+    {
+      "alternatives": [
+        "V",
+        "V7"
+      ],
+      "bass": "F",
+      "beat": 0,
+      "confidence": 0.73,
+      "display_default": false,
+      "evidence": [
+        "强拍旋律 5 属于 I"
+      ],
+      "function": "I",
+      "id": "h118-p1-s2-m5-chord-1",
+      "inversion": "root",
+      "measure_id": "h118-p1-s2-m5",
+      "reason": "I 覆盖本小节主要旋律音；采用 root 转位以缩短与前一和弦的移动。",
+      "status": "auto_candidate",
+      "symbol": "F",
+      "tones": [
+        {
+          "finger": 5,
+          "note": "F"
+        },
+        {
+          "finger": 3,
+          "note": "A"
+        },
+        {
+          "finger": 1,
+          "note": "C"
+        }
+      ]
+    },
+    {
+      "alternatives": [
+        "V7",
+        "V"
+      ],
+      "bass": "F",
+      "beat": 0,
+      "confidence": 0.73,
+      "display_default": false,
+      "evidence": [
+        "强拍旋律 5 属于 I"
+      ],
+      "function": "I",
+      "id": "h118-p1-s2-m6-chord-1",
+      "inversion": "root",
+      "measure_id": "h118-p1-s2-m6",
+      "reason": "I 覆盖本小节主要旋律音；采用 root 转位以缩短与前一和弦的移动。",
+      "status": "auto_candidate",
+      "symbol": "F",
+      "tones": [
+        {
+          "finger": 5,
+          "note": "F"
+        },
+        {
+          "finger": 3,
+          "note": "A"
+        },
+        {
+          "finger": 1,
+          "note": "C"
+        }
+      ]
+    },
+    {
+      "alternatives": [
+        "V",
+        "ii"
+      ],
+      "bass": "E",
+      "beat": 0,
+      "confidence": 0.8900000000000001,
+      "display_default": false,
+      "evidence": [
+        "强拍旋律 2 属于 V7",
+        "终止前小节优先采用属功能"
+      ],
+      "function": "V7",
+      "id": "h118-p1-s2-m7-chord-1",
+      "inversion": "first",
+      "measure_id": "h118-p1-s2-m7",
+      "reason": "V7 覆盖本小节主要旋律音；采用 first 转位以缩短与前一和弦的移动。",
+      "status": "auto_candidate",
+      "symbol": "C7",
+      "tones": [
+        {
+          "finger": 5,
+          "note": "E"
+        },
+        {
+          "finger": 4,
+          "note": "G"
+        },
+        {
+          "finger": 2,
+          "note": "B♭"
+        },
+        {
+          "finger": 1,
+          "note": "C"
+        }
+      ]
+    },
+    {
+      "alternatives": [
+        "vi",
+        "ii"
+      ],
+      "bass": "F",
+      "beat": 0,
+      "confidence": 0.8300000000000001,
+      "display_default": false,
+      "evidence": [
+        "强拍旋律 3 属于 I",
+        "系统末小节优先落在主和弦"
+      ],
+      "function": "I",
+      "id": "h118-p1-s2-m8-chord-1",
+      "inversion": "root",
+      "measure_id": "h118-p1-s2-m8",
+      "reason": "I 覆盖本小节主要旋律音；采用 root 转位以缩短与前一和弦的移动。",
+      "status": "auto_candidate",
+      "symbol": "F",
+      "tones": [
+        {
+          "finger": 5,
+          "note": "F"
+        },
+        {
+          "finger": 3,
+          "note": "A"
+        },
+        {
+          "finger": 1,
+          "note": "C"
+        }
+      ]
+    },
+    {
+      "alternatives": [
+        "vi",
+        "ii"
+      ],
+      "bass": "F",
+      "beat": 0,
+      "confidence": 0.77,
+      "display_default": false,
+      "evidence": [
+        "强拍旋律 3 属于 I",
+        "乐句起点优先建立主调"
+      ],
+      "function": "I",
+      "id": "h118-p1-s3-m1-chord-1",
+      "inversion": "root",
+      "measure_id": "h118-p1-s3-m1",
+      "reason": "I 覆盖本小节主要旋律音；采用 root 转位以缩短与前一和弦的移动。",
+      "status": "auto_candidate",
+      "symbol": "F",
+      "tones": [
+        {
+          "finger": 5,
+          "note": "F"
+        },
+        {
+          "finger": 3,
+          "note": "A"
+        },
+        {
+          "finger": 1,
+          "note": "C"
+        }
+      ]
+    },
+    {
+      "alternatives": [
+        "vi",
+        "ii"
+      ],
+      "bass": "F",
+      "beat": 0,
+      "confidence": 0.73,
+      "display_default": false,
+      "evidence": [
+        "强拍旋律 3 属于 I"
+      ],
+      "function": "I",
+      "id": "h118-p1-s3-m2-chord-1",
+      "inversion": "root",
+      "measure_id": "h118-p1-s3-m2",
+      "reason": "I 覆盖本小节主要旋律音；采用 root 转位以缩短与前一和弦的移动。",
+      "status": "auto_candidate",
+      "symbol": "F",
+      "tones": [
+        {
+          "finger": 5,
+          "note": "F"
+        },
+        {
+          "finger": 3,
+          "note": "A"
+        },
+        {
+          "finger": 1,
+          "note": "C"
+        }
+      ]
+    },
+    {
+      "alternatives": [
+        "vi",
+        "I"
+      ],
+      "bass": "F",
+      "beat": 0,
+      "confidence": 0.73,
+      "display_default": false,
+      "evidence": [
+        "强拍旋律 6 属于 IV"
+      ],
+      "function": "IV",
+      "id": "h118-p1-s3-m3-chord-1",
+      "inversion": "second",
+      "measure_id": "h118-p1-s3-m3",
+      "reason": "IV 覆盖本小节主要旋律音；采用 second 转位以缩短与前一和弦的移动。",
+      "status": "auto_candidate",
+      "symbol": "B♭",
+      "tones": [
+        {
+          "finger": 5,
+          "note": "F"
+        },
+        {
+          "finger": 3,
+          "note": "B♭"
+        },
+        {
+          "finger": 1,
+          "note": "D"
+        }
+      ]
+    },
+    {
+      "alternatives": [
+        "V7",
+        "V"
+      ],
+      "bass": "F",
+      "beat": 0,
+      "confidence": 0.73,
+      "display_default": false,
+      "evidence": [
+        "强拍旋律 5 属于 I"
+      ],
+      "function": "I",
+      "id": "h118-p1-s3-m4-chord-1",
+      "inversion": "root",
+      "measure_id": "h118-p1-s3-m4",
+      "reason": "I 覆盖本小节主要旋律音；采用 root 转位以缩短与前一和弦的移动。",
+      "status": "auto_candidate",
+      "symbol": "F",
+      "tones": [
+        {
+          "finger": 5,
+          "note": "F"
+        },
+        {
+          "finger": 3,
+          "note": "A"
+        },
+        {
+          "finger": 1,
+          "note": "C"
+        }
+      ]
+    },
+    {
+      "alternatives": [
+        "V",
+        "V7"
+      ],
+      "bass": "G",
+      "beat": 0,
+      "confidence": 0.67,
+      "display_default": false,
+      "evidence": [
+        "强拍旋律 2 属于 ii"
+      ],
+      "function": "ii",
+      "id": "h118-p1-s3-m5-chord-1",
+      "inversion": "root",
+      "measure_id": "h118-p1-s3-m5",
+      "reason": "ii 覆盖本小节主要旋律音；采用 root 转位以缩短与前一和弦的移动。",
+      "status": "auto_candidate",
+      "symbol": "Gm",
+      "tones": [
+        {
+          "finger": 5,
+          "note": "G"
+        },
+        {
+          "finger": 2,
+          "note": "B♭"
+        },
+        {
+          "finger": 1,
+          "note": "D"
+        }
+      ]
+    },
+    {
+      "alternatives": [
+        "IV",
+        "V7"
+      ],
+      "bass": "G",
+      "beat": 0,
+      "confidence": 0.73,
+      "display_default": false,
+      "evidence": [
+        "强拍旋律 4 属于 ii"
+      ],
+      "function": "ii",
+      "id": "h118-p1-s3-m6-chord-1",
+      "inversion": "root",
+      "measure_id": "h118-p1-s3-m6",
+      "reason": "ii 覆盖本小节主要旋律音；采用 root 转位以缩短与前一和弦的移动。",
+      "status": "auto_candidate",
+      "symbol": "Gm",
+      "tones": [
+        {
+          "finger": 5,
+          "note": "G"
+        },
+        {
+          "finger": 2,
+          "note": "B♭"
+        },
+        {
+          "finger": 1,
+          "note": "D"
+        }
+      ]
+    },
+    {
+      "alternatives": [
+        "V7",
+        "I"
+      ],
+      "bass": "G",
+      "beat": 0,
+      "confidence": 0.91,
+      "display_default": false,
+      "evidence": [
+        "强拍旋律 5 属于 V",
+        "终止前小节优先采用属功能"
+      ],
+      "function": "V",
+      "id": "h118-p1-s3-m7-chord-1",
+      "inversion": "second",
+      "measure_id": "h118-p1-s3-m7",
+      "reason": "V 覆盖本小节主要旋律音；采用 second 转位以缩短与前一和弦的移动。",
+      "status": "auto_candidate",
+      "symbol": "C",
+      "tones": [
+        {
+          "finger": 5,
+          "note": "G"
+        },
+        {
+          "finger": 3,
+          "note": "C"
+        },
+        {
+          "finger": 1,
+          "note": "E"
+        }
+      ]
+    },
+    {
+      "alternatives": [
+        "IV",
+        "vi"
+      ],
+      "bass": "A",
+      "beat": 0,
+      "confidence": 0.91,
+      "display_default": false,
+      "evidence": [
+        "强拍旋律 1 属于 I",
+        "系统末小节优先落在主和弦"
+      ],
+      "function": "I",
+      "id": "h118-p1-s3-m8-chord-1",
+      "inversion": "first",
+      "measure_id": "h118-p1-s3-m8",
+      "reason": "I 覆盖本小节主要旋律音；采用 first 转位以缩短与前一和弦的移动。",
+      "status": "auto_candidate",
+      "symbol": "F",
+      "tones": [
+        {
+          "finger": 5,
+          "note": "A"
+        },
+        {
+          "finger": 2,
+          "note": "C"
+        },
+        {
+          "finger": 1,
+          "note": "F"
+        }
+      ]
+    },
+    {
+      "alternatives": [
+        "vi",
+        "IV"
+      ],
+      "bass": "A",
+      "beat": 0,
+      "confidence": 0.81,
+      "display_default": false,
+      "evidence": [
+        "强拍旋律 1 属于 I",
+        "乐句起点优先建立主调"
+      ],
+      "function": "I",
+      "id": "h118-p5-s1-m1-chord-1",
+      "inversion": "first",
+      "measure_id": "h118-p5-s1-m1",
+      "reason": "I 覆盖本小节主要旋律音；采用 first 转位以缩短与前一和弦的移动。",
+      "status": "auto_candidate",
+      "symbol": "F",
+      "tones": [
+        {
+          "finger": 5,
+          "note": "A"
+        },
+        {
+          "finger": 2,
+          "note": "C"
+        },
+        {
+          "finger": 1,
+          "note": "F"
+        }
+      ]
+    },
+    {
+      "alternatives": [
+        "V7",
+        "I"
+      ],
+      "bass": "G",
+      "beat": 0,
+      "confidence": 0.8700000000000001,
+      "display_default": false,
+      "evidence": [
+        "强拍旋律 5 属于 V"
+      ],
+      "function": "V",
+      "id": "h118-p5-s1-m2-chord-1",
+      "inversion": "second",
+      "measure_id": "h118-p5-s1-m2",
+      "reason": "V 覆盖本小节主要旋律音；采用 second 转位以缩短与前一和弦的移动。",
+      "status": "auto_candidate",
+      "symbol": "C",
+      "tones": [
+        {
+          "finger": 5,
+          "note": "G"
+        },
+        {
+          "finger": 3,
+          "note": "C"
+        },
+        {
+          "finger": 1,
+          "note": "E"
+        }
+      ]
+    },
+    {
+      "alternatives": [
+        "vi",
+        "V"
+      ],
+      "bass": "A",
+      "beat": 0,
+      "confidence": 0.8700000000000001,
+      "display_default": false,
+      "evidence": [
+        "强拍旋律 1 属于 I"
+      ],
+      "function": "I",
+      "id": "h118-p5-s1-m3-chord-1",
+      "inversion": "first",
+      "measure_id": "h118-p5-s1-m3",
+      "reason": "I 覆盖本小节主要旋律音；采用 first 转位以缩短与前一和弦的移动。",
+      "status": "auto_candidate",
+      "symbol": "F",
+      "tones": [
+        {
+          "finger": 5,
+          "note": "A"
+        },
+        {
+          "finger": 2,
+          "note": "C"
+        },
+        {
+          "finger": 1,
+          "note": "F"
+        }
+      ]
+    },
+    {
+      "alternatives": [
+        "vi",
+        "ii"
+      ],
+      "bass": "B♭",
+      "beat": 0,
+      "confidence": 0.79,
+      "display_default": false,
+      "evidence": [
+        "强拍旋律 6 属于 IV"
+      ],
+      "function": "IV",
+      "id": "h118-p5-s1-m4-chord-1",
+      "inversion": "root",
+      "measure_id": "h118-p5-s1-m4",
+      "reason": "IV 覆盖本小节主要旋律音；采用 root 转位以缩短与前一和弦的移动。",
+      "status": "auto_candidate",
+      "symbol": "B♭",
+      "tones": [
+        {
+          "finger": 5,
+          "note": "B♭"
+        },
+        {
+          "finger": 3,
+          "note": "D"
+        },
+        {
+          "finger": 1,
+          "note": "F"
+        }
+      ]
+    },
+    {
+      "alternatives": [
+        "V",
+        "V7"
+      ],
+      "bass": "A",
+      "beat": 0,
+      "confidence": 0.81,
+      "display_default": false,
+      "evidence": [
+        "系统末小节优先落在主和弦"
+      ],
+      "function": "I",
+      "id": "h118-p5-s1-m5-chord-1",
+      "inversion": "first",
+      "measure_id": "h118-p5-s1-m5",
+      "reason": "I 覆盖本小节主要旋律音；采用 first 转位以缩短与前一和弦的移动。",
+      "status": "auto_candidate",
+      "symbol": "F",
+      "tones": [
+        {
+          "finger": 5,
+          "note": "A"
+        },
+        {
+          "finger": 2,
+          "note": "C"
+        },
+        {
+          "finger": 1,
+          "note": "F"
+        }
+      ]
+    },
+    {
+      "alternatives": [
+        "IV",
+        "vi"
+      ],
+      "bass": "A",
+      "beat": 0,
+      "confidence": 0.8500000000000001,
+      "display_default": false,
+      "evidence": [
+        "强拍旋律 1 属于 I",
+        "乐句起点优先建立主调"
+      ],
+      "function": "I",
+      "id": "h118-p5-s2-m1-chord-1",
+      "inversion": "first",
+      "measure_id": "h118-p5-s2-m1",
+      "reason": "I 覆盖本小节主要旋律音；采用 first 转位以缩短与前一和弦的移动。",
+      "status": "auto_candidate",
+      "symbol": "F",
+      "tones": [
+        {
+          "finger": 5,
+          "note": "A"
+        },
+        {
+          "finger": 2,
+          "note": "C"
+        },
+        {
+          "finger": 1,
+          "note": "F"
+        }
+      ]
+    },
+    {
+      "alternatives": [
+        "V7",
+        "I"
+      ],
+      "bass": "G",
+      "beat": 0,
+      "confidence": 0.8500000000000001,
+      "display_default": false,
+      "evidence": [
+        "强拍旋律 7 属于 V"
+      ],
+      "function": "V",
+      "id": "h118-p5-s2-m2-chord-1",
+      "inversion": "second",
+      "measure_id": "h118-p5-s2-m2",
+      "reason": "V 覆盖本小节主要旋律音；采用 second 转位以缩短与前一和弦的移动。",
+      "status": "auto_candidate",
+      "symbol": "C",
+      "tones": [
+        {
+          "finger": 5,
+          "note": "G"
+        },
+        {
+          "finger": 3,
+          "note": "C"
+        },
+        {
+          "finger": 1,
+          "note": "E"
+        }
+      ]
+    },
+    {
+      "alternatives": [
+        "V",
+        "V7"
+      ],
+      "bass": "A",
+      "beat": 0,
+      "confidence": 0.77,
+      "display_default": false,
+      "evidence": [
+        "强拍旋律 5 属于 I"
+      ],
+      "function": "I",
+      "id": "h118-p5-s2-m3-chord-1",
+      "inversion": "first",
+      "measure_id": "h118-p5-s2-m3",
+      "reason": "I 覆盖本小节主要旋律音；采用 first 转位以缩短与前一和弦的移动。",
+      "status": "auto_candidate",
+      "symbol": "F",
+      "tones": [
+        {
+          "finger": 5,
+          "note": "A"
+        },
+        {
+          "finger": 2,
+          "note": "C"
+        },
+        {
+          "finger": 1,
+          "note": "F"
+        }
+      ]
+    },
+    {
+      "alternatives": [
+        "V",
+        "V7"
+      ],
+      "bass": "A",
+      "beat": 0,
+      "confidence": 0.8500000000000001,
+      "display_default": false,
+      "evidence": [
+        "强拍旋律 1 属于 I"
+      ],
+      "function": "I",
+      "id": "h118-p5-s2-m4-chord-1",
+      "inversion": "first",
+      "measure_id": "h118-p5-s2-m4",
+      "reason": "I 覆盖本小节主要旋律音；采用 first 转位以缩短与前一和弦的移动。",
+      "status": "auto_candidate",
+      "symbol": "F",
+      "tones": [
+        {
+          "finger": 5,
+          "note": "A"
+        },
+        {
+          "finger": 2,
+          "note": "C"
+        },
+        {
+          "finger": 1,
+          "note": "F"
+        }
+      ]
+    },
+    {
+      "alternatives": [
+        "V",
+        "V7"
+      ],
+      "bass": "A",
+      "beat": 0,
+      "confidence": 0.7100000000000001,
+      "display_default": false,
+      "evidence": [
+        "系统末小节优先落在主和弦"
+      ],
+      "function": "I",
+      "id": "h118-p5-s2-m5-chord-1",
+      "inversion": "first",
+      "measure_id": "h118-p5-s2-m5",
+      "reason": "I 覆盖本小节主要旋律音；采用 first 转位以缩短与前一和弦的移动。",
+      "status": "auto_candidate",
+      "symbol": "F",
+      "tones": [
+        {
+          "finger": 5,
+          "note": "A"
+        },
+        {
+          "finger": 2,
+          "note": "C"
+        },
+        {
+          "finger": 1,
+          "note": "F"
+        }
+      ]
+    },
+    {
+      "alternatives": [
+        "IV",
+        "vi"
+      ],
+      "bass": "G",
+      "beat": 0,
+      "confidence": 0.7100000000000001,
+      "display_default": false,
+      "evidence": [
+        "强拍旋律 6 属于 ii"
+      ],
+      "function": "ii",
+      "id": "h118-p5-s3-m1-chord-1",
+      "inversion": "root",
+      "measure_id": "h118-p5-s3-m1",
+      "reason": "ii 覆盖本小节主要旋律音；采用 root 转位以缩短与前一和弦的移动。",
+      "status": "auto_candidate",
+      "symbol": "Gm",
+      "tones": [
+        {
+          "finger": 5,
+          "note": "G"
+        },
+        {
+          "finger": 2,
+          "note": "B♭"
+        },
+        {
+          "finger": 1,
+          "note": "D"
+        }
+      ]
+    },
+    {
+      "alternatives": [
+        "V7",
+        "V"
+      ],
+      "bass": "G",
+      "beat": 0,
+      "confidence": 0.8500000000000001,
+      "display_default": false,
+      "evidence": [
+        "强拍旋律 2 属于 ii"
+      ],
+      "function": "ii",
+      "id": "h118-p5-s3-m2-chord-1",
+      "inversion": "root",
+      "measure_id": "h118-p5-s3-m2",
+      "reason": "ii 覆盖本小节主要旋律音；采用 root 转位以缩短与前一和弦的移动。",
+      "status": "auto_candidate",
+      "symbol": "Gm",
+      "tones": [
+        {
+          "finger": 5,
+          "note": "G"
+        },
+        {
+          "finger": 2,
+          "note": "B♭"
+        },
+        {
+          "finger": 1,
+          "note": "D"
+        }
+      ]
+    },
+    {
+      "alternatives": [
+        "V7",
+        "I"
+      ],
+      "bass": "G",
+      "beat": 0,
+      "confidence": 0.79,
+      "display_default": false,
+      "evidence": [
+        "根据本小节旋律和弦音覆盖率选择"
+      ],
+      "function": "V",
+      "id": "h118-p5-s3-m3-chord-1",
+      "inversion": "second",
+      "measure_id": "h118-p5-s3-m3",
+      "reason": "V 覆盖本小节主要旋律音；采用 second 转位以缩短与前一和弦的移动。",
+      "status": "auto_candidate",
+      "symbol": "C",
+      "tones": [
+        {
+          "finger": 5,
+          "note": "G"
+        },
+        {
+          "finger": 3,
+          "note": "C"
+        },
+        {
+          "finger": 1,
+          "note": "E"
+        }
+      ]
+    },
+    {
+      "alternatives": [
+        "V7",
+        "I"
+      ],
+      "bass": "G",
+      "beat": 0,
+      "confidence": 0.77,
+      "display_default": false,
+      "evidence": [
+        "终止前小节优先采用属功能"
+      ],
+      "function": "V",
+      "id": "h118-p5-s3-m4-chord-1",
+      "inversion": "second",
+      "measure_id": "h118-p5-s3-m4",
+      "reason": "V 覆盖本小节主要旋律音；采用 second 转位以缩短与前一和弦的移动。",
+      "status": "auto_candidate",
+      "symbol": "C",
+      "tones": [
+        {
+          "finger": 5,
+          "note": "G"
+        },
+        {
+          "finger": 3,
+          "note": "C"
+        },
+        {
+          "finger": 1,
+          "note": "E"
+        }
+      ]
+    },
+    {
+      "alternatives": [
+        "V",
+        "V7"
+      ],
+      "bass": "A",
+      "beat": 0,
+      "confidence": 0.8300000000000001,
+      "display_default": false,
+      "evidence": [
+        "强拍旋律 5 属于 I",
+        "系统末小节优先落在主和弦"
+      ],
+      "function": "I",
+      "id": "h118-p5-s3-m5-chord-1",
+      "inversion": "first",
+      "measure_id": "h118-p5-s3-m5",
+      "reason": "I 覆盖本小节主要旋律音；采用 first 转位以缩短与前一和弦的移动。",
+      "status": "auto_candidate",
+      "symbol": "F",
+      "tones": [
+        {
+          "finger": 5,
+          "note": "A"
+        },
+        {
+          "finger": 2,
+          "note": "C"
+        },
+        {
+          "finger": 1,
+          "note": "F"
+        }
+      ]
+    },
+    {
+      "alternatives": [
+        "IV",
+        "V7"
+      ],
+      "bass": "A",
+      "beat": 0,
+      "confidence": 0.8300000000000001,
+      "display_default": false,
+      "evidence": [
+        "强拍旋律 1 属于 I",
+        "乐句起点优先建立主调"
+      ],
+      "function": "I",
+      "id": "h118-p5-s4-m1-chord-1",
+      "inversion": "first",
+      "measure_id": "h118-p5-s4-m1",
+      "reason": "I 覆盖本小节主要旋律音；采用 first 转位以缩短与前一和弦的移动。",
+      "status": "auto_candidate",
+      "symbol": "F",
+      "tones": [
+        {
+          "finger": 5,
+          "note": "A"
+        },
+        {
+          "finger": 2,
+          "note": "C"
+        },
+        {
+          "finger": 1,
+          "note": "F"
+        }
+      ]
+    },
+    {
+      "alternatives": [
+        "V7",
+        "I"
+      ],
+      "bass": "G",
+      "beat": 0,
+      "confidence": 0.7100000000000001,
+      "display_default": false,
+      "evidence": [
+        "终止前小节优先采用属功能"
+      ],
+      "function": "V",
+      "id": "h118-p5-s4-m2-chord-1",
+      "inversion": "second",
+      "measure_id": "h118-p5-s4-m2",
+      "reason": "V 覆盖本小节主要旋律音；采用 second 转位以缩短与前一和弦的移动。",
+      "status": "auto_candidate",
+      "symbol": "C",
+      "tones": [
+        {
+          "finger": 5,
+          "note": "G"
+        },
+        {
+          "finger": 3,
+          "note": "C"
+        },
+        {
+          "finger": 1,
+          "note": "E"
+        }
+      ]
+    },
+    {
+      "alternatives": [
+        "IV",
+        "vi"
+      ],
+      "bass": "A",
+      "beat": 0,
+      "confidence": 0.91,
+      "display_default": false,
+      "evidence": [
+        "强拍旋律 1 属于 I",
+        "系统末小节优先落在主和弦"
+      ],
+      "function": "I",
+      "id": "h118-p5-s4-m3-chord-1",
+      "inversion": "first",
+      "measure_id": "h118-p5-s4-m3",
+      "reason": "I 覆盖本小节主要旋律音；采用 first 转位以缩短与前一和弦的移动。",
+      "status": "auto_candidate",
+      "symbol": "F",
+      "tones": [
+        {
+          "finger": 5,
+          "note": "A"
+        },
+        {
+          "finger": 2,
+          "note": "C"
+        },
+        {
+          "finger": 1,
+          "note": "F"
+        }
+      ]
+    }
+  ],
+  "content_hash": "cc460a96ab76078db11cd7c4a20cb207ac5bc7d79991e295b809fa2a75817394",
+  "ending": {
+    "reason": "明确终止，使会众知道诗歌已经结束。",
+    "status": "manual_confirmed",
+    "text": "C7 到 F，并在 F 和弦上延长一拍"
+  },
+  "fingerings": [
+    {
+      "confidence": 1,
+      "event_id": "h118-p1-s1-m1-e1",
+      "finger": 1,
+      "hand": "right",
+      "reason": "F 调主音以 1 指起句，建立 F 五指位。",
+      "status": "manual_confirmed"
+    },
+    {
+      "confidence": 1,
+      "event_id": "h118-p1-s1-m2-e1",
+      "finger": 3,
+      "hand": "right",
+      "reason": "3-2-1 使用相邻手指，旋律下行时不移动手掌。",
+      "status": "manual_confirmed"
+    },
+    {
+      "confidence": 1,
+      "event_id": "h118-p1-s1-m2-e2",
+      "finger": 2,
+      "hand": "right",
+      "reason": "3-2-1 使用相邻手指，旋律下行时不移动手掌。",
+      "status": "manual_confirmed"
+    },
+    {
+      "confidence": 1,
+      "event_id": "h118-p1-s1-m2-e3",
+      "finger": 1,
+      "hand": "right",
+      "reason": "落在 F 调主音并保留完整五指手型。",
+      "status": "manual_confirmed"
+    },
+    {
+      "confidence": 1,
+      "event_id": "h118-p1-s1-m3-e1",
+      "finger": 5,
+      "hand": "right",
+      "reason": "五指位中的 5 音固定使用 5 指。",
+      "status": "manual_confirmed"
+    },
+    {
+      "confidence": 1,
+      "event_id": "h118-p1-s1-m3-e2",
+      "finger": 5,
+      "hand": "right",
+      "reason": "重复音保持同一手指，避免无意义换指。",
+      "status": "manual_confirmed"
+    },
+    {
+      "confidence": 1,
+      "event_id": "h118-p1-s1-m4-e1",
+      "finger": 4,
+      "hand": "right",
+      "reason": "B♭ 黑键交给 4 指，保持手腕自然。",
+      "status": "manual_confirmed"
+    },
+    {
+      "confidence": 1,
+      "event_id": "h118-p1-s1-m4-e2",
+      "finger": 3,
+      "hand": "right",
+      "reason": "4-3-2 继续使用相邻手指，不提前换位。",
+      "status": "manual_confirmed"
+    },
+    {
+      "confidence": 1,
+      "event_id": "h118-p1-s1-m4-e3",
+      "finger": 2,
+      "hand": "right",
+      "reason": "4-3-2 继续使用相邻手指，为下一小节 3 音预备。",
+      "status": "manual_confirmed"
+    },
+    {
+      "confidence": 1,
+      "event_id": "h118-p1-s1-m5-e1",
+      "finger": 3,
+      "hand": "right",
+      "reason": "3 音回到 F 五指位的 3 指。",
+      "status": "manual_confirmed"
+    },
+    {
+      "confidence": 1,
+      "event_id": "h118-p1-s1-m5-e2",
+      "finger": 3,
+      "hand": "right",
+      "reason": "重复音保持 3 指稳定触键。",
+      "status": "manual_confirmed"
+    },
+    {
+      "confidence": 1,
+      "event_id": "h118-p1-s1-m6-e1",
+      "finger": 1,
+      "hand": "right",
+      "reason": "在乐句边界整体右移，2 音由 1 指承担。",
+      "status": "manual_confirmed"
+    },
+    {
+      "confidence": 1,
+      "event_id": "h118-p1-s1-m6-e2",
+      "finger": 5,
+      "hand": "right",
+      "reason": "移动后 6 音自然落在 5 指，不让小指从原位硬伸。",
+      "status": "manual_confirmed"
+    },
+    {
+      "confidence": 1,
+      "event_id": "h118-p1-s1-m6-e3",
+      "finger": 4,
+      "hand": "right",
+      "reason": "移动手位中的 5 音使用 4 指，便于下一句回主音。",
+      "status": "manual_confirmed"
+    },
+    {
+      "confidence": 1,
+      "event_id": "h118-p1-s1-m7-e1",
+      "finger": 1,
+      "hand": "right",
+      "reason": "回到 F 五指位，主音由 1 指重新定位。",
+      "status": "manual_confirmed"
+    },
+    {
+      "confidence": 1,
+      "event_id": "h118-p1-s1-m7-e2",
+      "finger": 4,
+      "hand": "right",
+      "reason": "4 音 B♭ 使用 4 指。",
+      "status": "manual_confirmed"
+    },
+    {
+      "confidence": 1,
+      "event_id": "h118-p1-s1-m7-e3",
+      "finger": 3,
+      "hand": "right",
+      "reason": "4-3 下行使用相邻手指。",
+      "status": "manual_confirmed"
+    },
+    {
+      "confidence": 1,
+      "event_id": "h118-p1-s1-m8-e1",
+      "finger": 5,
+      "hand": "right",
+      "reason": "6 音以 5 指作为句首高点，随后向下回收。",
+      "status": "manual_confirmed"
+    },
+    {
+      "confidence": 1,
+      "event_id": "h118-p1-s1-m8-e2",
+      "finger": 2,
+      "hand": "right",
+      "reason": "2 音由 2 指承接，为主音 1 指预留位置。",
+      "status": "manual_confirmed"
+    },
+    {
+      "confidence": 1,
+      "event_id": "h118-p1-s1-m8-e3",
+      "finger": 1,
+      "hand": "right",
+      "reason": "主音以 1 指稳定落下。",
+      "status": "manual_confirmed"
+    },
+    {
+      "confidence": 1,
+      "event_id": "h118-p1-s1-m9-e1",
+      "finger": 5,
+      "hand": "right",
+      "reason": "低音 7 作为属功能延长音，以当前手位 5 指保持。",
+      "status": "manual_confirmed"
+    },
+    {
+      "confidence": 0.82,
+      "event_id": "h118-p1-s2-m1-e1",
+      "finger": 1,
+      "hand": "right",
+      "reason": "保持当前手位并顺着旋律方向使用 1 指。",
+      "status": "auto_candidate"
+    },
+    {
+      "confidence": 0.82,
+      "event_id": "h118-p1-s2-m2-e1",
+      "finger": 2,
+      "hand": "right",
+      "reason": "保持当前手位并顺着旋律方向使用 2 指。",
+      "status": "auto_candidate"
+    },
+    {
+      "confidence": 0.82,
+      "event_id": "h118-p1-s2-m2-e2",
+      "finger": 3,
+      "hand": "right",
+      "reason": "保持当前手位并顺着旋律方向使用 3 指。",
+      "status": "auto_candidate"
+    },
+    {
+      "confidence": 0.82,
+      "event_id": "h118-p1-s2-m2-e3",
+      "finger": 4,
+      "hand": "right",
+      "reason": "保持当前手位并顺着旋律方向使用 4 指。",
+      "status": "auto_candidate"
+    },
+    {
+      "confidence": 0.82,
+      "event_id": "h118-p1-s2-m3-e1",
+      "finger": 4,
+      "hand": "right",
+      "reason": "保持当前手位并顺着旋律方向使用 4 指。",
+      "status": "auto_candidate"
+    },
+    {
+      "confidence": 0.82,
+      "event_id": "h118-p1-s2-m3-e2",
+      "finger": 3,
+      "hand": "right",
+      "reason": "保持当前手位并顺着旋律方向使用 3 指。",
+      "status": "auto_candidate"
+    },
+    {
+      "confidence": 0.82,
+      "event_id": "h118-p1-s2-m4-e1",
+      "finger": 4,
+      "hand": "right",
+      "reason": "保持当前手位并顺着旋律方向使用 4 指。",
+      "status": "auto_candidate"
+    },
+    {
+      "confidence": 0.82,
+      "event_id": "h118-p1-s2-m4-e2",
+      "finger": 4,
+      "hand": "right",
+      "reason": "保持当前手位并顺着旋律方向使用 4 指。",
+      "status": "auto_candidate"
+    },
+    {
+      "confidence": 0.82,
+      "event_id": "h118-p1-s2-m5-e1",
+      "finger": 4,
+      "hand": "right",
+      "reason": "保持当前手位并顺着旋律方向使用 4 指。",
+      "status": "auto_candidate"
+    },
+    {
+      "confidence": 0.82,
+      "event_id": "h118-p1-s2-m5-e2",
+      "finger": 4,
+      "hand": "right",
+      "reason": "保持当前手位并顺着旋律方向使用 4 指。",
+      "status": "auto_candidate"
+    },
+    {
+      "confidence": 0.82,
+      "event_id": "h118-p1-s2-m6-e1",
+      "finger": 4,
+      "hand": "right",
+      "reason": "保持当前手位并顺着旋律方向使用 4 指。",
+      "status": "auto_candidate"
+    },
+    {
+      "confidence": 0.82,
+      "event_id": "h118-p1-s2-m6-e2",
+      "finger": 4,
+      "hand": "right",
+      "reason": "B♭ 是黑键，优先使用 4 指，避免拇指或小指触黑键。",
+      "status": "auto_candidate"
+    },
+    {
+      "confidence": 0.82,
+      "event_id": "h118-p1-s2-m6-e3",
+      "finger": 3,
+      "hand": "right",
+      "reason": "保持当前手位并顺着旋律方向使用 3 指。",
+      "status": "auto_candidate"
+    },
+    {
+      "confidence": 0.82,
+      "event_id": "h118-p1-s2-m7-e1",
+      "finger": 2,
+      "hand": "right",
+      "reason": "保持当前手位并顺着旋律方向使用 2 指。",
+      "status": "auto_candidate"
+    },
+    {
+      "confidence": 0.82,
+      "event_id": "h118-p1-s2-m7-e2",
+      "finger": 3,
+      "hand": "right",
+      "reason": "保持当前手位并顺着旋律方向使用 3 指。",
+      "status": "auto_candidate"
+    },
+    {
+      "confidence": 0.82,
+      "event_id": "h118-p1-s2-m7-e3",
+      "finger": 4,
+      "hand": "right",
+      "reason": "B♭ 是黑键，优先使用 4 指，避免拇指或小指触黑键。",
+      "status": "auto_candidate"
+    },
+    {
+      "confidence": 0.82,
+      "event_id": "h118-p1-s2-m8-e1",
+      "finger": 3,
+      "hand": "right",
+      "reason": "保持当前手位并顺着旋律方向使用 3 指。",
+      "status": "auto_candidate"
+    },
+    {
+      "confidence": 0.82,
+      "event_id": "h118-p1-s3-m1-e1",
+      "finger": 2,
+      "hand": "right",
+      "reason": "保持当前手位并顺着旋律方向使用 2 指。",
+      "status": "auto_candidate"
+    },
+    {
+      "confidence": 0.82,
+      "event_id": "h118-p1-s3-m2-e1",
+      "finger": 2,
+      "hand": "right",
+      "reason": "保持当前手位并顺着旋律方向使用 2 指。",
+      "status": "auto_candidate"
+    },
+    {
+      "confidence": 0.82,
+      "event_id": "h118-p1-s3-m2-e2",
+      "finger": 2,
+      "hand": "right",
+      "reason": "保持当前手位并顺着旋律方向使用 2 指。",
+      "status": "auto_candidate"
+    },
+    {
+      "confidence": 0.82,
+      "event_id": "h118-p1-s3-m3-e1",
+      "finger": 5,
+      "hand": "right",
+      "reason": "保持当前手位并顺着旋律方向使用 5 指。",
+      "status": "auto_candidate"
+    },
+    {
+      "confidence": 0.82,
+      "event_id": "h118-p1-s3-m3-e2",
+      "finger": 1,
+      "hand": "right",
+      "reason": "为后续音域整体移动手位，本音用 1 指落位。",
+      "status": "auto_candidate"
+    },
+    {
+      "confidence": 0.82,
+      "event_id": "h118-p1-s3-m4-e1",
+      "finger": 5,
+      "hand": "right",
+      "reason": "保持当前手位并顺着旋律方向使用 5 指。",
+      "status": "auto_candidate"
+    },
+    {
+      "confidence": 0.82,
+      "event_id": "h118-p1-s3-m4-e2",
+      "finger": 4,
+      "hand": "right",
+      "reason": "B♭ 是黑键，优先使用 4 指，避免拇指或小指触黑键。",
+      "status": "auto_candidate"
+    },
+    {
+      "confidence": 0.82,
+      "event_id": "h118-p1-s3-m4-e3",
+      "finger": 3,
+      "hand": "right",
+      "reason": "保持当前手位并顺着旋律方向使用 3 指。",
+      "status": "auto_candidate"
+    },
+    {
+      "confidence": 0.82,
+      "event_id": "h118-p1-s3-m5-e1",
+      "finger": 2,
+      "hand": "right",
+      "reason": "保持当前手位并顺着旋律方向使用 2 指。",
+      "status": "auto_candidate"
+    },
+    {
+      "confidence": 0.82,
+      "event_id": "h118-p1-s3-m5-e2",
+      "finger": 3,
+      "hand": "right",
+      "reason": "保持当前手位并顺着旋律方向使用 3 指。",
+      "status": "auto_candidate"
+    },
+    {
+      "confidence": 0.82,
+      "event_id": "h118-p1-s3-m6-e1",
+      "finger": 4,
+      "hand": "right",
+      "reason": "B♭ 是黑键，优先使用 4 指，避免拇指或小指触黑键。",
+      "status": "auto_candidate"
+    },
+    {
+      "confidence": 0.82,
+      "event_id": "h118-p1-s3-m6-e2",
+      "finger": 4,
+      "hand": "right",
+      "reason": "为后续音域整体移动手位，本音用 4 指落位。",
+      "status": "auto_candidate"
+    },
+    {
+      "confidence": 0.82,
+      "event_id": "h118-p1-s3-m6-e3",
+      "finger": 5,
+      "hand": "right",
+      "reason": "保持当前手位并顺着旋律方向使用 5 指。",
+      "status": "auto_candidate"
+    },
+    {
+      "confidence": 0.82,
+      "event_id": "h118-p1-s3-m7-e1",
+      "finger": 4,
+      "hand": "right",
+      "reason": "保持当前手位并顺着旋律方向使用 4 指。",
+      "status": "auto_candidate"
+    },
+    {
+      "confidence": 0.82,
+      "event_id": "h118-p1-s3-m7-e2",
+      "finger": 3,
+      "hand": "right",
+      "reason": "为后续音域整体移动手位，本音用 3 指落位。",
+      "status": "auto_candidate"
+    },
+    {
+      "confidence": 0.82,
+      "event_id": "h118-p1-s3-m8-e1",
+      "finger": 4,
+      "hand": "right",
+      "reason": "保持当前手位并顺着旋律方向使用 4 指。",
+      "status": "auto_candidate"
+    },
+    {
+      "confidence": 0.82,
+      "event_id": "h118-p5-s1-m1-e1",
+      "finger": 1,
+      "hand": "right",
+      "reason": "保持当前手位并顺着旋律方向使用 1 指。",
+      "status": "auto_candidate"
+    },
+    {
+      "confidence": 0.82,
+      "event_id": "h118-p5-s1-m1-e2",
+      "finger": 3,
+      "hand": "right",
+      "reason": "保持当前手位并顺着旋律方向使用 3 指。",
+      "status": "auto_candidate"
+    },
+    {
+      "confidence": 0.82,
+      "event_id": "h118-p5-s1-m2-e1",
+      "finger": 1,
+      "hand": "right",
+      "reason": "为后续音域整体移动手位，本音用 1 指落位。",
+      "status": "auto_candidate"
+    },
+    {
+      "confidence": 0.82,
+      "event_id": "h118-p5-s1-m2-e2",
+      "finger": 1,
+      "hand": "right",
+      "reason": "保持当前手位并顺着旋律方向使用 1 指。",
+      "status": "auto_candidate"
+    },
+    {
+      "confidence": 0.82,
+      "event_id": "h118-p5-s1-m2-e3",
+      "finger": 2,
+      "hand": "right",
+      "reason": "保持当前手位并顺着旋律方向使用 2 指。",
+      "status": "auto_candidate"
+    },
+    {
+      "confidence": 0.82,
+      "event_id": "h118-p5-s1-m2-e4",
+      "finger": 3,
+      "hand": "right",
+      "reason": "保持当前手位并顺着旋律方向使用 3 指。",
+      "status": "auto_candidate"
+    },
+    {
+      "confidence": 0.82,
+      "event_id": "h118-p5-s1-m3-e1",
+      "finger": 4,
+      "hand": "right",
+      "reason": "保持当前手位并顺着旋律方向使用 4 指。",
+      "status": "auto_candidate"
+    },
+    {
+      "confidence": 0.82,
+      "event_id": "h118-p5-s1-m3-e2",
+      "finger": 1,
+      "hand": "right",
+      "reason": "保持当前手位并顺着旋律方向使用 1 指。",
+      "status": "auto_candidate"
+    },
+    {
+      "confidence": 0.82,
+      "event_id": "h118-p5-s1-m3-e3",
+      "finger": 1,
+      "hand": "right",
+      "reason": "保持当前手位并顺着旋律方向使用 1 指。",
+      "status": "auto_candidate"
+    },
+    {
+      "confidence": 0.82,
+      "event_id": "h118-p5-s1-m3-e4",
+      "finger": 1,
+      "hand": "right",
+      "reason": "为后续音域整体移动手位，本音用 1 指落位。",
+      "status": "auto_candidate"
+    },
+    {
+      "confidence": 0.82,
+      "event_id": "h118-p5-s1-m3-e5",
+      "finger": 1,
+      "hand": "right",
+      "reason": "为后续音域整体移动手位，本音用 1 指落位。",
+      "status": "auto_candidate"
+    },
+    {
+      "confidence": 0.82,
+      "event_id": "h118-p5-s1-m4-e1",
+      "finger": 2,
+      "hand": "right",
+      "reason": "保持当前手位并顺着旋律方向使用 2 指。",
+      "status": "auto_candidate"
+    },
+    {
+      "confidence": 0.82,
+      "event_id": "h118-p5-s1-m4-e2",
+      "finger": 2,
+      "hand": "right",
+      "reason": "保持当前手位并顺着旋律方向使用 2 指。",
+      "status": "auto_candidate"
+    },
+    {
+      "confidence": 0.82,
+      "event_id": "h118-p5-s1-m4-e3",
+      "finger": 3,
+      "hand": "right",
+      "reason": "保持当前手位并顺着旋律方向使用 3 指。",
+      "status": "auto_candidate"
+    },
+    {
+      "confidence": 0.82,
+      "event_id": "h118-p5-s1-m4-e4",
+      "finger": 4,
+      "hand": "right",
+      "reason": "保持当前手位并顺着旋律方向使用 4 指。",
+      "status": "auto_candidate"
+    },
+    {
+      "confidence": 0.82,
+      "event_id": "h118-p5-s1-m5-e1",
+      "finger": 5,
+      "hand": "right",
+      "reason": "保持当前手位并顺着旋律方向使用 5 指。",
+      "status": "auto_candidate"
+    },
+    {
+      "confidence": 0.82,
+      "event_id": "h118-p5-s1-m5-e2",
+      "finger": 1,
+      "hand": "right",
+      "reason": "保持当前手位并顺着旋律方向使用 1 指。",
+      "status": "auto_candidate"
+    },
+    {
+      "confidence": 0.82,
+      "event_id": "h118-p5-s1-m5-e3",
+      "finger": 1,
+      "hand": "right",
+      "reason": "保持当前手位并顺着旋律方向使用 1 指。",
+      "status": "auto_candidate"
+    },
+    {
+      "confidence": 0.82,
+      "event_id": "h118-p5-s2-m1-e1",
+      "finger": 4,
+      "hand": "right",
+      "reason": "保持当前手位并顺着旋律方向使用 4 指。",
+      "status": "auto_candidate"
+    },
+    {
+      "confidence": 0.82,
+      "event_id": "h118-p5-s2-m2-e1",
+      "finger": 3,
+      "hand": "right",
+      "reason": "保持当前手位并顺着旋律方向使用 3 指。",
+      "status": "auto_candidate"
+    },
+    {
+      "confidence": 0.82,
+      "event_id": "h118-p5-s2-m2-e2",
+      "finger": 1,
+      "hand": "right",
+      "reason": "保持当前手位并顺着旋律方向使用 1 指。",
+      "status": "auto_candidate"
+    },
+    {
+      "confidence": 0.82,
+      "event_id": "h118-p5-s2-m2-e3",
+      "finger": 2,
+      "hand": "right",
+      "reason": "保持当前手位并顺着旋律方向使用 2 指。",
+      "status": "auto_candidate"
+    },
+    {
+      "confidence": 0.82,
+      "event_id": "h118-p5-s2-m2-e4",
+      "finger": 3,
+      "hand": "right",
+      "reason": "保持当前手位并顺着旋律方向使用 3 指。",
+      "status": "auto_candidate"
+    },
+    {
+      "confidence": 0.82,
+      "event_id": "h118-p5-s2-m3-e1",
+      "finger": 1,
+      "hand": "right",
+      "reason": "保持当前手位并顺着旋律方向使用 1 指。",
+      "status": "auto_candidate"
+    },
+    {
+      "confidence": 0.82,
+      "event_id": "h118-p5-s2-m3-e2",
+      "finger": 1,
+      "hand": "right",
+      "reason": "保持当前手位并顺着旋律方向使用 1 指。",
+      "status": "auto_candidate"
+    },
+    {
+      "confidence": 0.82,
+      "event_id": "h118-p5-s2-m3-e3",
+      "finger": 3,
+      "hand": "right",
+      "reason": "为后续音域整体移动手位，本音用 3 指落位。",
+      "status": "auto_candidate"
+    },
+    {
+      "confidence": 0.82,
+      "event_id": "h118-p5-s2-m4-e1",
+      "finger": 1,
+      "hand": "right",
+      "reason": "保持当前手位并顺着旋律方向使用 1 指。",
+      "status": "auto_candidate"
+    },
+    {
+      "confidence": 0.82,
+      "event_id": "h118-p5-s2-m4-e2",
+      "finger": 3,
+      "hand": "right",
+      "reason": "保持当前手位并顺着旋律方向使用 3 指。",
+      "status": "auto_candidate"
+    },
+    {
+      "confidence": 0.82,
+      "event_id": "h118-p5-s2-m4-e3",
+      "finger": 5,
+      "hand": "right",
+      "reason": "保持当前手位并顺着旋律方向使用 5 指。",
+      "status": "auto_candidate"
+    },
+    {
+      "confidence": 0.82,
+      "event_id": "h118-p5-s2-m4-e4",
+      "finger": 5,
+      "hand": "right",
+      "reason": "保持当前手位并顺着旋律方向使用 5 指。",
+      "status": "auto_candidate"
+    },
+    {
+      "confidence": 0.82,
+      "event_id": "h118-p5-s2-m5-e1",
+      "finger": 5,
+      "hand": "right",
+      "reason": "为后续音域整体移动手位，本音用 5 指落位。",
+      "status": "auto_candidate"
+    },
+    {
+      "confidence": 0.82,
+      "event_id": "h118-p5-s2-m5-e2",
+      "finger": 4,
+      "hand": "right",
+      "reason": "保持当前手位并顺着旋律方向使用 4 指。",
+      "status": "auto_candidate"
+    },
+    {
+      "confidence": 0.82,
+      "event_id": "h118-p5-s2-m5-e3",
+      "finger": 4,
+      "hand": "right",
+      "reason": "保持当前手位并顺着旋律方向使用 4 指。",
+      "status": "auto_candidate"
+    },
+    {
+      "confidence": 0.82,
+      "event_id": "h118-p5-s3-m1-e1",
+      "finger": 5,
+      "hand": "right",
+      "reason": "保持当前手位并顺着旋律方向使用 5 指。",
+      "status": "auto_candidate"
+    },
+    {
+      "confidence": 0.82,
+      "event_id": "h118-p5-s3-m1-e2",
+      "finger": 4,
+      "hand": "right",
+      "reason": "B♭ 是黑键，优先使用 4 指，避免拇指或小指触黑键。",
+      "status": "auto_candidate"
+    },
+    {
+      "confidence": 0.82,
+      "event_id": "h118-p5-s3-m2-e1",
+      "finger": 2,
+      "hand": "right",
+      "reason": "保持当前手位并顺着旋律方向使用 2 指。",
+      "status": "auto_candidate"
+    },
+    {
+      "confidence": 0.82,
+      "event_id": "h118-p5-s3-m2-e2",
+      "finger": 4,
+      "hand": "right",
+      "reason": "B♭ 是黑键，优先使用 4 指，避免拇指或小指触黑键。",
+      "status": "auto_candidate"
+    },
+    {
+      "confidence": 0.82,
+      "event_id": "h118-p5-s3-m2-e3",
+      "finger": 1,
+      "hand": "right",
+      "reason": "为后续音域整体移动手位，本音用 1 指落位。",
+      "status": "auto_candidate"
+    },
+    {
+      "confidence": 0.82,
+      "event_id": "h118-p5-s3-m2-e4",
+      "finger": 4,
+      "hand": "right",
+      "reason": "保持当前手位并顺着旋律方向使用 4 指。",
+      "status": "auto_candidate"
+    },
+    {
+      "confidence": 0.82,
+      "event_id": "h118-p5-s3-m3-e1",
+      "finger": 5,
+      "hand": "right",
+      "reason": "保持当前手位并顺着旋律方向使用 5 指。",
+      "status": "auto_candidate"
+    },
+    {
+      "confidence": 0.82,
+      "event_id": "h118-p5-s3-m3-e2",
+      "finger": 4,
+      "hand": "right",
+      "reason": "保持当前手位并顺着旋律方向使用 4 指。",
+      "status": "auto_candidate"
+    },
+    {
+      "confidence": 0.82,
+      "event_id": "h118-p5-s3-m3-e3",
+      "finger": 4,
+      "hand": "right",
+      "reason": "保持当前手位并顺着旋律方向使用 4 指。",
+      "status": "auto_candidate"
+    },
+    {
+      "confidence": 0.82,
+      "event_id": "h118-p5-s3-m3-e4",
+      "finger": 2,
+      "hand": "right",
+      "reason": "保持当前手位并顺着旋律方向使用 2 指。",
+      "status": "auto_candidate"
+    },
+    {
+      "confidence": 0.82,
+      "event_id": "h118-p5-s3-m4-e1",
+      "finger": 4,
+      "hand": "right",
+      "reason": "为后续音域整体移动手位，本音用 4 指落位。",
+      "status": "auto_candidate"
+    },
+    {
+      "confidence": 0.82,
+      "event_id": "h118-p5-s3-m4-e2",
+      "finger": 1,
+      "hand": "right",
+      "reason": "保持当前手位并顺着旋律方向使用 1 指。",
+      "status": "auto_candidate"
+    },
+    {
+      "confidence": 0.82,
+      "event_id": "h118-p5-s3-m4-e3",
+      "finger": 3,
+      "hand": "right",
+      "reason": "保持当前手位并顺着旋律方向使用 3 指。",
+      "status": "auto_candidate"
+    },
+    {
+      "confidence": 0.82,
+      "event_id": "h118-p5-s3-m4-e4",
+      "finger": 2,
+      "hand": "right",
+      "reason": "保持当前手位并顺着旋律方向使用 2 指。",
+      "status": "auto_candidate"
+    },
+    {
+      "confidence": 0.82,
+      "event_id": "h118-p5-s3-m5-e1",
+      "finger": 1,
+      "hand": "right",
+      "reason": "保持当前手位并顺着旋律方向使用 1 指。",
+      "status": "auto_candidate"
+    },
+    {
+      "confidence": 0.82,
+      "event_id": "h118-p5-s4-m1-e1",
+      "finger": 1,
+      "hand": "right",
+      "reason": "保持当前手位并顺着旋律方向使用 1 指。",
+      "status": "auto_candidate"
+    },
+    {
+      "confidence": 0.82,
+      "event_id": "h118-p5-s4-m1-e2",
+      "finger": 5,
+      "hand": "right",
+      "reason": "保持当前手位并顺着旋律方向使用 5 指。",
+      "status": "auto_candidate"
+    },
+    {
+      "confidence": 0.82,
+      "event_id": "h118-p5-s4-m1-e3",
+      "finger": 4,
+      "hand": "right",
+      "reason": "B♭ 是黑键，优先使用 4 指，避免拇指或小指触黑键。",
+      "status": "auto_candidate"
+    },
+    {
+      "confidence": 0.82,
+      "event_id": "h118-p5-s4-m2-e1",
+      "finger": 3,
+      "hand": "right",
+      "reason": "保持当前手位并顺着旋律方向使用 3 指。",
+      "status": "auto_candidate"
+    },
+    {
+      "confidence": 0.82,
+      "event_id": "h118-p5-s4-m2-e2",
+      "finger": 2,
+      "hand": "right",
+      "reason": "保持当前手位并顺着旋律方向使用 2 指。",
+      "status": "auto_candidate"
+    },
+    {
+      "confidence": 0.82,
+      "event_id": "h118-p5-s4-m3-e1",
+      "finger": 1,
+      "hand": "right",
+      "reason": "保持当前手位并顺着旋律方向使用 1 指。",
+      "status": "auto_candidate"
+    }
+  ],
+  "hymn_key": "118",
+  "interlude": {
+    "reason": "使用会众已经听过的旋律保持进入点清楚。",
+    "status": "manual_confirmed",
+    "text": "段间重复末句 2 小节"
+  },
+  "intro": {
+    "reason": "保留 F 调与 3/4 拍，不加入陌生花音。",
+    "status": "manual_confirmed",
+    "text": "取最后一句 4 小节作为前奏"
+  },
+  "moves": [
+    {
+      "from_position_id": "h118-p1-s1-position-1",
+      "id": "h118-p1-s1-position-2-move",
+      "instruction": "Move to G Position",
+      "reason": "在 2 音出现前整体右移，为 6 音预留 5 指。",
+      "to_position_id": "h118-p1-s1-position-2",
+      "trigger_event_id": "h118-p1-s1-m6-e1"
+    },
+    {
+      "from_position_id": "h118-p5-s2-position-6",
+      "id": "h118-p5-s2-position-7-move",
+      "instruction": "Move to F Position",
+      "reason": "旋律超出原手位或需要为后续音符预留手指，在此音前整体移动手掌。",
+      "to_position_id": "h118-p5-s2-position-7",
+      "trigger_event_id": "h118-p5-s2-m3-e3"
+    },
+    {
+      "from_position_id": "h118-p5-s3-position-8",
+      "id": "h118-p5-s3-position-9-move",
+      "instruction": "Move to D Position",
+      "reason": "旋律超出原手位或需要为后续音符预留手指，在此音前整体移动手掌。",
+      "to_position_id": "h118-p5-s3-position-9",
+      "trigger_event_id": "h118-p5-s3-m2-e3"
+    },
+    {
+      "from_position_id": "h118-p1-s1-position-2",
+      "id": "h118-p1-s1-position-3-move",
+      "instruction": "Move to F Position",
+      "reason": "乐句回到主音时恢复 F 五指位。",
+      "to_position_id": "h118-p1-s1-position-3",
+      "trigger_event_id": "h118-p1-s1-m7-e1"
+    }
+  ],
+  "positions": [
+    {
+      "confidence": 1,
+      "end_event_id": "h118-p1-s1-m5-e2",
+      "finger_notes": {
+        "1": "F",
+        "2": "G",
+        "3": "A",
+        "4": "B♭",
+        "5": "C"
+      },
+      "id": "h118-p1-s1-position-1",
+      "label": "F Position",
+      "reason": "起句至重复 3 音均在 F 五指位内，固定手位最稳定。",
+      "start_event_id": "h118-p1-s1-m1-e1",
+      "status": "manual_confirmed"
+    },
+    {
+      "confidence": 1,
+      "end_event_id": "h118-p1-s1-m6-e3",
+      "finger_notes": {
+        "1": "G",
+        "2": "A",
+        "3": "B♭",
+        "4": "C",
+        "5": "D"
+      },
+      "id": "h118-p1-s1-position-2",
+      "label": "G Position",
+      "reason": "2-6-5 超出 F 五指位，在乐句边界整体右移，避免 5 指硬伸。",
+      "start_event_id": "h118-p1-s1-m6-e1",
+      "status": "manual_confirmed"
+    },
+    {
+      "confidence": 0.82,
+      "end_event_id": "h118-p1-s2-m8-e1",
+      "finger_notes": {
+        "1": "G",
+        "2": "A",
+        "3": "B",
+        "4": "C",
+        "5": "D"
+      },
+      "id": "h118-p1-s2-position-3",
+      "label": "G Position",
+      "reason": "黑键优先交给 2、3、4 指，减少拇指或小指扭转。",
+      "start_event_id": "h118-p1-s2-m1-e1",
+      "status": "auto_candidate"
+    },
+    {
+      "confidence": 0.82,
+      "end_event_id": "h118-p1-s3-m8-e1",
+      "finger_notes": {
+        "1": "F",
+        "2": "G",
+        "3": "A",
+        "4": "B♭",
+        "5": "C"
+      },
+      "id": "h118-p1-s3-position-4",
+      "label": "F Position",
+      "reason": "黑键优先交给 2、3、4 指，减少拇指或小指扭转。",
+      "start_event_id": "h118-p1-s3-m1-e1",
+      "status": "auto_candidate"
+    },
+    {
+      "confidence": 0.82,
+      "end_event_id": "h118-p5-s1-m5-e3",
+      "finger_notes": {
+        "1": "C",
+        "2": "D",
+        "3": "E",
+        "4": "F",
+        "5": "G"
+      },
+      "id": "h118-p5-s1-position-5",
+      "label": "C Position",
+      "reason": "此区段优先保持固定手位，减少看手和临时伸指。",
+      "start_event_id": "h118-p5-s1-m1-e1",
+      "status": "auto_candidate"
+    },
+    {
+      "confidence": 0.82,
+      "end_event_id": "h118-p5-s2-m3-e2",
+      "finger_notes": {
+        "1": "C",
+        "2": "D",
+        "3": "E",
+        "4": "F",
+        "5": "G"
+      },
+      "id": "h118-p5-s2-position-6",
+      "label": "C Position",
+      "reason": "此区段优先保持固定手位，减少看手和临时伸指。",
+      "start_event_id": "h118-p5-s2-m1-e1",
+      "status": "auto_candidate"
+    },
+    {
+      "confidence": 0.82,
+      "end_event_id": "h118-p5-s2-m5-e3",
+      "finger_notes": {
+        "1": "F",
+        "2": "G",
+        "3": "A",
+        "4": "B♭",
+        "5": "C"
+      },
+      "id": "h118-p5-s2-position-7",
+      "label": "F Position",
+      "reason": "此区段优先保持固定手位，减少看手和临时伸指。",
+      "start_event_id": "h118-p5-s2-m3-e3",
+      "status": "auto_candidate"
+    },
+    {
+      "confidence": 0.82,
+      "end_event_id": "h118-p5-s3-m2-e2",
+      "finger_notes": {
+        "1": "F",
+        "2": "G",
+        "3": "A",
+        "4": "B♭",
+        "5": "C"
+      },
+      "id": "h118-p5-s3-position-8",
+      "label": "F Position",
+      "reason": "黑键优先交给 2、3、4 指，减少拇指或小指扭转。",
+      "start_event_id": "h118-p5-s3-m1-e1",
+      "status": "auto_candidate"
+    },
+    {
+      "confidence": 0.82,
+      "end_event_id": "h118-p5-s3-m5-e1",
+      "finger_notes": {
+        "1": "D",
+        "2": "E",
+        "3": "G♭",
+        "4": "G",
+        "5": "A"
+      },
+      "id": "h118-p5-s3-position-9",
+      "label": "D Position",
+      "reason": "此区段优先保持固定手位，减少看手和临时伸指。",
+      "start_event_id": "h118-p5-s3-m2-e3",
+      "status": "auto_candidate"
+    },
+    {
+      "confidence": 0.82,
+      "end_event_id": "h118-p5-s4-m3-e1",
+      "finger_notes": {
+        "1": "F",
+        "2": "G",
+        "3": "A",
+        "4": "B♭",
+        "5": "C"
+      },
+      "id": "h118-p5-s4-position-10",
+      "label": "F Position",
+      "reason": "黑键优先交给 2、3、4 指，减少拇指或小指扭转。",
+      "start_event_id": "h118-p5-s4-m1-e1",
+      "status": "auto_candidate"
+    },
+    {
+      "confidence": 1,
+      "end_event_id": "h118-p1-s1-m7-e3",
+      "finger_notes": {
+        "1": "F",
+        "2": "G",
+        "3": "A",
+        "4": "B♭",
+        "5": "C"
+      },
+      "id": "h118-p1-s1-position-3",
+      "label": "F Position",
+      "reason": "下一句回到主音，重新建立 F 五指位。",
+      "start_event_id": "h118-p1-s1-m7-e1",
+      "status": "manual_confirmed"
+    }
+  ],
+  "schema": "shiqin-arrangement/v1",
+  "score_hash": "3f1d96fd974a98c42db59cd597db504ad4f9f77c67b01192b0d13426b75f308b"
+}
