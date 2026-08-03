@@ -1,6 +1,6 @@
 import { mkdtemp, rm, writeFile } from "node:fs/promises";
 import { tmpdir } from "node:os";
-import { join, resolve } from "node:path";
+import { join } from "node:path";
 import { strToU8, zipSync } from "fflate";
 import { describe, expect, it } from "vitest";
 import {
@@ -10,13 +10,15 @@ import {
   type SourceTextRun,
   type SourceTextShape,
 } from "../../src/features/score/contracts";
+import { resolvePptxCorpusFile } from "./corpus-paths";
 import { readPptxSource } from "./pptx-reader";
 
-const hymn001 = resolve("712首-文字/001 至大医生.pptx");
-const hymn060 = resolve("712首-文字/060 乐哉白白恩典.pptx");
-const hymn118 = resolve("712首-文字/118 神的儿子亲爱救主.pptx");
-const hymn154 = resolve("712首-文字/154 一直走十架窄路.pptx");
-const hymn712 = resolve("712首-文字/712 你们要赞美耶和华.pptx");
+const hymn001 = resolvePptxCorpusFile("001 至大医生.pptx");
+const hymn005 = resolvePptxCorpusFile("005 需要耶稣.pptx");
+const hymn060 = resolvePptxCorpusFile("060 乐哉白白恩典.pptx");
+const hymn118 = resolvePptxCorpusFile("118 神的儿子亲爱救主.pptx");
+const hymn154 = resolvePptxCorpusFile("154 一直走十架窄路.pptx");
+const hymn712 = resolvePptxCorpusFile("712 你们要赞美耶和华.pptx");
 
 describe("readPptxSource", () => {
   it("按 presentation 顺序读取 001 的页面、z-order、EMU/px 和 run 样式", async () => {
@@ -26,7 +28,7 @@ describe("readPptxSource", () => {
       schema: "shiqin-pptx-source/v1",
       hymn_key: "1",
       title: "至大医生",
-      generator_version: "pptx-reader/v2",
+      generator_version: "pptx-reader/v3",
     });
     expect(document.source_hash).toMatch(/^[a-f0-9]{64}$/);
     expect(document.slides).toHaveLength(7);
@@ -117,6 +119,34 @@ describe("readPptxSource", () => {
       font_size: 32,
       character_spacing: -16,
     });
+  });
+
+  it("[defect-probing] 将 PPT 段内换行保留为可定位的歌词行", async () => {
+    const document = await readPptxSource(hymn005);
+    const lyricShape = textShapes(document).find(
+      (shape) => shape.id === "slide-1-shape-18",
+    );
+    const lines =
+      lyricShape?.paragraphs.map((paragraph) =>
+        paragraph.runs.map((run) => run.text).join(""),
+      ) ?? [];
+
+    expect(lines.filter(Boolean)).toEqual([
+      "需要耶稣！需要耶稣！",
+      "人人都需要耶稣！",
+      "要脱罪担需要主，要得平安需要主，",
+      "要免沉沦得永生，你需要耶稣！",
+    ]);
+    expect(lines).toEqual([
+      lines[0],
+      "",
+      lines[2],
+      "",
+      lines[4],
+      "",
+      lines[6],
+    ]);
+    expect(validateSourceDocument(document)).toEqual([]);
   });
 
   it("解析 712 的图片 relationship 并保留媒体 z-order 与坐标", async () => {

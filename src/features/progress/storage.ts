@@ -4,11 +4,17 @@ import type {
   ServiceSet,
   ServiceSetItem,
 } from "./types";
+import {
+  DEFAULT_SCORE_DISPLAY_PREFERENCES,
+  type ScoreDisplayPreferences,
+} from "@/features/score/display-preferences";
 
 export const STORAGE_KEYS = {
   progress: "shiqin.progress.v1",
   records: "shiqin.practice-records.v1",
   serviceSet: "shiqin.service-set.v1",
+  scoreDisplay: "shiqin.score-display.v1",
+  sidebarCollapsed: "shiqin.sidebar-collapsed.v1",
 } as const;
 
 const isObject = (value: unknown): value is Record<string, unknown> =>
@@ -33,6 +39,10 @@ export function createDefaultServiceSet(): ServiceSet {
     items: [],
     updated_at: new Date().toISOString(),
   };
+}
+
+export function createDefaultScoreDisplay(): ScoreDisplayPreferences {
+  return { ...DEFAULT_SCORE_DISPLAY_PREFERENCES };
 }
 
 function isLearningProgress(value: unknown): value is LearningProgress {
@@ -89,6 +99,27 @@ function isServiceSet(value: unknown): value is ServiceSet {
   );
 }
 
+type StoredScoreDisplayPreferences = Omit<
+  ScoreDisplayPreferences,
+  "lyrics" | "noteNames"
+> & {
+  lyrics?: boolean;
+  noteNames?: boolean;
+};
+
+function isScoreDisplayPreferences(
+  value: unknown,
+): value is StoredScoreDisplayPreferences {
+  if (!isObject(value)) return false;
+  return (
+    typeof value.positions === "boolean" &&
+    typeof value.fingerings === "boolean" &&
+    typeof value.chords === "boolean" &&
+    (value.lyrics === undefined || typeof value.lyrics === "boolean") &&
+    (value.noteNames === undefined || typeof value.noteNames === "boolean")
+  );
+}
+
 function readJson<T>(
   key: string,
   fallback: T,
@@ -136,6 +167,34 @@ export const practiceStorage = {
     ),
   save: (value: HymnPracticeRecord[]): boolean =>
     writeJson(STORAGE_KEYS.records, value.slice(0, 2000)),
+};
+
+export const scoreDisplayStorage = {
+  load: (): ScoreDisplayPreferences => {
+    const stored = readJson<StoredScoreDisplayPreferences>(
+      STORAGE_KEYS.scoreDisplay,
+      createDefaultScoreDisplay(),
+      isScoreDisplayPreferences,
+    );
+    return {
+      ...stored,
+      lyrics: stored.lyrics ?? true,
+      noteNames: stored.noteNames ?? true,
+    };
+  },
+  save: (value: ScoreDisplayPreferences): boolean =>
+    writeJson(STORAGE_KEYS.scoreDisplay, value),
+};
+
+export const sidebarStorage = {
+  load: (): boolean =>
+    readJson(
+      STORAGE_KEYS.sidebarCollapsed,
+      false,
+      (value): value is boolean => typeof value === "boolean",
+    ),
+  save: (collapsed: boolean): boolean =>
+    writeJson(STORAGE_KEYS.sidebarCollapsed, collapsed),
 };
 
 export const serviceSetStorage = {

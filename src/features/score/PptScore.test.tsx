@@ -1,8 +1,401 @@
-import { render } from "@testing-library/react";
-import { makeRender } from "@/test/scoreFixtures";
+import { render, waitFor } from "@testing-library/react";
+import {
+  makeArrangement,
+  makeRender,
+  makeScore,
+} from "@/test/scoreFixtures";
 import { PptScore } from "./PptScore";
 
 describe("PptScore", () => {
+  it("按浏览器实际字形中心校正指法横坐标", async () => {
+    const document = makeRender();
+    const shape = document.variants[0].score_shapes[0];
+    shape.bbox = { ...shape.bbox, x: 100, width: 300 };
+    shape.paragraphs[0].runs[0].text = "123";
+    const score = makeScore();
+    const firstEvent = score.pages[0].systems[0].measures[0].events[0];
+    firstEvent.source_anchor = {
+      slide: 1,
+      x: 150,
+      y: 105,
+    };
+    const arrangement = makeArrangement({
+      fingerings: [makeArrangement().fingerings[0]],
+      positions: [],
+      chords: [],
+    });
+    const originalCreateRange = globalThis.document.createRange.bind(
+      globalThis.document,
+    );
+    const rangeSpy = vi
+      .spyOn(globalThis.document, "createRange")
+      .mockImplementation(() => {
+        const range = originalCreateRange();
+        Object.defineProperty(range, "getBoundingClientRect", {
+          configurable: true,
+          value: () =>
+            ({
+              x: 310,
+              y: 0,
+              width: 20,
+              height: 20,
+              top: 0,
+              right: 330,
+              bottom: 20,
+              left: 310,
+              toJSON: () => ({}),
+            }) satisfies DOMRect,
+        });
+        return range;
+      });
+    const svgRectSpy = vi
+      .spyOn(SVGSVGElement.prototype, "getBoundingClientRect")
+      .mockReturnValue({
+        x: 0,
+        y: 0,
+        width: 960,
+        height: 540,
+        top: 0,
+        right: 960,
+        bottom: 540,
+        left: 0,
+        toJSON: () => ({}),
+      });
+
+    try {
+      const { container } = render(
+        <PptScore
+          document={document}
+          variantIndex={0}
+          score={score}
+          arrangement={arrangement}
+        />,
+      );
+
+      await waitFor(() =>
+        expect(
+          container.querySelector(
+            '[data-layer="fingerings"] [data-event-id="note-1"]',
+          ),
+        ).toHaveAttribute("x", "320"),
+      );
+    } finally {
+      rangeSpy.mockRestore();
+      svgRectSpy.mockRestore();
+    }
+  });
+
+  it("将自动候选和人工确认和弦以不同状态展示在对应谱行下方", () => {
+    const document = makeRender();
+    const score = makeScore();
+    const arrangement = makeArrangement();
+    score.pages[0].systems[0].measures[0].events.forEach(
+      (event, index) => {
+        event.source_anchor = {
+          slide: 1,
+          x: 140 + index * 80,
+          y: 105,
+        };
+      },
+    );
+
+    const { container, rerender } = render(
+      <PptScore
+        document={document}
+        variantIndex={0}
+        score={score}
+        arrangement={arrangement}
+      />,
+    );
+    const candidate = container.querySelector(
+      '[data-layer="chords"] [data-chord-id="chord-1"]',
+    );
+    const noteName = container.querySelector(
+      '[data-layer="note-names"] [data-event-id="note-1"]',
+    );
+    const row = container.querySelector<SVGGElement>(
+      "svg > [data-score-row='0']",
+    );
+
+    expect(noteName).toHaveTextContent("E♭4");
+    expect(noteName).toHaveAttribute("x", "140");
+    expect(Number(noteName?.getAttribute("y"))).toBeGreaterThan(
+      Number(row?.dataset.scoreBottom),
+    );
+    expect(Number(noteName?.getAttribute("y"))).toBeLessThanOrEqual(
+      Number(row?.dataset.noteNameBottom),
+    );
+    expect(candidate).toHaveAttribute(
+      "data-status",
+      "auto_candidate",
+    );
+    expect(candidate).toHaveAttribute("data-score-row", "0");
+    expect(candidate).toHaveTextContent("E♭ · I");
+    expect(candidate).toHaveTextContent("5-3-1");
+    expect(candidate).toHaveTextContent("自动预判");
+
+    arrangement.chords[0].status = "manual_confirmed";
+    rerender(
+      <PptScore
+        document={document}
+        variantIndex={0}
+        score={score}
+        arrangement={arrangement}
+      />,
+    );
+    expect(
+      container.querySelector(
+        '[data-layer="chords"] [data-chord-id="chord-1"]',
+      ),
+    ).toHaveTextContent("已确认");
+  });
+
+  it("按源锚点将和弦归入谱行并为同行碰撞分配轨道", () => {
+    const document = makeRender();
+    const variant = document.variants[0];
+    const firstScoreShape = variant.score_shapes[0];
+    variant.score_shapes.push({
+      ...firstScoreShape,
+      id: "score-shape-row-2",
+      bbox: { ...firstScoreShape.bbox, y: 240 },
+      bbox_emu: {
+        ...firstScoreShape.bbox_emu,
+        y: 240 * 9_525,
+      },
+    });
+    const lyricShape = variant.lyric_versions[0].shapes[0];
+    const lyricRun = lyricShape.paragraphs[0].runs[0];
+    lyricShape.bbox = { ...lyricShape.bbox, y: 150, height: 220 };
+    lyricShape.paragraphs = [
+      {
+        id: "lyric-row-1",
+        order: 0,
+        runs: [{ ...lyricRun, text: "第一谱行歌词" }],
+      },
+      {
+        id: "lyric-row-2",
+        order: 1,
+        runs: [
+          {
+            ...lyricRun,
+            id: "lyric-run-row-2",
+            text: "第二谱行歌词",
+          },
+        ],
+      },
+    ];
+
+    const score = makeScore();
+    const firstMeasure = score.pages[0].systems[0].measures[0];
+    firstMeasure.events.forEach((event, index) => {
+      event.source_anchor = {
+        slide: 1,
+        x: 220 + index * 70,
+        y: 105,
+      };
+    });
+    const secondMeasure = structuredClone(firstMeasure);
+    secondMeasure.id = "measure-2";
+    secondMeasure.number = 2;
+    secondMeasure.events.forEach((event, index) => {
+      event.id = `${event.id}-row-2`;
+      event.measure_id = secondMeasure.id;
+      event.source_anchor = {
+        slide: 1,
+        x: 620 + index * 70,
+        y: 265,
+      };
+    });
+    score.pages[0].systems[0].measures.push(secondMeasure);
+
+    const arrangement = makeArrangement();
+    const firstChord = arrangement.chords[0];
+    arrangement.chords.push(
+      {
+        ...firstChord,
+        id: "chord-1-overlap",
+      },
+      {
+        ...firstChord,
+        id: "chord-2",
+        measure_id: "measure-2",
+      },
+    );
+
+    const { container } = render(
+      <PptScore
+        document={document}
+        variantIndex={0}
+        score={score}
+        arrangement={arrangement}
+      />,
+    );
+    const rows = container.querySelectorAll<SVGGElement>(
+      "svg > [data-score-row]",
+    );
+    const firstTrack = container.querySelector(
+      '[data-chord-track="0"]',
+    );
+    const firstChordNode = container.querySelector<SVGGElement>(
+      '[data-chord-id="chord-1"]',
+    );
+    const overlapChordNode = container.querySelector<SVGGElement>(
+      '[data-chord-id="chord-1-overlap"]',
+    );
+    const secondChordNode = container.querySelector<SVGGElement>(
+      '[data-chord-id="chord-2"]',
+    );
+    const secondChordRect = secondChordNode?.querySelector("rect");
+
+    expect(rows).toHaveLength(2);
+    expect(firstTrack).toHaveAttribute("data-lane-count", "2");
+    expect(firstChordNode).toHaveAttribute("data-score-row", "0");
+    expect(firstChordNode).toHaveAttribute("data-lane", "0");
+    expect(overlapChordNode).toHaveAttribute("data-score-row", "0");
+    expect(overlapChordNode).toHaveAttribute("data-lane", "1");
+    expect(secondChordNode).toHaveAttribute("data-score-row", "1");
+    expect(Number(rows[0].dataset.scoreBottom)).toBeLessThan(
+      Number(rows[0].dataset.chordY),
+    );
+    expect(Number(rows[0].dataset.chordBottom)).toBeLessThan(
+      Number(rows[0].dataset.lyricY),
+    );
+    expect(Number(rows[0].dataset.lyricBottom)).toBeLessThan(
+      Number(rows[1].dataset.positionY),
+    );
+    expect(
+      Number(secondChordRect?.getAttribute("x")) +
+        Number(secondChordRect?.getAttribute("width")) / 2,
+    ).toBe(Number(secondChordNode?.getAttribute("data-source-x")));
+    expect(Number(secondChordRect?.getAttribute("width"))).toBeLessThan(64);
+  });
+
+  it("每张和弦卡按内容收缩且中心对齐对应音符", () => {
+    const document = makeRender();
+    const score = makeScore();
+    const firstMeasure = score.pages[0].systems[0].measures[0];
+    const measures = Array.from({ length: 4 }, (_, measureIndex) => {
+      const measure = structuredClone(firstMeasure);
+      measure.id = `measure-${measureIndex + 1}`;
+      measure.number = measureIndex + 1;
+      measure.events.forEach((event, eventIndex) => {
+        event.id = `${event.id}-measure-${measureIndex + 1}`;
+        event.measure_id = measure.id;
+        event.source_anchor = {
+          slide: 1,
+          x: 150 + measureIndex * 210 + eventIndex * 90,
+          y: 105,
+        };
+      });
+      return measure;
+    });
+    score.pages[0].systems[0].measures = measures;
+
+    const firstChord = makeArrangement().chords[0];
+    const arrangement = makeArrangement({
+      chords: measures.map((measure, index) => ({
+        ...firstChord,
+        id: `chord-${index + 1}`,
+        measure_id: measure.id,
+        symbol: index === 1 ? "E♭maj7(add9)" : firstChord.symbol,
+      })),
+    });
+    const { container } = render(
+      <PptScore
+        document={document}
+        variantIndex={0}
+        score={score}
+        arrangement={arrangement}
+      />,
+    );
+    const track = container.querySelector('[data-chord-track="0"]');
+    const cards = Array.from(
+      track?.querySelectorAll<SVGRectElement>(
+        "[data-chord-id] > rect",
+      ) ?? [],
+    );
+    const sourceXs = cards.map((card) =>
+      Number(card.parentElement?.getAttribute("data-source-x")),
+    );
+    const cardCenters = cards.map(
+      (card) =>
+        Number(card.getAttribute("x")) +
+        Number(card.getAttribute("width")) / 2,
+    );
+    const widths = cards.map((card) =>
+      Number(card.getAttribute("width")),
+    );
+
+    expect(track).toHaveAttribute("data-lane-count", "1");
+    expect(cards).toHaveLength(4);
+    expect(cardCenters).toEqual(sourceXs);
+    expect(widths[0]).toBeLessThan(64);
+    expect(widths[1]).toBeGreaterThan(widths[0]);
+    expect(widths[2]).toBe(widths[0]);
+  });
+
+  it("关闭教学层后隐藏标记并回收对应轨道高度", () => {
+    const document = makeRender();
+    const score = makeScore();
+    score.pages[0].systems[0].measures[0].events.forEach(
+      (event, index) => {
+        event.source_anchor = {
+          slide: 1,
+          x: 140 + index * 80,
+          y: 105,
+        };
+      },
+    );
+    const arrangement = makeArrangement();
+    const { container, rerender } = render(
+      <PptScore
+        document={document}
+        variantIndex={0}
+        score={score}
+        arrangement={arrangement}
+      />,
+    );
+    const visibleHeight = Number(
+      container.querySelector("svg")?.getAttribute("viewBox")?.split(" ")[3],
+    );
+
+    rerender(
+      <PptScore
+        document={document}
+        variantIndex={0}
+        score={score}
+        arrangement={arrangement}
+        visibility={{
+          positions: false,
+          fingerings: false,
+          noteNames: false,
+          chords: false,
+          lyrics: false,
+        }}
+      />,
+    );
+    const hiddenHeight = Number(
+      container.querySelector("svg")?.getAttribute("viewBox")?.split(" ")[3],
+    );
+
+    expect(
+      container.querySelector('[data-layer="positions"]'),
+    ).not.toBeInTheDocument();
+    expect(
+      container.querySelector('[data-layer="fingerings"]'),
+    ).not.toBeInTheDocument();
+    expect(
+      container.querySelector('[data-layer="note-names"]'),
+    ).not.toBeInTheDocument();
+    expect(
+      container.querySelector('[data-layer="chords"]'),
+    ).not.toBeInTheDocument();
+    expect(
+      container.querySelector('[data-render-role="lyric"]'),
+    ).not.toBeInTheDocument();
+    expect(hiddenHeight).toBeLessThan(visibleHeight);
+  });
+
   it("[defect-probing] 将 PPT 正负字符间距转换为 CSS letter-spacing", () => {
     const document = makeRender();
     const shape = document.variants[0].lyric_versions[0].shapes[0];

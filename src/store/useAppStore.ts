@@ -2,8 +2,14 @@ import { create } from "zustand";
 import {
   practiceStorage,
   progressStorage,
+  scoreDisplayStorage,
+  sidebarStorage,
   serviceSetStorage,
 } from "@/features/progress/storage";
+import type {
+  ScoreDisplayLayer,
+  ScoreDisplayPreferences,
+} from "@/features/score/display-preferences";
 import type {
   HymnPracticeRecord,
   LearningProgress,
@@ -15,6 +21,8 @@ interface AppState {
   progress: LearningProgress;
   records: HymnPracticeRecord[];
   service_set: ServiceSet;
+  score_display: ScoreDisplayPreferences;
+  sidebar_collapsed: boolean;
   storage_available: boolean;
   toggleTask: (taskId: string) => void;
   advancePracticeDay: () => void;
@@ -39,6 +47,11 @@ interface AppState {
   moveServiceItem: (itemId: string, direction: -1 | 1) => void;
   removeServiceItem: (itemId: string) => void;
   replaceServiceSet: (serviceSet: ServiceSet) => void;
+  setScoreDisplayLayer: (
+    layer: ScoreDisplayLayer,
+    visible: boolean,
+  ) => void;
+  setSidebarCollapsed: (collapsed: boolean) => void;
 }
 
 const createId = (prefix: string): string =>
@@ -56,10 +69,18 @@ function persistServiceSet(serviceSet: ServiceSet): boolean {
   return serviceSetStorage.save(serviceSet);
 }
 
+function persistScoreDisplay(
+  preferences: ScoreDisplayPreferences,
+): boolean {
+  return scoreDisplayStorage.save(preferences);
+}
+
 export const useAppStore = create<AppState>((set) => ({
   progress: progressStorage.load(),
   records: practiceStorage.load(),
   service_set: serviceSetStorage.load(),
+  score_display: scoreDisplayStorage.load(),
+  sidebar_collapsed: sidebarStorage.load(),
   storage_available: true,
 
   toggleTask: (taskId) =>
@@ -251,5 +272,25 @@ export const useAppStore = create<AppState>((set) => ({
       service_set,
       storage_available:
         persistServiceSet(service_set) && state.storage_available,
+    })),
+
+  setScoreDisplayLayer: (layer, visible) =>
+    set((state) => {
+      const score_display = {
+        ...state.score_display,
+        [layer]: visible,
+      };
+      return {
+        score_display,
+        storage_available:
+          persistScoreDisplay(score_display) && state.storage_available,
+      };
+    }),
+
+  setSidebarCollapsed: (sidebar_collapsed) =>
+    set((state) => ({
+      sidebar_collapsed,
+      storage_available:
+        sidebarStorage.save(sidebar_collapsed) && state.storage_available,
     })),
 }));

@@ -13,7 +13,7 @@
       "bass": "D",
       "beat": 0,
       "confidence": 0.92,
-      "display_default": false,
+      "display_default": true,
       "evidence": [
         "强拍旋律 5 属于 I",
         "乐句起点优先建立主调"
@@ -48,7 +48,7 @@
       "bass": "E♭",
       "beat": 0,
       "confidence": 0.77,
-      "display_default": false,
+      "display_default": true,
       "evidence": [
         "强拍旋律 1 属于 IV"
       ],
@@ -82,7 +82,7 @@
       "bass": "F",
       "beat": 0,
       "confidence": 0.8700000000000001,
-      "display_default": false,
+      "display_default": true,
       "evidence": [
         "强拍旋律 5 属于 V",
         "终止前小节优先采用属功能"
@@ -117,7 +117,7 @@
       "bass": "F",
       "beat": 0,
       "confidence": 0.8300000000000001,
-      "display_default": false,
+      "display_default": true,
       "evidence": [
         "系统末小节优先落在主和弦"
       ],
@@ -151,7 +151,7 @@
       "bass": "F",
       "beat": 0,
       "confidence": 0.92,
-      "display_default": false,
+      "display_default": true,
       "evidence": [
         "强拍旋律 5 属于 I",
         "乐句起点优先建立主调"
@@ -186,7 +186,7 @@
       "bass": "G",
       "beat": 0,
       "confidence": 0.77,
-      "display_default": false,
+      "display_default": true,
       "evidence": [
         "强拍旋律 1 属于 IV"
       ],
@@ -220,7 +220,7 @@
       "bass": "F",
       "beat": 0,
       "confidence": 0.8700000000000001,
-      "display_default": false,
+      "display_default": true,
       "evidence": [
         "强拍旋律 5 属于 V",
         "终止前小节优先采用属功能"
@@ -255,7 +255,7 @@
       "bass": "F",
       "beat": 0,
       "confidence": 0.91,
-      "display_default": false,
+      "display_default": true,
       "evidence": [
         "系统末小节优先落在主和弦"
       ],
@@ -289,7 +289,7 @@
       "bass": "F",
       "beat": 0,
       "confidence": 0.91,
-      "display_default": false,
+      "display_default": true,
       "evidence": [
         "乐句起点优先建立主调"
       ],
@@ -323,7 +323,7 @@
       "bass": "F",
       "beat": 0,
       "confidence": 0.81,
-      "display_default": false,
+      "display_default": true,
       "evidence": [
         "根据本小节旋律和弦音覆盖率选择"
       ],
@@ -357,7 +357,7 @@
       "bass": "F",
       "beat": 0,
       "confidence": 0.8300000000000001,
-      "display_default": false,
+      "display_default": true,
       "evidence": [
         "强拍旋律 1 属于 I"
       ],
@@ -391,7 +391,7 @@
       "bass": "F",
       "beat": 0,
       "confidence": 0.91,
-      "display_default": false,
+      "display_default": true,
       "evidence": [
         "系统末小节优先落在主和弦"
       ],
@@ -418,7 +418,7 @@
       ]
     }
   ],
-  "content_hash": "a424fc17060600470f39703d000fbbbe5b5abe895760522c393219d36f51c083",
+  "content_hash": "c1a441a517cf1cf983b01576f003fcd97aa9aeb5f31f1979dd19565385423d2b",
   "ending": {
     "reason": "沿用实际终止进行，比统一套用固定 V7-I 更贴合本曲句法。",
     "status": "auto_candidate",
@@ -943,15 +943,47 @@
   },
   "moves": [
     {
-      "from_position_id": "h615-p1-s3-position-3",
-      "id": "h615-p1-s3-position-4-move",
+      "from_position_id": "h615-p1-s1-position-1",
+      "id": "h615-p1-s1-position-2-move",
       "instruction": "Move to F Position",
       "reason": "旋律超出原手位或需要为后续音符预留手指，在此音前整体移动手掌。",
-      "to_position_id": "h615-p1-s3-position-4",
+      "to_position_id": "h615-p1-s1-position-2",
+      "trigger_event_id": "h615-p1-s1-m1-e4"
+    },
+    {
+      "from_position_id": "h615-p1-s2-position-3",
+      "id": "h615-p1-s2-position-4-move",
+      "instruction": "Move to F Position",
+      "reason": "旋律超出原手位或需要为后续音符预留手指，在此音前整体移动手掌。",
+      "to_position_id": "h615-p1-s2-position-4",
+      "trigger_event_id": "h615-p1-s2-m1-e4"
+    },
+    {
+      "from_position_id": "h615-p1-s3-position-5",
+      "id": "h615-p1-s3-position-6-move",
+      "instruction": "Move to F Position",
+      "reason": "旋律超出原手位或需要为后续音符预留手指，在此音前整体移动手掌。",
+      "to_position_id": "h615-p1-s3-position-6",
       "trigger_event_id": "h615-p1-s3-m2-e5"
     }
   ],
   "positions": [
+    {
+      "confidence": 0.82,
+      "end_event_id": "h615-p1-s1-m1-e3",
+      "finger_notes": {
+        "1": "B♭",
+        "2": "C",
+        "3": "D",
+        "4": "E♭",
+        "5": "F"
+      },
+      "id": "h615-p1-s1-position-1",
+      "label": "B♭ Position",
+      "reason": "黑键优先交给 2、3、4 指，减少拇指或小指扭转。",
+      "start_event_id": "h615-p1-s1-m1-e1",
+      "status": "auto_candidate"
+    },
     {
       "confidence": 0.82,
       "end_event_id": "h615-p1-s1-m4-e4",
@@ -962,10 +994,26 @@
         "4": "B♭",
         "5": "C"
       },
-      "id": "h615-p1-s1-position-1",
+      "id": "h615-p1-s1-position-2",
       "label": "F Position",
       "reason": "黑键优先交给 2、3、4 指，减少拇指或小指扭转。",
-      "start_event_id": "h615-p1-s1-m1-e1",
+      "start_event_id": "h615-p1-s1-m1-e4",
+      "status": "auto_candidate"
+    },
+    {
+      "confidence": 0.82,
+      "end_event_id": "h615-p1-s2-m1-e3",
+      "finger_notes": {
+        "1": "B♭",
+        "2": "C",
+        "3": "D",
+        "4": "E♭",
+        "5": "F"
+      },
+      "id": "h615-p1-s2-position-3",
+      "label": "B♭ Position",
+      "reason": "黑键优先交给 2、3、4 指，减少拇指或小指扭转。",
+      "start_event_id": "h615-p1-s2-m1-e1",
       "status": "auto_candidate"
     },
     {
@@ -978,10 +1026,10 @@
         "4": "B♭",
         "5": "C"
       },
-      "id": "h615-p1-s2-position-2",
+      "id": "h615-p1-s2-position-4",
       "label": "F Position",
       "reason": "黑键优先交给 2、3、4 指，减少拇指或小指扭转。",
-      "start_event_id": "h615-p1-s2-m1-e1",
+      "start_event_id": "h615-p1-s2-m1-e4",
       "status": "auto_candidate"
     },
     {
@@ -994,7 +1042,7 @@
         "4": "E♭",
         "5": "F"
       },
-      "id": "h615-p1-s3-position-3",
+      "id": "h615-p1-s3-position-5",
       "label": "B♭ Position",
       "reason": "黑键优先交给 2、3、4 指，减少拇指或小指扭转。",
       "start_event_id": "h615-p1-s3-m1-e1",
@@ -1010,7 +1058,7 @@
         "4": "B♭",
         "5": "C"
       },
-      "id": "h615-p1-s3-position-4",
+      "id": "h615-p1-s3-position-6",
       "label": "F Position",
       "reason": "黑键优先交给 2、3、4 指，减少拇指或小指扭转。",
       "start_event_id": "h615-p1-s3-m2-e5",

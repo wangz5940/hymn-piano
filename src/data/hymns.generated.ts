@@ -18,7 +18,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/1/arrangement.json",
     "render_asset_url": "/materials/hymns/1/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "E♭",
+    "meter": "6/8",
+    "position_change_count": 0
   },
   {
     "key": "2",
@@ -36,7 +39,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/2/arrangement.json",
     "render_asset_url": "/materials/hymns/2/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "F",
+    "meter": "4/4",
+    "position_change_count": 0
   },
   {
     "key": "3",
@@ -54,7 +60,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/3/arrangement.json",
     "render_asset_url": "/materials/hymns/3/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": null,
+    "meter": "6/8",
+    "position_change_count": 3
   },
   {
     "key": "4",
@@ -72,7 +81,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/4/arrangement.json",
     "render_asset_url": "/materials/hymns/4/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "D",
+    "meter": "4/4",
+    "position_change_count": 5
   },
   {
     "key": "5",
@@ -90,7 +102,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/5/arrangement.json",
     "render_asset_url": "/materials/hymns/5/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "D",
+    "meter": "2/2",
+    "position_change_count": 2
   },
   {
     "key": "6",
@@ -108,7 +123,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/6/arrangement.json",
     "render_asset_url": "/materials/hymns/6/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "C",
+    "meter": "3/4",
+    "position_change_count": 9
   },
   {
     "key": "7",
@@ -126,7 +144,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/7/arrangement.json",
     "render_asset_url": "/materials/hymns/7/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "F",
+    "meter": "4/4",
+    "position_change_count": 5
   },
   {
     "key": "8",
@@ -144,7 +165,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/8/arrangement.json",
     "render_asset_url": "/materials/hymns/8/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "E♭",
+    "meter": "6/4",
+    "position_change_count": 4
   },
   {
     "key": "9",
@@ -162,7 +186,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/9/arrangement.json",
     "render_asset_url": "/materials/hymns/9/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "A",
+    "meter": "3/4",
+    "position_change_count": 3
   },
   {
     "key": "10",
@@ -180,7 +207,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/10/arrangement.json",
     "render_asset_url": "/materials/hymns/10/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "G",
+    "meter": "6/4",
+    "position_change_count": 3
   },
   {
     "key": "11",
@@ -198,7 +228,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/11/arrangement.json",
     "render_asset_url": "/materials/hymns/11/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "G",
+    "meter": "6/4",
+    "position_change_count": 4
   },
   {
     "key": "12",
@@ -216,7 +249,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/12/arrangement.json",
     "render_asset_url": "/materials/hymns/12/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "E♭",
+    "meter": "4/4",
+    "position_change_count": 1
   },
   {
     "key": "13",
@@ -234,7 +270,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/13/arrangement.json",
     "render_asset_url": "/materials/hymns/13/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "G",
+    "meter": "6/8",
+    "position_change_count": 2
   },
   {
     "key": "14",
@@ -252,7 +291,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/14/arrangement.json",
     "render_asset_url": "/materials/hymns/14/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "G",
+    "meter": "3/2",
+    "position_change_count": 4
   },
   {
     "key": "15",
@@ -270,7 +312,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/15/arrangement.json",
     "render_asset_url": "/materials/hymns/15/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "C",
+    "meter": "4/4",
+    "position_change_count": 7
   },
   {
     "key": "16",
@@ -288,7 +333,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/16/arrangement.json",
     "render_asset_url": "/materials/hymns/16/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "B♭",
+    "meter": "4/4",
+    "position_change_count": 1
   },
   {
     "key": "17",
@@ -306,7 +354,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/17/arrangement.json",
     "render_asset_url": "/materials/hymns/17/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": null,
+    "meter": "4/4",
+    "position_change_count": 8
   },
   {
     "key": "18",
@@ -324,7 +375,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/18/arrangement.json",
     "render_asset_url": "/materials/hymns/18/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "B♭",
+    "meter": "4/4",
+    "position_change_count": 2
   },
   {
     "key": "19",
@@ -342,7 +396,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/19/arrangement.json",
     "render_asset_url": "/materials/hymns/19/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "A♭",
+    "meter": "3/4",
+    "position_change_count": 8
   },
   {
     "key": "20",
@@ -360,7 +417,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/20/arrangement.json",
     "render_asset_url": "/materials/hymns/20/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "B",
+    "meter": "4/4",
+    "position_change_count": 4
   },
   {
     "key": "21",
@@ -378,7 +438,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/21/arrangement.json",
     "render_asset_url": "/materials/hymns/21/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "E♭",
+    "meter": "3/4",
+    "position_change_count": 3
   },
   {
     "key": "22",
@@ -396,7 +459,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/22/arrangement.json",
     "render_asset_url": "/materials/hymns/22/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "G",
+    "meter": "4/4",
+    "position_change_count": 12
   },
   {
     "key": "23",
@@ -414,7 +480,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/23/arrangement.json",
     "render_asset_url": "/materials/hymns/23/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "F",
+    "meter": "3/4",
+    "position_change_count": 2
   },
   {
     "key": "24",
@@ -432,7 +501,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/24/arrangement.json",
     "render_asset_url": "/materials/hymns/24/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": null,
+    "meter": "6/8",
+    "position_change_count": 0
   },
   {
     "key": "25",
@@ -450,7 +522,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/25/arrangement.json",
     "render_asset_url": "/materials/hymns/25/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "E♭",
+    "meter": "4/4",
+    "position_change_count": 2
   },
   {
     "key": "26",
@@ -468,7 +543,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/26/arrangement.json",
     "render_asset_url": "/materials/hymns/26/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "E♭",
+    "meter": "4/4",
+    "position_change_count": 3
   },
   {
     "key": "27",
@@ -486,7 +564,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/27/arrangement.json",
     "render_asset_url": "/materials/hymns/27/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "A♭",
+    "meter": "4/4",
+    "position_change_count": 4
   },
   {
     "key": "28",
@@ -504,7 +585,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/28/arrangement.json",
     "render_asset_url": "/materials/hymns/28/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "A♭",
+    "meter": "4/4",
+    "position_change_count": 3
   },
   {
     "key": "29",
@@ -522,7 +606,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/29/arrangement.json",
     "render_asset_url": "/materials/hymns/29/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": null,
+    "meter": "6/8",
+    "position_change_count": 3
   },
   {
     "key": "30",
@@ -540,7 +627,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/30/arrangement.json",
     "render_asset_url": "/materials/hymns/30/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": null,
+    "meter": "4/4",
+    "position_change_count": 5
   },
   {
     "key": "31",
@@ -558,7 +648,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/31/arrangement.json",
     "render_asset_url": "/materials/hymns/31/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": null,
+    "meter": "4/4",
+    "position_change_count": 6
   },
   {
     "key": "32",
@@ -576,7 +669,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/32/arrangement.json",
     "render_asset_url": "/materials/hymns/32/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "F",
+    "meter": "6/8",
+    "position_change_count": 3
   },
   {
     "key": "33",
@@ -594,7 +690,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/33/arrangement.json",
     "render_asset_url": "/materials/hymns/33/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "E♭",
+    "meter": "6/8",
+    "position_change_count": 4
   },
   {
     "key": "34",
@@ -612,7 +711,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/34/arrangement.json",
     "render_asset_url": "/materials/hymns/34/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "A",
+    "meter": "4/4",
+    "position_change_count": 0
   },
   {
     "key": "35",
@@ -630,7 +732,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/35/arrangement.json",
     "render_asset_url": "/materials/hymns/35/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "E♭",
+    "meter": "3/4",
+    "position_change_count": 8
   },
   {
     "key": "36",
@@ -648,7 +753,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/36/arrangement.json",
     "render_asset_url": "/materials/hymns/36/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "B♭",
+    "meter": "3/4",
+    "position_change_count": 8
   },
   {
     "key": "36b",
@@ -666,7 +774,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": null,
     "render_asset_url": "/materials/hymns/36/render.json",
     "render_variant": 1,
-    "fallback_reason": "第二调暂无独立 SimpMusic PPTX，使用本版本图片谱。"
+    "fallback_reason": "第二调暂无独立 SimpMusic PPTX，使用本版本图片谱。",
+    "key_signature": null,
+    "meter": null,
+    "position_change_count": null
   },
   {
     "key": "37",
@@ -684,7 +795,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/37/arrangement.json",
     "render_asset_url": "/materials/hymns/37/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "E♭",
+    "meter": "4/4",
+    "position_change_count": 4
   },
   {
     "key": "37b",
@@ -702,7 +816,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": null,
     "render_asset_url": "/materials/hymns/37/render.json",
     "render_variant": 1,
-    "fallback_reason": "第二调暂无独立 SimpMusic PPTX，使用本版本图片谱。"
+    "fallback_reason": "第二调暂无独立 SimpMusic PPTX，使用本版本图片谱。",
+    "key_signature": null,
+    "meter": null,
+    "position_change_count": null
   },
   {
     "key": "38",
@@ -720,7 +837,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/38/arrangement.json",
     "render_asset_url": "/materials/hymns/38/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "A♭",
+    "meter": "4/4",
+    "position_change_count": 3
   },
   {
     "key": "39",
@@ -738,7 +858,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/39/arrangement.json",
     "render_asset_url": "/materials/hymns/39/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "A♭",
+    "meter": "4/4",
+    "position_change_count": 2
   },
   {
     "key": "40",
@@ -756,7 +879,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/40/arrangement.json",
     "render_asset_url": "/materials/hymns/40/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "F",
+    "meter": "3/2",
+    "position_change_count": 2
   },
   {
     "key": "41",
@@ -774,7 +900,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/41/arrangement.json",
     "render_asset_url": "/materials/hymns/41/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "A♭",
+    "meter": "6/4",
+    "position_change_count": 3
   },
   {
     "key": "42",
@@ -792,7 +921,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/42/arrangement.json",
     "render_asset_url": "/materials/hymns/42/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "B♭",
+    "meter": "4/4",
+    "position_change_count": 0
   },
   {
     "key": "43",
@@ -810,7 +942,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/43/arrangement.json",
     "render_asset_url": "/materials/hymns/43/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "A♭",
+    "meter": "4/4",
+    "position_change_count": 10
   },
   {
     "key": "44",
@@ -828,7 +963,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/44/arrangement.json",
     "render_asset_url": "/materials/hymns/44/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": null,
+    "meter": null,
+    "position_change_count": 1
   },
   {
     "key": "45",
@@ -846,7 +984,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/45/arrangement.json",
     "render_asset_url": "/materials/hymns/45/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "F",
+    "meter": "4/4",
+    "position_change_count": 1
   },
   {
     "key": "46",
@@ -864,7 +1005,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/46/arrangement.json",
     "render_asset_url": "/materials/hymns/46/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": null,
+    "meter": "3/4",
+    "position_change_count": 4
   },
   {
     "key": "47",
@@ -882,7 +1026,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/47/arrangement.json",
     "render_asset_url": "/materials/hymns/47/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "G",
+    "meter": "3/4",
+    "position_change_count": 0
   },
   {
     "key": "48",
@@ -900,7 +1047,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/48/arrangement.json",
     "render_asset_url": "/materials/hymns/48/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": null,
+    "meter": "3/4",
+    "position_change_count": 15
   },
   {
     "key": "49",
@@ -918,7 +1068,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/49/arrangement.json",
     "render_asset_url": "/materials/hymns/49/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "F",
+    "meter": "4/4",
+    "position_change_count": 0
   },
   {
     "key": "50",
@@ -936,7 +1089,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/50/arrangement.json",
     "render_asset_url": "/materials/hymns/50/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "C",
+    "meter": "3/2",
+    "position_change_count": 2
   },
   {
     "key": "51",
@@ -954,7 +1110,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/51/arrangement.json",
     "render_asset_url": "/materials/hymns/51/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "B♭",
+    "meter": "4/4",
+    "position_change_count": 4
   },
   {
     "key": "52",
@@ -972,7 +1131,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/52/arrangement.json",
     "render_asset_url": "/materials/hymns/52/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "E♭",
+    "meter": "4/4",
+    "position_change_count": 3
   },
   {
     "key": "53",
@@ -990,7 +1152,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/53/arrangement.json",
     "render_asset_url": "/materials/hymns/53/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "G",
+    "meter": "4/4",
+    "position_change_count": 2
   },
   {
     "key": "54",
@@ -1008,7 +1173,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/54/arrangement.json",
     "render_asset_url": "/materials/hymns/54/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "G",
+    "meter": "4/4",
+    "position_change_count": 3
   },
   {
     "key": "55",
@@ -1026,7 +1194,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/55/arrangement.json",
     "render_asset_url": "/materials/hymns/55/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "A♭",
+    "meter": "3/4",
+    "position_change_count": 5
   },
   {
     "key": "56",
@@ -1044,7 +1215,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/56/arrangement.json",
     "render_asset_url": "/materials/hymns/56/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "E♭",
+    "meter": "4/4",
+    "position_change_count": 1
   },
   {
     "key": "57",
@@ -1062,7 +1236,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/57/arrangement.json",
     "render_asset_url": "/materials/hymns/57/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "E♭",
+    "meter": "4/4",
+    "position_change_count": 12
   },
   {
     "key": "58",
@@ -1080,7 +1257,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/58/arrangement.json",
     "render_asset_url": "/materials/hymns/58/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "C",
+    "meter": "3/4",
+    "position_change_count": 4
   },
   {
     "key": "59",
@@ -1098,7 +1278,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/59/arrangement.json",
     "render_asset_url": "/materials/hymns/59/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "D",
+    "meter": "3/4",
+    "position_change_count": 6
   },
   {
     "key": "59b",
@@ -1116,7 +1299,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": null,
     "render_asset_url": "/materials/hymns/59/render.json",
     "render_variant": 1,
-    "fallback_reason": "第二调暂无独立 SimpMusic PPTX，使用本版本图片谱。"
+    "fallback_reason": "第二调暂无独立 SimpMusic PPTX，使用本版本图片谱。",
+    "key_signature": null,
+    "meter": null,
+    "position_change_count": null
   },
   {
     "key": "60",
@@ -1134,7 +1320,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": null,
     "render_asset_url": null,
     "render_variant": null,
-    "fallback_reason": "PPTX 不含 SimpMusic Base 结构化谱面"
+    "fallback_reason": "PPTX 不含 SimpMusic Base 结构化谱面",
+    "key_signature": null,
+    "meter": null,
+    "position_change_count": null
   },
   {
     "key": "61",
@@ -1152,7 +1341,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/61/arrangement.json",
     "render_asset_url": "/materials/hymns/61/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "B♭",
+    "meter": "3/4",
+    "position_change_count": 8
   },
   {
     "key": "62",
@@ -1170,7 +1362,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/62/arrangement.json",
     "render_asset_url": "/materials/hymns/62/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "E♭",
+    "meter": "3/4",
+    "position_change_count": 2
   },
   {
     "key": "63",
@@ -1188,7 +1383,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": null,
     "render_asset_url": null,
     "render_variant": null,
-    "fallback_reason": "PPTX 不含 SimpMusic Base 结构化谱面"
+    "fallback_reason": "PPTX 不含 SimpMusic Base 结构化谱面",
+    "key_signature": null,
+    "meter": null,
+    "position_change_count": null
   },
   {
     "key": "64",
@@ -1206,7 +1404,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/64/arrangement.json",
     "render_asset_url": "/materials/hymns/64/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "F",
+    "meter": "6/4",
+    "position_change_count": 6
   },
   {
     "key": "65",
@@ -1224,7 +1425,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/65/arrangement.json",
     "render_asset_url": "/materials/hymns/65/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "G",
+    "meter": "3/4",
+    "position_change_count": 4
   },
   {
     "key": "66",
@@ -1242,7 +1446,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/66/arrangement.json",
     "render_asset_url": "/materials/hymns/66/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "E♭",
+    "meter": "4/4",
+    "position_change_count": 3
   },
   {
     "key": "67",
@@ -1260,7 +1467,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/67/arrangement.json",
     "render_asset_url": "/materials/hymns/67/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": null,
+    "meter": "6/8",
+    "position_change_count": 1
   },
   {
     "key": "68",
@@ -1278,7 +1488,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/68/arrangement.json",
     "render_asset_url": "/materials/hymns/68/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "D",
+    "meter": "4/4",
+    "position_change_count": 1
   },
   {
     "key": "69",
@@ -1296,7 +1509,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/69/arrangement.json",
     "render_asset_url": "/materials/hymns/69/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "F",
+    "meter": "4/4",
+    "position_change_count": 3
   },
   {
     "key": "70",
@@ -1314,7 +1530,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/70/arrangement.json",
     "render_asset_url": "/materials/hymns/70/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "E♭",
+    "meter": "4/4",
+    "position_change_count": 2
   },
   {
     "key": "71",
@@ -1332,7 +1551,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/71/arrangement.json",
     "render_asset_url": "/materials/hymns/71/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "B♭",
+    "meter": "3/4",
+    "position_change_count": 5
   },
   {
     "key": "72",
@@ -1350,7 +1572,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/72/arrangement.json",
     "render_asset_url": "/materials/hymns/72/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "A♭",
+    "meter": "4/4",
+    "position_change_count": 6
   },
   {
     "key": "73",
@@ -1368,7 +1593,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/73/arrangement.json",
     "render_asset_url": "/materials/hymns/73/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "F",
+    "meter": "4/4",
+    "position_change_count": 0
   },
   {
     "key": "74",
@@ -1386,7 +1614,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/74/arrangement.json",
     "render_asset_url": "/materials/hymns/74/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "G",
+    "meter": "2/4",
+    "position_change_count": 0
   },
   {
     "key": "75",
@@ -1404,7 +1635,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/75/arrangement.json",
     "render_asset_url": "/materials/hymns/75/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "G",
+    "meter": "3/2",
+    "position_change_count": 1
   },
   {
     "key": "76",
@@ -1422,7 +1656,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/76/arrangement.json",
     "render_asset_url": "/materials/hymns/76/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "E♭",
+    "meter": "4/4",
+    "position_change_count": 6
   },
   {
     "key": "77",
@@ -1440,7 +1677,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/77/arrangement.json",
     "render_asset_url": "/materials/hymns/77/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "D",
+    "meter": "4/4",
+    "position_change_count": 3
   },
   {
     "key": "78",
@@ -1458,7 +1698,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/78/arrangement.json",
     "render_asset_url": "/materials/hymns/78/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "E♭",
+    "meter": "4/4",
+    "position_change_count": 3
   },
   {
     "key": "79",
@@ -1476,7 +1719,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/79/arrangement.json",
     "render_asset_url": "/materials/hymns/79/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "G",
+    "meter": "4/4",
+    "position_change_count": 1
   },
   {
     "key": "79b",
@@ -1494,7 +1740,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": null,
     "render_asset_url": "/materials/hymns/79/render.json",
     "render_variant": 1,
-    "fallback_reason": "第二调暂无独立 SimpMusic PPTX，使用本版本图片谱。"
+    "fallback_reason": "第二调暂无独立 SimpMusic PPTX，使用本版本图片谱。",
+    "key_signature": null,
+    "meter": null,
+    "position_change_count": null
   },
   {
     "key": "80",
@@ -1512,7 +1761,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/80/arrangement.json",
     "render_asset_url": "/materials/hymns/80/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "F",
+    "meter": "4/4",
+    "position_change_count": 2
   },
   {
     "key": "81",
@@ -1530,7 +1782,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/81/arrangement.json",
     "render_asset_url": "/materials/hymns/81/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "C",
+    "meter": "4/4",
+    "position_change_count": 8
   },
   {
     "key": "81b",
@@ -1548,7 +1803,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": null,
     "render_asset_url": "/materials/hymns/81/render.json",
     "render_variant": 1,
-    "fallback_reason": "第二调暂无独立 SimpMusic PPTX，使用本版本图片谱。"
+    "fallback_reason": "第二调暂无独立 SimpMusic PPTX，使用本版本图片谱。",
+    "key_signature": null,
+    "meter": null,
+    "position_change_count": null
   },
   {
     "key": "82",
@@ -1566,7 +1824,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/82/arrangement.json",
     "render_asset_url": "/materials/hymns/82/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "E♭",
+    "meter": "3/4",
+    "position_change_count": 8
   },
   {
     "key": "83",
@@ -1584,7 +1845,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/83/arrangement.json",
     "render_asset_url": "/materials/hymns/83/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "G",
+    "meter": "4/4",
+    "position_change_count": 4
   },
   {
     "key": "84",
@@ -1602,7 +1866,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/84/arrangement.json",
     "render_asset_url": "/materials/hymns/84/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": null,
+    "meter": "3/4",
+    "position_change_count": 0
   },
   {
     "key": "85",
@@ -1620,7 +1887,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/85/arrangement.json",
     "render_asset_url": "/materials/hymns/85/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "B♭",
+    "meter": "4/4",
+    "position_change_count": 6
   },
   {
     "key": "86",
@@ -1638,7 +1908,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/86/arrangement.json",
     "render_asset_url": "/materials/hymns/86/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": null,
+    "meter": "6/8",
+    "position_change_count": 3
   },
   {
     "key": "87",
@@ -1656,7 +1929,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/87/arrangement.json",
     "render_asset_url": "/materials/hymns/87/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "F",
+    "meter": "6/8",
+    "position_change_count": 4
   },
   {
     "key": "88",
@@ -1674,7 +1950,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/88/arrangement.json",
     "render_asset_url": "/materials/hymns/88/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "G",
+    "meter": "6/8",
+    "position_change_count": 1
   },
   {
     "key": "89",
@@ -1692,7 +1971,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/89/arrangement.json",
     "render_asset_url": "/materials/hymns/89/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": null,
+    "meter": null,
+    "position_change_count": 4
   },
   {
     "key": "90",
@@ -1710,7 +1992,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/90/arrangement.json",
     "render_asset_url": "/materials/hymns/90/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "B♭",
+    "meter": "4/4",
+    "position_change_count": 8
   },
   {
     "key": "91",
@@ -1728,7 +2013,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/91/arrangement.json",
     "render_asset_url": "/materials/hymns/91/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "E",
+    "meter": "6/4",
+    "position_change_count": 2
   },
   {
     "key": "92",
@@ -1746,7 +2034,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/92/arrangement.json",
     "render_asset_url": "/materials/hymns/92/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "C",
+    "meter": "3/4",
+    "position_change_count": 8
   },
   {
     "key": "93",
@@ -1764,7 +2055,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/93/arrangement.json",
     "render_asset_url": "/materials/hymns/93/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": null,
+    "meter": null,
+    "position_change_count": 2
   },
   {
     "key": "94",
@@ -1782,7 +2076,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/94/arrangement.json",
     "render_asset_url": "/materials/hymns/94/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "E♭",
+    "meter": "4/4",
+    "position_change_count": 2
   },
   {
     "key": "95",
@@ -1800,7 +2097,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/95/arrangement.json",
     "render_asset_url": "/materials/hymns/95/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": null,
+    "meter": "4/4",
+    "position_change_count": 1
   },
   {
     "key": "96",
@@ -1818,7 +2118,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/96/arrangement.json",
     "render_asset_url": "/materials/hymns/96/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "F",
+    "meter": "3/4",
+    "position_change_count": 2
   },
   {
     "key": "96b",
@@ -1836,7 +2139,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": null,
     "render_asset_url": "/materials/hymns/96/render.json",
     "render_variant": 1,
-    "fallback_reason": "第二调暂无独立 SimpMusic PPTX，使用本版本图片谱。"
+    "fallback_reason": "第二调暂无独立 SimpMusic PPTX，使用本版本图片谱。",
+    "key_signature": null,
+    "meter": null,
+    "position_change_count": null
   },
   {
     "key": "97",
@@ -1854,7 +2160,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/97/arrangement.json",
     "render_asset_url": "/materials/hymns/97/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "A",
+    "meter": "4/4",
+    "position_change_count": 0
   },
   {
     "key": "98",
@@ -1872,7 +2181,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/98/arrangement.json",
     "render_asset_url": "/materials/hymns/98/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "E♭",
+    "meter": "3/4",
+    "position_change_count": 9
   },
   {
     "key": "99",
@@ -1890,7 +2202,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/99/arrangement.json",
     "render_asset_url": "/materials/hymns/99/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "F",
+    "meter": "4/4",
+    "position_change_count": 4
   },
   {
     "key": "100",
@@ -1908,7 +2223,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/100/arrangement.json",
     "render_asset_url": "/materials/hymns/100/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "A♭",
+    "meter": "6/4",
+    "position_change_count": 1
   },
   {
     "key": "101",
@@ -1926,7 +2244,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/101/arrangement.json",
     "render_asset_url": "/materials/hymns/101/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "E♭",
+    "meter": "4/4",
+    "position_change_count": 12
   },
   {
     "key": "102",
@@ -1944,7 +2265,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/102/arrangement.json",
     "render_asset_url": "/materials/hymns/102/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "C",
+    "meter": "4/4",
+    "position_change_count": 4
   },
   {
     "key": "103",
@@ -1962,7 +2286,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/103/arrangement.json",
     "render_asset_url": "/materials/hymns/103/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "A",
+    "meter": "4/4",
+    "position_change_count": 2
   },
   {
     "key": "104",
@@ -1980,7 +2307,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/104/arrangement.json",
     "render_asset_url": "/materials/hymns/104/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "B♭",
+    "meter": "4/4",
+    "position_change_count": 2
   },
   {
     "key": "105",
@@ -1998,7 +2328,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/105/arrangement.json",
     "render_asset_url": "/materials/hymns/105/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "B♭",
+    "meter": "4/4",
+    "position_change_count": 3
   },
   {
     "key": "106",
@@ -2016,7 +2349,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/106/arrangement.json",
     "render_asset_url": "/materials/hymns/106/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "B♭",
+    "meter": "4/4",
+    "position_change_count": 2
   },
   {
     "key": "107",
@@ -2034,7 +2370,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/107/arrangement.json",
     "render_asset_url": "/materials/hymns/107/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "E♭",
+    "meter": "4/4",
+    "position_change_count": 6
   },
   {
     "key": "108",
@@ -2052,7 +2391,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/108/arrangement.json",
     "render_asset_url": "/materials/hymns/108/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "E♭",
+    "meter": "4/4",
+    "position_change_count": 1
   },
   {
     "key": "109",
@@ -2070,7 +2412,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/109/arrangement.json",
     "render_asset_url": "/materials/hymns/109/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "G",
+    "meter": "4/4",
+    "position_change_count": 0
   },
   {
     "key": "110",
@@ -2088,7 +2433,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/110/arrangement.json",
     "render_asset_url": "/materials/hymns/110/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "B♭",
+    "meter": "4/4",
+    "position_change_count": 2
   },
   {
     "key": "111",
@@ -2106,7 +2454,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/111/arrangement.json",
     "render_asset_url": "/materials/hymns/111/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "A♭",
+    "meter": null,
+    "position_change_count": 25
   },
   {
     "key": "112",
@@ -2124,7 +2475,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/112/arrangement.json",
     "render_asset_url": "/materials/hymns/112/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "E♭",
+    "meter": "4/4",
+    "position_change_count": 6
   },
   {
     "key": "113",
@@ -2142,7 +2496,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/113/arrangement.json",
     "render_asset_url": "/materials/hymns/113/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "D",
+    "meter": "3/4",
+    "position_change_count": 2
   },
   {
     "key": "114",
@@ -2160,7 +2517,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/114/arrangement.json",
     "render_asset_url": "/materials/hymns/114/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": null,
+    "meter": "4/4",
+    "position_change_count": 0
   },
   {
     "key": "115",
@@ -2178,7 +2538,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/115/arrangement.json",
     "render_asset_url": "/materials/hymns/115/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "A",
+    "meter": "6/4",
+    "position_change_count": 10
   },
   {
     "key": "116",
@@ -2196,7 +2559,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/116/arrangement.json",
     "render_asset_url": "/materials/hymns/116/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "E♭",
+    "meter": "3/2",
+    "position_change_count": 1
   },
   {
     "key": "117",
@@ -2214,7 +2580,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/117/arrangement.json",
     "render_asset_url": "/materials/hymns/117/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "B♭",
+    "meter": "4/4",
+    "position_change_count": 9
   },
   {
     "key": "118",
@@ -2232,7 +2601,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/118/arrangement.json",
     "render_asset_url": "/materials/hymns/118/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "F",
+    "meter": "3/4",
+    "position_change_count": 4
   },
   {
     "key": "118b",
@@ -2250,7 +2622,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": null,
     "render_asset_url": "/materials/hymns/118/render.json",
     "render_variant": 1,
-    "fallback_reason": "第二调暂无独立 SimpMusic PPTX，使用本版本图片谱。"
+    "fallback_reason": "第二调暂无独立 SimpMusic PPTX，使用本版本图片谱。",
+    "key_signature": null,
+    "meter": null,
+    "position_change_count": null
   },
   {
     "key": "119",
@@ -2268,7 +2643,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/119/arrangement.json",
     "render_asset_url": "/materials/hymns/119/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "B♭",
+    "meter": "3/4",
+    "position_change_count": 0
   },
   {
     "key": "120",
@@ -2286,7 +2664,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/120/arrangement.json",
     "render_asset_url": "/materials/hymns/120/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "G",
+    "meter": "4/4",
+    "position_change_count": 8
   },
   {
     "key": "121",
@@ -2304,7 +2685,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/121/arrangement.json",
     "render_asset_url": "/materials/hymns/121/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "A♭",
+    "meter": "4/4",
+    "position_change_count": 10
   },
   {
     "key": "122",
@@ -2322,7 +2706,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/122/arrangement.json",
     "render_asset_url": "/materials/hymns/122/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "C",
+    "meter": "4/4",
+    "position_change_count": 6
   },
   {
     "key": "123",
@@ -2340,7 +2727,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/123/arrangement.json",
     "render_asset_url": "/materials/hymns/123/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "B♭",
+    "meter": "4/4",
+    "position_change_count": 3
   },
   {
     "key": "123b",
@@ -2358,7 +2748,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": null,
     "render_asset_url": "/materials/hymns/123/render.json",
     "render_variant": 1,
-    "fallback_reason": "第二调暂无独立 SimpMusic PPTX，使用本版本图片谱。"
+    "fallback_reason": "第二调暂无独立 SimpMusic PPTX，使用本版本图片谱。",
+    "key_signature": null,
+    "meter": null,
+    "position_change_count": null
   },
   {
     "key": "124",
@@ -2376,7 +2769,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/124/arrangement.json",
     "render_asset_url": "/materials/hymns/124/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "A♭",
+    "meter": "4/4",
+    "position_change_count": 6
   },
   {
     "key": "125",
@@ -2394,7 +2790,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/125/arrangement.json",
     "render_asset_url": "/materials/hymns/125/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "G",
+    "meter": "4/4",
+    "position_change_count": 0
   },
   {
     "key": "126",
@@ -2412,7 +2811,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/126/arrangement.json",
     "render_asset_url": "/materials/hymns/126/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "A♭",
+    "meter": "6/4",
+    "position_change_count": 4
   },
   {
     "key": "127",
@@ -2430,7 +2832,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/127/arrangement.json",
     "render_asset_url": "/materials/hymns/127/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "A♭",
+    "meter": "6/8",
+    "position_change_count": 14
   },
   {
     "key": "128",
@@ -2448,7 +2853,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/128/arrangement.json",
     "render_asset_url": "/materials/hymns/128/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "A♭",
+    "meter": "3/4",
+    "position_change_count": 2
   },
   {
     "key": "129",
@@ -2466,7 +2874,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/129/arrangement.json",
     "render_asset_url": "/materials/hymns/129/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "G",
+    "meter": "4/4",
+    "position_change_count": 0
   },
   {
     "key": "130",
@@ -2484,7 +2895,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/130/arrangement.json",
     "render_asset_url": "/materials/hymns/130/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "G",
+    "meter": "4/4",
+    "position_change_count": 9
   },
   {
     "key": "131",
@@ -2502,7 +2916,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/131/arrangement.json",
     "render_asset_url": "/materials/hymns/131/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "E♭",
+    "meter": "4/4",
+    "position_change_count": 0
   },
   {
     "key": "132",
@@ -2520,7 +2937,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/132/arrangement.json",
     "render_asset_url": "/materials/hymns/132/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "C",
+    "meter": "4/4",
+    "position_change_count": 4
   },
   {
     "key": "133",
@@ -2538,7 +2958,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/133/arrangement.json",
     "render_asset_url": "/materials/hymns/133/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "D",
+    "meter": "3/4",
+    "position_change_count": 12
   },
   {
     "key": "134",
@@ -2556,7 +2979,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/134/arrangement.json",
     "render_asset_url": "/materials/hymns/134/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "F",
+    "meter": "4/4",
+    "position_change_count": 0
   },
   {
     "key": "135",
@@ -2574,7 +3000,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/135/arrangement.json",
     "render_asset_url": "/materials/hymns/135/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "D",
+    "meter": "4/4",
+    "position_change_count": 10
   },
   {
     "key": "136",
@@ -2592,7 +3021,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/136/arrangement.json",
     "render_asset_url": "/materials/hymns/136/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "E♭",
+    "meter": "4/4",
+    "position_change_count": 8
   },
   {
     "key": "137",
@@ -2610,7 +3042,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/137/arrangement.json",
     "render_asset_url": "/materials/hymns/137/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "A♭",
+    "meter": "4/4",
+    "position_change_count": 6
   },
   {
     "key": "138",
@@ -2628,7 +3063,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/138/arrangement.json",
     "render_asset_url": "/materials/hymns/138/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "B♭",
+    "meter": "4/4",
+    "position_change_count": 8
   },
   {
     "key": "139",
@@ -2646,7 +3084,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/139/arrangement.json",
     "render_asset_url": "/materials/hymns/139/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "G",
+    "meter": "6/4",
+    "position_change_count": 3
   },
   {
     "key": "140",
@@ -2664,7 +3105,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/140/arrangement.json",
     "render_asset_url": "/materials/hymns/140/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": null,
+    "meter": "6/8",
+    "position_change_count": 3
   },
   {
     "key": "141",
@@ -2682,7 +3126,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/141/arrangement.json",
     "render_asset_url": "/materials/hymns/141/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "E♭",
+    "meter": "6/8",
+    "position_change_count": 4
   },
   {
     "key": "141b",
@@ -2700,7 +3147,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": null,
     "render_asset_url": "/materials/hymns/141/render.json",
     "render_variant": 1,
-    "fallback_reason": "第二调暂无独立 SimpMusic PPTX，使用本版本图片谱。"
+    "fallback_reason": "第二调暂无独立 SimpMusic PPTX，使用本版本图片谱。",
+    "key_signature": null,
+    "meter": null,
+    "position_change_count": null
   },
   {
     "key": "142",
@@ -2718,7 +3168,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/142/arrangement.json",
     "render_asset_url": "/materials/hymns/142/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "C",
+    "meter": "3/4",
+    "position_change_count": 4
   },
   {
     "key": "143",
@@ -2736,7 +3189,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/143/arrangement.json",
     "render_asset_url": "/materials/hymns/143/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "D",
+    "meter": "2/4",
+    "position_change_count": 10
   },
   {
     "key": "144",
@@ -2754,7 +3210,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/144/arrangement.json",
     "render_asset_url": "/materials/hymns/144/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "G",
+    "meter": "4/4",
+    "position_change_count": 5
   },
   {
     "key": "145",
@@ -2772,7 +3231,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/145/arrangement.json",
     "render_asset_url": "/materials/hymns/145/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "E♭",
+    "meter": "6/4",
+    "position_change_count": 8
   },
   {
     "key": "146",
@@ -2790,7 +3252,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/146/arrangement.json",
     "render_asset_url": "/materials/hymns/146/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": null,
+    "meter": "6/8",
+    "position_change_count": 16
   },
   {
     "key": "147",
@@ -2808,7 +3273,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/147/arrangement.json",
     "render_asset_url": "/materials/hymns/147/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "A♭",
+    "meter": "3/4",
+    "position_change_count": 15
   },
   {
     "key": "148",
@@ -2826,7 +3294,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/148/arrangement.json",
     "render_asset_url": "/materials/hymns/148/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "E♭",
+    "meter": "4/4",
+    "position_change_count": 2
   },
   {
     "key": "149",
@@ -2844,7 +3315,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/149/arrangement.json",
     "render_asset_url": "/materials/hymns/149/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "G",
+    "meter": "3/4",
+    "position_change_count": 6
   },
   {
     "key": "150",
@@ -2862,7 +3336,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/150/arrangement.json",
     "render_asset_url": "/materials/hymns/150/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "D",
+    "meter": "4/4",
+    "position_change_count": 6
   },
   {
     "key": "151",
@@ -2880,7 +3357,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/151/arrangement.json",
     "render_asset_url": "/materials/hymns/151/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "A♭",
+    "meter": "4/4",
+    "position_change_count": 1
   },
   {
     "key": "151b",
@@ -2898,7 +3378,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": null,
     "render_asset_url": "/materials/hymns/151/render.json",
     "render_variant": 1,
-    "fallback_reason": "第二调暂无独立 SimpMusic PPTX，使用本版本图片谱。"
+    "fallback_reason": "第二调暂无独立 SimpMusic PPTX，使用本版本图片谱。",
+    "key_signature": null,
+    "meter": null,
+    "position_change_count": null
   },
   {
     "key": "152",
@@ -2916,7 +3399,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/152/arrangement.json",
     "render_asset_url": "/materials/hymns/152/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "A",
+    "meter": "4/4",
+    "position_change_count": 10
   },
   {
     "key": "152b",
@@ -2934,7 +3420,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": null,
     "render_asset_url": "/materials/hymns/152/render.json",
     "render_variant": 1,
-    "fallback_reason": "第二调暂无独立 SimpMusic PPTX，使用本版本图片谱。"
+    "fallback_reason": "第二调暂无独立 SimpMusic PPTX，使用本版本图片谱。",
+    "key_signature": null,
+    "meter": null,
+    "position_change_count": null
   },
   {
     "key": "153",
@@ -2952,7 +3441,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/153/arrangement.json",
     "render_asset_url": "/materials/hymns/153/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "E♭",
+    "meter": "4/4",
+    "position_change_count": 6
   },
   {
     "key": "154",
@@ -2970,7 +3462,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/154/arrangement.json",
     "render_asset_url": "/materials/hymns/154/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": null,
+    "meter": "3/4",
+    "position_change_count": 7
   },
   {
     "key": "155",
@@ -2988,7 +3483,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/155/arrangement.json",
     "render_asset_url": "/materials/hymns/155/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "C",
+    "meter": null,
+    "position_change_count": 6
   },
   {
     "key": "156",
@@ -3006,7 +3504,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/156/arrangement.json",
     "render_asset_url": "/materials/hymns/156/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "B♭",
+    "meter": "4/4",
+    "position_change_count": 2
   },
   {
     "key": "157",
@@ -3024,7 +3525,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/157/arrangement.json",
     "render_asset_url": "/materials/hymns/157/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "B♭",
+    "meter": "4/4",
+    "position_change_count": 3
   },
   {
     "key": "158",
@@ -3042,7 +3546,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/158/arrangement.json",
     "render_asset_url": "/materials/hymns/158/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "A♭",
+    "meter": "6/8",
+    "position_change_count": 27
   },
   {
     "key": "159",
@@ -3060,7 +3567,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/159/arrangement.json",
     "render_asset_url": "/materials/hymns/159/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "E♭",
+    "meter": "4/4",
+    "position_change_count": 4
   },
   {
     "key": "160",
@@ -3078,7 +3588,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/160/arrangement.json",
     "render_asset_url": "/materials/hymns/160/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "E♭",
+    "meter": "4/4",
+    "position_change_count": 6
   },
   {
     "key": "161",
@@ -3096,7 +3609,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/161/arrangement.json",
     "render_asset_url": "/materials/hymns/161/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "F",
+    "meter": "3/4",
+    "position_change_count": 4
   },
   {
     "key": "162",
@@ -3114,7 +3630,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/162/arrangement.json",
     "render_asset_url": "/materials/hymns/162/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "G",
+    "meter": "6/8",
+    "position_change_count": 12
   },
   {
     "key": "163",
@@ -3132,7 +3651,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/163/arrangement.json",
     "render_asset_url": "/materials/hymns/163/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "F",
+    "meter": "6/8",
+    "position_change_count": 0
   },
   {
     "key": "164",
@@ -3150,7 +3672,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/164/arrangement.json",
     "render_asset_url": "/materials/hymns/164/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "F",
+    "meter": "3/4",
+    "position_change_count": 3
   },
   {
     "key": "165",
@@ -3168,7 +3693,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/165/arrangement.json",
     "render_asset_url": "/materials/hymns/165/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "E♭",
+    "meter": "3/4",
+    "position_change_count": 4
   },
   {
     "key": "166",
@@ -3186,7 +3714,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/166/arrangement.json",
     "render_asset_url": "/materials/hymns/166/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "E♭",
+    "meter": "4/4",
+    "position_change_count": 15
   },
   {
     "key": "167",
@@ -3204,7 +3735,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/167/arrangement.json",
     "render_asset_url": "/materials/hymns/167/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "E♭",
+    "meter": "4/4",
+    "position_change_count": 8
   },
   {
     "key": "168",
@@ -3222,7 +3756,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/168/arrangement.json",
     "render_asset_url": "/materials/hymns/168/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "F",
+    "meter": "4/4",
+    "position_change_count": 7
   },
   {
     "key": "169",
@@ -3240,7 +3777,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/169/arrangement.json",
     "render_asset_url": "/materials/hymns/169/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "A♭",
+    "meter": null,
+    "position_change_count": 13
   },
   {
     "key": "169b",
@@ -3258,7 +3798,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": null,
     "render_asset_url": "/materials/hymns/169/render.json",
     "render_variant": 1,
-    "fallback_reason": "第二调暂无独立 SimpMusic PPTX，使用本版本图片谱。"
+    "fallback_reason": "第二调暂无独立 SimpMusic PPTX，使用本版本图片谱。",
+    "key_signature": null,
+    "meter": null,
+    "position_change_count": null
   },
   {
     "key": "170",
@@ -3276,7 +3819,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/170/arrangement.json",
     "render_asset_url": "/materials/hymns/170/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "A♭",
+    "meter": "4/4",
+    "position_change_count": 6
   },
   {
     "key": "171",
@@ -3294,7 +3840,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/171/arrangement.json",
     "render_asset_url": "/materials/hymns/171/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "A♭",
+    "meter": "4/4",
+    "position_change_count": 6
   },
   {
     "key": "172",
@@ -3312,7 +3861,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/172/arrangement.json",
     "render_asset_url": "/materials/hymns/172/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "A♭",
+    "meter": "4/4",
+    "position_change_count": 4
   },
   {
     "key": "173",
@@ -3330,7 +3882,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/173/arrangement.json",
     "render_asset_url": "/materials/hymns/173/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "F",
+    "meter": "4/4",
+    "position_change_count": 14
   },
   {
     "key": "173b",
@@ -3348,7 +3903,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": null,
     "render_asset_url": "/materials/hymns/173/render.json",
     "render_variant": 1,
-    "fallback_reason": "第二调暂无独立 SimpMusic PPTX，使用本版本图片谱。"
+    "fallback_reason": "第二调暂无独立 SimpMusic PPTX，使用本版本图片谱。",
+    "key_signature": null,
+    "meter": null,
+    "position_change_count": null
   },
   {
     "key": "174",
@@ -3366,7 +3924,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/174/arrangement.json",
     "render_asset_url": "/materials/hymns/174/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "E♭",
+    "meter": "4/4",
+    "position_change_count": 15
   },
   {
     "key": "174b",
@@ -3384,7 +3945,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": null,
     "render_asset_url": "/materials/hymns/174/render.json",
     "render_variant": 1,
-    "fallback_reason": "第二调暂无独立 SimpMusic PPTX，使用本版本图片谱。"
+    "fallback_reason": "第二调暂无独立 SimpMusic PPTX，使用本版本图片谱。",
+    "key_signature": null,
+    "meter": null,
+    "position_change_count": null
   },
   {
     "key": "175",
@@ -3402,7 +3966,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/175/arrangement.json",
     "render_asset_url": "/materials/hymns/175/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "G",
+    "meter": "6/4",
+    "position_change_count": 4
   },
   {
     "key": "176",
@@ -3420,7 +3987,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/176/arrangement.json",
     "render_asset_url": "/materials/hymns/176/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "B♭",
+    "meter": "3/4",
+    "position_change_count": 4
   },
   {
     "key": "177",
@@ -3438,7 +4008,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/177/arrangement.json",
     "render_asset_url": "/materials/hymns/177/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "C",
+    "meter": "4/4",
+    "position_change_count": 2
   },
   {
     "key": "178",
@@ -3456,7 +4029,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/178/arrangement.json",
     "render_asset_url": "/materials/hymns/178/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "D",
+    "meter": "4/4",
+    "position_change_count": 3
   },
   {
     "key": "179",
@@ -3474,7 +4050,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/179/arrangement.json",
     "render_asset_url": "/materials/hymns/179/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "B♭",
+    "meter": "6/8",
+    "position_change_count": 3
   },
   {
     "key": "180",
@@ -3492,7 +4071,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/180/arrangement.json",
     "render_asset_url": "/materials/hymns/180/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "C",
+    "meter": "6/8",
+    "position_change_count": 6
   },
   {
     "key": "181",
@@ -3510,7 +4092,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/181/arrangement.json",
     "render_asset_url": "/materials/hymns/181/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": null,
+    "meter": "4/4",
+    "position_change_count": 6
   },
   {
     "key": "182",
@@ -3528,7 +4113,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/182/arrangement.json",
     "render_asset_url": "/materials/hymns/182/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "F",
+    "meter": "3/4",
+    "position_change_count": 0
   },
   {
     "key": "183",
@@ -3546,7 +4134,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/183/arrangement.json",
     "render_asset_url": "/materials/hymns/183/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "D♭",
+    "meter": "4/4",
+    "position_change_count": 2
   },
   {
     "key": "184",
@@ -3564,7 +4155,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/184/arrangement.json",
     "render_asset_url": "/materials/hymns/184/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "E",
+    "meter": "6/8",
+    "position_change_count": 1
   },
   {
     "key": "185",
@@ -3582,7 +4176,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/185/arrangement.json",
     "render_asset_url": "/materials/hymns/185/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "F",
+    "meter": "4/4",
+    "position_change_count": 24
   },
   {
     "key": "186",
@@ -3600,7 +4197,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/186/arrangement.json",
     "render_asset_url": "/materials/hymns/186/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": null,
+    "meter": "4/4",
+    "position_change_count": 30
   },
   {
     "key": "187",
@@ -3618,7 +4218,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/187/arrangement.json",
     "render_asset_url": "/materials/hymns/187/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "E♭",
+    "meter": "6/4",
+    "position_change_count": 0
   },
   {
     "key": "188",
@@ -3636,7 +4239,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/188/arrangement.json",
     "render_asset_url": "/materials/hymns/188/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "D",
+    "meter": "6/8",
+    "position_change_count": 12
   },
   {
     "key": "189",
@@ -3654,7 +4260,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/189/arrangement.json",
     "render_asset_url": "/materials/hymns/189/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "E♭",
+    "meter": "6/8",
+    "position_change_count": 10
   },
   {
     "key": "190",
@@ -3672,7 +4281,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/190/arrangement.json",
     "render_asset_url": "/materials/hymns/190/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "B♭",
+    "meter": "3/4",
+    "position_change_count": 9
   },
   {
     "key": "191",
@@ -3690,7 +4302,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/191/arrangement.json",
     "render_asset_url": "/materials/hymns/191/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": null,
+    "meter": "6/8",
+    "position_change_count": 6
   },
   {
     "key": "192",
@@ -3708,7 +4323,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/192/arrangement.json",
     "render_asset_url": "/materials/hymns/192/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "F",
+    "meter": "4/4",
+    "position_change_count": 2
   },
   {
     "key": "192b",
@@ -3726,7 +4344,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": null,
     "render_asset_url": "/materials/hymns/192/render.json",
     "render_variant": 1,
-    "fallback_reason": "第二调暂无独立 SimpMusic PPTX，使用本版本图片谱。"
+    "fallback_reason": "第二调暂无独立 SimpMusic PPTX，使用本版本图片谱。",
+    "key_signature": null,
+    "meter": null,
+    "position_change_count": null
   },
   {
     "key": "193",
@@ -3744,7 +4365,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/193/arrangement.json",
     "render_asset_url": "/materials/hymns/193/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "A♭",
+    "meter": "3/4",
+    "position_change_count": 4
   },
   {
     "key": "194",
@@ -3762,7 +4386,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/194/arrangement.json",
     "render_asset_url": "/materials/hymns/194/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "D♭",
+    "meter": "4/4",
+    "position_change_count": 2
   },
   {
     "key": "195",
@@ -3780,7 +4407,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/195/arrangement.json",
     "render_asset_url": "/materials/hymns/195/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "F",
+    "meter": "2/4",
+    "position_change_count": 4
   },
   {
     "key": "196",
@@ -3798,7 +4428,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/196/arrangement.json",
     "render_asset_url": "/materials/hymns/196/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "D",
+    "meter": "4/4",
+    "position_change_count": 18
   },
   {
     "key": "197",
@@ -3816,7 +4449,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/197/arrangement.json",
     "render_asset_url": "/materials/hymns/197/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "E♭",
+    "meter": "4/4",
+    "position_change_count": 4
   },
   {
     "key": "198",
@@ -3834,7 +4470,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/198/arrangement.json",
     "render_asset_url": "/materials/hymns/198/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "C",
+    "meter": "3/2",
+    "position_change_count": 4
   },
   {
     "key": "199",
@@ -3852,7 +4491,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/199/arrangement.json",
     "render_asset_url": "/materials/hymns/199/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "E♭",
+    "meter": null,
+    "position_change_count": 4
   },
   {
     "key": "200",
@@ -3870,7 +4512,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/200/arrangement.json",
     "render_asset_url": "/materials/hymns/200/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "F",
+    "meter": "3/4",
+    "position_change_count": 0
   },
   {
     "key": "201",
@@ -3888,7 +4533,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/201/arrangement.json",
     "render_asset_url": "/materials/hymns/201/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "E♭",
+    "meter": "4/4",
+    "position_change_count": 3
   },
   {
     "key": "202",
@@ -3906,7 +4554,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/202/arrangement.json",
     "render_asset_url": "/materials/hymns/202/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "E♭",
+    "meter": "6/8",
+    "position_change_count": 2
   },
   {
     "key": "203",
@@ -3924,7 +4575,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/203/arrangement.json",
     "render_asset_url": "/materials/hymns/203/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "E",
+    "meter": "4/4",
+    "position_change_count": 3
   },
   {
     "key": "204",
@@ -3942,7 +4596,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/204/arrangement.json",
     "render_asset_url": "/materials/hymns/204/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "D",
+    "meter": "6/8",
+    "position_change_count": 28
   },
   {
     "key": "205",
@@ -3960,7 +4617,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/205/arrangement.json",
     "render_asset_url": "/materials/hymns/205/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "A♭",
+    "meter": "6/8",
+    "position_change_count": 16
   },
   {
     "key": "206",
@@ -3978,7 +4638,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/206/arrangement.json",
     "render_asset_url": "/materials/hymns/206/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "A♭",
+    "meter": "6/8",
+    "position_change_count": 6
   },
   {
     "key": "207",
@@ -3996,7 +4659,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/207/arrangement.json",
     "render_asset_url": "/materials/hymns/207/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "A♭",
+    "meter": "3/4",
+    "position_change_count": 15
   },
   {
     "key": "208",
@@ -4014,7 +4680,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/208/arrangement.json",
     "render_asset_url": "/materials/hymns/208/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "D",
+    "meter": "4/4",
+    "position_change_count": 12
   },
   {
     "key": "209",
@@ -4032,7 +4701,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/209/arrangement.json",
     "render_asset_url": "/materials/hymns/209/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "A♭",
+    "meter": "4/2",
+    "position_change_count": 2
   },
   {
     "key": "210",
@@ -4050,7 +4722,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/210/arrangement.json",
     "render_asset_url": "/materials/hymns/210/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "A",
+    "meter": "6/8",
+    "position_change_count": 7
   },
   {
     "key": "211",
@@ -4068,7 +4743,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/211/arrangement.json",
     "render_asset_url": "/materials/hymns/211/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "A♭",
+    "meter": "4/4",
+    "position_change_count": 15
   },
   {
     "key": "212",
@@ -4086,7 +4764,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/212/arrangement.json",
     "render_asset_url": "/materials/hymns/212/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "B♭",
+    "meter": "4/4",
+    "position_change_count": 20
   },
   {
     "key": "213",
@@ -4104,7 +4785,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/213/arrangement.json",
     "render_asset_url": "/materials/hymns/213/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "G",
+    "meter": "4/4",
+    "position_change_count": 6
   },
   {
     "key": "214",
@@ -4122,7 +4806,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/214/arrangement.json",
     "render_asset_url": "/materials/hymns/214/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "G",
+    "meter": "6/4",
+    "position_change_count": 0
   },
   {
     "key": "215",
@@ -4140,7 +4827,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/215/arrangement.json",
     "render_asset_url": "/materials/hymns/215/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "E♭",
+    "meter": null,
+    "position_change_count": 9
   },
   {
     "key": "216",
@@ -4158,7 +4848,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/216/arrangement.json",
     "render_asset_url": "/materials/hymns/216/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "A♭",
+    "meter": "4/4",
+    "position_change_count": 2
   },
   {
     "key": "217",
@@ -4176,7 +4869,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/217/arrangement.json",
     "render_asset_url": "/materials/hymns/217/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "D",
+    "meter": "6/8",
+    "position_change_count": 1
   },
   {
     "key": "218",
@@ -4194,7 +4890,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/218/arrangement.json",
     "render_asset_url": "/materials/hymns/218/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "C",
+    "meter": "4/4",
+    "position_change_count": 4
   },
   {
     "key": "219",
@@ -4212,7 +4911,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/219/arrangement.json",
     "render_asset_url": "/materials/hymns/219/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "A",
+    "meter": "4/4",
+    "position_change_count": 4
   },
   {
     "key": "220",
@@ -4230,7 +4932,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/220/arrangement.json",
     "render_asset_url": "/materials/hymns/220/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "C",
+    "meter": "4/4",
+    "position_change_count": 6
   },
   {
     "key": "221",
@@ -4248,7 +4953,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/221/arrangement.json",
     "render_asset_url": "/materials/hymns/221/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "F",
+    "meter": "6/8",
+    "position_change_count": 8
   },
   {
     "key": "222",
@@ -4266,7 +4974,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/222/arrangement.json",
     "render_asset_url": "/materials/hymns/222/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "F",
+    "meter": "4/4",
+    "position_change_count": 8
   },
   {
     "key": "223",
@@ -4284,7 +4995,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/223/arrangement.json",
     "render_asset_url": "/materials/hymns/223/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "F",
+    "meter": "4/4",
+    "position_change_count": 0
   },
   {
     "key": "224",
@@ -4302,7 +5016,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/224/arrangement.json",
     "render_asset_url": "/materials/hymns/224/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "D♭",
+    "meter": "6/4",
+    "position_change_count": 15
   },
   {
     "key": "225",
@@ -4320,7 +5037,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/225/arrangement.json",
     "render_asset_url": "/materials/hymns/225/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "A♭",
+    "meter": "2/4",
+    "position_change_count": 3
   },
   {
     "key": "226",
@@ -4338,7 +5058,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/226/arrangement.json",
     "render_asset_url": "/materials/hymns/226/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "E♭",
+    "meter": "2/4",
+    "position_change_count": 4
   },
   {
     "key": "227",
@@ -4356,7 +5079,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/227/arrangement.json",
     "render_asset_url": "/materials/hymns/227/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "B♭",
+    "meter": "4/4",
+    "position_change_count": 4
   },
   {
     "key": "228",
@@ -4374,7 +5100,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/228/arrangement.json",
     "render_asset_url": "/materials/hymns/228/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "A♭",
+    "meter": "4/4",
+    "position_change_count": 14
   },
   {
     "key": "229",
@@ -4392,7 +5121,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/229/arrangement.json",
     "render_asset_url": "/materials/hymns/229/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "B♭",
+    "meter": "6/8",
+    "position_change_count": 12
   },
   {
     "key": "230",
@@ -4410,7 +5142,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/230/arrangement.json",
     "render_asset_url": "/materials/hymns/230/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "G",
+    "meter": "6/8",
+    "position_change_count": 4
   },
   {
     "key": "231",
@@ -4428,7 +5163,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/231/arrangement.json",
     "render_asset_url": "/materials/hymns/231/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": null,
+    "meter": "3/4",
+    "position_change_count": 0
   },
   {
     "key": "232",
@@ -4446,7 +5184,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/232/arrangement.json",
     "render_asset_url": "/materials/hymns/232/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": null,
+    "meter": "6/8",
+    "position_change_count": 8
   },
   {
     "key": "233",
@@ -4464,7 +5205,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/233/arrangement.json",
     "render_asset_url": "/materials/hymns/233/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "G",
+    "meter": "3/4",
+    "position_change_count": 3
   },
   {
     "key": "234",
@@ -4482,7 +5226,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/234/arrangement.json",
     "render_asset_url": "/materials/hymns/234/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "B♭",
+    "meter": "3/4",
+    "position_change_count": 9
   },
   {
     "key": "235",
@@ -4500,7 +5247,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/235/arrangement.json",
     "render_asset_url": "/materials/hymns/235/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "D",
+    "meter": "3/4",
+    "position_change_count": 10
   },
   {
     "key": "235b",
@@ -4518,7 +5268,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": null,
     "render_asset_url": "/materials/hymns/235/render.json",
     "render_variant": 1,
-    "fallback_reason": "第二调暂无独立 SimpMusic PPTX，使用本版本图片谱。"
+    "fallback_reason": "第二调暂无独立 SimpMusic PPTX，使用本版本图片谱。",
+    "key_signature": null,
+    "meter": null,
+    "position_change_count": null
   },
   {
     "key": "236",
@@ -4536,7 +5289,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/236/arrangement.json",
     "render_asset_url": "/materials/hymns/236/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "E♭",
+    "meter": "4/4",
+    "position_change_count": 1
   },
   {
     "key": "237",
@@ -4554,7 +5310,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/237/arrangement.json",
     "render_asset_url": "/materials/hymns/237/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "B♭",
+    "meter": "6/8",
+    "position_change_count": 3
   },
   {
     "key": "238",
@@ -4572,7 +5331,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/238/arrangement.json",
     "render_asset_url": "/materials/hymns/238/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "E♭",
+    "meter": "3/4",
+    "position_change_count": 4
   },
   {
     "key": "239",
@@ -4590,7 +5352,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/239/arrangement.json",
     "render_asset_url": "/materials/hymns/239/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "G",
+    "meter": "3/2",
+    "position_change_count": 4
   },
   {
     "key": "240",
@@ -4608,7 +5373,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/240/arrangement.json",
     "render_asset_url": "/materials/hymns/240/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "G",
+    "meter": "4/4",
+    "position_change_count": 1
   },
   {
     "key": "241",
@@ -4626,7 +5394,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/241/arrangement.json",
     "render_asset_url": "/materials/hymns/241/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "E♭",
+    "meter": "4/4",
+    "position_change_count": 2
   },
   {
     "key": "242",
@@ -4644,7 +5415,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/242/arrangement.json",
     "render_asset_url": "/materials/hymns/242/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "G",
+    "meter": null,
+    "position_change_count": 3
   },
   {
     "key": "243",
@@ -4662,7 +5436,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/243/arrangement.json",
     "render_asset_url": "/materials/hymns/243/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "C",
+    "meter": "4/4",
+    "position_change_count": 6
   },
   {
     "key": "244",
@@ -4680,7 +5457,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/244/arrangement.json",
     "render_asset_url": "/materials/hymns/244/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "E",
+    "meter": "4/4",
+    "position_change_count": 4
   },
   {
     "key": "245",
@@ -4698,7 +5478,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/245/arrangement.json",
     "render_asset_url": "/materials/hymns/245/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": null,
+    "meter": "3/4",
+    "position_change_count": 0
   },
   {
     "key": "246",
@@ -4716,7 +5499,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/246/arrangement.json",
     "render_asset_url": "/materials/hymns/246/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "C",
+    "meter": "4/4",
+    "position_change_count": 8
   },
   {
     "key": "247",
@@ -4734,7 +5520,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/247/arrangement.json",
     "render_asset_url": "/materials/hymns/247/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "G",
+    "meter": "4/4",
+    "position_change_count": 3
   },
   {
     "key": "248",
@@ -4752,7 +5541,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/248/arrangement.json",
     "render_asset_url": "/materials/hymns/248/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "A♭",
+    "meter": "3/4",
+    "position_change_count": 6
   },
   {
     "key": "249",
@@ -4770,7 +5562,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/249/arrangement.json",
     "render_asset_url": "/materials/hymns/249/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "B♭",
+    "meter": "2/2",
+    "position_change_count": 2
   },
   {
     "key": "250",
@@ -4788,7 +5583,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/250/arrangement.json",
     "render_asset_url": "/materials/hymns/250/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "A♭",
+    "meter": "4/4",
+    "position_change_count": 4
   },
   {
     "key": "251",
@@ -4806,7 +5604,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/251/arrangement.json",
     "render_asset_url": "/materials/hymns/251/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "E♭",
+    "meter": "4/4",
+    "position_change_count": 8
   },
   {
     "key": "252",
@@ -4824,7 +5625,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/252/arrangement.json",
     "render_asset_url": "/materials/hymns/252/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "A♭",
+    "meter": "3/4",
+    "position_change_count": 8
   },
   {
     "key": "253",
@@ -4842,7 +5646,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/253/arrangement.json",
     "render_asset_url": "/materials/hymns/253/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "G",
+    "meter": "4/4",
+    "position_change_count": 4
   },
   {
     "key": "254",
@@ -4860,7 +5667,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/254/arrangement.json",
     "render_asset_url": "/materials/hymns/254/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "F",
+    "meter": "3/4",
+    "position_change_count": 2
   },
   {
     "key": "255",
@@ -4878,7 +5688,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/255/arrangement.json",
     "render_asset_url": "/materials/hymns/255/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "D",
+    "meter": "4/4",
+    "position_change_count": 4
   },
   {
     "key": "256",
@@ -4896,7 +5709,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/256/arrangement.json",
     "render_asset_url": "/materials/hymns/256/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "A♭",
+    "meter": "3/4",
+    "position_change_count": 1
   },
   {
     "key": "257",
@@ -4914,7 +5730,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/257/arrangement.json",
     "render_asset_url": "/materials/hymns/257/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": null,
+    "meter": "3/4",
+    "position_change_count": 0
   },
   {
     "key": "258",
@@ -4932,7 +5751,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/258/arrangement.json",
     "render_asset_url": "/materials/hymns/258/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "A",
+    "meter": "4/4",
+    "position_change_count": 4
   },
   {
     "key": "259",
@@ -4950,7 +5772,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/259/arrangement.json",
     "render_asset_url": "/materials/hymns/259/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "A♭",
+    "meter": "4/4",
+    "position_change_count": 2
   },
   {
     "key": "260",
@@ -4968,7 +5793,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/260/arrangement.json",
     "render_asset_url": "/materials/hymns/260/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "F",
+    "meter": "3/4",
+    "position_change_count": 4
   },
   {
     "key": "261",
@@ -4986,7 +5814,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/261/arrangement.json",
     "render_asset_url": "/materials/hymns/261/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "A♭",
+    "meter": "3/4",
+    "position_change_count": 6
   },
   {
     "key": "261b",
@@ -5004,7 +5835,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": null,
     "render_asset_url": "/materials/hymns/261/render.json",
     "render_variant": 1,
-    "fallback_reason": "第二调暂无独立 SimpMusic PPTX，使用本版本图片谱。"
+    "fallback_reason": "第二调暂无独立 SimpMusic PPTX，使用本版本图片谱。",
+    "key_signature": null,
+    "meter": null,
+    "position_change_count": null
   },
   {
     "key": "262",
@@ -5022,7 +5856,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/262/arrangement.json",
     "render_asset_url": "/materials/hymns/262/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "C",
+    "meter": "3/4",
+    "position_change_count": 20
   },
   {
     "key": "262b",
@@ -5040,7 +5877,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": null,
     "render_asset_url": "/materials/hymns/262/render.json",
     "render_variant": 1,
-    "fallback_reason": "第二调暂无独立 SimpMusic PPTX，使用本版本图片谱。"
+    "fallback_reason": "第二调暂无独立 SimpMusic PPTX，使用本版本图片谱。",
+    "key_signature": null,
+    "meter": null,
+    "position_change_count": null
   },
   {
     "key": "263",
@@ -5058,7 +5898,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/263/arrangement.json",
     "render_asset_url": "/materials/hymns/263/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "E♭",
+    "meter": "4/4",
+    "position_change_count": 14
   },
   {
     "key": "264",
@@ -5076,7 +5919,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/264/arrangement.json",
     "render_asset_url": "/materials/hymns/264/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "F",
+    "meter": "3/4",
+    "position_change_count": 9
   },
   {
     "key": "265",
@@ -5094,7 +5940,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/265/arrangement.json",
     "render_asset_url": "/materials/hymns/265/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "G",
+    "meter": "4/4",
+    "position_change_count": 6
   },
   {
     "key": "266",
@@ -5112,7 +5961,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/266/arrangement.json",
     "render_asset_url": "/materials/hymns/266/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "A♭",
+    "meter": "4/4",
+    "position_change_count": 4
   },
   {
     "key": "267",
@@ -5130,7 +5982,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/267/arrangement.json",
     "render_asset_url": "/materials/hymns/267/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "B♭",
+    "meter": "6/8",
+    "position_change_count": 2
   },
   {
     "key": "268",
@@ -5148,7 +6003,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/268/arrangement.json",
     "render_asset_url": "/materials/hymns/268/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "F",
+    "meter": "3/4",
+    "position_change_count": 0
   },
   {
     "key": "269",
@@ -5166,7 +6024,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/269/arrangement.json",
     "render_asset_url": "/materials/hymns/269/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "D",
+    "meter": "3/4",
+    "position_change_count": 28
   },
   {
     "key": "269b",
@@ -5184,7 +6045,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": null,
     "render_asset_url": "/materials/hymns/269/render.json",
     "render_variant": 1,
-    "fallback_reason": "第二调暂无独立 SimpMusic PPTX，使用本版本图片谱。"
+    "fallback_reason": "第二调暂无独立 SimpMusic PPTX，使用本版本图片谱。",
+    "key_signature": null,
+    "meter": null,
+    "position_change_count": null
   },
   {
     "key": "270",
@@ -5202,7 +6066,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/270/arrangement.json",
     "render_asset_url": "/materials/hymns/270/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "D♭",
+    "meter": "4/4",
+    "position_change_count": 63
   },
   {
     "key": "271",
@@ -5220,7 +6087,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/271/arrangement.json",
     "render_asset_url": "/materials/hymns/271/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "C",
+    "meter": "4/4",
+    "position_change_count": 2
   },
   {
     "key": "272",
@@ -5238,7 +6108,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/272/arrangement.json",
     "render_asset_url": "/materials/hymns/272/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "C",
+    "meter": "6/4",
+    "position_change_count": 0
   },
   {
     "key": "273",
@@ -5256,7 +6129,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/273/arrangement.json",
     "render_asset_url": "/materials/hymns/273/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "D♭",
+    "meter": "4/4",
+    "position_change_count": 8
   },
   {
     "key": "274",
@@ -5274,7 +6150,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/274/arrangement.json",
     "render_asset_url": "/materials/hymns/274/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "D",
+    "meter": "4/4",
+    "position_change_count": 24
   },
   {
     "key": "275",
@@ -5292,7 +6171,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/275/arrangement.json",
     "render_asset_url": "/materials/hymns/275/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "G",
+    "meter": "4/4",
+    "position_change_count": 28
   },
   {
     "key": "276",
@@ -5310,7 +6192,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/276/arrangement.json",
     "render_asset_url": "/materials/hymns/276/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "D",
+    "meter": "4/4",
+    "position_change_count": 6
   },
   {
     "key": "277",
@@ -5328,7 +6213,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/277/arrangement.json",
     "render_asset_url": "/materials/hymns/277/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "E♭",
+    "meter": "4/4",
+    "position_change_count": 0
   },
   {
     "key": "278",
@@ -5346,7 +6234,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/278/arrangement.json",
     "render_asset_url": "/materials/hymns/278/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "B♭",
+    "meter": "4/4",
+    "position_change_count": 0
   },
   {
     "key": "279",
@@ -5364,7 +6255,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/279/arrangement.json",
     "render_asset_url": "/materials/hymns/279/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "A♭",
+    "meter": "6/8",
+    "position_change_count": 15
   },
   {
     "key": "280",
@@ -5382,7 +6276,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/280/arrangement.json",
     "render_asset_url": "/materials/hymns/280/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "G",
+    "meter": "3/4",
+    "position_change_count": 20
   },
   {
     "key": "281",
@@ -5400,7 +6297,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/281/arrangement.json",
     "render_asset_url": "/materials/hymns/281/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "C",
+    "meter": "4/4",
+    "position_change_count": 4
   },
   {
     "key": "282",
@@ -5418,7 +6318,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/282/arrangement.json",
     "render_asset_url": "/materials/hymns/282/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "E♭",
+    "meter": "4/4",
+    "position_change_count": 9
   },
   {
     "key": "283",
@@ -5436,7 +6339,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/283/arrangement.json",
     "render_asset_url": "/materials/hymns/283/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "E♭",
+    "meter": null,
+    "position_change_count": 5
   },
   {
     "key": "284",
@@ -5454,7 +6360,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/284/arrangement.json",
     "render_asset_url": "/materials/hymns/284/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "C",
+    "meter": "4/4",
+    "position_change_count": 4
   },
   {
     "key": "285",
@@ -5472,7 +6381,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/285/arrangement.json",
     "render_asset_url": "/materials/hymns/285/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "F",
+    "meter": "3/4",
+    "position_change_count": 15
   },
   {
     "key": "285b",
@@ -5490,7 +6402,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": null,
     "render_asset_url": "/materials/hymns/285/render.json",
     "render_variant": 1,
-    "fallback_reason": "第二调暂无独立 SimpMusic PPTX，使用本版本图片谱。"
+    "fallback_reason": "第二调暂无独立 SimpMusic PPTX，使用本版本图片谱。",
+    "key_signature": null,
+    "meter": null,
+    "position_change_count": null
   },
   {
     "key": "286",
@@ -5508,7 +6423,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/286/arrangement.json",
     "render_asset_url": "/materials/hymns/286/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "F",
+    "meter": "6/8",
+    "position_change_count": 1
   },
   {
     "key": "287",
@@ -5526,7 +6444,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/287/arrangement.json",
     "render_asset_url": "/materials/hymns/287/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "D",
+    "meter": "3/8",
+    "position_change_count": 9
   },
   {
     "key": "288",
@@ -5544,7 +6465,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/288/arrangement.json",
     "render_asset_url": "/materials/hymns/288/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "B♭",
+    "meter": "3/2",
+    "position_change_count": 3
   },
   {
     "key": "289",
@@ -5562,7 +6486,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/289/arrangement.json",
     "render_asset_url": "/materials/hymns/289/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "F",
+    "meter": "3/4",
+    "position_change_count": 0
   },
   {
     "key": "290",
@@ -5580,7 +6507,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/290/arrangement.json",
     "render_asset_url": "/materials/hymns/290/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "G",
+    "meter": "2/4",
+    "position_change_count": 6
   },
   {
     "key": "291",
@@ -5598,7 +6528,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/291/arrangement.json",
     "render_asset_url": "/materials/hymns/291/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "D",
+    "meter": "6/8",
+    "position_change_count": 2
   },
   {
     "key": "292",
@@ -5616,7 +6549,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/292/arrangement.json",
     "render_asset_url": "/materials/hymns/292/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "D",
+    "meter": "3/4",
+    "position_change_count": 2
   },
   {
     "key": "293",
@@ -5634,7 +6570,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/293/arrangement.json",
     "render_asset_url": "/materials/hymns/293/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "E♭",
+    "meter": "6/8",
+    "position_change_count": 2
   },
   {
     "key": "294",
@@ -5652,7 +6591,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/294/arrangement.json",
     "render_asset_url": "/materials/hymns/294/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "B♭",
+    "meter": "4/4",
+    "position_change_count": 4
   },
   {
     "key": "295",
@@ -5670,7 +6612,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/295/arrangement.json",
     "render_asset_url": "/materials/hymns/295/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "D",
+    "meter": "4/4",
+    "position_change_count": 8
   },
   {
     "key": "296",
@@ -5688,7 +6633,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/296/arrangement.json",
     "render_asset_url": "/materials/hymns/296/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "B♭",
+    "meter": "4/4",
+    "position_change_count": 4
   },
   {
     "key": "296b",
@@ -5706,7 +6654,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": null,
     "render_asset_url": "/materials/hymns/296/render.json",
     "render_variant": 1,
-    "fallback_reason": "第二调暂无独立 SimpMusic PPTX，使用本版本图片谱。"
+    "fallback_reason": "第二调暂无独立 SimpMusic PPTX，使用本版本图片谱。",
+    "key_signature": null,
+    "meter": null,
+    "position_change_count": null
   },
   {
     "key": "297",
@@ -5724,7 +6675,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/297/arrangement.json",
     "render_asset_url": "/materials/hymns/297/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "B♭",
+    "meter": "6/8",
+    "position_change_count": 4
   },
   {
     "key": "298",
@@ -5742,7 +6696,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/298/arrangement.json",
     "render_asset_url": "/materials/hymns/298/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "B♭",
+    "meter": "4/4",
+    "position_change_count": 6
   },
   {
     "key": "299",
@@ -5760,7 +6717,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/299/arrangement.json",
     "render_asset_url": "/materials/hymns/299/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "B♭",
+    "meter": "6/8",
+    "position_change_count": 12
   },
   {
     "key": "300",
@@ -5778,7 +6738,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/300/arrangement.json",
     "render_asset_url": "/materials/hymns/300/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "B♭",
+    "meter": "4/4",
+    "position_change_count": 4
   },
   {
     "key": "301",
@@ -5796,7 +6759,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/301/arrangement.json",
     "render_asset_url": "/materials/hymns/301/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "D",
+    "meter": "4/4",
+    "position_change_count": 10
   },
   {
     "key": "301b",
@@ -5814,7 +6780,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": null,
     "render_asset_url": "/materials/hymns/301/render.json",
     "render_variant": 1,
-    "fallback_reason": "第二调暂无独立 SimpMusic PPTX，使用本版本图片谱。"
+    "fallback_reason": "第二调暂无独立 SimpMusic PPTX，使用本版本图片谱。",
+    "key_signature": null,
+    "meter": null,
+    "position_change_count": null
   },
   {
     "key": "302",
@@ -5832,7 +6801,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/302/arrangement.json",
     "render_asset_url": "/materials/hymns/302/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "E♭",
+    "meter": "4/4",
+    "position_change_count": 6
   },
   {
     "key": "302b",
@@ -5850,7 +6822,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": null,
     "render_asset_url": "/materials/hymns/302/render.json",
     "render_variant": 1,
-    "fallback_reason": "第二调暂无独立 SimpMusic PPTX，使用本版本图片谱。"
+    "fallback_reason": "第二调暂无独立 SimpMusic PPTX，使用本版本图片谱。",
+    "key_signature": null,
+    "meter": null,
+    "position_change_count": null
   },
   {
     "key": "303",
@@ -5868,7 +6843,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/303/arrangement.json",
     "render_asset_url": "/materials/hymns/303/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "G",
+    "meter": "3/4",
+    "position_change_count": 16
   },
   {
     "key": "304",
@@ -5886,7 +6864,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/304/arrangement.json",
     "render_asset_url": "/materials/hymns/304/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "G",
+    "meter": "3/4",
+    "position_change_count": 2
   },
   {
     "key": "305",
@@ -5904,7 +6885,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/305/arrangement.json",
     "render_asset_url": "/materials/hymns/305/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "G",
+    "meter": "4/4",
+    "position_change_count": 0
   },
   {
     "key": "306",
@@ -5922,7 +6906,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/306/arrangement.json",
     "render_asset_url": "/materials/hymns/306/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "D♭",
+    "meter": "4/4",
+    "position_change_count": 4
   },
   {
     "key": "306b",
@@ -5940,7 +6927,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": null,
     "render_asset_url": "/materials/hymns/306/render.json",
     "render_variant": 1,
-    "fallback_reason": "第二调暂无独立 SimpMusic PPTX，使用本版本图片谱。"
+    "fallback_reason": "第二调暂无独立 SimpMusic PPTX，使用本版本图片谱。",
+    "key_signature": null,
+    "meter": null,
+    "position_change_count": null
   },
   {
     "key": "307",
@@ -5958,7 +6948,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/307/arrangement.json",
     "render_asset_url": "/materials/hymns/307/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "E♭",
+    "meter": "4/4",
+    "position_change_count": 14
   },
   {
     "key": "307b",
@@ -5976,7 +6969,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": null,
     "render_asset_url": "/materials/hymns/307/render.json",
     "render_variant": 1,
-    "fallback_reason": "第二调暂无独立 SimpMusic PPTX，使用本版本图片谱。"
+    "fallback_reason": "第二调暂无独立 SimpMusic PPTX，使用本版本图片谱。",
+    "key_signature": null,
+    "meter": null,
+    "position_change_count": null
   },
   {
     "key": "308",
@@ -5994,7 +6990,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/308/arrangement.json",
     "render_asset_url": "/materials/hymns/308/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "A♭",
+    "meter": "4/4",
+    "position_change_count": 0
   },
   {
     "key": "309",
@@ -6012,7 +7011,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/309/arrangement.json",
     "render_asset_url": "/materials/hymns/309/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "D",
+    "meter": "2/4",
+    "position_change_count": 6
   },
   {
     "key": "310",
@@ -6030,7 +7032,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/310/arrangement.json",
     "render_asset_url": "/materials/hymns/310/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "A",
+    "meter": "2/4",
+    "position_change_count": 4
   },
   {
     "key": "311",
@@ -6048,7 +7053,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/311/arrangement.json",
     "render_asset_url": "/materials/hymns/311/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "D",
+    "meter": "4/4",
+    "position_change_count": 4
   },
   {
     "key": "312",
@@ -6066,7 +7074,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/312/arrangement.json",
     "render_asset_url": "/materials/hymns/312/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "F",
+    "meter": "2/2",
+    "position_change_count": 0
   },
   {
     "key": "313",
@@ -6084,7 +7095,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/313/arrangement.json",
     "render_asset_url": "/materials/hymns/313/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "A♭",
+    "meter": "4/4",
+    "position_change_count": 6
   },
   {
     "key": "314",
@@ -6102,7 +7116,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/314/arrangement.json",
     "render_asset_url": "/materials/hymns/314/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "G",
+    "meter": "4/4",
+    "position_change_count": 5
   },
   {
     "key": "314b",
@@ -6120,7 +7137,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": null,
     "render_asset_url": "/materials/hymns/314/render.json",
     "render_variant": 1,
-    "fallback_reason": "第二调暂无独立 SimpMusic PPTX，使用本版本图片谱。"
+    "fallback_reason": "第二调暂无独立 SimpMusic PPTX，使用本版本图片谱。",
+    "key_signature": null,
+    "meter": null,
+    "position_change_count": null
   },
   {
     "key": "315",
@@ -6138,7 +7158,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/315/arrangement.json",
     "render_asset_url": "/materials/hymns/315/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "A♭",
+    "meter": "3/4",
+    "position_change_count": 2
   },
   {
     "key": "316",
@@ -6156,7 +7179,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/316/arrangement.json",
     "render_asset_url": "/materials/hymns/316/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "G",
+    "meter": "4/4",
+    "position_change_count": 4
   },
   {
     "key": "316b",
@@ -6174,7 +7200,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": null,
     "render_asset_url": "/materials/hymns/316/render.json",
     "render_variant": 1,
-    "fallback_reason": "第二调暂无独立 SimpMusic PPTX，使用本版本图片谱。"
+    "fallback_reason": "第二调暂无独立 SimpMusic PPTX，使用本版本图片谱。",
+    "key_signature": null,
+    "meter": null,
+    "position_change_count": null
   },
   {
     "key": "317",
@@ -6192,7 +7221,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/317/arrangement.json",
     "render_asset_url": "/materials/hymns/317/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "F",
+    "meter": "3/4",
+    "position_change_count": 0
   },
   {
     "key": "318",
@@ -6210,7 +7242,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/318/arrangement.json",
     "render_asset_url": "/materials/hymns/318/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "C",
+    "meter": "4/4",
+    "position_change_count": 0
   },
   {
     "key": "319",
@@ -6228,7 +7263,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/319/arrangement.json",
     "render_asset_url": "/materials/hymns/319/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "F",
+    "meter": "4/4",
+    "position_change_count": 1
   },
   {
     "key": "320",
@@ -6246,7 +7284,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/320/arrangement.json",
     "render_asset_url": "/materials/hymns/320/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "E♭",
+    "meter": "4/4",
+    "position_change_count": 1
   },
   {
     "key": "321",
@@ -6264,7 +7305,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/321/arrangement.json",
     "render_asset_url": "/materials/hymns/321/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "D",
+    "meter": null,
+    "position_change_count": 10
   },
   {
     "key": "322",
@@ -6282,7 +7326,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/322/arrangement.json",
     "render_asset_url": "/materials/hymns/322/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "D♭",
+    "meter": "6/8",
+    "position_change_count": 10
   },
   {
     "key": "323",
@@ -6300,7 +7347,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/323/arrangement.json",
     "render_asset_url": "/materials/hymns/323/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "E♭",
+    "meter": "4/4",
+    "position_change_count": 12
   },
   {
     "key": "324",
@@ -6318,7 +7368,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/324/arrangement.json",
     "render_asset_url": "/materials/hymns/324/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "E♭",
+    "meter": "4/4",
+    "position_change_count": 0
   },
   {
     "key": "325",
@@ -6336,7 +7389,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/325/arrangement.json",
     "render_asset_url": "/materials/hymns/325/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "B♭",
+    "meter": "3/4",
+    "position_change_count": 4
   },
   {
     "key": "325b",
@@ -6354,7 +7410,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": null,
     "render_asset_url": "/materials/hymns/325/render.json",
     "render_variant": 1,
-    "fallback_reason": "第二调暂无独立 SimpMusic PPTX，使用本版本图片谱。"
+    "fallback_reason": "第二调暂无独立 SimpMusic PPTX，使用本版本图片谱。",
+    "key_signature": null,
+    "meter": null,
+    "position_change_count": null
   },
   {
     "key": "326",
@@ -6372,7 +7431,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/326/arrangement.json",
     "render_asset_url": "/materials/hymns/326/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "E♭",
+    "meter": "4/4",
+    "position_change_count": 4
   },
   {
     "key": "326b",
@@ -6390,7 +7452,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": null,
     "render_asset_url": "/materials/hymns/326/render.json",
     "render_variant": 1,
-    "fallback_reason": "第二调暂无独立 SimpMusic PPTX，使用本版本图片谱。"
+    "fallback_reason": "第二调暂无独立 SimpMusic PPTX，使用本版本图片谱。",
+    "key_signature": null,
+    "meter": null,
+    "position_change_count": null
   },
   {
     "key": "327",
@@ -6408,7 +7473,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/327/arrangement.json",
     "render_asset_url": "/materials/hymns/327/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "G",
+    "meter": "3/4",
+    "position_change_count": 0
   },
   {
     "key": "328",
@@ -6426,7 +7494,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/328/arrangement.json",
     "render_asset_url": "/materials/hymns/328/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "G",
+    "meter": "3/4",
+    "position_change_count": 2
   },
   {
     "key": "329",
@@ -6444,7 +7515,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/329/arrangement.json",
     "render_asset_url": "/materials/hymns/329/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "E♭",
+    "meter": "4/4",
+    "position_change_count": 8
   },
   {
     "key": "329b",
@@ -6462,7 +7536,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": null,
     "render_asset_url": "/materials/hymns/329/render.json",
     "render_variant": 1,
-    "fallback_reason": "第二调暂无独立 SimpMusic PPTX，使用本版本图片谱。"
+    "fallback_reason": "第二调暂无独立 SimpMusic PPTX，使用本版本图片谱。",
+    "key_signature": null,
+    "meter": null,
+    "position_change_count": null
   },
   {
     "key": "330",
@@ -6480,7 +7557,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/330/arrangement.json",
     "render_asset_url": "/materials/hymns/330/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "C",
+    "meter": "3/4",
+    "position_change_count": 6
   },
   {
     "key": "331",
@@ -6498,7 +7578,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/331/arrangement.json",
     "render_asset_url": "/materials/hymns/331/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "G",
+    "meter": "3/4",
+    "position_change_count": 4
   },
   {
     "key": "332",
@@ -6516,7 +7599,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/332/arrangement.json",
     "render_asset_url": "/materials/hymns/332/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "E♭",
+    "meter": "4/4",
+    "position_change_count": 6
   },
   {
     "key": "333",
@@ -6534,7 +7620,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/333/arrangement.json",
     "render_asset_url": "/materials/hymns/333/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "C",
+    "meter": "3/4",
+    "position_change_count": 3
   },
   {
     "key": "334",
@@ -6552,7 +7641,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/334/arrangement.json",
     "render_asset_url": "/materials/hymns/334/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "F",
+    "meter": "4/4",
+    "position_change_count": 4
   },
   {
     "key": "334b",
@@ -6570,7 +7662,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": null,
     "render_asset_url": "/materials/hymns/334/render.json",
     "render_variant": 1,
-    "fallback_reason": "第二调暂无独立 SimpMusic PPTX，使用本版本图片谱。"
+    "fallback_reason": "第二调暂无独立 SimpMusic PPTX，使用本版本图片谱。",
+    "key_signature": null,
+    "meter": null,
+    "position_change_count": null
   },
   {
     "key": "335",
@@ -6588,7 +7683,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/335/arrangement.json",
     "render_asset_url": "/materials/hymns/335/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "G",
+    "meter": "3/4",
+    "position_change_count": 8
   },
   {
     "key": "336",
@@ -6606,7 +7704,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/336/arrangement.json",
     "render_asset_url": "/materials/hymns/336/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "E♭",
+    "meter": "3/4",
+    "position_change_count": 3
   },
   {
     "key": "337",
@@ -6624,7 +7725,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/337/arrangement.json",
     "render_asset_url": "/materials/hymns/337/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "E♭",
+    "meter": "4/4",
+    "position_change_count": 4
   },
   {
     "key": "338",
@@ -6642,7 +7746,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/338/arrangement.json",
     "render_asset_url": "/materials/hymns/338/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "D♭",
+    "meter": "4/4",
+    "position_change_count": 9
   },
   {
     "key": "339",
@@ -6660,7 +7767,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/339/arrangement.json",
     "render_asset_url": "/materials/hymns/339/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "F",
+    "meter": "3/4",
+    "position_change_count": 2
   },
   {
     "key": "340",
@@ -6678,7 +7788,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/340/arrangement.json",
     "render_asset_url": "/materials/hymns/340/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "E♭",
+    "meter": "4/4",
+    "position_change_count": 0
   },
   {
     "key": "341",
@@ -6696,7 +7809,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/341/arrangement.json",
     "render_asset_url": "/materials/hymns/341/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "A♭",
+    "meter": "6/4",
+    "position_change_count": 3
   },
   {
     "key": "342",
@@ -6714,7 +7830,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/342/arrangement.json",
     "render_asset_url": "/materials/hymns/342/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "G",
+    "meter": "2/4",
+    "position_change_count": 6
   },
   {
     "key": "343",
@@ -6732,7 +7851,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/343/arrangement.json",
     "render_asset_url": "/materials/hymns/343/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "E♭",
+    "meter": "3/4",
+    "position_change_count": 6
   },
   {
     "key": "344",
@@ -6750,7 +7872,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/344/arrangement.json",
     "render_asset_url": "/materials/hymns/344/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "F",
+    "meter": "2/4",
+    "position_change_count": 0
   },
   {
     "key": "345",
@@ -6768,7 +7893,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/345/arrangement.json",
     "render_asset_url": "/materials/hymns/345/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "D",
+    "meter": "3/4",
+    "position_change_count": 2
   },
   {
     "key": "346",
@@ -6786,7 +7914,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/346/arrangement.json",
     "render_asset_url": "/materials/hymns/346/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "E♭",
+    "meter": "4/4",
+    "position_change_count": 4
   },
   {
     "key": "347",
@@ -6804,7 +7935,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/347/arrangement.json",
     "render_asset_url": "/materials/hymns/347/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "C",
+    "meter": "4/4",
+    "position_change_count": 4
   },
   {
     "key": "348",
@@ -6822,7 +7956,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/348/arrangement.json",
     "render_asset_url": "/materials/hymns/348/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "B♭",
+    "meter": "4/4",
+    "position_change_count": 3
   },
   {
     "key": "349",
@@ -6840,7 +7977,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/349/arrangement.json",
     "render_asset_url": "/materials/hymns/349/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "D♭",
+    "meter": "3/4",
+    "position_change_count": 2
   },
   {
     "key": "350",
@@ -6858,7 +7998,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/350/arrangement.json",
     "render_asset_url": "/materials/hymns/350/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "F",
+    "meter": "4/4",
+    "position_change_count": 0
   },
   {
     "key": "351",
@@ -6876,7 +8019,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/351/arrangement.json",
     "render_asset_url": "/materials/hymns/351/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "C",
+    "meter": "4/4",
+    "position_change_count": 2
   },
   {
     "key": "352",
@@ -6894,7 +8040,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/352/arrangement.json",
     "render_asset_url": "/materials/hymns/352/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "F",
+    "meter": "4/4",
+    "position_change_count": 3
   },
   {
     "key": "353",
@@ -6912,7 +8061,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/353/arrangement.json",
     "render_asset_url": "/materials/hymns/353/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "G",
+    "meter": "3/4",
+    "position_change_count": 2
   },
   {
     "key": "354",
@@ -6930,7 +8082,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/354/arrangement.json",
     "render_asset_url": "/materials/hymns/354/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "G",
+    "meter": "6/8",
+    "position_change_count": 2
   },
   {
     "key": "355",
@@ -6948,7 +8103,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/355/arrangement.json",
     "render_asset_url": "/materials/hymns/355/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "E♭",
+    "meter": "3/4",
+    "position_change_count": 3
   },
   {
     "key": "356",
@@ -6966,7 +8124,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/356/arrangement.json",
     "render_asset_url": "/materials/hymns/356/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "G",
+    "meter": "4/4",
+    "position_change_count": 4
   },
   {
     "key": "357",
@@ -6984,7 +8145,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/357/arrangement.json",
     "render_asset_url": "/materials/hymns/357/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "D",
+    "meter": "2/4",
+    "position_change_count": 2
   },
   {
     "key": "358",
@@ -7002,7 +8166,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/358/arrangement.json",
     "render_asset_url": "/materials/hymns/358/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": null,
+    "meter": "3/4",
+    "position_change_count": 0
   },
   {
     "key": "359",
@@ -7020,7 +8187,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/359/arrangement.json",
     "render_asset_url": "/materials/hymns/359/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "C",
+    "meter": "4/4",
+    "position_change_count": 4
   },
   {
     "key": "360",
@@ -7038,7 +8208,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/360/arrangement.json",
     "render_asset_url": "/materials/hymns/360/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "G",
+    "meter": "4/4",
+    "position_change_count": 2
   },
   {
     "key": "361",
@@ -7056,7 +8229,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/361/arrangement.json",
     "render_asset_url": "/materials/hymns/361/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "E",
+    "meter": "4/4",
+    "position_change_count": 4
   },
   {
     "key": "362",
@@ -7074,7 +8250,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/362/arrangement.json",
     "render_asset_url": "/materials/hymns/362/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "C",
+    "meter": "3/4",
+    "position_change_count": 10
   },
   {
     "key": "363",
@@ -7092,7 +8271,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/363/arrangement.json",
     "render_asset_url": "/materials/hymns/363/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "G",
+    "meter": "4/4",
+    "position_change_count": 4
   },
   {
     "key": "364",
@@ -7110,7 +8292,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/364/arrangement.json",
     "render_asset_url": "/materials/hymns/364/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "B♭",
+    "meter": "4/4",
+    "position_change_count": 1
   },
   {
     "key": "365",
@@ -7128,7 +8313,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/365/arrangement.json",
     "render_asset_url": "/materials/hymns/365/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "G",
+    "meter": "4/4",
+    "position_change_count": 2
   },
   {
     "key": "366",
@@ -7146,7 +8334,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/366/arrangement.json",
     "render_asset_url": "/materials/hymns/366/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "E♭",
+    "meter": "4/4",
+    "position_change_count": 3
   },
   {
     "key": "367",
@@ -7164,7 +8355,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/367/arrangement.json",
     "render_asset_url": "/materials/hymns/367/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": null,
+    "meter": "4/4",
+    "position_change_count": 4
   },
   {
     "key": "368",
@@ -7182,7 +8376,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/368/arrangement.json",
     "render_asset_url": "/materials/hymns/368/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "G",
+    "meter": "6/4",
+    "position_change_count": 2
   },
   {
     "key": "369",
@@ -7200,7 +8397,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/369/arrangement.json",
     "render_asset_url": "/materials/hymns/369/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "D",
+    "meter": "3/4",
+    "position_change_count": 2
   },
   {
     "key": "370",
@@ -7218,7 +8418,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/370/arrangement.json",
     "render_asset_url": "/materials/hymns/370/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "G",
+    "meter": "6/8",
+    "position_change_count": 20
   },
   {
     "key": "371",
@@ -7236,7 +8439,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/371/arrangement.json",
     "render_asset_url": "/materials/hymns/371/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "E♭",
+    "meter": "3/4",
+    "position_change_count": 9
   },
   {
     "key": "372",
@@ -7254,7 +8460,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/372/arrangement.json",
     "render_asset_url": "/materials/hymns/372/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": null,
+    "meter": "3/4",
+    "position_change_count": 5
   },
   {
     "key": "373",
@@ -7272,7 +8481,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/373/arrangement.json",
     "render_asset_url": "/materials/hymns/373/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "C",
+    "meter": "4/4",
+    "position_change_count": 10
   },
   {
     "key": "374",
@@ -7290,7 +8502,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/374/arrangement.json",
     "render_asset_url": "/materials/hymns/374/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "E",
+    "meter": "4/4",
+    "position_change_count": 7
   },
   {
     "key": "375",
@@ -7308,7 +8523,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/375/arrangement.json",
     "render_asset_url": "/materials/hymns/375/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "C",
+    "meter": "4/4",
+    "position_change_count": 19
   },
   {
     "key": "376",
@@ -7326,7 +8544,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/376/arrangement.json",
     "render_asset_url": "/materials/hymns/376/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "E",
+    "meter": "4/4",
+    "position_change_count": 13
   },
   {
     "key": "377",
@@ -7344,7 +8565,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/377/arrangement.json",
     "render_asset_url": "/materials/hymns/377/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "A♭",
+    "meter": "4/4",
+    "position_change_count": 8
   },
   {
     "key": "378",
@@ -7362,7 +8586,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/378/arrangement.json",
     "render_asset_url": "/materials/hymns/378/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "F",
+    "meter": null,
+    "position_change_count": 12
   },
   {
     "key": "379",
@@ -7380,7 +8607,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/379/arrangement.json",
     "render_asset_url": "/materials/hymns/379/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "A♭",
+    "meter": "4/4",
+    "position_change_count": 4
   },
   {
     "key": "380",
@@ -7398,7 +8628,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/380/arrangement.json",
     "render_asset_url": "/materials/hymns/380/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "B♭",
+    "meter": "2/8",
+    "position_change_count": 2
   },
   {
     "key": "381",
@@ -7416,7 +8649,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/381/arrangement.json",
     "render_asset_url": "/materials/hymns/381/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "F",
+    "meter": "4/4",
+    "position_change_count": 12
   },
   {
     "key": "382",
@@ -7434,7 +8670,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/382/arrangement.json",
     "render_asset_url": "/materials/hymns/382/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "F",
+    "meter": "4/4",
+    "position_change_count": 0
   },
   {
     "key": "383",
@@ -7452,7 +8691,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/383/arrangement.json",
     "render_asset_url": "/materials/hymns/383/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "E♭",
+    "meter": "4/4",
+    "position_change_count": 1
   },
   {
     "key": "384",
@@ -7470,7 +8712,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/384/arrangement.json",
     "render_asset_url": "/materials/hymns/384/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "B♭",
+    "meter": "4/4",
+    "position_change_count": 8
   },
   {
     "key": "385",
@@ -7488,7 +8733,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/385/arrangement.json",
     "render_asset_url": "/materials/hymns/385/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "B♭",
+    "meter": "6/8",
+    "position_change_count": 6
   },
   {
     "key": "386",
@@ -7506,7 +8754,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/386/arrangement.json",
     "render_asset_url": "/materials/hymns/386/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "A",
+    "meter": "3/4",
+    "position_change_count": 5
   },
   {
     "key": "387",
@@ -7524,7 +8775,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/387/arrangement.json",
     "render_asset_url": "/materials/hymns/387/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "G",
+    "meter": "4/4",
+    "position_change_count": 5
   },
   {
     "key": "388",
@@ -7542,7 +8796,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/388/arrangement.json",
     "render_asset_url": "/materials/hymns/388/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "B♭",
+    "meter": "6/8",
+    "position_change_count": 5
   },
   {
     "key": "389",
@@ -7560,7 +8817,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/389/arrangement.json",
     "render_asset_url": "/materials/hymns/389/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "F",
+    "meter": "4/4",
+    "position_change_count": 0
   },
   {
     "key": "390",
@@ -7578,7 +8838,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/390/arrangement.json",
     "render_asset_url": "/materials/hymns/390/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "E♭",
+    "meter": "4/4",
+    "position_change_count": 8
   },
   {
     "key": "391",
@@ -7596,7 +8859,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/391/arrangement.json",
     "render_asset_url": "/materials/hymns/391/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "G",
+    "meter": "4/4",
+    "position_change_count": 4
   },
   {
     "key": "392",
@@ -7614,7 +8880,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/392/arrangement.json",
     "render_asset_url": "/materials/hymns/392/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "F",
+    "meter": "6/8",
+    "position_change_count": 6
   },
   {
     "key": "393",
@@ -7632,7 +8901,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/393/arrangement.json",
     "render_asset_url": "/materials/hymns/393/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "A♭",
+    "meter": "4/4",
+    "position_change_count": 4
   },
   {
     "key": "394",
@@ -7650,7 +8922,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/394/arrangement.json",
     "render_asset_url": "/materials/hymns/394/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "A♭",
+    "meter": "4/4",
+    "position_change_count": 4
   },
   {
     "key": "395",
@@ -7668,7 +8943,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/395/arrangement.json",
     "render_asset_url": "/materials/hymns/395/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "G",
+    "meter": "4/4",
+    "position_change_count": 0
   },
   {
     "key": "396",
@@ -7686,7 +8964,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/396/arrangement.json",
     "render_asset_url": "/materials/hymns/396/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "C",
+    "meter": "4/4",
+    "position_change_count": 6
   },
   {
     "key": "397",
@@ -7704,7 +8985,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/397/arrangement.json",
     "render_asset_url": "/materials/hymns/397/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "C",
+    "meter": "4/4",
+    "position_change_count": 2
   },
   {
     "key": "398",
@@ -7722,7 +9006,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/398/arrangement.json",
     "render_asset_url": "/materials/hymns/398/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "F",
+    "meter": "4/4",
+    "position_change_count": 3
   },
   {
     "key": "399",
@@ -7740,7 +9027,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/399/arrangement.json",
     "render_asset_url": "/materials/hymns/399/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": null,
+    "meter": "3/4",
+    "position_change_count": 4
   },
   {
     "key": "400",
@@ -7758,7 +9048,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/400/arrangement.json",
     "render_asset_url": "/materials/hymns/400/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "G",
+    "meter": "3/4",
+    "position_change_count": 0
   },
   {
     "key": "401",
@@ -7776,7 +9069,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/401/arrangement.json",
     "render_asset_url": "/materials/hymns/401/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "F",
+    "meter": "3/4",
+    "position_change_count": 2
   },
   {
     "key": "402",
@@ -7794,7 +9090,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/402/arrangement.json",
     "render_asset_url": "/materials/hymns/402/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "C",
+    "meter": "4/4",
+    "position_change_count": 2
   },
   {
     "key": "403",
@@ -7812,7 +9111,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/403/arrangement.json",
     "render_asset_url": "/materials/hymns/403/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "B♭",
+    "meter": "4/4",
+    "position_change_count": 4
   },
   {
     "key": "404",
@@ -7830,7 +9132,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/404/arrangement.json",
     "render_asset_url": "/materials/hymns/404/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "A♭",
+    "meter": "4/4",
+    "position_change_count": 5
   },
   {
     "key": "405",
@@ -7848,7 +9153,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/405/arrangement.json",
     "render_asset_url": "/materials/hymns/405/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "E♭",
+    "meter": "4/4",
+    "position_change_count": 6
   },
   {
     "key": "406",
@@ -7866,7 +9174,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/406/arrangement.json",
     "render_asset_url": "/materials/hymns/406/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "E♭",
+    "meter": "4/4",
+    "position_change_count": 3
   },
   {
     "key": "407",
@@ -7884,7 +9195,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/407/arrangement.json",
     "render_asset_url": "/materials/hymns/407/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "E♭",
+    "meter": "6/8",
+    "position_change_count": 4
   },
   {
     "key": "408",
@@ -7902,7 +9216,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/408/arrangement.json",
     "render_asset_url": "/materials/hymns/408/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "A♭",
+    "meter": "6/8",
+    "position_change_count": 5
   },
   {
     "key": "409",
@@ -7920,7 +9237,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/409/arrangement.json",
     "render_asset_url": "/materials/hymns/409/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "G",
+    "meter": "3/4",
+    "position_change_count": 4
   },
   {
     "key": "410",
@@ -7938,7 +9258,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/410/arrangement.json",
     "render_asset_url": "/materials/hymns/410/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "F",
+    "meter": "4/4",
+    "position_change_count": 4
   },
   {
     "key": "411",
@@ -7956,7 +9279,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/411/arrangement.json",
     "render_asset_url": "/materials/hymns/411/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "D",
+    "meter": "2/4",
+    "position_change_count": 2
   },
   {
     "key": "412",
@@ -7974,7 +9300,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/412/arrangement.json",
     "render_asset_url": "/materials/hymns/412/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "G",
+    "meter": "4/4",
+    "position_change_count": 6
   },
   {
     "key": "413",
@@ -7992,7 +9321,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/413/arrangement.json",
     "render_asset_url": "/materials/hymns/413/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "C",
+    "meter": "4/4",
+    "position_change_count": 10
   },
   {
     "key": "414",
@@ -8010,7 +9342,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/414/arrangement.json",
     "render_asset_url": "/materials/hymns/414/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "E♭",
+    "meter": "3/4",
+    "position_change_count": 3
   },
   {
     "key": "415",
@@ -8028,7 +9363,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/415/arrangement.json",
     "render_asset_url": "/materials/hymns/415/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "G",
+    "meter": "4/4",
+    "position_change_count": 18
   },
   {
     "key": "416",
@@ -8046,7 +9384,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/416/arrangement.json",
     "render_asset_url": "/materials/hymns/416/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "D",
+    "meter": "4/4",
+    "position_change_count": 4
   },
   {
     "key": "417",
@@ -8064,7 +9405,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/417/arrangement.json",
     "render_asset_url": "/materials/hymns/417/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "G",
+    "meter": "4/4",
+    "position_change_count": 2
   },
   {
     "key": "418",
@@ -8082,7 +9426,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/418/arrangement.json",
     "render_asset_url": "/materials/hymns/418/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "F",
+    "meter": "4/4",
+    "position_change_count": 1
   },
   {
     "key": "419",
@@ -8100,7 +9447,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/419/arrangement.json",
     "render_asset_url": "/materials/hymns/419/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "F",
+    "meter": "4/4",
+    "position_change_count": 0
   },
   {
     "key": "420",
@@ -8118,7 +9468,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/420/arrangement.json",
     "render_asset_url": "/materials/hymns/420/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "E♭",
+    "meter": "2/4",
+    "position_change_count": 6
   },
   {
     "key": "421",
@@ -8136,7 +9489,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/421/arrangement.json",
     "render_asset_url": "/materials/hymns/421/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "G",
+    "meter": "4/4",
+    "position_change_count": 0
   },
   {
     "key": "422",
@@ -8154,7 +9510,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/422/arrangement.json",
     "render_asset_url": "/materials/hymns/422/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "D",
+    "meter": "4/4",
+    "position_change_count": 4
   },
   {
     "key": "423",
@@ -8172,7 +9531,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/423/arrangement.json",
     "render_asset_url": "/materials/hymns/423/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "B♭",
+    "meter": "6/8",
+    "position_change_count": 6
   },
   {
     "key": "424",
@@ -8190,7 +9552,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/424/arrangement.json",
     "render_asset_url": "/materials/hymns/424/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "B♭",
+    "meter": "4/4",
+    "position_change_count": 6
   },
   {
     "key": "425",
@@ -8208,7 +9573,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/425/arrangement.json",
     "render_asset_url": "/materials/hymns/425/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "F",
+    "meter": "4/4",
+    "position_change_count": 2
   },
   {
     "key": "426",
@@ -8226,7 +9594,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/426/arrangement.json",
     "render_asset_url": "/materials/hymns/426/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "G",
+    "meter": "4/4",
+    "position_change_count": 3
   },
   {
     "key": "427",
@@ -8244,7 +9615,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/427/arrangement.json",
     "render_asset_url": "/materials/hymns/427/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "A♭",
+    "meter": "4/4",
+    "position_change_count": 4
   },
   {
     "key": "428",
@@ -8262,7 +9636,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/428/arrangement.json",
     "render_asset_url": "/materials/hymns/428/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "D",
+    "meter": "4/4",
+    "position_change_count": 12
   },
   {
     "key": "429",
@@ -8280,7 +9657,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/429/arrangement.json",
     "render_asset_url": "/materials/hymns/429/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "D",
+    "meter": "4/4",
+    "position_change_count": 7
   },
   {
     "key": "430",
@@ -8298,7 +9678,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/430/arrangement.json",
     "render_asset_url": "/materials/hymns/430/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "F",
+    "meter": "4/4",
+    "position_change_count": 6
   },
   {
     "key": "431",
@@ -8316,7 +9699,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/431/arrangement.json",
     "render_asset_url": "/materials/hymns/431/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "C",
+    "meter": "3/4",
+    "position_change_count": 6
   },
   {
     "key": "432",
@@ -8334,7 +9720,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/432/arrangement.json",
     "render_asset_url": "/materials/hymns/432/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "E♭",
+    "meter": "4/4",
+    "position_change_count": 3
   },
   {
     "key": "433",
@@ -8352,7 +9741,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/433/arrangement.json",
     "render_asset_url": "/materials/hymns/433/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "G",
+    "meter": "4/4",
+    "position_change_count": 2
   },
   {
     "key": "434",
@@ -8370,7 +9762,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/434/arrangement.json",
     "render_asset_url": "/materials/hymns/434/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "G",
+    "meter": "4/4",
+    "position_change_count": 9
   },
   {
     "key": "435",
@@ -8388,7 +9783,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/435/arrangement.json",
     "render_asset_url": "/materials/hymns/435/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "A",
+    "meter": "4/4",
+    "position_change_count": 4
   },
   {
     "key": "436",
@@ -8406,7 +9804,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/436/arrangement.json",
     "render_asset_url": "/materials/hymns/436/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "C",
+    "meter": "4/4",
+    "position_change_count": 2
   },
   {
     "key": "437",
@@ -8424,7 +9825,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/437/arrangement.json",
     "render_asset_url": "/materials/hymns/437/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "F",
+    "meter": "3/4",
+    "position_change_count": 0
   },
   {
     "key": "438",
@@ -8442,7 +9846,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/438/arrangement.json",
     "render_asset_url": "/materials/hymns/438/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "F",
+    "meter": "6/4",
+    "position_change_count": 0
   },
   {
     "key": "439",
@@ -8460,7 +9867,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/439/arrangement.json",
     "render_asset_url": "/materials/hymns/439/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "B♭",
+    "meter": "4/4",
+    "position_change_count": 2
   },
   {
     "key": "440",
@@ -8478,7 +9888,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/440/arrangement.json",
     "render_asset_url": "/materials/hymns/440/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "F",
+    "meter": "4/4",
+    "position_change_count": 2
   },
   {
     "key": "441",
@@ -8496,7 +9909,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/441/arrangement.json",
     "render_asset_url": "/materials/hymns/441/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "B♭",
+    "meter": "4/4",
+    "position_change_count": 1
   },
   {
     "key": "442",
@@ -8514,7 +9930,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/442/arrangement.json",
     "render_asset_url": "/materials/hymns/442/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "B♭",
+    "meter": "4/4",
+    "position_change_count": 3
   },
   {
     "key": "443",
@@ -8532,7 +9951,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/443/arrangement.json",
     "render_asset_url": "/materials/hymns/443/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": null,
+    "meter": "3/4",
+    "position_change_count": 2
   },
   {
     "key": "444",
@@ -8550,7 +9972,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": null,
     "render_asset_url": null,
     "render_variant": null,
-    "fallback_reason": "PPTX 不含 SimpMusic Base 结构化谱面"
+    "fallback_reason": "PPTX 不含 SimpMusic Base 结构化谱面",
+    "key_signature": null,
+    "meter": null,
+    "position_change_count": null
   },
   {
     "key": "445",
@@ -8568,7 +9993,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/445/arrangement.json",
     "render_asset_url": "/materials/hymns/445/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "D",
+    "meter": "2/4",
+    "position_change_count": 5
   },
   {
     "key": "446",
@@ -8586,7 +10014,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/446/arrangement.json",
     "render_asset_url": "/materials/hymns/446/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "E♭",
+    "meter": "4/4",
+    "position_change_count": 6
   },
   {
     "key": "447",
@@ -8604,7 +10035,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/447/arrangement.json",
     "render_asset_url": "/materials/hymns/447/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "F",
+    "meter": "4/4",
+    "position_change_count": 4
   },
   {
     "key": "448",
@@ -8622,7 +10056,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/448/arrangement.json",
     "render_asset_url": "/materials/hymns/448/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "A",
+    "meter": "2/4",
+    "position_change_count": 2
   },
   {
     "key": "449",
@@ -8640,7 +10077,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/449/arrangement.json",
     "render_asset_url": "/materials/hymns/449/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "D",
+    "meter": "3/4",
+    "position_change_count": 12
   },
   {
     "key": "450",
@@ -8658,7 +10098,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/450/arrangement.json",
     "render_asset_url": "/materials/hymns/450/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "A♭",
+    "meter": "3/4",
+    "position_change_count": 2
   },
   {
     "key": "451",
@@ -8676,7 +10119,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/451/arrangement.json",
     "render_asset_url": "/materials/hymns/451/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "B♭",
+    "meter": "4/4",
+    "position_change_count": 8
   },
   {
     "key": "452",
@@ -8694,7 +10140,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/452/arrangement.json",
     "render_asset_url": "/materials/hymns/452/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "B♭",
+    "meter": "4/4",
+    "position_change_count": 6
   },
   {
     "key": "453",
@@ -8712,7 +10161,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/453/arrangement.json",
     "render_asset_url": "/materials/hymns/453/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "D",
+    "meter": "2/8",
+    "position_change_count": 6
   },
   {
     "key": "454",
@@ -8730,7 +10182,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/454/arrangement.json",
     "render_asset_url": "/materials/hymns/454/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "G",
+    "meter": "4/4",
+    "position_change_count": 2
   },
   {
     "key": "455",
@@ -8748,7 +10203,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/455/arrangement.json",
     "render_asset_url": "/materials/hymns/455/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "F",
+    "meter": "3/4",
+    "position_change_count": 2
   },
   {
     "key": "456",
@@ -8766,7 +10224,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/456/arrangement.json",
     "render_asset_url": "/materials/hymns/456/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "D♭",
+    "meter": "3/4",
+    "position_change_count": 6
   },
   {
     "key": "457",
@@ -8784,7 +10245,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/457/arrangement.json",
     "render_asset_url": "/materials/hymns/457/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "G",
+    "meter": "4/4",
+    "position_change_count": 2
   },
   {
     "key": "458",
@@ -8802,7 +10266,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/458/arrangement.json",
     "render_asset_url": "/materials/hymns/458/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "E♭",
+    "meter": "4/4",
+    "position_change_count": 7
   },
   {
     "key": "459",
@@ -8820,7 +10287,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/459/arrangement.json",
     "render_asset_url": "/materials/hymns/459/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "C",
+    "meter": "4/4",
+    "position_change_count": 4
   },
   {
     "key": "460",
@@ -8838,7 +10308,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/460/arrangement.json",
     "render_asset_url": "/materials/hymns/460/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "F",
+    "meter": "3/4",
+    "position_change_count": 2
   },
   {
     "key": "461",
@@ -8856,7 +10329,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/461/arrangement.json",
     "render_asset_url": "/materials/hymns/461/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "G",
+    "meter": "3/4",
+    "position_change_count": 4
   },
   {
     "key": "462",
@@ -8874,7 +10350,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/462/arrangement.json",
     "render_asset_url": "/materials/hymns/462/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "G",
+    "meter": "6/8",
+    "position_change_count": 3
   },
   {
     "key": "463",
@@ -8892,7 +10371,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/463/arrangement.json",
     "render_asset_url": "/materials/hymns/463/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "B♭",
+    "meter": "6/8",
+    "position_change_count": 5
   },
   {
     "key": "464",
@@ -8910,7 +10392,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/464/arrangement.json",
     "render_asset_url": "/materials/hymns/464/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "F",
+    "meter": "4/4",
+    "position_change_count": 0
   },
   {
     "key": "465",
@@ -8928,7 +10413,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/465/arrangement.json",
     "render_asset_url": "/materials/hymns/465/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "D",
+    "meter": "4/4",
+    "position_change_count": 6
   },
   {
     "key": "466",
@@ -8946,7 +10434,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/466/arrangement.json",
     "render_asset_url": "/materials/hymns/466/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "F",
+    "meter": "4/4",
+    "position_change_count": 2
   },
   {
     "key": "467",
@@ -8964,7 +10455,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/467/arrangement.json",
     "render_asset_url": "/materials/hymns/467/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "A♭",
+    "meter": "4/4",
+    "position_change_count": 4
   },
   {
     "key": "468",
@@ -8982,7 +10476,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/468/arrangement.json",
     "render_asset_url": "/materials/hymns/468/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "B♭",
+    "meter": "6/8",
+    "position_change_count": 1
   },
   {
     "key": "469",
@@ -9000,7 +10497,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/469/arrangement.json",
     "render_asset_url": "/materials/hymns/469/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "E♭",
+    "meter": "4/4",
+    "position_change_count": 3
   },
   {
     "key": "470",
@@ -9018,7 +10518,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/470/arrangement.json",
     "render_asset_url": "/materials/hymns/470/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "G",
+    "meter": "4/4",
+    "position_change_count": 1
   },
   {
     "key": "471",
@@ -9036,7 +10539,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/471/arrangement.json",
     "render_asset_url": "/materials/hymns/471/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": null,
+    "meter": "4/4",
+    "position_change_count": 8
   },
   {
     "key": "472",
@@ -9054,7 +10560,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/472/arrangement.json",
     "render_asset_url": "/materials/hymns/472/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "G",
+    "meter": "4/4",
+    "position_change_count": 4
   },
   {
     "key": "473",
@@ -9072,7 +10581,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/473/arrangement.json",
     "render_asset_url": "/materials/hymns/473/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "A♭",
+    "meter": "4/4",
+    "position_change_count": 11
   },
   {
     "key": "474",
@@ -9090,7 +10602,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/474/arrangement.json",
     "render_asset_url": "/materials/hymns/474/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "G",
+    "meter": "4/4",
+    "position_change_count": 2
   },
   {
     "key": "475",
@@ -9108,7 +10623,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/475/arrangement.json",
     "render_asset_url": "/materials/hymns/475/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "G",
+    "meter": "4/4",
+    "position_change_count": 9
   },
   {
     "key": "476",
@@ -9126,7 +10644,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/476/arrangement.json",
     "render_asset_url": "/materials/hymns/476/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "C",
+    "meter": "4/4",
+    "position_change_count": 3
   },
   {
     "key": "477",
@@ -9144,7 +10665,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/477/arrangement.json",
     "render_asset_url": "/materials/hymns/477/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "G",
+    "meter": "4/4",
+    "position_change_count": 1
   },
   {
     "key": "478",
@@ -9162,7 +10686,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/478/arrangement.json",
     "render_asset_url": "/materials/hymns/478/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "G",
+    "meter": "4/4",
+    "position_change_count": 9
   },
   {
     "key": "479",
@@ -9180,7 +10707,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/479/arrangement.json",
     "render_asset_url": "/materials/hymns/479/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "G",
+    "meter": "6/4",
+    "position_change_count": 0
   },
   {
     "key": "480",
@@ -9198,7 +10728,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/480/arrangement.json",
     "render_asset_url": "/materials/hymns/480/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "C",
+    "meter": "4/4",
+    "position_change_count": 1
   },
   {
     "key": "481",
@@ -9216,7 +10749,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/481/arrangement.json",
     "render_asset_url": "/materials/hymns/481/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "F",
+    "meter": "4/4",
+    "position_change_count": 0
   },
   {
     "key": "482",
@@ -9234,7 +10770,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/482/arrangement.json",
     "render_asset_url": "/materials/hymns/482/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "E♭",
+    "meter": "4/4",
+    "position_change_count": 3
   },
   {
     "key": "483",
@@ -9252,7 +10791,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/483/arrangement.json",
     "render_asset_url": "/materials/hymns/483/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "F",
+    "meter": "4/4",
+    "position_change_count": 0
   },
   {
     "key": "484",
@@ -9270,7 +10812,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/484/arrangement.json",
     "render_asset_url": "/materials/hymns/484/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "A♭",
+    "meter": "4/4",
+    "position_change_count": 6
   },
   {
     "key": "485",
@@ -9288,7 +10833,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/485/arrangement.json",
     "render_asset_url": "/materials/hymns/485/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "C",
+    "meter": "4/4",
+    "position_change_count": 18
   },
   {
     "key": "485b",
@@ -9306,7 +10854,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": null,
     "render_asset_url": "/materials/hymns/485/render.json",
     "render_variant": 1,
-    "fallback_reason": "第二调暂无独立 SimpMusic PPTX，使用本版本图片谱。"
+    "fallback_reason": "第二调暂无独立 SimpMusic PPTX，使用本版本图片谱。",
+    "key_signature": null,
+    "meter": null,
+    "position_change_count": null
   },
   {
     "key": "486",
@@ -9324,7 +10875,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/486/arrangement.json",
     "render_asset_url": "/materials/hymns/486/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "G",
+    "meter": "6/4",
+    "position_change_count": 8
   },
   {
     "key": "487",
@@ -9342,7 +10896,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/487/arrangement.json",
     "render_asset_url": "/materials/hymns/487/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "A♭",
+    "meter": "4/4",
+    "position_change_count": 2
   },
   {
     "key": "488",
@@ -9360,7 +10917,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/488/arrangement.json",
     "render_asset_url": "/materials/hymns/488/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "G",
+    "meter": "4/4",
+    "position_change_count": 3
   },
   {
     "key": "489",
@@ -9378,7 +10938,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/489/arrangement.json",
     "render_asset_url": "/materials/hymns/489/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "C",
+    "meter": "4/4",
+    "position_change_count": 11
   },
   {
     "key": "490",
@@ -9396,7 +10959,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/490/arrangement.json",
     "render_asset_url": "/materials/hymns/490/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "A♭",
+    "meter": "4/4",
+    "position_change_count": 4
   },
   {
     "key": "491",
@@ -9414,7 +10980,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/491/arrangement.json",
     "render_asset_url": "/materials/hymns/491/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "B♭",
+    "meter": "4/4",
+    "position_change_count": 5
   },
   {
     "key": "492",
@@ -9432,7 +11001,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/492/arrangement.json",
     "render_asset_url": "/materials/hymns/492/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "F",
+    "meter": "4/4",
+    "position_change_count": 2
   },
   {
     "key": "493",
@@ -9450,7 +11022,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/493/arrangement.json",
     "render_asset_url": "/materials/hymns/493/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "A♭",
+    "meter": "3/4",
+    "position_change_count": 20
   },
   {
     "key": "494",
@@ -9468,7 +11043,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/494/arrangement.json",
     "render_asset_url": "/materials/hymns/494/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "F",
+    "meter": "3/4",
+    "position_change_count": 1
   },
   {
     "key": "495",
@@ -9486,7 +11064,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/495/arrangement.json",
     "render_asset_url": "/materials/hymns/495/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "C",
+    "meter": "4/4",
+    "position_change_count": 5
   },
   {
     "key": "496",
@@ -9504,7 +11085,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/496/arrangement.json",
     "render_asset_url": "/materials/hymns/496/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "C",
+    "meter": "4/4",
+    "position_change_count": 6
   },
   {
     "key": "497",
@@ -9522,7 +11106,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/497/arrangement.json",
     "render_asset_url": "/materials/hymns/497/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "C",
+    "meter": "4/4",
+    "position_change_count": 1
   },
   {
     "key": "498",
@@ -9540,7 +11127,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/498/arrangement.json",
     "render_asset_url": "/materials/hymns/498/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "G",
+    "meter": "4/4",
+    "position_change_count": 1
   },
   {
     "key": "499",
@@ -9558,7 +11148,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/499/arrangement.json",
     "render_asset_url": "/materials/hymns/499/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "B♭",
+    "meter": "3/4",
+    "position_change_count": 2
   },
   {
     "key": "500",
@@ -9576,7 +11169,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/500/arrangement.json",
     "render_asset_url": "/materials/hymns/500/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "E♭",
+    "meter": "4/4",
+    "position_change_count": 9
   },
   {
     "key": "501",
@@ -9594,7 +11190,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/501/arrangement.json",
     "render_asset_url": "/materials/hymns/501/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "C",
+    "meter": "3/4",
+    "position_change_count": 2
   },
   {
     "key": "502",
@@ -9612,7 +11211,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/502/arrangement.json",
     "render_asset_url": "/materials/hymns/502/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "B♭",
+    "meter": "6/8",
+    "position_change_count": 2
   },
   {
     "key": "503",
@@ -9630,7 +11232,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/503/arrangement.json",
     "render_asset_url": "/materials/hymns/503/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "E♭",
+    "meter": "4/4",
+    "position_change_count": 5
   },
   {
     "key": "504",
@@ -9648,7 +11253,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/504/arrangement.json",
     "render_asset_url": "/materials/hymns/504/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "D",
+    "meter": "4/4",
+    "position_change_count": 2
   },
   {
     "key": "505",
@@ -9666,7 +11274,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/505/arrangement.json",
     "render_asset_url": "/materials/hymns/505/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "E",
+    "meter": "3/4",
+    "position_change_count": 0
   },
   {
     "key": "506",
@@ -9684,7 +11295,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/506/arrangement.json",
     "render_asset_url": "/materials/hymns/506/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "A♭",
+    "meter": "4/4",
+    "position_change_count": 3
   },
   {
     "key": "507",
@@ -9702,7 +11316,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/507/arrangement.json",
     "render_asset_url": "/materials/hymns/507/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "G",
+    "meter": "2/4",
+    "position_change_count": 8
   },
   {
     "key": "508",
@@ -9720,7 +11337,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/508/arrangement.json",
     "render_asset_url": "/materials/hymns/508/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "D",
+    "meter": "6/8",
+    "position_change_count": 3
   },
   {
     "key": "509",
@@ -9738,7 +11358,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/509/arrangement.json",
     "render_asset_url": "/materials/hymns/509/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "E♭",
+    "meter": "4/4",
+    "position_change_count": 3
   },
   {
     "key": "510",
@@ -9756,7 +11379,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/510/arrangement.json",
     "render_asset_url": "/materials/hymns/510/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "E♭",
+    "meter": "4/4",
+    "position_change_count": 3
   },
   {
     "key": "511",
@@ -9774,7 +11400,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/511/arrangement.json",
     "render_asset_url": "/materials/hymns/511/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "B♭",
+    "meter": "3/4",
+    "position_change_count": 2
   },
   {
     "key": "512",
@@ -9792,7 +11421,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/512/arrangement.json",
     "render_asset_url": "/materials/hymns/512/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "D",
+    "meter": "3/4",
+    "position_change_count": 3
   },
   {
     "key": "513",
@@ -9810,7 +11442,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/513/arrangement.json",
     "render_asset_url": "/materials/hymns/513/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "E♭",
+    "meter": "6/4",
+    "position_change_count": 4
   },
   {
     "key": "514",
@@ -9828,7 +11463,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/514/arrangement.json",
     "render_asset_url": "/materials/hymns/514/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "G",
+    "meter": "3/4",
+    "position_change_count": 10
   },
   {
     "key": "515",
@@ -9846,7 +11484,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/515/arrangement.json",
     "render_asset_url": "/materials/hymns/515/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "E♭",
+    "meter": "4/4",
+    "position_change_count": 54
   },
   {
     "key": "516",
@@ -9864,7 +11505,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/516/arrangement.json",
     "render_asset_url": "/materials/hymns/516/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "C",
+    "meter": "4/4",
+    "position_change_count": 1
   },
   {
     "key": "517",
@@ -9882,7 +11526,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/517/arrangement.json",
     "render_asset_url": "/materials/hymns/517/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "F",
+    "meter": "3/4",
+    "position_change_count": 6
   },
   {
     "key": "518",
@@ -9900,7 +11547,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/518/arrangement.json",
     "render_asset_url": "/materials/hymns/518/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "D",
+    "meter": "4/4",
+    "position_change_count": 1
   },
   {
     "key": "519",
@@ -9918,7 +11568,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/519/arrangement.json",
     "render_asset_url": "/materials/hymns/519/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "F",
+    "meter": "3/4",
+    "position_change_count": 4
   },
   {
     "key": "520",
@@ -9936,7 +11589,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/520/arrangement.json",
     "render_asset_url": "/materials/hymns/520/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "F",
+    "meter": "4/4",
+    "position_change_count": 7
   },
   {
     "key": "521",
@@ -9954,7 +11610,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/521/arrangement.json",
     "render_asset_url": "/materials/hymns/521/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "C",
+    "meter": "3/4",
+    "position_change_count": 4
   },
   {
     "key": "522",
@@ -9972,7 +11631,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/522/arrangement.json",
     "render_asset_url": "/materials/hymns/522/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "F",
+    "meter": "3/4",
+    "position_change_count": 2
   },
   {
     "key": "523",
@@ -9990,7 +11652,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/523/arrangement.json",
     "render_asset_url": "/materials/hymns/523/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "E♭",
+    "meter": "3/4",
+    "position_change_count": 2
   },
   {
     "key": "524",
@@ -10008,7 +11673,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/524/arrangement.json",
     "render_asset_url": "/materials/hymns/524/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "B♭",
+    "meter": "6/4",
+    "position_change_count": 3
   },
   {
     "key": "525",
@@ -10026,7 +11694,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/525/arrangement.json",
     "render_asset_url": "/materials/hymns/525/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "F",
+    "meter": "4/4",
+    "position_change_count": 1
   },
   {
     "key": "526",
@@ -10044,7 +11715,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/526/arrangement.json",
     "render_asset_url": "/materials/hymns/526/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "F",
+    "meter": "3/4",
+    "position_change_count": 6
   },
   {
     "key": "527",
@@ -10062,7 +11736,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/527/arrangement.json",
     "render_asset_url": "/materials/hymns/527/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "G",
+    "meter": "4/4",
+    "position_change_count": 3
   },
   {
     "key": "528",
@@ -10080,7 +11757,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/528/arrangement.json",
     "render_asset_url": "/materials/hymns/528/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "E♭",
+    "meter": "3/4",
+    "position_change_count": 8
   },
   {
     "key": "529",
@@ -10098,7 +11778,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/529/arrangement.json",
     "render_asset_url": "/materials/hymns/529/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "G",
+    "meter": "4/4",
+    "position_change_count": 6
   },
   {
     "key": "530",
@@ -10116,7 +11799,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/530/arrangement.json",
     "render_asset_url": "/materials/hymns/530/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "E♭",
+    "meter": "4/4",
+    "position_change_count": 36
   },
   {
     "key": "531",
@@ -10134,7 +11820,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/531/arrangement.json",
     "render_asset_url": "/materials/hymns/531/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "D",
+    "meter": null,
+    "position_change_count": 4
   },
   {
     "key": "532",
@@ -10152,7 +11841,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/532/arrangement.json",
     "render_asset_url": "/materials/hymns/532/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "C",
+    "meter": "3/4",
+    "position_change_count": 0
   },
   {
     "key": "533",
@@ -10170,7 +11862,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/533/arrangement.json",
     "render_asset_url": "/materials/hymns/533/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "F",
+    "meter": null,
+    "position_change_count": 8
   },
   {
     "key": "534",
@@ -10188,7 +11883,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/534/arrangement.json",
     "render_asset_url": "/materials/hymns/534/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "G",
+    "meter": null,
+    "position_change_count": 3
   },
   {
     "key": "535",
@@ -10206,7 +11904,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/535/arrangement.json",
     "render_asset_url": "/materials/hymns/535/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": null,
+    "meter": "4/4",
+    "position_change_count": 33
   },
   {
     "key": "536",
@@ -10224,7 +11925,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/536/arrangement.json",
     "render_asset_url": "/materials/hymns/536/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "E♭",
+    "meter": "4/4",
+    "position_change_count": 9
   },
   {
     "key": "536b",
@@ -10242,7 +11946,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": null,
     "render_asset_url": "/materials/hymns/536/render.json",
     "render_variant": 1,
-    "fallback_reason": "第二调暂无独立 SimpMusic PPTX，使用本版本图片谱。"
+    "fallback_reason": "第二调暂无独立 SimpMusic PPTX，使用本版本图片谱。",
+    "key_signature": null,
+    "meter": null,
+    "position_change_count": null
   },
   {
     "key": "537",
@@ -10260,7 +11967,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/537/arrangement.json",
     "render_asset_url": "/materials/hymns/537/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "A♭",
+    "meter": "6/4",
+    "position_change_count": 6
   },
   {
     "key": "538",
@@ -10278,7 +11988,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/538/arrangement.json",
     "render_asset_url": "/materials/hymns/538/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "C",
+    "meter": "4/4",
+    "position_change_count": 21
   },
   {
     "key": "539",
@@ -10296,7 +12009,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/539/arrangement.json",
     "render_asset_url": "/materials/hymns/539/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": null,
+    "meter": "4/4",
+    "position_change_count": 9
   },
   {
     "key": "540",
@@ -10314,7 +12030,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/540/arrangement.json",
     "render_asset_url": "/materials/hymns/540/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "D",
+    "meter": "4/4",
+    "position_change_count": 6
   },
   {
     "key": "541",
@@ -10332,7 +12051,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/541/arrangement.json",
     "render_asset_url": "/materials/hymns/541/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "C",
+    "meter": "4/4",
+    "position_change_count": 10
   },
   {
     "key": "542",
@@ -10350,7 +12072,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/542/arrangement.json",
     "render_asset_url": "/materials/hymns/542/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "E♭",
+    "meter": "4/4",
+    "position_change_count": 6
   },
   {
     "key": "543",
@@ -10368,7 +12093,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/543/arrangement.json",
     "render_asset_url": "/materials/hymns/543/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "G",
+    "meter": "4/4",
+    "position_change_count": 8
   },
   {
     "key": "544",
@@ -10386,7 +12114,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/544/arrangement.json",
     "render_asset_url": "/materials/hymns/544/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "D♭",
+    "meter": "6/8",
+    "position_change_count": 35
   },
   {
     "key": "545",
@@ -10404,7 +12135,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/545/arrangement.json",
     "render_asset_url": "/materials/hymns/545/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "A♭",
+    "meter": "6/4",
+    "position_change_count": 2
   },
   {
     "key": "546",
@@ -10422,7 +12156,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/546/arrangement.json",
     "render_asset_url": "/materials/hymns/546/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "E♭",
+    "meter": "4/4",
+    "position_change_count": 1
   },
   {
     "key": "547",
@@ -10440,7 +12177,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/547/arrangement.json",
     "render_asset_url": "/materials/hymns/547/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "G",
+    "meter": "3/4",
+    "position_change_count": 4
   },
   {
     "key": "548",
@@ -10458,7 +12198,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/548/arrangement.json",
     "render_asset_url": "/materials/hymns/548/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "D",
+    "meter": "6/8",
+    "position_change_count": 0
   },
   {
     "key": "549",
@@ -10476,7 +12219,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/549/arrangement.json",
     "render_asset_url": "/materials/hymns/549/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "E♭",
+    "meter": "3/4",
+    "position_change_count": 1
   },
   {
     "key": "550",
@@ -10494,7 +12240,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/550/arrangement.json",
     "render_asset_url": "/materials/hymns/550/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "A♭",
+    "meter": "3/4",
+    "position_change_count": 0
   },
   {
     "key": "551",
@@ -10512,7 +12261,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/551/arrangement.json",
     "render_asset_url": "/materials/hymns/551/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "D",
+    "meter": "4/4",
+    "position_change_count": 2
   },
   {
     "key": "552",
@@ -10530,7 +12282,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/552/arrangement.json",
     "render_asset_url": "/materials/hymns/552/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "C",
+    "meter": "3/4",
+    "position_change_count": 4
   },
   {
     "key": "553",
@@ -10548,7 +12303,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/553/arrangement.json",
     "render_asset_url": "/materials/hymns/553/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "D♭",
+    "meter": "3/4",
+    "position_change_count": 0
   },
   {
     "key": "554",
@@ -10566,7 +12324,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/554/arrangement.json",
     "render_asset_url": "/materials/hymns/554/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "B♭",
+    "meter": "4/4",
+    "position_change_count": 4
   },
   {
     "key": "555",
@@ -10584,7 +12345,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/555/arrangement.json",
     "render_asset_url": "/materials/hymns/555/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "A♭",
+    "meter": "3/4",
+    "position_change_count": 5
   },
   {
     "key": "556",
@@ -10602,7 +12366,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/556/arrangement.json",
     "render_asset_url": "/materials/hymns/556/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "G",
+    "meter": "4/4",
+    "position_change_count": 4
   },
   {
     "key": "557",
@@ -10620,7 +12387,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/557/arrangement.json",
     "render_asset_url": "/materials/hymns/557/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "D",
+    "meter": "2/4",
+    "position_change_count": 6
   },
   {
     "key": "558",
@@ -10638,7 +12408,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/558/arrangement.json",
     "render_asset_url": "/materials/hymns/558/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "D",
+    "meter": "4/4",
+    "position_change_count": 8
   },
   {
     "key": "559",
@@ -10656,7 +12429,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/559/arrangement.json",
     "render_asset_url": "/materials/hymns/559/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": null,
+    "meter": "4/4",
+    "position_change_count": 18
   },
   {
     "key": "560",
@@ -10674,7 +12450,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/560/arrangement.json",
     "render_asset_url": "/materials/hymns/560/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "D",
+    "meter": "4/4",
+    "position_change_count": 15
   },
   {
     "key": "561",
@@ -10692,7 +12471,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/561/arrangement.json",
     "render_asset_url": "/materials/hymns/561/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "A",
+    "meter": "3/4",
+    "position_change_count": 15
   },
   {
     "key": "562",
@@ -10710,7 +12492,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/562/arrangement.json",
     "render_asset_url": "/materials/hymns/562/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "G",
+    "meter": "4/4",
+    "position_change_count": 4
   },
   {
     "key": "563",
@@ -10728,7 +12513,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/563/arrangement.json",
     "render_asset_url": "/materials/hymns/563/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "E♭",
+    "meter": "6/4",
+    "position_change_count": 2
   },
   {
     "key": "564",
@@ -10746,7 +12534,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/564/arrangement.json",
     "render_asset_url": "/materials/hymns/564/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "B♭",
+    "meter": "3/4",
+    "position_change_count": 2
   },
   {
     "key": "565",
@@ -10764,7 +12555,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/565/arrangement.json",
     "render_asset_url": "/materials/hymns/565/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "C",
+    "meter": "4/4",
+    "position_change_count": 7
   },
   {
     "key": "566",
@@ -10782,7 +12576,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/566/arrangement.json",
     "render_asset_url": "/materials/hymns/566/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "E♭",
+    "meter": "3/4",
+    "position_change_count": 3
   },
   {
     "key": "567",
@@ -10800,7 +12597,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/567/arrangement.json",
     "render_asset_url": "/materials/hymns/567/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "A♭",
+    "meter": "6/8",
+    "position_change_count": 5
   },
   {
     "key": "568",
@@ -10818,7 +12618,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/568/arrangement.json",
     "render_asset_url": "/materials/hymns/568/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "F",
+    "meter": "4/4",
+    "position_change_count": 1
   },
   {
     "key": "569",
@@ -10836,7 +12639,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/569/arrangement.json",
     "render_asset_url": "/materials/hymns/569/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "A",
+    "meter": "4/4",
+    "position_change_count": 8
   },
   {
     "key": "570",
@@ -10854,7 +12660,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/570/arrangement.json",
     "render_asset_url": "/materials/hymns/570/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "B♭",
+    "meter": "4/4",
+    "position_change_count": 7
   },
   {
     "key": "571",
@@ -10872,7 +12681,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/571/arrangement.json",
     "render_asset_url": "/materials/hymns/571/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "G",
+    "meter": "4/4",
+    "position_change_count": 3
   },
   {
     "key": "572",
@@ -10890,7 +12702,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/572/arrangement.json",
     "render_asset_url": "/materials/hymns/572/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "F",
+    "meter": "3/4",
+    "position_change_count": 4
   },
   {
     "key": "573",
@@ -10908,7 +12723,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/573/arrangement.json",
     "render_asset_url": "/materials/hymns/573/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "F",
+    "meter": "4/4",
+    "position_change_count": 4
   },
   {
     "key": "574",
@@ -10926,7 +12744,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/574/arrangement.json",
     "render_asset_url": "/materials/hymns/574/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "B♭",
+    "meter": "4/4",
+    "position_change_count": 12
   },
   {
     "key": "575",
@@ -10944,7 +12765,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/575/arrangement.json",
     "render_asset_url": "/materials/hymns/575/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "A♭",
+    "meter": "6/8",
+    "position_change_count": 5
   },
   {
     "key": "576",
@@ -10962,7 +12786,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/576/arrangement.json",
     "render_asset_url": "/materials/hymns/576/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "F",
+    "meter": "4/4",
+    "position_change_count": 6
   },
   {
     "key": "577",
@@ -10980,7 +12807,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/577/arrangement.json",
     "render_asset_url": "/materials/hymns/577/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "F",
+    "meter": "4/4",
+    "position_change_count": 0
   },
   {
     "key": "578",
@@ -10998,7 +12828,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/578/arrangement.json",
     "render_asset_url": "/materials/hymns/578/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "F",
+    "meter": "3/4",
+    "position_change_count": 6
   },
   {
     "key": "578b",
@@ -11016,7 +12849,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": null,
     "render_asset_url": "/materials/hymns/578/render.json",
     "render_variant": 1,
-    "fallback_reason": "第二调暂无独立 SimpMusic PPTX，使用本版本图片谱。"
+    "fallback_reason": "第二调暂无独立 SimpMusic PPTX，使用本版本图片谱。",
+    "key_signature": null,
+    "meter": null,
+    "position_change_count": null
   },
   {
     "key": "579",
@@ -11034,7 +12870,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/579/arrangement.json",
     "render_asset_url": "/materials/hymns/579/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "E♭",
+    "meter": "4/4",
+    "position_change_count": 2
   },
   {
     "key": "580",
@@ -11052,7 +12891,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/580/arrangement.json",
     "render_asset_url": "/materials/hymns/580/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "F",
+    "meter": "4/4",
+    "position_change_count": 4
   },
   {
     "key": "581",
@@ -11070,7 +12912,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/581/arrangement.json",
     "render_asset_url": "/materials/hymns/581/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "E♭",
+    "meter": "4/4",
+    "position_change_count": 3
   },
   {
     "key": "582",
@@ -11088,7 +12933,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/582/arrangement.json",
     "render_asset_url": "/materials/hymns/582/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "C",
+    "meter": "4/4",
+    "position_change_count": 12
   },
   {
     "key": "583",
@@ -11106,7 +12954,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/583/arrangement.json",
     "render_asset_url": "/materials/hymns/583/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "E♭",
+    "meter": "4/4",
+    "position_change_count": 6
   },
   {
     "key": "584",
@@ -11124,7 +12975,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/584/arrangement.json",
     "render_asset_url": "/materials/hymns/584/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "F",
+    "meter": "2/2",
+    "position_change_count": 0
   },
   {
     "key": "585",
@@ -11142,7 +12996,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/585/arrangement.json",
     "render_asset_url": "/materials/hymns/585/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "D",
+    "meter": "4/4",
+    "position_change_count": 5
   },
   {
     "key": "586",
@@ -11160,7 +13017,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/586/arrangement.json",
     "render_asset_url": "/materials/hymns/586/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "A♭",
+    "meter": "3/4",
+    "position_change_count": 9
   },
   {
     "key": "587",
@@ -11178,7 +13038,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/587/arrangement.json",
     "render_asset_url": "/materials/hymns/587/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "E♭",
+    "meter": "4/4",
+    "position_change_count": 4
   },
   {
     "key": "588",
@@ -11196,7 +13059,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/588/arrangement.json",
     "render_asset_url": "/materials/hymns/588/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "F",
+    "meter": "6/4",
+    "position_change_count": 2
   },
   {
     "key": "589",
@@ -11214,7 +13080,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/589/arrangement.json",
     "render_asset_url": "/materials/hymns/589/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "C",
+    "meter": "4/4",
+    "position_change_count": 6
   },
   {
     "key": "590",
@@ -11232,7 +13101,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/590/arrangement.json",
     "render_asset_url": "/materials/hymns/590/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "F",
+    "meter": "4/4",
+    "position_change_count": 2
   },
   {
     "key": "591",
@@ -11250,7 +13122,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/591/arrangement.json",
     "render_asset_url": "/materials/hymns/591/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "C",
+    "meter": "4/4",
+    "position_change_count": 4
   },
   {
     "key": "592",
@@ -11268,7 +13143,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/592/arrangement.json",
     "render_asset_url": "/materials/hymns/592/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "D",
+    "meter": "4/4",
+    "position_change_count": 2
   },
   {
     "key": "593",
@@ -11286,7 +13164,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/593/arrangement.json",
     "render_asset_url": "/materials/hymns/593/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "A♭",
+    "meter": "4/4",
+    "position_change_count": 2
   },
   {
     "key": "594",
@@ -11304,7 +13185,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/594/arrangement.json",
     "render_asset_url": "/materials/hymns/594/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "D",
+    "meter": "4/4",
+    "position_change_count": 2
   },
   {
     "key": "595",
@@ -11322,7 +13206,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/595/arrangement.json",
     "render_asset_url": "/materials/hymns/595/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "F",
+    "meter": "4/4",
+    "position_change_count": 0
   },
   {
     "key": "596",
@@ -11340,7 +13227,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/596/arrangement.json",
     "render_asset_url": "/materials/hymns/596/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "D",
+    "meter": "4/4",
+    "position_change_count": 3
   },
   {
     "key": "597",
@@ -11358,7 +13248,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/597/arrangement.json",
     "render_asset_url": "/materials/hymns/597/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "G",
+    "meter": "3/2",
+    "position_change_count": 3
   },
   {
     "key": "598",
@@ -11376,7 +13269,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/598/arrangement.json",
     "render_asset_url": "/materials/hymns/598/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "A",
+    "meter": "4/4",
+    "position_change_count": 1
   },
   {
     "key": "599",
@@ -11394,7 +13290,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/599/arrangement.json",
     "render_asset_url": "/materials/hymns/599/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "F",
+    "meter": "4/4",
+    "position_change_count": 4
   },
   {
     "key": "600",
@@ -11412,7 +13311,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/600/arrangement.json",
     "render_asset_url": "/materials/hymns/600/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "A♭",
+    "meter": "4/4",
+    "position_change_count": 4
   },
   {
     "key": "601",
@@ -11430,7 +13332,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/601/arrangement.json",
     "render_asset_url": "/materials/hymns/601/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "F",
+    "meter": "4/4",
+    "position_change_count": 10
   },
   {
     "key": "602",
@@ -11448,7 +13353,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/602/arrangement.json",
     "render_asset_url": "/materials/hymns/602/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "D",
+    "meter": "3/4",
+    "position_change_count": 3
   },
   {
     "key": "603",
@@ -11466,7 +13374,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/603/arrangement.json",
     "render_asset_url": "/materials/hymns/603/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "E♭",
+    "meter": "4/4",
+    "position_change_count": 2
   },
   {
     "key": "604",
@@ -11484,7 +13395,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/604/arrangement.json",
     "render_asset_url": "/materials/hymns/604/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "G",
+    "meter": "3/4",
+    "position_change_count": 6
   },
   {
     "key": "605",
@@ -11502,7 +13416,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/605/arrangement.json",
     "render_asset_url": "/materials/hymns/605/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "D",
+    "meter": "2/4",
+    "position_change_count": 2
   },
   {
     "key": "606",
@@ -11520,7 +13437,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/606/arrangement.json",
     "render_asset_url": "/materials/hymns/606/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "F",
+    "meter": "4/4",
+    "position_change_count": 3
   },
   {
     "key": "606b",
@@ -11538,7 +13458,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": null,
     "render_asset_url": "/materials/hymns/606/render.json",
     "render_variant": 1,
-    "fallback_reason": "第二调暂无独立 SimpMusic PPTX，使用本版本图片谱。"
+    "fallback_reason": "第二调暂无独立 SimpMusic PPTX，使用本版本图片谱。",
+    "key_signature": null,
+    "meter": null,
+    "position_change_count": null
   },
   {
     "key": "607",
@@ -11556,7 +13479,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/607/arrangement.json",
     "render_asset_url": "/materials/hymns/607/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "F",
+    "meter": "3/4",
+    "position_change_count": 4
   },
   {
     "key": "608",
@@ -11574,7 +13500,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/608/arrangement.json",
     "render_asset_url": "/materials/hymns/608/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "B♭",
+    "meter": "2/4",
+    "position_change_count": 0
   },
   {
     "key": "609",
@@ -11592,7 +13521,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/609/arrangement.json",
     "render_asset_url": "/materials/hymns/609/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "D",
+    "meter": "4/4",
+    "position_change_count": 6
   },
   {
     "key": "610",
@@ -11610,7 +13542,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/610/arrangement.json",
     "render_asset_url": "/materials/hymns/610/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "D",
+    "meter": "4/4",
+    "position_change_count": 7
   },
   {
     "key": "611",
@@ -11628,7 +13563,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/611/arrangement.json",
     "render_asset_url": "/materials/hymns/611/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "E♭",
+    "meter": "4/4",
+    "position_change_count": 2
   },
   {
     "key": "612",
@@ -11646,7 +13584,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/612/arrangement.json",
     "render_asset_url": "/materials/hymns/612/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "D",
+    "meter": "3/4",
+    "position_change_count": 5
   },
   {
     "key": "613",
@@ -11664,7 +13605,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/613/arrangement.json",
     "render_asset_url": "/materials/hymns/613/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "G",
+    "meter": "4/4",
+    "position_change_count": 5
   },
   {
     "key": "614",
@@ -11682,7 +13626,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/614/arrangement.json",
     "render_asset_url": "/materials/hymns/614/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "B♭",
+    "meter": "3/4",
+    "position_change_count": 3
   },
   {
     "key": "615",
@@ -11700,7 +13647,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/615/arrangement.json",
     "render_asset_url": "/materials/hymns/615/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "B♭",
+    "meter": "4/4",
+    "position_change_count": 3
   },
   {
     "key": "616",
@@ -11718,7 +13668,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/616/arrangement.json",
     "render_asset_url": "/materials/hymns/616/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": null,
+    "meter": "6/4",
+    "position_change_count": 9
   },
   {
     "key": "617",
@@ -11736,7 +13689,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/617/arrangement.json",
     "render_asset_url": "/materials/hymns/617/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "B♭",
+    "meter": "4/4",
+    "position_change_count": 2
   },
   {
     "key": "618",
@@ -11754,7 +13710,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/618/arrangement.json",
     "render_asset_url": "/materials/hymns/618/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "E♭",
+    "meter": "6/8",
+    "position_change_count": 7
   },
   {
     "key": "619",
@@ -11772,7 +13731,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/619/arrangement.json",
     "render_asset_url": "/materials/hymns/619/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": null,
+    "meter": "4/4",
+    "position_change_count": 12
   },
   {
     "key": "620",
@@ -11790,7 +13752,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/620/arrangement.json",
     "render_asset_url": "/materials/hymns/620/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "A♭",
+    "meter": "4/4",
+    "position_change_count": 2
   },
   {
     "key": "621",
@@ -11808,7 +13773,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/621/arrangement.json",
     "render_asset_url": "/materials/hymns/621/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "A♭",
+    "meter": "4/4",
+    "position_change_count": 4
   },
   {
     "key": "622",
@@ -11826,7 +13794,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/622/arrangement.json",
     "render_asset_url": "/materials/hymns/622/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "B♭",
+    "meter": "4/4",
+    "position_change_count": 0
   },
   {
     "key": "623",
@@ -11844,7 +13815,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/623/arrangement.json",
     "render_asset_url": "/materials/hymns/623/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "A",
+    "meter": "3/4",
+    "position_change_count": 4
   },
   {
     "key": "624",
@@ -11862,7 +13836,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/624/arrangement.json",
     "render_asset_url": "/materials/hymns/624/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "F",
+    "meter": "4/4",
+    "position_change_count": 1
   },
   {
     "key": "625",
@@ -11880,7 +13857,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/625/arrangement.json",
     "render_asset_url": "/materials/hymns/625/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "A",
+    "meter": "6/8",
+    "position_change_count": 1
   },
   {
     "key": "626",
@@ -11898,7 +13878,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/626/arrangement.json",
     "render_asset_url": "/materials/hymns/626/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "B♭",
+    "meter": "4/4",
+    "position_change_count": 5
   },
   {
     "key": "627",
@@ -11916,7 +13899,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/627/arrangement.json",
     "render_asset_url": "/materials/hymns/627/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "E♭",
+    "meter": "4/4",
+    "position_change_count": 15
   },
   {
     "key": "628",
@@ -11934,7 +13920,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/628/arrangement.json",
     "render_asset_url": "/materials/hymns/628/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "D",
+    "meter": "4/4",
+    "position_change_count": 11
   },
   {
     "key": "629",
@@ -11952,7 +13941,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/629/arrangement.json",
     "render_asset_url": "/materials/hymns/629/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "C",
+    "meter": "4/4",
+    "position_change_count": 5
   },
   {
     "key": "630",
@@ -11970,7 +13962,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/630/arrangement.json",
     "render_asset_url": "/materials/hymns/630/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "F",
+    "meter": "4/4",
+    "position_change_count": 6
   },
   {
     "key": "631",
@@ -11988,7 +13983,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/631/arrangement.json",
     "render_asset_url": "/materials/hymns/631/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "E♭",
+    "meter": "4/4",
+    "position_change_count": 10
   },
   {
     "key": "632",
@@ -12006,7 +14004,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/632/arrangement.json",
     "render_asset_url": "/materials/hymns/632/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "D",
+    "meter": "2/2",
+    "position_change_count": 3
   },
   {
     "key": "633",
@@ -12024,7 +14025,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/633/arrangement.json",
     "render_asset_url": "/materials/hymns/633/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "A♭",
+    "meter": "4/4",
+    "position_change_count": 3
   },
   {
     "key": "634",
@@ -12042,7 +14046,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/634/arrangement.json",
     "render_asset_url": "/materials/hymns/634/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "E♭",
+    "meter": "4/4",
+    "position_change_count": 5
   },
   {
     "key": "635",
@@ -12060,7 +14067,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/635/arrangement.json",
     "render_asset_url": "/materials/hymns/635/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "C",
+    "meter": "4/4",
+    "position_change_count": 6
   },
   {
     "key": "636",
@@ -12078,7 +14088,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/636/arrangement.json",
     "render_asset_url": "/materials/hymns/636/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "A♭",
+    "meter": "6/8",
+    "position_change_count": 4
   },
   {
     "key": "637",
@@ -12096,7 +14109,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/637/arrangement.json",
     "render_asset_url": "/materials/hymns/637/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "D",
+    "meter": "4/4",
+    "position_change_count": 4
   },
   {
     "key": "638",
@@ -12114,7 +14130,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/638/arrangement.json",
     "render_asset_url": "/materials/hymns/638/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "D♭",
+    "meter": "4/4",
+    "position_change_count": 9
   },
   {
     "key": "639",
@@ -12132,7 +14151,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/639/arrangement.json",
     "render_asset_url": "/materials/hymns/639/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": null,
+    "meter": "4/4",
+    "position_change_count": 0
   },
   {
     "key": "640",
@@ -12150,7 +14172,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/640/arrangement.json",
     "render_asset_url": "/materials/hymns/640/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": null,
+    "meter": "3/4",
+    "position_change_count": 0
   },
   {
     "key": "641",
@@ -12168,7 +14193,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/641/arrangement.json",
     "render_asset_url": "/materials/hymns/641/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "A♭",
+    "meter": "4/4",
+    "position_change_count": 3
   },
   {
     "key": "642",
@@ -12186,7 +14214,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/642/arrangement.json",
     "render_asset_url": "/materials/hymns/642/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "E♭",
+    "meter": "3/4",
+    "position_change_count": 4
   },
   {
     "key": "643",
@@ -12204,7 +14235,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/643/arrangement.json",
     "render_asset_url": "/materials/hymns/643/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "D♭",
+    "meter": "4/4",
+    "position_change_count": 10
   },
   {
     "key": "644",
@@ -12222,7 +14256,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/644/arrangement.json",
     "render_asset_url": "/materials/hymns/644/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "E♭",
+    "meter": "4/4",
+    "position_change_count": 4
   },
   {
     "key": "645",
@@ -12240,7 +14277,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/645/arrangement.json",
     "render_asset_url": "/materials/hymns/645/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "G",
+    "meter": "3/4",
+    "position_change_count": 4
   },
   {
     "key": "646",
@@ -12258,7 +14298,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/646/arrangement.json",
     "render_asset_url": "/materials/hymns/646/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "C",
+    "meter": "3/4",
+    "position_change_count": 6
   },
   {
     "key": "647",
@@ -12276,7 +14319,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/647/arrangement.json",
     "render_asset_url": "/materials/hymns/647/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "B♭",
+    "meter": "4/4",
+    "position_change_count": 1
   },
   {
     "key": "648",
@@ -12294,7 +14340,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/648/arrangement.json",
     "render_asset_url": "/materials/hymns/648/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "C",
+    "meter": "3/4",
+    "position_change_count": 12
   },
   {
     "key": "649",
@@ -12312,7 +14361,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/649/arrangement.json",
     "render_asset_url": "/materials/hymns/649/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "D",
+    "meter": "4/4",
+    "position_change_count": 2
   },
   {
     "key": "650",
@@ -12330,7 +14382,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/650/arrangement.json",
     "render_asset_url": "/materials/hymns/650/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "A♭",
+    "meter": "4/2",
+    "position_change_count": 0
   },
   {
     "key": "651",
@@ -12348,7 +14403,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/651/arrangement.json",
     "render_asset_url": "/materials/hymns/651/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "G",
+    "meter": "4/4",
+    "position_change_count": 1
   },
   {
     "key": "652",
@@ -12366,7 +14424,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/652/arrangement.json",
     "render_asset_url": "/materials/hymns/652/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "G",
+    "meter": "4/4",
+    "position_change_count": 12
   },
   {
     "key": "653",
@@ -12384,7 +14445,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/653/arrangement.json",
     "render_asset_url": "/materials/hymns/653/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "F",
+    "meter": "4/4",
+    "position_change_count": 1
   },
   {
     "key": "654",
@@ -12402,7 +14466,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/654/arrangement.json",
     "render_asset_url": "/materials/hymns/654/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "B♭",
+    "meter": "4/4",
+    "position_change_count": 2
   },
   {
     "key": "655",
@@ -12420,7 +14487,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/655/arrangement.json",
     "render_asset_url": "/materials/hymns/655/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "A♭",
+    "meter": "4/4",
+    "position_change_count": 12
   },
   {
     "key": "656",
@@ -12438,7 +14508,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/656/arrangement.json",
     "render_asset_url": "/materials/hymns/656/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "E♭",
+    "meter": "6/8",
+    "position_change_count": 8
   },
   {
     "key": "657",
@@ -12456,7 +14529,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/657/arrangement.json",
     "render_asset_url": "/materials/hymns/657/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "D",
+    "meter": "4/4",
+    "position_change_count": 3
   },
   {
     "key": "658",
@@ -12474,7 +14550,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/658/arrangement.json",
     "render_asset_url": "/materials/hymns/658/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "A♭",
+    "meter": "4/4",
+    "position_change_count": 2
   },
   {
     "key": "659",
@@ -12492,7 +14571,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/659/arrangement.json",
     "render_asset_url": "/materials/hymns/659/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "E♭",
+    "meter": "4/4",
+    "position_change_count": 8
   },
   {
     "key": "660",
@@ -12510,7 +14592,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/660/arrangement.json",
     "render_asset_url": "/materials/hymns/660/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "E♭",
+    "meter": "4/4",
+    "position_change_count": 3
   },
   {
     "key": "661",
@@ -12528,7 +14613,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/661/arrangement.json",
     "render_asset_url": "/materials/hymns/661/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "B♭",
+    "meter": "3/4",
+    "position_change_count": 0
   },
   {
     "key": "662",
@@ -12546,7 +14634,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/662/arrangement.json",
     "render_asset_url": "/materials/hymns/662/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "D",
+    "meter": "4/4",
+    "position_change_count": 3
   },
   {
     "key": "663",
@@ -12564,7 +14655,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/663/arrangement.json",
     "render_asset_url": "/materials/hymns/663/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "G",
+    "meter": "4/4",
+    "position_change_count": 6
   },
   {
     "key": "664",
@@ -12582,7 +14676,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/664/arrangement.json",
     "render_asset_url": "/materials/hymns/664/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "E♭",
+    "meter": "4/4",
+    "position_change_count": 0
   },
   {
     "key": "665",
@@ -12600,7 +14697,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/665/arrangement.json",
     "render_asset_url": "/materials/hymns/665/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "D",
+    "meter": "3/4",
+    "position_change_count": 3
   },
   {
     "key": "666",
@@ -12618,7 +14718,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/666/arrangement.json",
     "render_asset_url": "/materials/hymns/666/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "E♭",
+    "meter": "6/8",
+    "position_change_count": 3
   },
   {
     "key": "667",
@@ -12636,7 +14739,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/667/arrangement.json",
     "render_asset_url": "/materials/hymns/667/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "D",
+    "meter": "4/4",
+    "position_change_count": 21
   },
   {
     "key": "668",
@@ -12654,7 +14760,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/668/arrangement.json",
     "render_asset_url": "/materials/hymns/668/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "E♭",
+    "meter": "4/4",
+    "position_change_count": 3
   },
   {
     "key": "669",
@@ -12672,7 +14781,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/669/arrangement.json",
     "render_asset_url": "/materials/hymns/669/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": null,
+    "meter": "2/4",
+    "position_change_count": 3
   },
   {
     "key": "670",
@@ -12690,7 +14802,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/670/arrangement.json",
     "render_asset_url": "/materials/hymns/670/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "F",
+    "meter": "4/4",
+    "position_change_count": 0
   },
   {
     "key": "671",
@@ -12708,7 +14823,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/671/arrangement.json",
     "render_asset_url": "/materials/hymns/671/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "E♭",
+    "meter": "3/4",
+    "position_change_count": 3
   },
   {
     "key": "672",
@@ -12726,7 +14844,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/672/arrangement.json",
     "render_asset_url": "/materials/hymns/672/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "E♭",
+    "meter": "4/4",
+    "position_change_count": 2
   },
   {
     "key": "673",
@@ -12744,7 +14865,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/673/arrangement.json",
     "render_asset_url": "/materials/hymns/673/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "A♭",
+    "meter": "4/4",
+    "position_change_count": 2
   },
   {
     "key": "674",
@@ -12762,7 +14886,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/674/arrangement.json",
     "render_asset_url": "/materials/hymns/674/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "F",
+    "meter": "4/4",
+    "position_change_count": 9
   },
   {
     "key": "675",
@@ -12780,7 +14907,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/675/arrangement.json",
     "render_asset_url": "/materials/hymns/675/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "E♭",
+    "meter": "4/4",
+    "position_change_count": 2
   },
   {
     "key": "676",
@@ -12798,7 +14928,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/676/arrangement.json",
     "render_asset_url": "/materials/hymns/676/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "E♭",
+    "meter": "4/4",
+    "position_change_count": 12
   },
   {
     "key": "677",
@@ -12816,7 +14949,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/677/arrangement.json",
     "render_asset_url": "/materials/hymns/677/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "F",
+    "meter": "4/4",
+    "position_change_count": 0
   },
   {
     "key": "678",
@@ -12834,7 +14970,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/678/arrangement.json",
     "render_asset_url": "/materials/hymns/678/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "D",
+    "meter": "3/4",
+    "position_change_count": 6
   },
   {
     "key": "679",
@@ -12852,7 +14991,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/679/arrangement.json",
     "render_asset_url": "/materials/hymns/679/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "A♭",
+    "meter": "4/4",
+    "position_change_count": 4
   },
   {
     "key": "680",
@@ -12870,7 +15012,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/680/arrangement.json",
     "render_asset_url": "/materials/hymns/680/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "F",
+    "meter": "3/4",
+    "position_change_count": 0
   },
   {
     "key": "681",
@@ -12888,7 +15033,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/681/arrangement.json",
     "render_asset_url": "/materials/hymns/681/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "E♭",
+    "meter": "4/4",
+    "position_change_count": 0
   },
   {
     "key": "682",
@@ -12906,7 +15054,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/682/arrangement.json",
     "render_asset_url": "/materials/hymns/682/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "A♭",
+    "meter": "4/4",
+    "position_change_count": 2
   },
   {
     "key": "683",
@@ -12924,7 +15075,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/683/arrangement.json",
     "render_asset_url": "/materials/hymns/683/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": null,
+    "meter": "4/4",
+    "position_change_count": 2
   },
   {
     "key": "684",
@@ -12942,7 +15096,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/684/arrangement.json",
     "render_asset_url": "/materials/hymns/684/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "G",
+    "meter": "4/4",
+    "position_change_count": 0
   },
   {
     "key": "685",
@@ -12960,7 +15117,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/685/arrangement.json",
     "render_asset_url": "/materials/hymns/685/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "D♭",
+    "meter": "2/4",
+    "position_change_count": 16
   },
   {
     "key": "686",
@@ -12978,7 +15138,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/686/arrangement.json",
     "render_asset_url": "/materials/hymns/686/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "E♭",
+    "meter": "4/4",
+    "position_change_count": 5
   },
   {
     "key": "687",
@@ -12996,7 +15159,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/687/arrangement.json",
     "render_asset_url": "/materials/hymns/687/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "B♭",
+    "meter": "4/4",
+    "position_change_count": 15
   },
   {
     "key": "688",
@@ -13014,7 +15180,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/688/arrangement.json",
     "render_asset_url": "/materials/hymns/688/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "F",
+    "meter": "4/4",
+    "position_change_count": 1
   },
   {
     "key": "689",
@@ -13032,7 +15201,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/689/arrangement.json",
     "render_asset_url": "/materials/hymns/689/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "F",
+    "meter": "4/4",
+    "position_change_count": 0
   },
   {
     "key": "690",
@@ -13050,7 +15222,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/690/arrangement.json",
     "render_asset_url": "/materials/hymns/690/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "C",
+    "meter": "4/4",
+    "position_change_count": 11
   },
   {
     "key": "691",
@@ -13068,7 +15243,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/691/arrangement.json",
     "render_asset_url": "/materials/hymns/691/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "E♭",
+    "meter": "4/4",
+    "position_change_count": 12
   },
   {
     "key": "692",
@@ -13086,7 +15264,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/692/arrangement.json",
     "render_asset_url": "/materials/hymns/692/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": null,
+    "meter": "4/4",
+    "position_change_count": 4
   },
   {
     "key": "693",
@@ -13104,7 +15285,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/693/arrangement.json",
     "render_asset_url": "/materials/hymns/693/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "G",
+    "meter": null,
+    "position_change_count": 2
   },
   {
     "key": "694",
@@ -13122,7 +15306,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/694/arrangement.json",
     "render_asset_url": "/materials/hymns/694/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "C",
+    "meter": "4/4",
+    "position_change_count": 2
   },
   {
     "key": "695",
@@ -13140,7 +15327,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/695/arrangement.json",
     "render_asset_url": "/materials/hymns/695/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "E♭",
+    "meter": null,
+    "position_change_count": 3
   },
   {
     "key": "696",
@@ -13158,7 +15348,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/696/arrangement.json",
     "render_asset_url": "/materials/hymns/696/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "D",
+    "meter": "4/4",
+    "position_change_count": 7
   },
   {
     "key": "697",
@@ -13176,7 +15369,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/697/arrangement.json",
     "render_asset_url": "/materials/hymns/697/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "E♭",
+    "meter": "4/4",
+    "position_change_count": 6
   },
   {
     "key": "698",
@@ -13194,7 +15390,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/698/arrangement.json",
     "render_asset_url": "/materials/hymns/698/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "C",
+    "meter": "4/4",
+    "position_change_count": 4
   },
   {
     "key": "699",
@@ -13212,7 +15411,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/699/arrangement.json",
     "render_asset_url": "/materials/hymns/699/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "D",
+    "meter": "4/4",
+    "position_change_count": 7
   },
   {
     "key": "700",
@@ -13230,7 +15432,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/700/arrangement.json",
     "render_asset_url": "/materials/hymns/700/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "E♭",
+    "meter": "4/4",
+    "position_change_count": 18
   },
   {
     "key": "701",
@@ -13248,7 +15453,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/701/arrangement.json",
     "render_asset_url": "/materials/hymns/701/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "F",
+    "meter": "2/4",
+    "position_change_count": 5
   },
   {
     "key": "702",
@@ -13266,7 +15474,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/702/arrangement.json",
     "render_asset_url": "/materials/hymns/702/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "F",
+    "meter": "4/4",
+    "position_change_count": 6
   },
   {
     "key": "703",
@@ -13284,7 +15495,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/703/arrangement.json",
     "render_asset_url": "/materials/hymns/703/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "F",
+    "meter": null,
+    "position_change_count": 2
   },
   {
     "key": "704",
@@ -13302,7 +15516,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/704/arrangement.json",
     "render_asset_url": "/materials/hymns/704/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "F",
+    "meter": "3/4",
+    "position_change_count": 3
   },
   {
     "key": "705",
@@ -13320,7 +15537,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/705/arrangement.json",
     "render_asset_url": "/materials/hymns/705/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "G",
+    "meter": "3/4",
+    "position_change_count": 2
   },
   {
     "key": "706",
@@ -13338,7 +15558,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/706/arrangement.json",
     "render_asset_url": "/materials/hymns/706/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "B♭",
+    "meter": "4/4",
+    "position_change_count": 8
   },
   {
     "key": "707",
@@ -13356,7 +15579,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/707/arrangement.json",
     "render_asset_url": "/materials/hymns/707/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "C",
+    "meter": "4/4",
+    "position_change_count": 4
   },
   {
     "key": "708",
@@ -13374,7 +15600,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/708/arrangement.json",
     "render_asset_url": "/materials/hymns/708/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "E♭",
+    "meter": "3/4",
+    "position_change_count": 4
   },
   {
     "key": "709",
@@ -13392,7 +15621,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/709/arrangement.json",
     "render_asset_url": "/materials/hymns/709/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": null,
+    "meter": "4/4",
+    "position_change_count": 1
   },
   {
     "key": "710",
@@ -13410,7 +15642,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/710/arrangement.json",
     "render_asset_url": "/materials/hymns/710/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "G",
+    "meter": "4/4",
+    "position_change_count": 3
   },
   {
     "key": "711",
@@ -13428,7 +15663,10 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/711/arrangement.json",
     "render_asset_url": "/materials/hymns/711/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "D",
+    "meter": "4/4",
+    "position_change_count": 6
   },
   {
     "key": "712",
@@ -13446,6 +15684,9 @@ export const hymnCatalog: readonly HymnCatalogItem[] = [
     "arrangement_asset_url": "/materials/hymns/712/arrangement.json",
     "render_asset_url": "/materials/hymns/712/render.json",
     "render_variant": 0,
-    "fallback_reason": null
+    "fallback_reason": null,
+    "key_signature": "C",
+    "meter": "4/4",
+    "position_change_count": 9
   }
 ];

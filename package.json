@@ -6,7 +6,7 @@
   "scripts": {
     "generate:hymns": "node scripts/generate-hymn-catalog.mjs",
     "generate:scores": "tsx scripts/generate-score-assets.ts",
-    "ocr:hymns": "swift scripts/ocr-hymn-images.swift 选本诗歌712/歌谱 data/hymn-ocr.jsonl",
+    "ocr:hymns": "swift scripts/ocr-hymn-images.swift resource/歌谱 data/hymn-ocr.jsonl",
     "check:fonts": "tsx scripts/check-simpmusic-fonts.ts",
     "predev": "npm run generate:scores",
     "dev": "vite",

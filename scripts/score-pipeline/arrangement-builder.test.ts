@@ -11,6 +11,7 @@ import {
   loadManualArrangement,
   type ManualArrangementOverrides,
 } from "./arrangement-builder";
+import { resolvePptxCorpusFile } from "./corpus-paths";
 import { readPptxSource } from "./pptx-reader";
 import { buildPianoScore } from "./score-builder";
 
@@ -31,7 +32,7 @@ function noteEvents(score: PianoScoreDocument): ScoreNoteEvent[] {
 beforeAll(async () => {
   score118 = buildPianoScore(
     await readPptxSource(
-      resolve("712首-文字/118 神的儿子亲爱救主.pptx"),
+      resolvePptxCorpusFile("118 神的儿子亲爱救主.pptx"),
     ),
     {
       metadataFallback: {
@@ -53,7 +54,7 @@ describe("buildPianoArrangement", () => {
       arrangement.chords.every(
         (chord) =>
           (chord as typeof chord & { display_default?: boolean })
-            .display_default === false,
+            .display_default === true,
       ),
     ).toBe(true);
     expect(validateArrangementDocument(score118, arrangement)).toEqual([]);
@@ -136,9 +137,14 @@ describe("buildPianoArrangement", () => {
     expect(validateArrangementDocument(score118, arrangement)).toEqual([]);
   });
 
-  it("[defect-probing] 来源确认和人工确认和弦默认展示，自动候选默认隐藏", () => {
+  it("[defect-probing] 自动候选、来源确认和人工确认和弦均默认展示", () => {
     const automatic = buildPianoArrangement(score118);
     const firstChord = automatic.chords[0];
+
+    expect(firstChord).toMatchObject({
+      status: "auto_candidate",
+      display_default: true,
+    });
 
     for (const status of [
       "source_confirmed",
@@ -196,7 +202,7 @@ describe("buildPianoArrangement", () => {
     expect(validateArrangementDocument(score118, arrangement)).toEqual([]);
   });
 
-  it("调号为空时仍生成逐音指法，但和弦保持不可用", () => {
+  it("调号为空时仍生成逐音指法与相对级数和弦", () => {
     const noKeyScore: PianoScoreDocument = {
       ...score118,
       key_signature: null,
@@ -204,7 +210,17 @@ describe("buildPianoArrangement", () => {
     };
     const arrangement = buildPianoArrangement(noKeyScore);
     expect(arrangement.fingerings).toHaveLength(noteEvents(noKeyScore).length);
-    expect(arrangement.chords).toEqual([]);
-    expect(arrangement.accompaniment.status).toBe("unavailable");
+    expect(arrangement.chords.length).toBeGreaterThan(0);
+    expect(
+      arrangement.chords.every(
+        (chord) =>
+          chord.display_default &&
+          chord.status === "auto_candidate" &&
+          chord.evidence.includes(
+            "调号未标明，和弦音使用相对级数表达",
+          ),
+      ),
+    ).toBe(true);
+    expect(arrangement.accompaniment.status).toBe("auto_candidate");
   });
 });

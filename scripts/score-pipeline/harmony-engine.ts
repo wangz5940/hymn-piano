@@ -1,3 +1,4 @@
+import { shouldDisplayTeachingCandidate } from "../../src/features/score/contracts";
 import type {
   ArrangementRecommendation,
   ChordAssignment,
@@ -37,6 +38,26 @@ const FLAT_NAMES = [
   "B♭",
   "B",
 ] as const;
+const RELATIVE_DEGREE_NAMES = new Map<number, string>([
+  [0, "1"],
+  [2, "2"],
+  [4, "3"],
+  [5, "4"],
+  [7, "5"],
+  [9, "6"],
+  [11, "7"],
+]);
+const RELATIVE_CHORD_LABELS: Record<
+  ChordDefinition["function"],
+  string
+> = {
+  I: "主和弦",
+  ii: "二级小和弦",
+  IV: "下属和弦",
+  V: "属和弦",
+  V7: "属七和弦",
+  vi: "六级小和弦",
+};
 
 interface ChordDefinition {
   function: "I" | "ii" | "IV" | "V" | "V7" | "vi";
@@ -108,6 +129,10 @@ function degreePitchClass(tonic: number, degree: number): number {
 
 function noteName(pitchClass: number, preferFlats: boolean): string {
   return (preferFlats ? FLAT_NAMES : SHARP_NAMES)[mod(pitchClass, 12)];
+}
+
+function relativeDegreeName(pitch: number): string {
+  return RELATIVE_DEGREE_NAMES.get(mod(pitch, 12)) ?? "?";
 }
 
 function prefersFlats(keySignature: string): boolean {
@@ -271,20 +296,6 @@ function recommendation(
   return { status, text, reason };
 }
 
-function unavailableRecommendations(): Omit<HarmonyPlan, "chords"> {
-  const unavailable = recommendation(
-    "unavailable",
-    "调号未确认，暂不生成和声与伴奏结论。",
-    "没有可靠调号时写出实际和弦音名会造成错误教学。",
-  );
-  return {
-    accompaniment: unavailable,
-    intro: unavailable,
-    interlude: unavailable,
-    ending: unavailable,
-  };
-}
-
 function accompanimentForMeter(
   meter: string | null,
 ): ArrangementRecommendation {
@@ -319,10 +330,11 @@ function accompanimentForMeter(
 export function generateHarmonyPlan(score: PianoScoreDocument): HarmonyPlan {
   const keySignature = score.key_signature?.value ?? null;
   const tonic = keySignature ? tonicPitchClass(keySignature) : null;
-  if (!keySignature || tonic === null) {
-    return { chords: [], ...unavailableRecommendations() };
-  }
-  const preferFlats = prefersFlats(keySignature);
+  const relativeMode = tonic === null;
+  const voicingTonic = tonic ?? 0;
+  const preferFlats = keySignature
+    ? prefersFlats(keySignature)
+    : false;
   const chords: ChordAssignment[] = [];
   let previousVoicing: number[] | null = null;
 
@@ -339,36 +351,56 @@ export function generateHarmonyPlan(score: PianoScoreDocument): HarmonyPlan {
     const selected = ranked[0];
     const voicing = chooseVoicing(
       selected.definition,
-      tonic,
+      voicingTonic,
       preferFlats,
       previousVoicing,
     );
     const fingers = leftHandFingers(voicing);
-    const tones: ChordTone[] = voicing.names.map((note, index) => ({
+    const toneNames = relativeMode
+      ? voicing.pitches.map(relativeDegreeName)
+      : voicing.names;
+    const tones: ChordTone[] = toneNames.map((note, index) => ({
       note,
       finger: fingers[index],
     }));
-    const symbol = chordSymbol(selected.definition, tonic, preferFlats);
+    const symbol = relativeMode
+      ? RELATIVE_CHORD_LABELS[selected.definition.function]
+      : chordSymbol(selected.definition, voicingTonic, preferFlats);
+    const relativeEvidence = relativeMode
+      ? ["调号未标明，和弦音使用相对级数表达"]
+      : [];
     chords.push({
       id: `${context.measure.id}-chord-1`,
       measure_id: context.measure.id,
       beat: 0,
-      display_default: false,
+      display_default: shouldDisplayTeachingCandidate("auto_candidate"),
       symbol,
       function: selected.definition.function,
-      bass: voicing.names[0],
+      bass: toneNames[0],
       inversion: inversionNames(voicing.inversion),
       tones,
       status: "auto_candidate",
-      confidence: Math.min(0.92, 0.55 + selected.score * 0.04),
+      confidence: Math.min(
+        relativeMode ? 0.78 : 0.92,
+        (relativeMode ? 0.45 : 0.55) + selected.score * 0.04,
+      ),
       evidence:
         selected.evidence.length > 0
-          ? selected.evidence
-          : ["根据本小节旋律和弦音覆盖率选择"],
+          ? [...relativeEvidence, ...selected.evidence]
+          : [
+              ...relativeEvidence,
+              "根据本小节旋律和弦音覆盖率选择",
+            ],
       alternatives: ranked.slice(1, 3).map((item) => item.definition.function),
-      reason: `${selected.definition.function} 覆盖本小节主要旋律音；采用 ${inversionNames(
-        voicing.inversion,
-      )} 转位以缩短与前一和弦的移动。`,
+      reason: relativeMode
+        ? `${selected.definition.function} 覆盖本小节主要旋律音；左手采用 ${toneNames.join(
+            "-",
+          )} 的 ${inversionNames(
+            voicing.inversion,
+          )} 转位，调号确认后再换算绝对音名。`
+        : `${selected.definition.function} 覆盖本小节主要旋律音；采用 ${inversionNames(
+            voicing.inversion,
+          )} 转位以缩短与前一和弦的移动。`,
     });
     previousVoicing = voicing.pitches;
   }
@@ -389,8 +421,12 @@ export function generateHarmonyPlan(score: PianoScoreDocument): HarmonyPlan {
     ),
     ending: recommendation(
       "auto_candidate",
-      "使用最后两个已生成和弦，并在主和弦上延长",
-      "沿用实际终止进行，比统一套用固定 V7-I 更贴合本曲句法。",
+      relativeMode
+        ? "使用最后两个相对功能和弦，并在 I 级主和弦上延长"
+        : "使用最后两个已生成和弦，并在主和弦上延长",
+      relativeMode
+        ? "调号未标明时保留功能进行，不提前伪造绝对和弦音名。"
+        : "沿用实际终止进行，比统一套用固定 V7-I 更贴合本曲句法。",
     ),
   };
 }

@@ -183,7 +183,43 @@ describe("generateFingeringPlan", () => {
     expect(plan.fingerings.every((item) => item.confidence < 0.8)).toBe(true);
   });
 
-  it("[defect-probing] 合并少于四音的瞬时手位，逐音指法仍完整保留", () => {
+  it("[defect-probing] 第 5 首首行保留 E 到 G 的三音换位", () => {
+    const score = scoreWithDegrees("D", [
+      { degree: 5 },
+      { degree: 5 },
+      { degree: 3 },
+      { degree: 5 },
+      { degree: 1, octave: 1 },
+      { degree: 1, octave: 1 },
+      { degree: 6 },
+      { degree: 1, octave: 1 },
+    ]);
+    const eventIds = score.pages[0].systems[0].measures[0].events.map(
+      (event) => event.id,
+    );
+    const plan = generateFingeringPlan(score);
+
+    expect(plan.positions.map((position) => position.label)).toEqual([
+      "E Position",
+      "G Position",
+    ]);
+    expect(plan.positions[0]).toMatchObject({
+      start_event_id: eventIds[0],
+      end_event_id: eventIds[2],
+    });
+    expect(plan.positions[1]).toMatchObject({
+      start_event_id: eventIds[3],
+      end_event_id: eventIds[7],
+    });
+    expect(plan.moves).toEqual([
+      expect.objectContaining({
+        trigger_event_id: eventIds[3],
+        instruction: "Move to G Position",
+      }),
+    ]);
+  });
+
+  it("[defect-probing] 合并少于三音的瞬时手位，逐音指法仍完整保留", () => {
     const score = scoreWithDegrees("E♭", [
       { degree: 5 },
       { degree: 5 },
@@ -215,7 +251,7 @@ describe("generateFingeringPlan", () => {
       plan.positions.every((position) => {
         const start = eventIndexes.get(position.start_event_id);
         const end = eventIndexes.get(position.end_event_id);
-        return start !== undefined && end !== undefined && end - start + 1 >= 4;
+        return start !== undefined && end !== undefined && end - start + 1 >= 3;
       }),
     ).toBe(true);
     expect(plan.moves.length).toBeLessThanOrEqual(1);

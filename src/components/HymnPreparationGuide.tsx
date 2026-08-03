@@ -7,6 +7,7 @@ import type {
   TeachingSourceStatus,
 } from "@/features/score/contracts";
 import type { HymnAssets } from "@/features/score/loadHymnAssets";
+import { scoreNoteName } from "@/features/score/pitch";
 import { createHymnGuidance } from "@/features/hymns/guidance";
 import type { HymnCatalogItem } from "@/features/hymns/types";
 
@@ -84,6 +85,7 @@ function toneSummary(
 interface FingeringDetail {
   eventId: string;
   note: string;
+  keyName: string;
   assignment: FingerAssignment;
 }
 
@@ -135,6 +137,10 @@ function buildFingeringGroups(
             {
               eventId: event.id,
               note: noteLabel(event),
+              keyName: scoreNoteName(
+                event,
+                score.key_signature?.value ?? null,
+              ),
               assignment,
             },
           ];
@@ -254,8 +260,11 @@ export function HymnPreparationGuide({
                   <ol>
                     {group.items.map((item) => (
                       <li data-event-id={item.eventId} key={item.eventId}>
-                        <span className="fingering-detail__note">
-                          {item.note}
+                        <span className="fingering-detail__pitch">
+                          <span className="fingering-detail__note">
+                            {item.note}
+                          </span>
+                          <small>{item.keyName}</small>
                         </span>
                         <strong>{item.assignment.finger} 指</strong>
                         <p>{item.assignment.reason}</p>

@@ -13,7 +13,6 @@ import {
   type SourceReference,
   type SourceShape,
   type SourceSlide,
-  type SourceTextRun,
   type SourceTextShape,
 } from "../../src/features/score/contracts";
 import {
@@ -379,18 +378,21 @@ function parseTextShape(
     identity.id,
   );
   const txBody = firstChild(node, "p:txBody");
-  const paragraphs = txBody
-    ? childElements(txBody, "a:p").map((paragraph, paragraphIndex) =>
-        parseParagraph(
-          paragraph,
-          identity.id,
-          slide,
-          paragraphIndex,
-          auditAsset,
-          resolveParagraphDefaults(node, paragraph, placeholderDefaults),
-        ),
-      )
-    : [];
+  const paragraphs: SourceParagraph[] = [];
+  for (const paragraph of txBody
+    ? childElements(txBody, "a:p")
+    : []) {
+    paragraphs.push(
+      ...parseParagraphLines(
+        paragraph,
+        identity.id,
+        slide,
+        paragraphs.length,
+        auditAsset,
+        resolveParagraphDefaults(node, paragraph, placeholderDefaults),
+      ),
+    );
+  }
   const transform = readTransform(node);
 
   return {
@@ -406,19 +408,36 @@ function parseTextShape(
   };
 }
 
-function parseParagraph(
+function parseParagraphLines(
   node: OrderedXmlNode,
   shapeId: string,
   slide: number,
-  paragraphIndex: number,
+  firstParagraphIndex: number,
   auditAsset: string,
   defaults?: RunStyleDefaults,
-): SourceParagraph {
-  const runs: SourceTextRun[] = [];
+): SourceParagraph[] {
+  const paragraphs: SourceParagraph[] = [];
+  const nextParagraph = (): SourceParagraph => {
+    const paragraphIndex = firstParagraphIndex + paragraphs.length;
+    const paragraph = {
+      id: `${shapeId}-p-${paragraphIndex}`,
+      order: paragraphIndex,
+      runs: [],
+    };
+    paragraphs.push(paragraph);
+    return paragraph;
+  };
+  let current = nextParagraph();
+
   for (const child of elementChildren(node)) {
     const name = elementName(child);
+    if (name === "a:br") {
+      current = nextParagraph();
+      continue;
+    }
     if (name !== "a:r" && name !== "a:fld") continue;
-    const runIndex = runs.length;
+    const paragraphIndex = current.order;
+    const runIndex = current.runs.length;
     const source = createSourceReference(
       auditAsset,
       slide,
@@ -428,7 +447,7 @@ function parseParagraph(
     );
     const properties = firstChild(child, "a:rPr");
     const propertyAttributes = attributes(properties);
-    runs.push({
+    current.runs.push({
       id: `${shapeId}-p-${paragraphIndex}-r-${runIndex}`,
       text: descendants([child], "a:t").map(textContent).join(""),
       font_family: readTypeface(properties) ?? defaults?.fontFamily ?? null,
@@ -446,11 +465,7 @@ function parseParagraph(
       source,
     });
   }
-  return {
-    id: `${shapeId}-p-${paragraphIndex}`,
-    order: paragraphIndex,
-    runs,
-  };
+  return paragraphs;
 }
 
 function parseMediaShape(

@@ -13,7 +13,7 @@
       "bass": "E♭",
       "beat": 0,
       "confidence": 0.91,
-      "display_default": false,
+      "display_default": true,
       "evidence": [
         "强拍旋律 5 属于 I",
         "乐句起点优先建立主调"
@@ -48,7 +48,7 @@
       "bass": "E♭",
       "beat": 0,
       "confidence": 0.6900000000000001,
-      "display_default": false,
+      "display_default": true,
       "evidence": [
         "根据本小节旋律和弦音覆盖率选择"
       ],
@@ -82,7 +82,7 @@
       "bass": "E♭",
       "beat": 0,
       "confidence": 0.8900000000000001,
-      "display_default": false,
+      "display_default": true,
       "evidence": [
         "强拍旋律 5 属于 V",
         "终止前小节优先采用属功能"
@@ -117,7 +117,7 @@
       "bass": "E♭",
       "beat": 0,
       "confidence": 0.8300000000000001,
-      "display_default": false,
+      "display_default": true,
       "evidence": [
         "强拍旋律 5 属于 I",
         "系统末小节优先落在主和弦"
@@ -152,7 +152,7 @@
       "bass": "F",
       "beat": 0,
       "confidence": 0.79,
-      "display_default": false,
+      "display_default": true,
       "evidence": [
         "强拍旋律 6 属于 vi"
       ],
@@ -186,7 +186,7 @@
       "bass": "E♭",
       "beat": 0,
       "confidence": 0.67,
-      "display_default": false,
+      "display_default": true,
       "evidence": [
         "强拍旋律 3 属于 I"
       ],
@@ -220,7 +220,7 @@
       "bass": "E♭",
       "beat": 0,
       "confidence": 0.8300000000000001,
-      "display_default": false,
+      "display_default": true,
       "evidence": [
         "强拍旋律 2 属于 V",
         "终止前小节优先采用属功能"
@@ -255,7 +255,7 @@
       "bass": "E♭",
       "beat": 0,
       "confidence": 0.8300000000000001,
-      "display_default": false,
+      "display_default": true,
       "evidence": [
         "强拍旋律 5 属于 I",
         "系统末小节优先落在主和弦"
@@ -290,7 +290,7 @@
       "bass": "E♭",
       "beat": 0,
       "confidence": 0.92,
-      "display_default": false,
+      "display_default": true,
       "evidence": [
         "强拍旋律 5 属于 I",
         "乐句起点优先建立主调"
@@ -325,7 +325,7 @@
       "bass": "E♭",
       "beat": 0,
       "confidence": 0.6900000000000001,
-      "display_default": false,
+      "display_default": true,
       "evidence": [
         "根据本小节旋律和弦音覆盖率选择"
       ],
@@ -359,7 +359,7 @@
       "bass": "D♭",
       "beat": 0,
       "confidence": 0.8900000000000001,
-      "display_default": false,
+      "display_default": true,
       "evidence": [
         "强拍旋律 5 属于 V7",
         "终止前小节优先采用属功能"
@@ -398,7 +398,7 @@
       "bass": "C",
       "beat": 0,
       "confidence": 0.8300000000000001,
-      "display_default": false,
+      "display_default": true,
       "evidence": [
         "强拍旋律 5 属于 I",
         "系统末小节优先落在主和弦"
@@ -433,7 +433,7 @@
       "bass": "C",
       "beat": 0,
       "confidence": 0.8900000000000001,
-      "display_default": false,
+      "display_default": true,
       "evidence": [
         "强拍旋律 5 属于 I",
         "乐句起点优先建立主调"
@@ -468,7 +468,7 @@
       "bass": "D♭",
       "beat": 0,
       "confidence": 0.73,
-      "display_default": false,
+      "display_default": true,
       "evidence": [
         "强拍旋律 2 属于 ii"
       ],
@@ -502,7 +502,7 @@
       "bass": "E♭",
       "beat": 0,
       "confidence": 0.8900000000000001,
-      "display_default": false,
+      "display_default": true,
       "evidence": [
         "强拍旋律 7 属于 V",
         "终止前小节优先采用属功能"
@@ -537,7 +537,7 @@
       "bass": "E♭",
       "beat": 0,
       "confidence": 0.91,
-      "display_default": false,
+      "display_default": true,
       "evidence": [
         "强拍旋律 1 属于 I",
         "系统末小节优先落在主和弦"
@@ -565,7 +565,7 @@
       ]
     }
   ],
-  "content_hash": "207569272863c5035d940bb2b6105e37738215db90ce63b7eb68031837bed039",
+  "content_hash": "dd8db100193cb213458354eb2ba922a0a438ef69e8a8e1d92c2de1df58f2be6e",
   "ending": {
     "reason": "沿用实际终止进行，比统一套用固定 V7-I 更贴合本曲句法。",
     "status": "auto_candidate",
@@ -944,6 +944,14 @@
       "reason": "旋律超出原手位或需要为后续音符预留手指，在此音前整体移动手掌。",
       "to_position_id": "h259-p1-s3-position-4",
       "trigger_event_id": "h259-p1-s3-m3-e2"
+    },
+    {
+      "from_position_id": "h259-p1-s4-position-5",
+      "id": "h259-p1-s4-position-6-move",
+      "instruction": "Move to F Position",
+      "reason": "旋律超出原手位或需要为后续音符预留手指，在此音前整体移动手掌。",
+      "to_position_id": "h259-p1-s4-position-6",
+      "trigger_event_id": "h259-p1-s4-m1-e4"
     }
   ],
   "positions": [
@@ -1013,6 +1021,22 @@
     },
     {
       "confidence": 0.82,
+      "end_event_id": "h259-p1-s4-m1-e3",
+      "finger_notes": {
+        "1": "B",
+        "2": "D♭",
+        "3": "E♭",
+        "4": "E",
+        "5": "G♭"
+      },
+      "id": "h259-p1-s4-position-5",
+      "label": "B Position",
+      "reason": "黑键优先交给 2、3、4 指，减少拇指或小指扭转。",
+      "start_event_id": "h259-p1-s4-m1-e1",
+      "status": "auto_candidate"
+    },
+    {
+      "confidence": 0.82,
       "end_event_id": "h259-p1-s4-m4-e1",
       "finger_notes": {
         "1": "F",
@@ -1021,10 +1045,10 @@
         "4": "B♭",
         "5": "C"
       },
-      "id": "h259-p1-s4-position-5",
+      "id": "h259-p1-s4-position-6",
       "label": "F Position",
       "reason": "黑键优先交给 2、3、4 指，减少拇指或小指扭转。",
-      "start_event_id": "h259-p1-s4-m1-e1",
+      "start_event_id": "h259-p1-s4-m1-e4",
       "status": "auto_candidate"
     }
   ],

@@ -6,48 +6,16 @@ import type {
   PositionSegment,
   ScoreNoteEvent,
 } from "../../src/features/score/contracts";
+import {
+  isBlackKeyPitch,
+  pitchClassName,
+  prefersFlatNoteNames,
+  scoreNotePitch,
+} from "../../src/features/score/pitch";
 
-const SCALE_INTERVALS = [0, 2, 4, 5, 7, 9, 11] as const;
 const FINGER_OFFSETS = [0, 2, 4, 5, 7] as const;
-const BLACK_PITCH_CLASSES = new Set([1, 3, 6, 8, 10]);
-const NOTE_NAMES_SHARP = [
-  "C",
-  "C♯",
-  "D",
-  "D♯",
-  "E",
-  "F",
-  "F♯",
-  "G",
-  "G♯",
-  "A",
-  "A♯",
-  "B",
-] as const;
-const NOTE_NAMES_FLAT = [
-  "C",
-  "D♭",
-  "D",
-  "E♭",
-  "E",
-  "F",
-  "G♭",
-  "G",
-  "A♭",
-  "A",
-  "B♭",
-  "B",
-] as const;
-const NATURAL_PITCH_CLASSES = {
-  C: 0,
-  D: 2,
-  E: 4,
-  F: 5,
-  G: 7,
-  A: 9,
-  B: 11,
-} as const;
-const MIN_STABLE_POSITION_NOTES = 4;
+const MIN_STABLE_POSITION_NOTES = 3;
+const MIN_CROWDED_POSITION_NOTES = 4;
 const MICRO_POSITION_DISTANCE = 2;
 
 interface FingeringState {
@@ -84,55 +52,7 @@ export interface FingeringPlan {
   moves: PositionMove[];
 }
 
-function mod(value: number, divisor: number): number {
-  return ((value % divisor) + divisor) % divisor;
-}
-
-function tonicPitchClass(keySignature: string | null): number {
-  if (!keySignature) return 0;
-  const match = keySignature.match(/^([A-G])([♯♭]?)/u);
-  if (!match) return 0;
-  const natural =
-    NATURAL_PITCH_CLASSES[
-      match[1] as keyof typeof NATURAL_PITCH_CLASSES
-    ];
-  return mod(
-    natural + (match[2] === "♯" ? 1 : match[2] === "♭" ? -1 : 0),
-    12,
-  );
-}
-
-export function scoreNotePitch(
-  note: ScoreNoteEvent,
-  keySignature: string | null,
-): number {
-  const tonic = tonicPitchClass(keySignature);
-  const accidental =
-    note.accidental === "sharp" ? 1 : note.accidental === "flat" ? -1 : 0;
-  return (
-    60 +
-    tonic +
-    SCALE_INTERVALS[note.degree - 1] +
-    note.octave * 12 +
-    accidental
-  );
-}
-
-export function isBlackKeyPitch(pitch: number): boolean {
-  return BLACK_PITCH_CLASSES.has(mod(pitch, 12));
-}
-
-function noteName(pitch: number, preferFlats: boolean): string {
-  const names = preferFlats ? NOTE_NAMES_FLAT : NOTE_NAMES_SHARP;
-  return names[mod(pitch, 12)];
-}
-
-function prefersFlats(keySignature: string | null): boolean {
-  return Boolean(
-    keySignature &&
-      (keySignature.includes("♭") || keySignature === "F"),
-  );
-}
+export { isBlackKeyPitch, scoreNotePitch };
 
 function initialCost(
   pitch: number,
@@ -340,7 +260,7 @@ function blackKeyReason(
   preferFlats: boolean,
 ): string {
   const item = planned[index];
-  const name = noteName(item.pitch, preferFlats);
+  const name = pitchClassName(item.pitch, preferFlats);
   const alternative = item.middleFingerAlternative;
   if (!alternative) {
     return `${name} 是黑键，优先使用 ${item.finger} 指，避免拇指或小指触黑键。`;
@@ -361,7 +281,7 @@ function positionFingerNotes(
   return Object.fromEntries(
     FINGER_OFFSETS.map((offset, index) => [
       (index + 1) as FingerNumber,
-      noteName(position + offset, preferFlats),
+      pitchClassName(position + offset, preferFlats),
     ]),
   );
 }
@@ -447,7 +367,10 @@ function stablePositionRuns(notes: PlannedNote[]): PlannedPositionRun[] {
   while (runs.length > 1) {
     const shortIndex = runs.reduce(
       (selected, run, index) =>
-        run.notes.length < MIN_STABLE_POSITION_NOTES &&
+        (run.notes.length < MIN_STABLE_POSITION_NOTES ||
+          (run.notes.length < MIN_CROWDED_POSITION_NOTES &&
+            index > 0 &&
+            index < runs.length - 1)) &&
         (selected === -1 ||
           run.notes.length < runs[selected].notes.length)
           ? index
@@ -480,6 +403,23 @@ function stablePositionRuns(notes: PlannedNote[]): PlannedPositionRun[] {
       index += 1;
     }
   }
+
+  while (runs.length > 2) {
+    const shortCrowdedIndex = runs.findIndex(
+      (run) => run.notes.length < MIN_CROWDED_POSITION_NOTES,
+    );
+    if (shortCrowdedIndex < 0) break;
+    const targetIndex = shortRunMergeTarget(
+      runs,
+      shortCrowdedIndex,
+    );
+    const leftIndex = Math.min(shortCrowdedIndex, targetIndex);
+    runs.splice(
+      leftIndex,
+      2,
+      mergePositionRuns(runs[leftIndex], runs[leftIndex + 1]),
+    );
+  }
   return runs;
 }
 
@@ -487,7 +427,7 @@ export function generateFingeringPlan(
   score: PianoScoreDocument,
 ): FingeringPlan {
   const keySignature = score.key_signature?.value ?? null;
-  const preferFlats = prefersFlats(keySignature);
+  const preferFlats = prefersFlatNoteNames(keySignature);
   const planned: PlannedNote[] = [];
   for (const page of score.pages) {
     for (const system of page.systems) {
@@ -538,7 +478,7 @@ export function generateFingeringPlan(
         id: `${systemId}-position-${positions.length + 1}`,
         start_event_id: run.notes[0].event.id,
         end_event_id: run.notes.at(-1)!.event.id,
-        label: `${noteName(run.position, preferFlats)} Position`,
+        label: `${pitchClassName(run.position, preferFlats)} Position`,
         finger_notes: positionFingerNotes(run.position, preferFlats),
         status: "auto_candidate",
         confidence: keySignature ? 0.82 : 0.68,

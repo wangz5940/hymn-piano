@@ -101,13 +101,30 @@ function score(
 }
 
 describe("generateHarmonyPlan", () => {
-  it("无调号时不伪造和弦音名，并明确标记 unavailable", () => {
+  it("无调号时生成相对级数和弦且不伪造绝对音名", () => {
     const plan = generateHarmonyPlan(
       score(null, [measure(1, [1, 3, 5])]),
     );
-    expect(plan.chords).toEqual([]);
-    expect(plan.accompaniment.status).toBe("unavailable");
-    expect(plan.ending.text).toContain("调号未确认");
+    expect(plan.chords).toEqual([
+      expect.objectContaining({
+        symbol: "主和弦",
+        function: "I",
+        display_default: true,
+        status: "auto_candidate",
+        evidence: expect.arrayContaining([
+          "调号未标明，和弦音使用相对级数表达",
+        ]),
+      }),
+    ]);
+    expect(
+      new Set(plan.chords[0].tones.map((tone) => tone.note)),
+    ).toEqual(new Set(["1", "3", "5"]));
+    expect(plan.chords[0].confidence).toBeLessThanOrEqual(0.78);
+    expect(plan.accompaniment.status).toBe("auto_candidate");
+    expect(plan.ending.text).toContain("相对功能和弦");
+    expect(JSON.stringify(plan.chords)).not.toMatch(
+      /"symbol":"[A-G][♯♭]?/u,
+    );
   });
 
   it("根据实际旋律与终止位置生成不同功能，而不是固定 I-V7-I", () => {
@@ -168,7 +185,7 @@ describe("generateHarmonyPlan", () => {
     expect(sixEight.accompaniment.text).toContain("第 1、4");
   });
 
-  it("[defect-probing] 自动和弦保留为候选数据但默认不展示", () => {
+  it("[defect-probing] 自动和弦作为明确标识的初始方案默认展示", () => {
     const plan = generateHarmonyPlan(
       score("F", [
         measure(1, [1, 3, 5]),
@@ -181,7 +198,7 @@ describe("generateHarmonyPlan", () => {
       expect.arrayContaining([
         expect.objectContaining({
           status: "auto_candidate",
-          display_default: false,
+          display_default: true,
         }),
       ]),
     );
@@ -189,7 +206,7 @@ describe("generateHarmonyPlan", () => {
       plan.chords.every(
         (chord) =>
           (chord as typeof chord & { display_default?: boolean })
-            .display_default === false,
+            .display_default === true,
       ),
     ).toBe(true);
   });

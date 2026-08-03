@@ -1,4 +1,3 @@
-import { resolve } from "node:path";
 import { beforeAll, describe, expect, it } from "vitest";
 import {
   BASE_UNKNOWN_GLYPH_ALLOWLIST,
@@ -14,12 +13,13 @@ import {
   scanSimpMusicCorpus,
   type SimpMusicCorpusInventory,
 } from "./simpmusic-inventory";
+import { pptxCorpusDirectory } from "./corpus-paths";
 
 describe("SimpMusic 全语料 inventory", () => {
   let inventory: SimpMusicCorpusInventory;
 
   beforeAll(async () => {
-    inventory = await scanSimpMusicCorpus(resolve("712首-文字"), 12);
+    inventory = await scanSimpMusicCorpus(pptxCorpusDirectory, 12);
   }, 30_000);
 
   it("固定 712 份 PPTX 的字体使用与字符基线", () => {

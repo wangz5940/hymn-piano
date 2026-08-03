@@ -1,15 +1,1152 @@
 {
   "accompaniment": {
-    "reason": "没有可靠调号时写出实际和弦音名会造成错误教学。",
-    "status": "unavailable",
-    "text": "调号未确认，暂不生成和声与伴奏结论。"
+    "reason": "6/8 应听成两大拍，避免六拍平均用力。",
+    "status": "auto_candidate",
+    "text": "第 1、4 个八分音符形成两大拍，其余音轻分解"
   },
-  "chords": [],
-  "content_hash": "6da91abc25a2b00caf601163e364aabcd8dea1659a71627699ff77a21f15ab59",
+  "chords": [
+    {
+      "alternatives": [
+        "vi",
+        "ii"
+      ],
+      "bass": "3",
+      "beat": 0,
+      "confidence": 0.77,
+      "display_default": true,
+      "evidence": [
+        "调号未标明，和弦音使用相对级数表达",
+        "强拍旋律 3 属于 I",
+        "乐句起点优先建立主调"
+      ],
+      "function": "I",
+      "id": "h232-p1-s1-m1-chord-1",
+      "inversion": "first",
+      "measure_id": "h232-p1-s1-m1",
+      "reason": "I 覆盖本小节主要旋律音；左手采用 3-5-1 的 first 转位，调号确认后再换算绝对音名。",
+      "status": "auto_candidate",
+      "symbol": "主和弦",
+      "tones": [
+        {
+          "finger": 5,
+          "note": "3"
+        },
+        {
+          "finger": 2,
+          "note": "5"
+        },
+        {
+          "finger": 1,
+          "note": "1"
+        }
+      ]
+    },
+    {
+      "alternatives": [
+        "IV",
+        "vi"
+      ],
+      "bass": "3",
+      "beat": 0,
+      "confidence": 0.61,
+      "display_default": true,
+      "evidence": [
+        "调号未标明，和弦音使用相对级数表达",
+        "强拍旋律 1 属于 I"
+      ],
+      "function": "I",
+      "id": "h232-p1-s1-m2-chord-1",
+      "inversion": "first",
+      "measure_id": "h232-p1-s1-m2",
+      "reason": "I 覆盖本小节主要旋律音；左手采用 3-5-1 的 first 转位，调号确认后再换算绝对音名。",
+      "status": "auto_candidate",
+      "symbol": "主和弦",
+      "tones": [
+        {
+          "finger": 5,
+          "note": "3"
+        },
+        {
+          "finger": 2,
+          "note": "5"
+        },
+        {
+          "finger": 1,
+          "note": "1"
+        }
+      ]
+    },
+    {
+      "alternatives": [
+        "IV",
+        "V7"
+      ],
+      "bass": "2",
+      "beat": 0,
+      "confidence": 0.75,
+      "display_default": true,
+      "evidence": [
+        "调号未标明，和弦音使用相对级数表达",
+        "强拍旋律 6 属于 ii"
+      ],
+      "function": "ii",
+      "id": "h232-p1-s1-m3-chord-1",
+      "inversion": "root",
+      "measure_id": "h232-p1-s1-m3",
+      "reason": "ii 覆盖本小节主要旋律音；左手采用 2-4-6 的 root 转位，调号确认后再换算绝对音名。",
+      "status": "auto_candidate",
+      "symbol": "二级小和弦",
+      "tones": [
+        {
+          "finger": 5,
+          "note": "2"
+        },
+        {
+          "finger": 2,
+          "note": "4"
+        },
+        {
+          "finger": 1,
+          "note": "6"
+        }
+      ]
+    },
+    {
+      "alternatives": [
+        "vi",
+        "ii"
+      ],
+      "bass": "1",
+      "beat": 0,
+      "confidence": 0.77,
+      "display_default": true,
+      "evidence": [
+        "调号未标明，和弦音使用相对级数表达",
+        "强拍旋律 3 属于 I",
+        "系统末小节优先落在主和弦"
+      ],
+      "function": "I",
+      "id": "h232-p1-s1-m4-chord-1",
+      "inversion": "root",
+      "measure_id": "h232-p1-s1-m4",
+      "reason": "I 覆盖本小节主要旋律音；左手采用 1-3-5 的 root 转位，调号确认后再换算绝对音名。",
+      "status": "auto_candidate",
+      "symbol": "主和弦",
+      "tones": [
+        {
+          "finger": 5,
+          "note": "1"
+        },
+        {
+          "finger": 3,
+          "note": "3"
+        },
+        {
+          "finger": 1,
+          "note": "5"
+        }
+      ]
+    },
+    {
+      "alternatives": [
+        "vi",
+        "ii"
+      ],
+      "bass": "1",
+      "beat": 0,
+      "confidence": 0.77,
+      "display_default": true,
+      "evidence": [
+        "调号未标明，和弦音使用相对级数表达",
+        "强拍旋律 3 属于 I",
+        "乐句起点优先建立主调"
+      ],
+      "function": "I",
+      "id": "h232-p1-s2-m1-chord-1",
+      "inversion": "root",
+      "measure_id": "h232-p1-s2-m1",
+      "reason": "I 覆盖本小节主要旋律音；左手采用 1-3-5 的 root 转位，调号确认后再换算绝对音名。",
+      "status": "auto_candidate",
+      "symbol": "主和弦",
+      "tones": [
+        {
+          "finger": 5,
+          "note": "1"
+        },
+        {
+          "finger": 3,
+          "note": "3"
+        },
+        {
+          "finger": 1,
+          "note": "5"
+        }
+      ]
+    },
+    {
+      "alternatives": [
+        "vi",
+        "IV"
+      ],
+      "bass": "1",
+      "beat": 0,
+      "confidence": 0.61,
+      "display_default": true,
+      "evidence": [
+        "调号未标明，和弦音使用相对级数表达",
+        "强拍旋律 1 属于 I"
+      ],
+      "function": "I",
+      "id": "h232-p1-s2-m2-chord-1",
+      "inversion": "root",
+      "measure_id": "h232-p1-s2-m2",
+      "reason": "I 覆盖本小节主要旋律音；左手采用 1-3-5 的 root 转位，调号确认后再换算绝对音名。",
+      "status": "auto_candidate",
+      "symbol": "主和弦",
+      "tones": [
+        {
+          "finger": 5,
+          "note": "1"
+        },
+        {
+          "finger": 3,
+          "note": "3"
+        },
+        {
+          "finger": 1,
+          "note": "5"
+        }
+      ]
+    },
+    {
+      "alternatives": [
+        "IV",
+        "vi"
+      ],
+      "bass": "1",
+      "beat": 0,
+      "confidence": 0.69,
+      "display_default": true,
+      "evidence": [
+        "调号未标明，和弦音使用相对级数表达",
+        "强拍旋律 1 属于 I"
+      ],
+      "function": "I",
+      "id": "h232-p1-s2-m3-chord-1",
+      "inversion": "root",
+      "measure_id": "h232-p1-s2-m3",
+      "reason": "I 覆盖本小节主要旋律音；左手采用 1-3-5 的 root 转位，调号确认后再换算绝对音名。",
+      "status": "auto_candidate",
+      "symbol": "主和弦",
+      "tones": [
+        {
+          "finger": 5,
+          "note": "1"
+        },
+        {
+          "finger": 3,
+          "note": "3"
+        },
+        {
+          "finger": 1,
+          "note": "5"
+        }
+      ]
+    },
+    {
+      "alternatives": [
+        "V",
+        "V7"
+      ],
+      "bass": "1",
+      "beat": 0,
+      "confidence": 0.77,
+      "display_default": true,
+      "evidence": [
+        "调号未标明，和弦音使用相对级数表达",
+        "强拍旋律 5 属于 I",
+        "系统末小节优先落在主和弦"
+      ],
+      "function": "I",
+      "id": "h232-p1-s2-m4-chord-1",
+      "inversion": "root",
+      "measure_id": "h232-p1-s2-m4",
+      "reason": "I 覆盖本小节主要旋律音；左手采用 1-3-5 的 root 转位，调号确认后再换算绝对音名。",
+      "status": "auto_candidate",
+      "symbol": "主和弦",
+      "tones": [
+        {
+          "finger": 5,
+          "note": "1"
+        },
+        {
+          "finger": 3,
+          "note": "3"
+        },
+        {
+          "finger": 1,
+          "note": "5"
+        }
+      ]
+    },
+    {
+      "alternatives": [
+        "vi",
+        "IV"
+      ],
+      "bass": "1",
+      "beat": 0,
+      "confidence": 0.78,
+      "display_default": true,
+      "evidence": [
+        "调号未标明，和弦音使用相对级数表达",
+        "强拍旋律 3 属于 I",
+        "乐句起点优先建立主调"
+      ],
+      "function": "I",
+      "id": "h232-p1-s3-m1-chord-1",
+      "inversion": "root",
+      "measure_id": "h232-p1-s3-m1",
+      "reason": "I 覆盖本小节主要旋律音；左手采用 1-3-5 的 root 转位，调号确认后再换算绝对音名。",
+      "status": "auto_candidate",
+      "symbol": "主和弦",
+      "tones": [
+        {
+          "finger": 5,
+          "note": "1"
+        },
+        {
+          "finger": 3,
+          "note": "3"
+        },
+        {
+          "finger": 1,
+          "note": "5"
+        }
+      ]
+    },
+    {
+      "alternatives": [
+        "IV",
+        "vi"
+      ],
+      "bass": "2",
+      "beat": 0,
+      "confidence": 0.5700000000000001,
+      "display_default": true,
+      "evidence": [
+        "调号未标明，和弦音使用相对级数表达",
+        "强拍旋律 6 属于 ii"
+      ],
+      "function": "ii",
+      "id": "h232-p1-s3-m2-chord-1",
+      "inversion": "root",
+      "measure_id": "h232-p1-s3-m2",
+      "reason": "ii 覆盖本小节主要旋律音；左手采用 2-4-6 的 root 转位，调号确认后再换算绝对音名。",
+      "status": "auto_candidate",
+      "symbol": "二级小和弦",
+      "tones": [
+        {
+          "finger": 5,
+          "note": "2"
+        },
+        {
+          "finger": 2,
+          "note": "4"
+        },
+        {
+          "finger": 1,
+          "note": "6"
+        }
+      ]
+    },
+    {
+      "alternatives": [
+        "vi",
+        "V"
+      ],
+      "bass": "1",
+      "beat": 0,
+      "confidence": 0.75,
+      "display_default": true,
+      "evidence": [
+        "调号未标明，和弦音使用相对级数表达",
+        "强拍旋律 3 属于 I"
+      ],
+      "function": "I",
+      "id": "h232-p1-s3-m3-chord-1",
+      "inversion": "root",
+      "measure_id": "h232-p1-s3-m3",
+      "reason": "I 覆盖本小节主要旋律音；左手采用 1-3-5 的 root 转位，调号确认后再换算绝对音名。",
+      "status": "auto_candidate",
+      "symbol": "主和弦",
+      "tones": [
+        {
+          "finger": 5,
+          "note": "1"
+        },
+        {
+          "finger": 3,
+          "note": "3"
+        },
+        {
+          "finger": 1,
+          "note": "5"
+        }
+      ]
+    },
+    {
+      "alternatives": [
+        "IV",
+        "V"
+      ],
+      "bass": "1",
+      "beat": 0,
+      "confidence": 0.73,
+      "display_default": true,
+      "evidence": [
+        "调号未标明，和弦音使用相对级数表达",
+        "强拍旋律 1 属于 I",
+        "系统末小节优先落在主和弦"
+      ],
+      "function": "I",
+      "id": "h232-p1-s3-m4-chord-1",
+      "inversion": "root",
+      "measure_id": "h232-p1-s3-m4",
+      "reason": "I 覆盖本小节主要旋律音；左手采用 1-3-5 的 root 转位，调号确认后再换算绝对音名。",
+      "status": "auto_candidate",
+      "symbol": "主和弦",
+      "tones": [
+        {
+          "finger": 5,
+          "note": "1"
+        },
+        {
+          "finger": 3,
+          "note": "3"
+        },
+        {
+          "finger": 1,
+          "note": "5"
+        }
+      ]
+    },
+    {
+      "alternatives": [
+        "V",
+        "V7"
+      ],
+      "bass": "1",
+      "beat": 0,
+      "confidence": 0.65,
+      "display_default": true,
+      "evidence": [
+        "调号未标明，和弦音使用相对级数表达",
+        "乐句起点优先建立主调"
+      ],
+      "function": "I",
+      "id": "h232-p1-s4-m1-chord-1",
+      "inversion": "root",
+      "measure_id": "h232-p1-s4-m1",
+      "reason": "I 覆盖本小节主要旋律音；左手采用 1-3-5 的 root 转位，调号确认后再换算绝对音名。",
+      "status": "auto_candidate",
+      "symbol": "主和弦",
+      "tones": [
+        {
+          "finger": 5,
+          "note": "1"
+        },
+        {
+          "finger": 3,
+          "note": "3"
+        },
+        {
+          "finger": 1,
+          "note": "5"
+        }
+      ]
+    },
+    {
+      "alternatives": [
+        "IV",
+        "V7"
+      ],
+      "bass": "2",
+      "beat": 0,
+      "confidence": 0.61,
+      "display_default": true,
+      "evidence": [
+        "调号未标明，和弦音使用相对级数表达",
+        "强拍旋律 4 属于 ii"
+      ],
+      "function": "ii",
+      "id": "h232-p1-s4-m2-chord-1",
+      "inversion": "root",
+      "measure_id": "h232-p1-s4-m2",
+      "reason": "ii 覆盖本小节主要旋律音；左手采用 2-4-6 的 root 转位，调号确认后再换算绝对音名。",
+      "status": "auto_candidate",
+      "symbol": "二级小和弦",
+      "tones": [
+        {
+          "finger": 5,
+          "note": "2"
+        },
+        {
+          "finger": 2,
+          "note": "4"
+        },
+        {
+          "finger": 1,
+          "note": "6"
+        }
+      ]
+    },
+    {
+      "alternatives": [
+        "V7",
+        "ii"
+      ],
+      "bass": "2",
+      "beat": 0,
+      "confidence": 0.77,
+      "display_default": true,
+      "evidence": [
+        "调号未标明，和弦音使用相对级数表达",
+        "强拍旋律 7 属于 V",
+        "终止前小节优先采用属功能"
+      ],
+      "function": "V",
+      "id": "h232-p1-s4-m3-chord-1",
+      "inversion": "second",
+      "measure_id": "h232-p1-s4-m3",
+      "reason": "V 覆盖本小节主要旋律音；左手采用 2-5-7 的 second 转位，调号确认后再换算绝对音名。",
+      "status": "auto_candidate",
+      "symbol": "属和弦",
+      "tones": [
+        {
+          "finger": 5,
+          "note": "2"
+        },
+        {
+          "finger": 3,
+          "note": "5"
+        },
+        {
+          "finger": 1,
+          "note": "7"
+        }
+      ]
+    },
+    {
+      "alternatives": [
+        "IV",
+        "vi"
+      ],
+      "bass": "3",
+      "beat": 0,
+      "confidence": 0.78,
+      "display_default": true,
+      "evidence": [
+        "调号未标明，和弦音使用相对级数表达",
+        "强拍旋律 1 属于 I",
+        "系统末小节优先落在主和弦"
+      ],
+      "function": "I",
+      "id": "h232-p1-s4-m4-chord-1",
+      "inversion": "first",
+      "measure_id": "h232-p1-s4-m4",
+      "reason": "I 覆盖本小节主要旋律音；左手采用 3-5-1 的 first 转位，调号确认后再换算绝对音名。",
+      "status": "auto_candidate",
+      "symbol": "主和弦",
+      "tones": [
+        {
+          "finger": 5,
+          "note": "3"
+        },
+        {
+          "finger": 2,
+          "note": "5"
+        },
+        {
+          "finger": 1,
+          "note": "1"
+        }
+      ]
+    },
+    {
+      "alternatives": [
+        "vi",
+        "ii"
+      ],
+      "bass": "3",
+      "beat": 0,
+      "confidence": 0.77,
+      "display_default": true,
+      "evidence": [
+        "调号未标明，和弦音使用相对级数表达",
+        "强拍旋律 3 属于 I",
+        "乐句起点优先建立主调"
+      ],
+      "function": "I",
+      "id": "h232-p2-s1-m1-chord-1",
+      "inversion": "first",
+      "measure_id": "h232-p2-s1-m1",
+      "reason": "I 覆盖本小节主要旋律音；左手采用 3-5-1 的 first 转位，调号确认后再换算绝对音名。",
+      "status": "auto_candidate",
+      "symbol": "主和弦",
+      "tones": [
+        {
+          "finger": 5,
+          "note": "3"
+        },
+        {
+          "finger": 2,
+          "note": "5"
+        },
+        {
+          "finger": 1,
+          "note": "1"
+        }
+      ]
+    },
+    {
+      "alternatives": [
+        "IV",
+        "vi"
+      ],
+      "bass": "3",
+      "beat": 0,
+      "confidence": 0.61,
+      "display_default": true,
+      "evidence": [
+        "调号未标明，和弦音使用相对级数表达",
+        "强拍旋律 1 属于 I"
+      ],
+      "function": "I",
+      "id": "h232-p2-s1-m2-chord-1",
+      "inversion": "first",
+      "measure_id": "h232-p2-s1-m2",
+      "reason": "I 覆盖本小节主要旋律音；左手采用 3-5-1 的 first 转位，调号确认后再换算绝对音名。",
+      "status": "auto_candidate",
+      "symbol": "主和弦",
+      "tones": [
+        {
+          "finger": 5,
+          "note": "3"
+        },
+        {
+          "finger": 2,
+          "note": "5"
+        },
+        {
+          "finger": 1,
+          "note": "1"
+        }
+      ]
+    },
+    {
+      "alternatives": [
+        "IV",
+        "V7"
+      ],
+      "bass": "2",
+      "beat": 0,
+      "confidence": 0.75,
+      "display_default": true,
+      "evidence": [
+        "调号未标明，和弦音使用相对级数表达",
+        "强拍旋律 6 属于 ii"
+      ],
+      "function": "ii",
+      "id": "h232-p2-s1-m3-chord-1",
+      "inversion": "root",
+      "measure_id": "h232-p2-s1-m3",
+      "reason": "ii 覆盖本小节主要旋律音；左手采用 2-4-6 的 root 转位，调号确认后再换算绝对音名。",
+      "status": "auto_candidate",
+      "symbol": "二级小和弦",
+      "tones": [
+        {
+          "finger": 5,
+          "note": "2"
+        },
+        {
+          "finger": 2,
+          "note": "4"
+        },
+        {
+          "finger": 1,
+          "note": "6"
+        }
+      ]
+    },
+    {
+      "alternatives": [
+        "vi",
+        "ii"
+      ],
+      "bass": "1",
+      "beat": 0,
+      "confidence": 0.77,
+      "display_default": true,
+      "evidence": [
+        "调号未标明，和弦音使用相对级数表达",
+        "强拍旋律 3 属于 I",
+        "系统末小节优先落在主和弦"
+      ],
+      "function": "I",
+      "id": "h232-p2-s1-m4-chord-1",
+      "inversion": "root",
+      "measure_id": "h232-p2-s1-m4",
+      "reason": "I 覆盖本小节主要旋律音；左手采用 1-3-5 的 root 转位，调号确认后再换算绝对音名。",
+      "status": "auto_candidate",
+      "symbol": "主和弦",
+      "tones": [
+        {
+          "finger": 5,
+          "note": "1"
+        },
+        {
+          "finger": 3,
+          "note": "3"
+        },
+        {
+          "finger": 1,
+          "note": "5"
+        }
+      ]
+    },
+    {
+      "alternatives": [
+        "vi",
+        "ii"
+      ],
+      "bass": "1",
+      "beat": 0,
+      "confidence": 0.77,
+      "display_default": true,
+      "evidence": [
+        "调号未标明，和弦音使用相对级数表达",
+        "强拍旋律 3 属于 I",
+        "乐句起点优先建立主调"
+      ],
+      "function": "I",
+      "id": "h232-p2-s2-m1-chord-1",
+      "inversion": "root",
+      "measure_id": "h232-p2-s2-m1",
+      "reason": "I 覆盖本小节主要旋律音；左手采用 1-3-5 的 root 转位，调号确认后再换算绝对音名。",
+      "status": "auto_candidate",
+      "symbol": "主和弦",
+      "tones": [
+        {
+          "finger": 5,
+          "note": "1"
+        },
+        {
+          "finger": 3,
+          "note": "3"
+        },
+        {
+          "finger": 1,
+          "note": "5"
+        }
+      ]
+    },
+    {
+      "alternatives": [
+        "vi",
+        "IV"
+      ],
+      "bass": "1",
+      "beat": 0,
+      "confidence": 0.61,
+      "display_default": true,
+      "evidence": [
+        "调号未标明，和弦音使用相对级数表达",
+        "强拍旋律 1 属于 I"
+      ],
+      "function": "I",
+      "id": "h232-p2-s2-m2-chord-1",
+      "inversion": "root",
+      "measure_id": "h232-p2-s2-m2",
+      "reason": "I 覆盖本小节主要旋律音；左手采用 1-3-5 的 root 转位，调号确认后再换算绝对音名。",
+      "status": "auto_candidate",
+      "symbol": "主和弦",
+      "tones": [
+        {
+          "finger": 5,
+          "note": "1"
+        },
+        {
+          "finger": 3,
+          "note": "3"
+        },
+        {
+          "finger": 1,
+          "note": "5"
+        }
+      ]
+    },
+    {
+      "alternatives": [
+        "IV",
+        "vi"
+      ],
+      "bass": "1",
+      "beat": 0,
+      "confidence": 0.69,
+      "display_default": true,
+      "evidence": [
+        "调号未标明，和弦音使用相对级数表达",
+        "强拍旋律 1 属于 I"
+      ],
+      "function": "I",
+      "id": "h232-p2-s2-m3-chord-1",
+      "inversion": "root",
+      "measure_id": "h232-p2-s2-m3",
+      "reason": "I 覆盖本小节主要旋律音；左手采用 1-3-5 的 root 转位，调号确认后再换算绝对音名。",
+      "status": "auto_candidate",
+      "symbol": "主和弦",
+      "tones": [
+        {
+          "finger": 5,
+          "note": "1"
+        },
+        {
+          "finger": 3,
+          "note": "3"
+        },
+        {
+          "finger": 1,
+          "note": "5"
+        }
+      ]
+    },
+    {
+      "alternatives": [
+        "V",
+        "V7"
+      ],
+      "bass": "1",
+      "beat": 0,
+      "confidence": 0.77,
+      "display_default": true,
+      "evidence": [
+        "调号未标明，和弦音使用相对级数表达",
+        "强拍旋律 5 属于 I",
+        "系统末小节优先落在主和弦"
+      ],
+      "function": "I",
+      "id": "h232-p2-s2-m4-chord-1",
+      "inversion": "root",
+      "measure_id": "h232-p2-s2-m4",
+      "reason": "I 覆盖本小节主要旋律音；左手采用 1-3-5 的 root 转位，调号确认后再换算绝对音名。",
+      "status": "auto_candidate",
+      "symbol": "主和弦",
+      "tones": [
+        {
+          "finger": 5,
+          "note": "1"
+        },
+        {
+          "finger": 3,
+          "note": "3"
+        },
+        {
+          "finger": 1,
+          "note": "5"
+        }
+      ]
+    },
+    {
+      "alternatives": [
+        "vi",
+        "IV"
+      ],
+      "bass": "1",
+      "beat": 0,
+      "confidence": 0.78,
+      "display_default": true,
+      "evidence": [
+        "调号未标明，和弦音使用相对级数表达",
+        "强拍旋律 3 属于 I",
+        "乐句起点优先建立主调"
+      ],
+      "function": "I",
+      "id": "h232-p2-s3-m1-chord-1",
+      "inversion": "root",
+      "measure_id": "h232-p2-s3-m1",
+      "reason": "I 覆盖本小节主要旋律音；左手采用 1-3-5 的 root 转位，调号确认后再换算绝对音名。",
+      "status": "auto_candidate",
+      "symbol": "主和弦",
+      "tones": [
+        {
+          "finger": 5,
+          "note": "1"
+        },
+        {
+          "finger": 3,
+          "note": "3"
+        },
+        {
+          "finger": 1,
+          "note": "5"
+        }
+      ]
+    },
+    {
+      "alternatives": [
+        "IV",
+        "vi"
+      ],
+      "bass": "2",
+      "beat": 0,
+      "confidence": 0.5700000000000001,
+      "display_default": true,
+      "evidence": [
+        "调号未标明，和弦音使用相对级数表达",
+        "强拍旋律 6 属于 ii"
+      ],
+      "function": "ii",
+      "id": "h232-p2-s3-m2-chord-1",
+      "inversion": "root",
+      "measure_id": "h232-p2-s3-m2",
+      "reason": "ii 覆盖本小节主要旋律音；左手采用 2-4-6 的 root 转位，调号确认后再换算绝对音名。",
+      "status": "auto_candidate",
+      "symbol": "二级小和弦",
+      "tones": [
+        {
+          "finger": 5,
+          "note": "2"
+        },
+        {
+          "finger": 2,
+          "note": "4"
+        },
+        {
+          "finger": 1,
+          "note": "6"
+        }
+      ]
+    },
+    {
+      "alternatives": [
+        "vi",
+        "V"
+      ],
+      "bass": "1",
+      "beat": 0,
+      "confidence": 0.75,
+      "display_default": true,
+      "evidence": [
+        "调号未标明，和弦音使用相对级数表达",
+        "强拍旋律 3 属于 I"
+      ],
+      "function": "I",
+      "id": "h232-p2-s3-m3-chord-1",
+      "inversion": "root",
+      "measure_id": "h232-p2-s3-m3",
+      "reason": "I 覆盖本小节主要旋律音；左手采用 1-3-5 的 root 转位，调号确认后再换算绝对音名。",
+      "status": "auto_candidate",
+      "symbol": "主和弦",
+      "tones": [
+        {
+          "finger": 5,
+          "note": "1"
+        },
+        {
+          "finger": 3,
+          "note": "3"
+        },
+        {
+          "finger": 1,
+          "note": "5"
+        }
+      ]
+    },
+    {
+      "alternatives": [
+        "IV",
+        "V"
+      ],
+      "bass": "1",
+      "beat": 0,
+      "confidence": 0.73,
+      "display_default": true,
+      "evidence": [
+        "调号未标明，和弦音使用相对级数表达",
+        "强拍旋律 1 属于 I",
+        "系统末小节优先落在主和弦"
+      ],
+      "function": "I",
+      "id": "h232-p2-s3-m4-chord-1",
+      "inversion": "root",
+      "measure_id": "h232-p2-s3-m4",
+      "reason": "I 覆盖本小节主要旋律音；左手采用 1-3-5 的 root 转位，调号确认后再换算绝对音名。",
+      "status": "auto_candidate",
+      "symbol": "主和弦",
+      "tones": [
+        {
+          "finger": 5,
+          "note": "1"
+        },
+        {
+          "finger": 3,
+          "note": "3"
+        },
+        {
+          "finger": 1,
+          "note": "5"
+        }
+      ]
+    },
+    {
+      "alternatives": [
+        "V",
+        "V7"
+      ],
+      "bass": "1",
+      "beat": 0,
+      "confidence": 0.65,
+      "display_default": true,
+      "evidence": [
+        "调号未标明，和弦音使用相对级数表达",
+        "乐句起点优先建立主调"
+      ],
+      "function": "I",
+      "id": "h232-p2-s4-m1-chord-1",
+      "inversion": "root",
+      "measure_id": "h232-p2-s4-m1",
+      "reason": "I 覆盖本小节主要旋律音；左手采用 1-3-5 的 root 转位，调号确认后再换算绝对音名。",
+      "status": "auto_candidate",
+      "symbol": "主和弦",
+      "tones": [
+        {
+          "finger": 5,
+          "note": "1"
+        },
+        {
+          "finger": 3,
+          "note": "3"
+        },
+        {
+          "finger": 1,
+          "note": "5"
+        }
+      ]
+    },
+    {
+      "alternatives": [
+        "IV",
+        "V7"
+      ],
+      "bass": "2",
+      "beat": 0,
+      "confidence": 0.61,
+      "display_default": true,
+      "evidence": [
+        "调号未标明，和弦音使用相对级数表达",
+        "强拍旋律 4 属于 ii"
+      ],
+      "function": "ii",
+      "id": "h232-p2-s4-m2-chord-1",
+      "inversion": "root",
+      "measure_id": "h232-p2-s4-m2",
+      "reason": "ii 覆盖本小节主要旋律音；左手采用 2-4-6 的 root 转位，调号确认后再换算绝对音名。",
+      "status": "auto_candidate",
+      "symbol": "二级小和弦",
+      "tones": [
+        {
+          "finger": 5,
+          "note": "2"
+        },
+        {
+          "finger": 2,
+          "note": "4"
+        },
+        {
+          "finger": 1,
+          "note": "6"
+        }
+      ]
+    },
+    {
+      "alternatives": [
+        "V7",
+        "ii"
+      ],
+      "bass": "2",
+      "beat": 0,
+      "confidence": 0.77,
+      "display_default": true,
+      "evidence": [
+        "调号未标明，和弦音使用相对级数表达",
+        "强拍旋律 7 属于 V",
+        "终止前小节优先采用属功能"
+      ],
+      "function": "V",
+      "id": "h232-p2-s4-m3-chord-1",
+      "inversion": "second",
+      "measure_id": "h232-p2-s4-m3",
+      "reason": "V 覆盖本小节主要旋律音；左手采用 2-5-7 的 second 转位，调号确认后再换算绝对音名。",
+      "status": "auto_candidate",
+      "symbol": "属和弦",
+      "tones": [
+        {
+          "finger": 5,
+          "note": "2"
+        },
+        {
+          "finger": 3,
+          "note": "5"
+        },
+        {
+          "finger": 1,
+          "note": "7"
+        }
+      ]
+    },
+    {
+      "alternatives": [
+        "IV",
+        "vi"
+      ],
+      "bass": "3",
+      "beat": 0,
+      "confidence": 0.78,
+      "display_default": true,
+      "evidence": [
+        "调号未标明，和弦音使用相对级数表达",
+        "强拍旋律 1 属于 I",
+        "系统末小节优先落在主和弦"
+      ],
+      "function": "I",
+      "id": "h232-p2-s4-m4-chord-1",
+      "inversion": "first",
+      "measure_id": "h232-p2-s4-m4",
+      "reason": "I 覆盖本小节主要旋律音；左手采用 3-5-1 的 first 转位，调号确认后再换算绝对音名。",
+      "status": "auto_candidate",
+      "symbol": "主和弦",
+      "tones": [
+        {
+          "finger": 5,
+          "note": "3"
+        },
+        {
+          "finger": 2,
+          "note": "5"
+        },
+        {
+          "finger": 1,
+          "note": "1"
+        }
+      ]
+    }
+  ],
+  "content_hash": "f1121e72ca21265c207999507a50723bfd16711900559f5f2871c3cf18b530d1",
   "ending": {
-    "reason": "没有可靠调号时写出实际和弦音名会造成错误教学。",
-    "status": "unavailable",
-    "text": "调号未确认，暂不生成和声与伴奏结论。"
+    "reason": "调号未标明时保留功能进行，不提前伪造绝对和弦音名。",
+    "status": "auto_candidate",
+    "text": "使用最后两个相对功能和弦，并在 I 级主和弦上延长"
   },
   "fingerings": [
     {
@@ -943,14 +2080,14 @@
   ],
   "hymn_key": "232",
   "interlude": {
-    "reason": "没有可靠调号时写出实际和弦音名会造成错误教学。",
-    "status": "unavailable",
-    "text": "调号未确认，暂不生成和声与伴奏结论。"
+    "reason": "使用听过的材料可让段间衔接清楚，不额外增加陌生旋律。",
+    "status": "auto_candidate",
+    "text": "重复末句或副歌入口前 2 小节"
   },
   "intro": {
-    "reason": "没有可靠调号时写出实际和弦音名会造成错误教学。",
-    "status": "unavailable",
-    "text": "调号未确认，暂不生成和声与伴奏结论。"
+    "reason": "末句已包含本曲调性与会众进入所需的旋律线索。",
+    "status": "auto_candidate",
+    "text": "取末句 2 至 4 小节，保留原拍号和主要终止"
   },
   "moves": [
     {
@@ -970,35 +2107,51 @@
       "trigger_event_id": "h232-p1-s1-m3-e4"
     },
     {
-      "from_position_id": "h232-p1-s4-position-6",
-      "id": "h232-p1-s4-position-7-move",
-      "instruction": "Move to A Position",
+      "from_position_id": "h232-p1-s2-position-4",
+      "id": "h232-p1-s2-position-5-move",
+      "instruction": "Move to C Position",
       "reason": "旋律超出原手位或需要为后续音符预留手指，在此音前整体移动手掌。",
-      "to_position_id": "h232-p1-s4-position-7",
-      "trigger_event_id": "h232-p1-s4-m2-e2"
+      "to_position_id": "h232-p1-s2-position-5",
+      "trigger_event_id": "h232-p1-s2-m3-e5"
     },
     {
-      "from_position_id": "h232-p2-s1-position-8",
-      "id": "h232-p2-s1-position-9-move",
-      "instruction": "Move to G Position",
+      "from_position_id": "h232-p1-s4-position-7",
+      "id": "h232-p1-s4-position-8-move",
+      "instruction": "Move to A Position",
       "reason": "旋律超出原手位或需要为后续音符预留手指，在此音前整体移动手掌。",
-      "to_position_id": "h232-p2-s1-position-9",
-      "trigger_event_id": "h232-p2-s1-m2-e2"
+      "to_position_id": "h232-p1-s4-position-8",
+      "trigger_event_id": "h232-p1-s4-m2-e2"
     },
     {
       "from_position_id": "h232-p2-s1-position-9",
       "id": "h232-p2-s1-position-10-move",
-      "instruction": "Move to C Position",
+      "instruction": "Move to G Position",
       "reason": "旋律超出原手位或需要为后续音符预留手指，在此音前整体移动手掌。",
       "to_position_id": "h232-p2-s1-position-10",
+      "trigger_event_id": "h232-p2-s1-m2-e2"
+    },
+    {
+      "from_position_id": "h232-p2-s1-position-10",
+      "id": "h232-p2-s1-position-11-move",
+      "instruction": "Move to C Position",
+      "reason": "旋律超出原手位或需要为后续音符预留手指，在此音前整体移动手掌。",
+      "to_position_id": "h232-p2-s1-position-11",
       "trigger_event_id": "h232-p2-s1-m3-e4"
     },
     {
-      "from_position_id": "h232-p2-s4-position-13",
-      "id": "h232-p2-s4-position-14-move",
+      "from_position_id": "h232-p2-s2-position-12",
+      "id": "h232-p2-s2-position-13-move",
+      "instruction": "Move to C Position",
+      "reason": "旋律超出原手位或需要为后续音符预留手指，在此音前整体移动手掌。",
+      "to_position_id": "h232-p2-s2-position-13",
+      "trigger_event_id": "h232-p2-s2-m3-e5"
+    },
+    {
+      "from_position_id": "h232-p2-s4-position-15",
+      "id": "h232-p2-s4-position-16-move",
       "instruction": "Move to A Position",
       "reason": "旋律超出原手位或需要为后续音符预留手指，在此音前整体移动手掌。",
-      "to_position_id": "h232-p2-s4-position-14",
+      "to_position_id": "h232-p2-s4-position-16",
       "trigger_event_id": "h232-p2-s4-m2-e2"
     }
   ],
@@ -1053,7 +2206,7 @@
     },
     {
       "confidence": 0.68,
-      "end_event_id": "h232-p1-s2-m4-e2",
+      "end_event_id": "h232-p1-s2-m3-e4",
       "finger_notes": {
         "1": "C",
         "2": "D",
@@ -1063,8 +2216,24 @@
       },
       "id": "h232-p1-s2-position-4",
       "label": "C Position",
-      "reason": "黑键优先交给 2、3、4 指，减少拇指或小指扭转。 调号未确认，音名按 C 调相对位置显示，指序仍依据旋律走向。",
+      "reason": "此区段优先保持固定手位，减少看手和临时伸指。 调号未确认，音名按 C 调相对位置显示，指序仍依据旋律走向。",
       "start_event_id": "h232-p1-s2-m1-e1",
+      "status": "auto_candidate"
+    },
+    {
+      "confidence": 0.68,
+      "end_event_id": "h232-p1-s2-m4-e2",
+      "finger_notes": {
+        "1": "C",
+        "2": "D",
+        "3": "E",
+        "4": "F",
+        "5": "G"
+      },
+      "id": "h232-p1-s2-position-5",
+      "label": "C Position",
+      "reason": "黑键优先交给 2、3、4 指，减少拇指或小指扭转。 调号未确认，音名按 C 调相对位置显示，指序仍依据旋律走向。",
+      "start_event_id": "h232-p1-s2-m3-e5",
       "status": "auto_candidate"
     },
     {
@@ -1077,7 +2246,7 @@
         "4": "C",
         "5": "D"
       },
-      "id": "h232-p1-s3-position-5",
+      "id": "h232-p1-s3-position-6",
       "label": "G Position",
       "reason": "此区段优先保持固定手位，减少看手和临时伸指。 调号未确认，音名按 C 调相对位置显示，指序仍依据旋律走向。",
       "start_event_id": "h232-p1-s3-m1-e1",
@@ -1093,7 +2262,7 @@
         "4": "F",
         "5": "G"
       },
-      "id": "h232-p1-s4-position-6",
+      "id": "h232-p1-s4-position-7",
       "label": "C Position",
       "reason": "此区段优先保持固定手位，减少看手和临时伸指。 调号未确认，音名按 C 调相对位置显示，指序仍依据旋律走向。",
       "start_event_id": "h232-p1-s4-m1-e1",
@@ -1109,7 +2278,7 @@
         "4": "D",
         "5": "E"
       },
-      "id": "h232-p1-s4-position-7",
+      "id": "h232-p1-s4-position-8",
       "label": "A Position",
       "reason": "此区段优先保持固定手位，减少看手和临时伸指。 调号未确认，音名按 C 调相对位置显示，指序仍依据旋律走向。",
       "start_event_id": "h232-p1-s4-m2-e2",
@@ -1125,7 +2294,7 @@
         "4": "F",
         "5": "G"
       },
-      "id": "h232-p2-s1-position-8",
+      "id": "h232-p2-s1-position-9",
       "label": "C Position",
       "reason": "此区段优先保持固定手位，减少看手和临时伸指。 调号未确认，音名按 C 调相对位置显示，指序仍依据旋律走向。",
       "start_event_id": "h232-p2-s1-m1-e1",
@@ -1141,7 +2310,7 @@
         "4": "C",
         "5": "D"
       },
-      "id": "h232-p2-s1-position-9",
+      "id": "h232-p2-s1-position-10",
       "label": "G Position",
       "reason": "此区段优先保持固定手位，减少看手和临时伸指。 调号未确认，音名按 C 调相对位置显示，指序仍依据旋律走向。",
       "start_event_id": "h232-p2-s1-m2-e2",
@@ -1157,10 +2326,26 @@
         "4": "F",
         "5": "G"
       },
-      "id": "h232-p2-s1-position-10",
+      "id": "h232-p2-s1-position-11",
       "label": "C Position",
       "reason": "此区段优先保持固定手位，减少看手和临时伸指。 调号未确认，音名按 C 调相对位置显示，指序仍依据旋律走向。",
       "start_event_id": "h232-p2-s1-m3-e4",
+      "status": "auto_candidate"
+    },
+    {
+      "confidence": 0.68,
+      "end_event_id": "h232-p2-s2-m3-e4",
+      "finger_notes": {
+        "1": "C",
+        "2": "D",
+        "3": "E",
+        "4": "F",
+        "5": "G"
+      },
+      "id": "h232-p2-s2-position-12",
+      "label": "C Position",
+      "reason": "此区段优先保持固定手位，减少看手和临时伸指。 调号未确认，音名按 C 调相对位置显示，指序仍依据旋律走向。",
+      "start_event_id": "h232-p2-s2-m1-e1",
       "status": "auto_candidate"
     },
     {
@@ -1173,10 +2358,10 @@
         "4": "F",
         "5": "G"
       },
-      "id": "h232-p2-s2-position-11",
+      "id": "h232-p2-s2-position-13",
       "label": "C Position",
       "reason": "黑键优先交给 2、3、4 指，减少拇指或小指扭转。 调号未确认，音名按 C 调相对位置显示，指序仍依据旋律走向。",
-      "start_event_id": "h232-p2-s2-m1-e1",
+      "start_event_id": "h232-p2-s2-m3-e5",
       "status": "auto_candidate"
     },
     {
@@ -1189,7 +2374,7 @@
         "4": "C",
         "5": "D"
       },
-      "id": "h232-p2-s3-position-12",
+      "id": "h232-p2-s3-position-14",
       "label": "G Position",
       "reason": "此区段优先保持固定手位，减少看手和临时伸指。 调号未确认，音名按 C 调相对位置显示，指序仍依据旋律走向。",
       "start_event_id": "h232-p2-s3-m1-e1",
@@ -1205,7 +2390,7 @@
         "4": "F",
         "5": "G"
       },
-      "id": "h232-p2-s4-position-13",
+      "id": "h232-p2-s4-position-15",
       "label": "C Position",
       "reason": "此区段优先保持固定手位，减少看手和临时伸指。 调号未确认，音名按 C 调相对位置显示，指序仍依据旋律走向。",
       "start_event_id": "h232-p2-s4-m1-e1",
@@ -1221,7 +2406,7 @@
         "4": "D",
         "5": "E"
       },
-      "id": "h232-p2-s4-position-14",
+      "id": "h232-p2-s4-position-16",
       "label": "A Position",
       "reason": "此区段优先保持固定手位，减少看手和临时伸指。 调号未确认，音名按 C 调相对位置显示，指序仍依据旋律走向。",
       "start_event_id": "h232-p2-s4-m2-e2",

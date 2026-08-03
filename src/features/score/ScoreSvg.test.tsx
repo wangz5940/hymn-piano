@@ -309,10 +309,69 @@ describe("ScoreSvg", () => {
         '[data-layer="fingerings"] [data-event-id="note-1"]',
       ),
     ).toHaveTextContent("①");
+    expect(
+      container.querySelector(
+        '[data-layer="note-names"] [data-event-id="note-2"]',
+      ),
+    ).toHaveTextContent("G4");
     expect(screen.getByText("E♭ Position")).toBeInTheDocument();
     expect(screen.getByText("Move to B♭ Position")).toBeInTheDocument();
     expect(screen.getByText("E♭ · I")).toBeInTheDocument();
     expect(screen.getByText("E♭⑤ · G③ · B♭①")).toBeInTheDocument();
+    expect(screen.getByText("已确认")).toBeInTheDocument();
+  });
+
+  it("自动候选和弦进入 SVG 并明确标注为自动预判", () => {
+    const arrangement = makeArrangement();
+    arrangement.chords[0].status = "auto_candidate";
+    arrangement.chords[0].display_default = true;
+    const { container } = render(
+      <ScoreSvg score={makeScore()} arrangement={arrangement} />,
+    );
+    const chord = container.querySelector(
+      '[data-layer="chords"] [data-chord-id="chord-1"]',
+    );
+
+    expect(chord).toHaveAttribute("data-status", "auto_candidate");
+    expect(chord).toHaveTextContent("自动预判");
+  });
+
+  it("按显示偏好隐藏手位、指法、和弦和歌词层", () => {
+    const { container } = render(
+      <ScoreSvg
+        score={makeScore()}
+        arrangement={makeArrangement()}
+        visibility={{
+          positions: false,
+          fingerings: false,
+          noteNames: false,
+          chords: false,
+          lyrics: false,
+        }}
+      />,
+    );
+
+    expect(
+      container.querySelector('[data-layer="positions"]'),
+    ).not.toBeInTheDocument();
+    expect(
+      container.querySelector('[data-layer="moves"]'),
+    ).not.toBeInTheDocument();
+    expect(
+      container.querySelector('[data-layer="fingerings"]'),
+    ).not.toBeInTheDocument();
+    expect(
+      container.querySelector('[data-layer="note-names"]'),
+    ).not.toBeInTheDocument();
+    expect(
+      container.querySelector('[data-layer="chords"]'),
+    ).not.toBeInTheDocument();
+    expect(
+      container.querySelector('[data-layer="lyrics"]'),
+    ).not.toBeInTheDocument();
+    expect(
+      container.querySelector('[data-layer="notation"]'),
+    ).toBeInTheDocument();
   });
 
   it("为重叠手位分配不同教学轨道", () => {

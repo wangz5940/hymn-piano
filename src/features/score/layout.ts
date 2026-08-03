@@ -9,18 +9,26 @@ import type {
   ScoreLyric,
   ScoreMeasure,
 } from "./contracts";
+import {
+  DEFAULT_SCORE_DISPLAY_PREFERENCES,
+  type ScoreDisplayPreferences,
+} from "./display-preferences";
 
 const PAGE_WIDTH = 960;
 const PAGE_PADDING_X = 56;
 const PAGE_HEADER_HEIGHT = 76;
 const PAGE_PADDING_BOTTOM = 42;
-const SYSTEM_HEIGHT = 214;
+const SYSTEM_HEIGHT = 360;
 const SYSTEM_GAP = 28;
 const SCORE_BASELINE_OFFSET = 104;
 const MEASURE_GAP = 8;
 const MEASURE_PADDING = 14;
 const POSITION_TRACK_HEIGHT = 19;
-const CHORD_TRACK_HEIGHT = 32;
+const CHORD_TRACK_HEIGHT = 46;
+const CHORD_TRACK_OFFSET = 95;
+const LYRIC_AFTER_CHORD_GAP = 50;
+const DEFAULT_LYRIC_OFFSET = 38;
+export const NOTE_NAME_BASELINE_OFFSET = 42;
 
 export interface LayoutPoint {
   x: number;
@@ -214,6 +222,7 @@ function buildLyrics(
   pageId: string,
   systemId: string,
   baselineY: number,
+  offsetY: number,
 ): LyricLayout[] {
   return lyrics.flatMap((lyric, index) => {
     const anchors = lyric.event_ids
@@ -233,7 +242,7 @@ function buildLyrics(
         page_id: pageId,
         system_id: systemId,
         x: round(x),
-        y: round(baselineY + 38 + index * 22),
+        y: round(baselineY + offsetY + index * 22),
       },
     ];
   });
@@ -382,7 +391,7 @@ function chordLayouts(
         y: round(
           candidate.measure.y +
             SCORE_BASELINE_OFFSET +
-            70 +
+            CHORD_TRACK_OFFSET +
             lane * CHORD_TRACK_HEIGHT,
         ),
         lane,
@@ -430,6 +439,7 @@ function relationLayouts(
 export function layoutScore(
   score: PianoScoreDocument,
   arrangement?: PianoArrangementDocument,
+  visibility: ScoreDisplayPreferences = DEFAULT_SCORE_DISPLAY_PREFERENCES,
 ): ScoreLayout {
   if (arrangement && arrangement.hymn_key !== score.hymn_key) {
     throw new Error(
@@ -534,37 +544,62 @@ export function layoutScore(
     pageY += pageHeight + (pageIndex < score.pages.length - 1 ? 30 : 0);
   });
 
+  const positions = visibility.positions
+    ? positionLayouts(arrangement, eventIndex)
+    : [];
+  const fingers =
+    visibility.fingerings
+      ? arrangement?.fingerings.flatMap((assignment) => {
+          const event = eventIndex[assignment.event_id];
+          if (!event) return [];
+          return [
+            {
+              assignment,
+              event,
+              x: event.x,
+              y: round(event.y - 34),
+            },
+          ];
+        }) ?? []
+      : [];
+  const moves = visibility.positions
+    ? moveLayouts(arrangement, eventIndex, positions)
+    : [];
+  const chords = visibility.chords
+    ? chordLayouts(arrangement, measureIndex)
+    : [];
+
   score.pages.forEach((page) => {
     page.systems.forEach((system) => {
       const target = pages
         .find((pageLayout) => pageLayout.id === page.id)
         ?.systems.find((systemLayout) => systemLayout.id === system.id);
-      if (target) {
-        target.lyrics = buildLyrics(
-          system.lyrics,
-          eventIndex,
-          page.id,
-          system.id,
-          target.baseline_y,
-        );
-      }
+      if (!target || !visibility.lyrics) return;
+      const maximumChordLane = chords
+        .filter(
+          (chord) =>
+            chord.page_id === page.id &&
+            chord.system_id === system.id,
+        )
+        .reduce((maximum, chord) => Math.max(maximum, chord.lane), -1);
+      const lyricOffset =
+        maximumChordLane >= 0
+          ? CHORD_TRACK_OFFSET +
+            maximumChordLane * CHORD_TRACK_HEIGHT +
+            LYRIC_AFTER_CHORD_GAP
+          : visibility.noteNames
+            ? NOTE_NAME_BASELINE_OFFSET + 20
+            : DEFAULT_LYRIC_OFFSET;
+      target.lyrics = buildLyrics(
+        system.lyrics,
+        eventIndex,
+        page.id,
+        system.id,
+        target.baseline_y,
+        lyricOffset,
+      );
     });
   });
-
-  const positions = positionLayouts(arrangement, eventIndex);
-  const fingers =
-    arrangement?.fingerings.flatMap((assignment) => {
-      const event = eventIndex[assignment.event_id];
-      if (!event) return [];
-      return [
-        {
-          assignment,
-          event,
-          x: event.x,
-          y: round(event.y - 34),
-        },
-      ];
-    }) ?? [];
   const height = Math.max(
     1,
     pages.length > 0
@@ -583,8 +618,8 @@ export function layoutScore(
     measure_index: measureIndex,
     fingers,
     positions,
-    moves: moveLayouts(arrangement, eventIndex, positions),
-    chords: chordLayouts(arrangement, measureIndex),
+    moves,
+    chords,
     relations: relationLayouts(events, eventIndex),
   };
 }

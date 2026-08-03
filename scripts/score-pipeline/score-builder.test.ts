@@ -1,4 +1,3 @@
-import { resolve } from "node:path";
 import { describe, expect, it } from "vitest";
 import {
   SOURCE_SCHEMA,
@@ -6,17 +5,18 @@ import {
   type PptxSourceDocument,
   type ScoreEvent,
 } from "../../src/features/score/contracts";
+import { resolvePptxCorpusFile } from "./corpus-paths";
 import { readPptxSource } from "./pptx-reader";
 import { buildPianoScore } from "./score-builder";
 
-const hymn001 = resolve("712首-文字/001 至大医生.pptx");
-const hymn013 = resolve("712首-文字/013 神差爱子.pptx");
-const hymn023 = resolve("712首-文字/023 听啊救主叩门.pptx");
-const hymn101 = resolve("712首-文字/101 此时何时孤单之时.pptx");
-const hymn127 = resolve("712首-文字/127 橄榄山前一别离.pptx");
-const hymn154 = resolve("712首-文字/154 一直走十架窄路.pptx");
-const hymn185 = resolve("712首-文字/185 我今转身背向俗世.pptx");
-const hymn696 = resolve("712首-文字/696 愿祢崇高.pptx");
+const hymn001 = resolvePptxCorpusFile("001 至大医生.pptx");
+const hymn013 = resolvePptxCorpusFile("013 神差爱子.pptx");
+const hymn023 = resolvePptxCorpusFile("023 听啊救主叩门.pptx");
+const hymn101 = resolvePptxCorpusFile("101 此时何时孤单之时.pptx");
+const hymn127 = resolvePptxCorpusFile("127 橄榄山前一别离.pptx");
+const hymn154 = resolvePptxCorpusFile("154 一直走十架窄路.pptx");
+const hymn185 = resolvePptxCorpusFile("185 我今转身背向俗世.pptx");
+const hymn696 = resolvePptxCorpusFile("696 愿祢崇高.pptx");
 
 function events(score: ReturnType<typeof buildPianoScore>): ScoreEvent[] {
   return score.pages.flatMap((page) =>

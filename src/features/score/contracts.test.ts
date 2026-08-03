@@ -187,7 +187,7 @@ function makeArrangement(): PianoArrangementDocument {
         id: "chord-1",
         measure_id: "measure-1",
         beat: 0,
-        display_default: false,
+        display_default: true,
         symbol: "E♭",
         function: "I",
         bass: "E♭",
@@ -314,18 +314,19 @@ describe("乐谱数据契约", () => {
     );
   });
 
-  it("和弦默认展示状态必须与候选或确认来源一致", () => {
+  it("可用和弦默认展示，不可用和弦保持隐藏", () => {
     const score = makeScore();
     const arrangement = makeArrangement();
-    arrangement.chords[0].display_default = true;
+    expect(validateArrangementDocument(score, arrangement)).toEqual([]);
 
+    arrangement.chords[0].display_default = false;
     expect(validateArrangementDocument(score, arrangement)).toEqual(
       expect.arrayContaining([
         expect.objectContaining({ code: "display_status_mismatch" }),
       ]),
     );
 
-    arrangement.chords[0].status = "manual_confirmed";
+    arrangement.chords[0].status = "unavailable";
     expect(validateArrangementDocument(score, arrangement)).toEqual([]);
 
     const missingDisplay = makeArrangement() as unknown as {

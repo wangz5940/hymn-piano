@@ -4,36 +4,6 @@ import type { HymnRenderDocument } from "./render-contracts";
 import { buildScoreReflowLayout } from "./ppt-score-layout";
 
 const generatedRoot = resolve("public/materials/hymns");
-const expectedFallbackVariants = [
-  "2:0",
-  "2:1",
-  "3:0",
-  "4:0",
-  "5:0",
-  "7:0",
-  "9:0",
-  "10:0",
-  "11:0",
-  "12:0",
-  "13:0",
-  "19:0",
-  "19:1",
-  "24:0",
-  "58:0",
-  "58:1",
-  "59:0",
-  "59:1",
-  "59:2",
-  "59:3",
-  "61:0",
-  "61:1",
-  "62:0",
-  "64:0",
-  "481:0",
-  "482:0",
-  "566:0",
-  "566:1",
-];
 const metadataPattern =
   /^\s*(?:[（(]?注[：:]|(?:稍|不|很|中)?(?:快|慢)$|和$|切换\s)/u;
 
@@ -138,10 +108,50 @@ describe("PPT 全量重排语料", () => {
       }
     }
 
-    expect(fallbackVariants).toEqual(expectedFallbackVariants);
+    expect(fallbackVariants).toEqual([]);
     expect(preludeVariants).toEqual(["697:0"]);
     await expect(
       Promise.all(mediaPaths.map((path) => access(path))),
     ).resolves.toHaveLength(mediaPaths.length);
+  }, 120_000);
+
+  it("第 5、10 首按 PPT 手动换行逐行配对歌词", async () => {
+    const documents = await readRenderDocuments();
+    const expected = new Map<string, string[]>([
+      [
+        "5",
+        [
+          "需要耶稣！需要耶稣！",
+          "人人都需要耶稣！",
+          "要脱罪担需要主，要得平安需要主，",
+          "要免沉沦得永生，你需要耶稣！",
+        ],
+      ],
+      [
+        "10",
+        [
+          "我的罪孽比发还多，无数罪孽追上我，",
+          "罪孽刑罚怎能免脱？恳求救主拯救我！",
+          "拯救我！拯救我！求主现在拯救我！",
+          "赦我罪过，免我灾祸，求主现在拯救我！",
+        ],
+      ],
+    ]);
+
+    for (const [hymnKey, expectedLines] of expected) {
+      const document = documents.find(
+        (candidate) => candidate.hymn_key === hymnKey,
+      );
+      expect(document).toBeDefined();
+      const layout = buildScoreReflowLayout(document!.variants[0]);
+      expect(layout.fallbackLyrics).toEqual([]);
+      expect(
+        layout.rows.map((row) =>
+          row.lyricLine?.paragraph.runs
+            .map((run) => run.text)
+            .join(""),
+        ),
+      ).toEqual(expectedLines);
+    }
   }, 120_000);
 });

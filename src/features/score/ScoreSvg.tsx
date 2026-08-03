@@ -1,5 +1,6 @@
 import { useId } from "react";
 import type { CSSProperties, ReactNode } from "react";
+import { isConfirmedTeachingStatus } from "./contracts";
 import type {
   PianoArrangementDocument,
   PianoScoreDocument,
@@ -7,17 +8,26 @@ import type {
   ScoreNoteEvent,
   ScoreRepeatEvent,
 } from "./contracts";
-import { layoutScore } from "./layout";
+import {
+  DEFAULT_SCORE_DISPLAY_PREFERENCES,
+  type ScoreDisplayPreferences,
+} from "./display-preferences";
+import {
+  layoutScore,
+  NOTE_NAME_BASELINE_OFFSET,
+} from "./layout";
 import type {
   EventLayout,
   MeasureLayout,
   RelationLayout,
   ScoreLayout,
 } from "./layout";
+import { scoreNoteName } from "./pitch";
 
 interface ScoreSvgProps {
   score: PianoScoreDocument;
   arrangement?: PianoArrangementDocument;
+  visibility?: ScoreDisplayPreferences;
   className?: string;
 }
 
@@ -314,127 +324,187 @@ function NotationLayers({ layout }: { layout: ScoreLayout }) {
   );
 }
 
-function TeachingLayers({ layout }: { layout: ScoreLayout }) {
+function TeachingLayers({
+  layout,
+  visibility,
+  keySignature,
+}: {
+  layout: ScoreLayout;
+  visibility: ScoreDisplayPreferences;
+  keySignature: string | null;
+}) {
   return (
     <g data-layer="teaching">
-      <g data-layer="positions">
-        {layout.positions.map((position) => (
-          <g
-            key={position.segment.id}
-            data-position-id={position.segment.id}
-            data-lane={position.lane}
-          >
-            <rect
-              x={position.x}
-              y={position.y}
-              width={position.width}
-              height={position.height}
-              rx={5}
-              fill={palette.cedarLight}
-              stroke={palette.cedar}
-              strokeOpacity={0.32}
-            />
-            <text
-              x={position.x + 7}
-              y={position.y + 13}
-              fill={palette.cedar}
-              fontSize={10}
-              fontWeight={700}
-            >
-              {position.segment.label}
-            </text>
+      {visibility.positions && (
+        <>
+          <g data-layer="positions">
+            {layout.positions.map((position) => (
+              <g
+                key={position.segment.id}
+                data-position-id={position.segment.id}
+                data-lane={position.lane}
+              >
+                <rect
+                  x={position.x}
+                  y={position.y}
+                  width={position.width}
+                  height={position.height}
+                  rx={5}
+                  fill={palette.cedarLight}
+                  stroke={palette.cedar}
+                  strokeOpacity={0.32}
+                />
+                <text
+                  x={position.x + 7}
+                  y={position.y + 13}
+                  fill={palette.cedar}
+                  fontSize={10}
+                  fontWeight={700}
+                >
+                  {position.segment.label}
+                </text>
+              </g>
+            ))}
           </g>
-        ))}
-      </g>
-      <g data-layer="moves">
-        {layout.moves.map((move) => (
-          <g
-            key={move.move.id}
-            data-move-id={move.move.id}
-            data-event-id={move.move.trigger_event_id}
-          >
-            <path
-              d={`M ${move.x} ${move.y + 4} l 6 -6 l 6 6`}
-              fill="none"
-              stroke={palette.amber}
-              strokeWidth={1.6}
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            />
-            <text
-              x={move.x + 16}
-              y={move.y + 3}
-              fill={palette.amber}
-              fontSize={10}
-              fontWeight={700}
-            >
-              {move.move.instruction}
-            </text>
+          <g data-layer="moves">
+            {layout.moves.map((move) => (
+              <g
+                key={move.move.id}
+                data-move-id={move.move.id}
+                data-event-id={move.move.trigger_event_id}
+              >
+                <path
+                  d={`M ${move.x} ${move.y + 4} l 6 -6 l 6 6`}
+                  fill="none"
+                  stroke={palette.amber}
+                  strokeWidth={1.6}
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+                <text
+                  x={move.x + 16}
+                  y={move.y + 3}
+                  fill={palette.amber}
+                  fontSize={10}
+                  fontWeight={700}
+                >
+                  {move.move.instruction}
+                </text>
+              </g>
+            ))}
           </g>
-        ))}
-      </g>
-      <g data-layer="fingerings">
-        {layout.fingers.map((finger) => (
-          <text
-            key={`${finger.assignment.event_id}-finger`}
-            data-event-id={finger.assignment.event_id}
-            x={finger.x}
-            y={finger.y}
-            fill={
-              finger.assignment.status === "manual_confirmed"
-                ? palette.cedar
-                : palette.amber
-            }
-            fontSize={17}
-            fontWeight={700}
-            textAnchor="middle"
-          >
-            {fingerCircles[finger.assignment.finger]}
-          </text>
-        ))}
-      </g>
-      <g data-layer="chords">
-        {layout.chords.map((chord) => (
-          <g
-            key={chord.chord.id}
-            data-chord-id={chord.chord.id}
-            data-measure-id={chord.chord.measure_id}
-            data-lane={chord.lane}
-          >
-            <rect
-              x={chord.x - 42}
-              y={chord.y - 16}
-              width={84}
-              height={27}
-              rx={6}
-              fill={palette.amberLight}
-              stroke={palette.amber}
-              strokeOpacity={0.35}
-            />
+        </>
+      )}
+      {visibility.fingerings && (
+        <g data-layer="fingerings">
+          {layout.fingers.map((finger) => (
             <text
-              x={chord.x}
-              y={chord.y - 3}
-              fill={palette.amber}
-              fontSize={12}
-              fontWeight={800}
+              key={`${finger.assignment.event_id}-finger`}
+              data-event-id={finger.assignment.event_id}
+              x={finger.x}
+              y={finger.y}
+              fill={
+                finger.assignment.status === "manual_confirmed"
+                  ? palette.cedar
+                  : palette.amber
+              }
+              fontSize={17}
+              fontWeight={700}
               textAnchor="middle"
             >
-              {chord.chord.symbol} · {chord.chord.function}
+              {fingerCircles[finger.assignment.finger]}
             </text>
-            <text
-              x={chord.x}
-              y={chord.y + 23}
-              fill={palette.muted}
-              fontSize={9}
-              textAnchor="middle"
-            >
-              {chord.chord.tones
-                .map((tone) => `${tone.note}${fingerCircles[tone.finger]}`)
-                .join(" · ")}
-            </text>
-          </g>
-        ))}
-      </g>
+          ))}
+        </g>
+      )}
+      {visibility.noteNames && (
+        <g data-layer="note-names">
+          {layout.events
+            .filter(
+              (
+                event,
+              ): event is EventLayout & { event: ScoreNoteEvent } =>
+                event.event.kind === "note",
+            )
+            .map((event) => (
+              <text
+                key={`${event.event.id}-note-name`}
+                data-event-id={event.event.id}
+                x={event.x}
+                y={event.y + NOTE_NAME_BASELINE_OFFSET}
+                fill={palette.muted}
+                fontSize={9}
+                fontWeight={650}
+                textAnchor="middle"
+              >
+                {scoreNoteName(event.event, keySignature)}
+              </text>
+            ))}
+        </g>
+      )}
+      {visibility.chords && (
+        <g data-layer="chords">
+          {layout.chords.map((chord) => {
+            const isConfirmed = isConfirmedTeachingStatus(
+              chord.chord.status,
+            );
+            const color = isConfirmed ? palette.cedar : palette.amber;
+            return (
+              <g
+                key={chord.chord.id}
+                data-chord-id={chord.chord.id}
+                data-measure-id={chord.chord.measure_id}
+                data-status={chord.chord.status}
+                data-lane={chord.lane}
+              >
+                <rect
+                  x={chord.x - 42}
+                  y={chord.y - 19}
+                  width={84}
+                  height={36}
+                  rx={6}
+                  fill={
+                    isConfirmed ? palette.cedarLight : palette.amberLight
+                  }
+                  stroke={color}
+                  strokeOpacity={0.35}
+                />
+                <text
+                  x={chord.x}
+                  y={chord.y - 5}
+                  fill={color}
+                  fontSize={12}
+                  fontWeight={800}
+                  textAnchor="middle"
+                >
+                  {chord.chord.symbol} · {chord.chord.function}
+                </text>
+                <text
+                  x={chord.x}
+                  y={chord.y + 10}
+                  fill={color}
+                  fontSize={8}
+                  fontWeight={700}
+                  textAnchor="middle"
+                >
+                  {isConfirmed ? "已确认" : "自动预判"}
+                </text>
+                <text
+                  x={chord.x}
+                  y={chord.y + 29}
+                  fill={palette.muted}
+                  fontSize={9}
+                  textAnchor="middle"
+                >
+                  {chord.chord.tones
+                    .map((tone) => `${tone.note}${fingerCircles[tone.finger]}`)
+                    .join(" · ")}
+                </text>
+              </g>
+            );
+          })}
+        </g>
+      )}
     </g>
   );
 }
@@ -492,14 +562,24 @@ function LyricsLayer({ layout }: { layout: ScoreLayout }) {
 export function ScoreSvg({
   score,
   arrangement,
+  visibility = DEFAULT_SCORE_DISPLAY_PREFERENCES,
   className,
 }: ScoreSvgProps) {
-  const layout = layoutScore(score, arrangement);
+  const layout = layoutScore(score, arrangement, visibility);
   const reactId = useId().split(":").join("");
   const titleId = `score-title-${reactId}`;
   const descriptionId = `score-description-${reactId}`;
-  const keySignature = score.key_signature?.value ?? "调号未标明";
+  const sourceKeySignature = score.key_signature?.value ?? null;
+  const keySignature = sourceKeySignature ?? "调号未标明";
   const meter = score.meter?.value ?? "拍号未标明";
+  const contentLabels = [
+    "音符",
+    ...(visibility.lyrics ? ["歌词"] : []),
+    ...(visibility.fingerings ? ["右手指法"] : []),
+    ...(visibility.noteNames ? ["实际键位"] : []),
+    ...(visibility.positions ? ["手位"] : []),
+    ...(visibility.chords ? ["左手和弦"] : []),
+  ];
 
   return (
     <svg
@@ -516,8 +596,8 @@ export function ScoreSvg({
         第 {score.hymn_key} 首《{score.title}》简谱
       </title>
       <desc id={descriptionId}>
-        {keySignature}，{meter}，共 {layout.pages.length} 页。谱面含音符、
-        歌词、右手指法、手位和左手和弦教学标记。
+        {keySignature}，{meter}，共 {layout.pages.length} 页。谱面含
+        {contentLabels.join("、")}。
       </desc>
 
       <g data-layer="pages">
@@ -556,10 +636,14 @@ export function ScoreSvg({
         ))}
       </g>
 
-      <TeachingLayers layout={layout} />
+      <TeachingLayers
+        layout={layout}
+        visibility={visibility}
+        keySignature={sourceKeySignature}
+      />
       <NotationLayers layout={layout} />
       <RelationLayers layout={layout} />
-      <LyricsLayer layout={layout} />
+      {visibility.lyrics && <LyricsLayer layout={layout} />}
     </svg>
   );
 }

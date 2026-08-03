@@ -1,6 +1,9 @@
 import {
+  createDefaultScoreDisplay,
   createDefaultServiceSet,
   progressStorage,
+  scoreDisplayStorage,
+  sidebarStorage,
   serviceSetStorage,
   STORAGE_KEYS,
 } from "./storage";
@@ -56,6 +59,49 @@ describe("本地仓储", () => {
     expect(() =>
       serviceSetStorage.import(JSON.stringify(value), new Set(["1"])),
     ).toThrow("不存在的诗歌");
+  });
+
+  it("保存歌谱教学层显示偏好并在损坏时回退为全部显示", () => {
+    expect(
+      scoreDisplayStorage.save({
+        positions: false,
+        fingerings: true,
+        noteNames: false,
+        chords: false,
+        lyrics: false,
+      }),
+    ).toBe(true);
+    expect(scoreDisplayStorage.load()).toEqual({
+      positions: false,
+      fingerings: true,
+      noteNames: false,
+      chords: false,
+      lyrics: false,
+    });
+
+    localStorage.setItem(
+      STORAGE_KEYS.scoreDisplay,
+      '{"positions":false,"fingerings":true,"chords":false}',
+    );
+    expect(scoreDisplayStorage.load()).toEqual({
+      positions: false,
+      fingerings: true,
+      noteNames: true,
+      chords: false,
+      lyrics: true,
+    });
+
+    localStorage.setItem(STORAGE_KEYS.scoreDisplay, '{"positions":false}');
+    expect(scoreDisplayStorage.load()).toEqual(createDefaultScoreDisplay());
+  });
+
+  it("保存侧边栏收起状态并在损坏时回退为展开", () => {
+    expect(sidebarStorage.load()).toBe(false);
+    expect(sidebarStorage.save(true)).toBe(true);
+    expect(sidebarStorage.load()).toBe(true);
+
+    localStorage.setItem(STORAGE_KEYS.sidebarCollapsed, '"invalid"');
+    expect(sidebarStorage.load()).toBe(false);
   });
 });
 

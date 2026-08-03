@@ -166,7 +166,7 @@ export function makeArrangement(
         id: "chord-1",
         measure_id: "measure-1",
         beat: 0,
-        display_default: false,
+        display_default: true,
         symbol: "E♭",
         function: "I",
         bass: "E♭",

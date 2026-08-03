@@ -32,11 +32,13 @@ describe("HymnPreparationGuide", () => {
 
     const firstNote = container.querySelector('[data-event-id="note-1"]');
     expect(firstNote).toHaveTextContent("1");
+    expect(firstNote).toHaveTextContent("E♭4");
     expect(firstNote).toHaveTextContent("1 指");
     expect(firstNote).toHaveTextContent("主音用 1 指建立手位。");
 
     const secondNote = container.querySelector('[data-event-id="note-2"]');
     expect(secondNote).toHaveTextContent("5̇");
+    expect(secondNote).toHaveTextContent("B♭5");
     expect(secondNote).toHaveTextContent("5 指");
     expect(secondNote).toHaveTextContent("高音 5 用 5 指。");
   });
@@ -62,6 +64,8 @@ describe("HymnPreparationGuide", () => {
           status: "faithful",
           render: makeRender({ hymn_key: "118" }),
           renderVariant: 1,
+          score: makeScore({ hymn_key: "118" }),
+          arrangement: makeArrangement({ hymn_key: "118" }),
           reason: null,
         }}
       />,

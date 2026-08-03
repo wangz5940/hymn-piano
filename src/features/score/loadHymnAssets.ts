@@ -25,6 +25,8 @@ export type HymnAssets =
       status: "faithful";
       render: HymnRenderDocument;
       renderVariant: number;
+      score: PianoScoreDocument;
+      arrangement: PianoArrangementDocument;
       reason: string | null;
     }
   | {
@@ -64,6 +66,17 @@ function hasRenderAsset(hymn: HymnCatalogItem): boolean {
       Number.isInteger(hymn.render_variant) &&
       Number(hymn.render_variant) >= 0,
   );
+}
+
+function siblingAssetUrl(assetUrl: string, filename: string): string {
+  const absolutePattern = /^[a-z][a-z\d+.-]*:/iu;
+  const parsed = new URL(assetUrl, "http://local.shigin");
+  const segments = parsed.pathname.split("/");
+  segments[segments.length - 1] = filename;
+  parsed.pathname = segments.join("/");
+  return absolutePattern.test(assetUrl)
+    ? parsed.href
+    : `${parsed.pathname}${parsed.search}${parsed.hash}`;
 }
 
 export function initialHymnAssets(
@@ -183,16 +196,67 @@ export async function loadHymnAssets(
   }
 
   if (hymn.score_source !== "pptx") {
-    const render = validateRender(
-      await fetchDocument(
+    const scoreAssetUrl = siblingAssetUrl(renderAssetUrl, "score.json");
+    const arrangementAssetUrl = siblingAssetUrl(
+      renderAssetUrl,
+      "arrangement.json",
+    );
+    const [scoreRaw, arrangementRaw, renderRaw] = await Promise.all([
+      fetchDocument(
+        scoreAssetUrl,
+        "谱面",
+        hymn.key,
+        fetchImpl,
+        options.signal,
+      ),
+      fetchDocument(
+        arrangementAssetUrl,
+        "编配",
+        hymn.key,
+        fetchImpl,
+        options.signal,
+      ),
+      fetchDocument(
         renderAssetUrl,
         "忠实渲染",
         hymn.key,
         fetchImpl,
         options.signal,
       ),
-      hymn,
-    );
+    ]);
+    try {
+      assertScoreDocument(scoreRaw);
+    } catch (cause) {
+      throw new HymnAssetError(`第 ${hymn.key} 首谱面数据不符合规范。`, {
+        cause,
+      });
+    }
+    const score = scoreRaw as PianoScoreDocument;
+    const expectedKey = String(hymn.number);
+    if (score.hymn_key !== expectedKey) {
+      throw new HymnAssetError(
+        `谱面归属校验失败：期望第 ${expectedKey} 首，实际为第 ${score.hymn_key} 首。`,
+      );
+    }
+    try {
+      assertArrangementDocument(score, arrangementRaw);
+    } catch (cause) {
+      throw new HymnAssetError(`第 ${hymn.key} 首编配数据不符合规范。`, {
+        cause,
+      });
+    }
+    const arrangement = arrangementRaw as PianoArrangementDocument;
+    const render = validateRender(renderRaw, hymn);
+    if ((await hashDocument(score)) !== score.content_hash) {
+      throw new HymnAssetError(
+        `第 ${hymn.key} 首谱面内容哈希校验失败。`,
+      );
+    }
+    if ((await hashDocument(arrangement)) !== arrangement.content_hash) {
+      throw new HymnAssetError(
+        `第 ${hymn.key} 首编配内容哈希校验失败。`,
+      );
+    }
     if ((await hashDocument(render)) !== render.content_hash) {
       throw new HymnAssetError(
         `第 ${hymn.key} 首渲染内容哈希校验失败。`,
@@ -211,6 +275,8 @@ export async function loadHymnAssets(
       status: "faithful",
       render,
       renderVariant,
+      score,
+      arrangement,
       reason: hymn.fallback_reason ?? null,
     };
   }

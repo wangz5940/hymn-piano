@@ -6,7 +6,7 @@ export const DEFAULT_SLIDE_SIZE_EMU = {
   width: 9_144_000,
   height: 5_143_500,
 } as const;
-export const PPTX_SOURCE_GENERATOR_VERSION = "pptx-reader/v2";
+export const PPTX_SOURCE_GENERATOR_VERSION = "pptx-reader/v3";
 
 export interface OrderedXmlNode {
   [key: string]: unknown;

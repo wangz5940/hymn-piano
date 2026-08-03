@@ -1,4 +1,4 @@
-import { mkdir, readFile, readdir, rm, writeFile } from "node:fs/promises";
+import { mkdir, readFile, readdir, rm, stat, writeFile } from "node:fs/promises";
 import { basename, dirname, join, resolve } from "node:path";
 import { fileURLToPath, pathToFileURL } from "node:url";
 import { unzipSync } from "fflate";
@@ -18,6 +18,67 @@ interface GenerationStats {
   arrangement_bytes: number;
   render_bytes: number;
   render_media_bytes: number;
+}
+
+interface CorpusDirectories {
+  pptxDirectory: string;
+  pptxSourceFileDirectory: string;
+  imageDirectory: string;
+}
+
+function emptyStats(): GenerationStats {
+  return {
+    written: 0,
+    unchanged: 0,
+    removed: 0,
+    source_bytes: 0,
+    score_bytes: 0,
+    arrangement_bytes: 0,
+    render_bytes: 0,
+    render_media_bytes: 0,
+  };
+}
+
+async function isDirectory(path: string): Promise<boolean> {
+  try {
+    return (await stat(path)).isDirectory();
+  } catch (error) {
+    if ((error as NodeJS.ErrnoException).code === "ENOENT") return false;
+    throw error;
+  }
+}
+
+async function generatedAssetsExist(projectRoot: string): Promise<boolean> {
+  return (
+    (await isDirectory(join(projectRoot, "public", "materials", "hymns"))) &&
+    (await isDirectory(join(projectRoot, "data", "generated", "hymn-sources")))
+  );
+}
+
+export async function resolveCorpusDirectories(
+  projectRoot: string,
+): Promise<CorpusDirectories | null> {
+  const candidates: CorpusDirectories[] = [
+    {
+      pptxDirectory: join(projectRoot, "712首-文字"),
+      pptxSourceFileDirectory: "712首-文字",
+      imageDirectory: join(projectRoot, "选本诗歌712", "歌谱"),
+    },
+    {
+      pptxDirectory: join(projectRoot, "resource", "712首-文字"),
+      pptxSourceFileDirectory: "712首-文字",
+      imageDirectory: join(projectRoot, "resource", "歌谱"),
+    },
+  ];
+  for (const candidate of candidates) {
+    if (
+      (await isDirectory(candidate.pptxDirectory)) &&
+      (await isDirectory(candidate.imageDirectory))
+    ) {
+      return candidate;
+    }
+  }
+  return null;
 }
 
 function canonicalize(value: unknown): unknown {
@@ -90,11 +151,11 @@ async function removeGeneratedFile(
 }
 
 async function writeRenderMediaAssets(
-  projectRoot: string,
   publicRoot: string,
   source: PptxSourceDocument,
   render: HymnRenderDocument,
   stats: GenerationStats,
+  pptxDirectory: string,
 ): Promise<void> {
   const mediaPaths = new Set(
     render.variants
@@ -119,7 +180,9 @@ async function writeRenderMediaAssets(
   if (mediaPaths.size === 0) return;
 
   const packageParts = unzipSync(
-    new Uint8Array(await readFile(resolve(projectRoot, source.source_file))),
+    new Uint8Array(
+      await readFile(join(pptxDirectory, basename(source.source_file))),
+    ),
   );
   for (const mediaPath of [...mediaPaths].sort()) {
     const bytes = packageParts[mediaPath];
@@ -157,6 +220,9 @@ function generatedCatalogSource(
     render_asset_url: item.render_asset_url,
     render_variant: item.render_variant,
     fallback_reason: item.fallback_reason,
+    key_signature: item.key_signature,
+    meter: item.meter,
+    position_change_count: item.position_change_count,
   }));
   return [
     "// 此文件由诗琴结构化曲库生成脚本生成，请勿手工修改。",
@@ -174,9 +240,27 @@ function generatedCatalogSource(
 export async function generateScoreAssets(
   projectRoot: string,
 ): Promise<GenerationStats> {
+  const corpusDirectories = await resolveCorpusDirectories(projectRoot);
+  if (!corpusDirectories) {
+    if (await generatedAssetsExist(projectRoot)) {
+      console.log(
+        "未找到原始 PPTX/歌谱资源目录，已跳过重生成，继续使用已提交的生成资产。",
+      );
+      return emptyStats();
+    }
+    throw new Error(
+      [
+        "未找到原始 PPTX/歌谱资源目录。",
+        "请放置以下任一组目录：",
+        "1. 712首-文字 与 选本诗歌712/歌谱",
+        "2. resource/712首-文字 与 resource/歌谱",
+      ].join("\n"),
+    );
+  }
   const result = await importCorpus({
-    pptxDirectory: join(projectRoot, "712首-文字"),
-    imageDirectory: join(projectRoot, "选本诗歌712", "歌谱"),
+    pptxDirectory: corpusDirectories.pptxDirectory,
+    pptxSourceFileDirectory: corpusDirectories.pptxSourceFileDirectory,
+    imageDirectory: corpusDirectories.imageDirectory,
     ocrMetadataPath: join(projectRoot, "data", "hymn-ocr.jsonl"),
     manualArrangementDirectory: join(
       projectRoot,
@@ -247,11 +331,11 @@ export async function generateScoreAssets(
       throw new Error(`第 ${hymnKey} 首缺少 Render 对应的 Source AST`);
     }
     await writeRenderMediaAssets(
-      projectRoot,
       publicRoot,
       source,
       render,
       stats,
+      corpusDirectories.pptxDirectory,
     );
   }
 

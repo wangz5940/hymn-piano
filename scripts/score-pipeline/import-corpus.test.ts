@@ -24,9 +24,10 @@ import {
   discoverCorpusFiles,
   type CorpusFiles,
 } from "./import-corpus";
+import { imageCorpusDirectory, pptxCorpusDirectory } from "./corpus-paths";
 
-const pptxDirectory = resolve("712首-文字");
-const imageDirectory = resolve("选本诗歌712/歌谱");
+const pptxDirectory = pptxCorpusDirectory;
+const imageDirectory = imageCorpusDirectory;
 const generatedRoot = resolve("public/materials/hymns");
 
 async function readJson<T>(path: string): Promise<T> {
@@ -115,6 +116,18 @@ describe("曲库导入索引", () => {
     const first = buildCatalog(
       fixtureFiles(),
       new Set(["1"]),
+      new Set(["1"]),
+      new Map(),
+      new Map([
+        [
+          "1",
+          {
+            key_signature: "C",
+            meter: "4/4",
+            position_change_count: 2,
+          },
+        ],
+      ]),
     );
     const structured = first.catalog.find((item) => item.key === "1");
     const alternate = first.catalog.find((item) => item.key === "1b");
@@ -124,9 +137,12 @@ describe("曲库导入索引", () => {
       score_source: "pptx",
       score_schema: SCORE_SCHEMA,
       score_asset_url: "/materials/hymns/1/score.json",
-      arrangement_schema: null,
-      arrangement_asset_url: null,
+      arrangement_schema: ARRANGEMENT_SCHEMA,
+      arrangement_asset_url: "/materials/hymns/1/arrangement.json",
       fallback_reason: null,
+      key_signature: "C",
+      meter: "4/4",
+      position_change_count: 2,
     });
     expect(validateCatalogEntry(structured)).toEqual([]);
     expect(alternate).toMatchObject({
@@ -134,12 +150,18 @@ describe("曲库导入索引", () => {
       score_asset_url: null,
       arrangement_asset_url: null,
       fallback_reason: expect.stringContaining("第二调"),
+      key_signature: null,
+      meter: null,
+      position_change_count: null,
     });
     expect(validateCatalogEntry(alternate)).toEqual([]);
     expect(noBase).toMatchObject({
       score_source: "image",
       score_asset_url: null,
       fallback_reason: expect.stringContaining("SimpMusic Base"),
+      key_signature: null,
+      meter: null,
+      position_change_count: null,
     });
     expect(validateCatalogEntry(noBase)).toEqual([]);
   });
@@ -208,6 +230,9 @@ describe("曲库导入索引", () => {
         score_asset_url: string | null;
         arrangement_asset_url: string | null;
         fallback_reason: string | null;
+        key_signature: string | null;
+        meter: string | null;
+        position_change_count: number | null;
       }>
     >(resolve(generatedRoot, "catalog.json"));
 
@@ -238,6 +263,35 @@ describe("曲库导入索引", () => {
     const structured = catalog.filter(
       (entry) => entry.score_source === "pptx",
     );
+    const imageFallbacks = catalog.filter(
+      (entry) => entry.score_source === "image",
+    );
+    expect(
+      structured.filter((entry) => entry.key_signature !== null),
+    ).toHaveLength(666);
+    expect(
+      structured.filter((entry) => entry.meter !== null),
+    ).toHaveLength(691);
+    expect(
+      structured.every(
+        (entry) => entry.position_change_count !== null,
+      ),
+    ).toBe(true);
+    expect(
+      imageFallbacks.every(
+        (entry) =>
+          entry.key_signature === null &&
+          entry.meter === null &&
+          entry.position_change_count === null,
+      ),
+    ).toBe(true);
+    let chordCount = 0;
+    let autoChordCount = 0;
+    let confirmedChordCount = 0;
+    let arrangementsWithChords = 0;
+    let relativeChordCount = 0;
+    let relativeArrangements = 0;
+    let renderVariantsWithChords = 0;
     expect(structured).toHaveLength(709);
     for (const entry of structured) {
       expect(entry).toMatchObject({
@@ -258,7 +312,68 @@ describe("曲库导入索引", () => {
       expect(validateArrangementDocument(score, arrangement)).toEqual([]);
       expect(validateRenderDocument(render)).toEqual([]);
       expect(arrangement.score_hash).toBe(score.content_hash);
+      chordCount += arrangement.chords.length;
+      if (arrangement.chords.length > 0) arrangementsWithChords += 1;
+      let hasRelativeChords = false;
+      for (const chord of arrangement.chords) {
+        expect(chord.display_default).toBe(true);
+        if (chord.status === "auto_candidate") autoChordCount += 1;
+        if (
+          chord.evidence.includes(
+            "调号未标明，和弦音使用相对级数表达",
+          )
+        ) {
+          relativeChordCount += 1;
+          hasRelativeChords = true;
+        }
+        if (
+          chord.status === "manual_confirmed" ||
+          chord.status === "source_confirmed"
+        ) {
+          confirmedChordCount += 1;
+        }
+      }
+      if (hasRelativeChords) relativeArrangements += 1;
+
+      const events = score.pages.flatMap((page) =>
+        page.systems.flatMap((system) =>
+          system.measures.flatMap((measure) => measure.events),
+        ),
+      );
+      for (const variant of render.variants) {
+        const measureIds = new Set(
+          events
+            .filter(
+              (event) =>
+                event.source_anchor?.slide === variant.canonical_slide,
+            )
+            .map((event) => event.measure_id),
+        );
+        const visibleChords = arrangement.chords.filter(
+          (chord) =>
+            chord.display_default && measureIds.has(chord.measure_id),
+        );
+        expect(visibleChords.length).toBeGreaterThan(0);
+        renderVariantsWithChords += 1;
+      }
     }
+    expect({
+      arrangementsWithChords,
+      chordCount,
+      autoChordCount,
+      confirmedChordCount,
+      relativeArrangements,
+      relativeChordCount,
+      renderVariantsWithChords,
+    }).toEqual({
+      arrangementsWithChords: 709,
+      chordCount: 24_784,
+      autoChordCount: 24_779,
+      confirmedChordCount: 5,
+      relativeArrangements: 43,
+      relativeChordCount: 1_620,
+      renderVariantsWithChords: 1_319,
+    });
   }, 120_000);
 
   it("关键曲目覆盖普通、异常、人工、第二调、Accent 与末号场景", async () => {

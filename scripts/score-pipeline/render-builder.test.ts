@@ -1,15 +1,15 @@
-import { resolve } from "node:path";
 import { describe, expect, it } from "vitest";
 import type { SourceTextShape } from "../../src/features/score/contracts";
 import { validateRenderDocument } from "../../src/features/score/render-contracts";
+import { resolvePptxCorpusFile } from "./corpus-paths";
 import { readPptxSource } from "./pptx-reader";
 import { buildRenderDocument } from "./render-builder";
 
-const hymn001 = resolve("712首-文字/001 至大医生.pptx");
-const hymn059 = resolve("712首-文字/059 主耶稣当我们想到祢.pptx");
-const hymn110 = resolve("712首-文字/110 我们当来同声欢呼.pptx");
-const hymn118 = resolve("712首-文字/118 神的儿子亲爱救主.pptx");
-const hymn712 = resolve("712首-文字/712 你们要赞美耶和华.pptx");
+const hymn001 = resolvePptxCorpusFile("001 至大医生.pptx");
+const hymn059 = resolvePptxCorpusFile("059 主耶稣当我们想到祢.pptx");
+const hymn110 = resolvePptxCorpusFile("110 我们当来同声欢呼.pptx");
+const hymn118 = resolvePptxCorpusFile("118 神的儿子亲爱救主.pptx");
+const hymn712 = resolvePptxCorpusFile("712 你们要赞美耶和华.pptx");
 
 describe("PPT 原坐标渲染资产", () => {
   it("[defect-probing] 第 1 首七张歌词 slide 合并后只输出第一段", async () => {

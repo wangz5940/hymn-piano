@@ -10,6 +10,19 @@ export type TeachingSourceStatus =
   | "unavailable";
 export type FingerNumber = 1 | 2 | 3 | 4 | 5;
 
+export function isConfirmedTeachingStatus(status: unknown): boolean {
+  return status === "source_confirmed" || status === "manual_confirmed";
+}
+
+export function shouldDisplayTeachingCandidate(
+  status: unknown,
+): boolean {
+  return (
+    isConfirmedTeachingStatus(status) ||
+    status === "auto_candidate"
+  );
+}
+
 export interface BBox {
   x: number;
   y: number;
@@ -721,17 +734,17 @@ export function validateArrangementDocument(
           "和弦默认展示标记必须是布尔值",
         );
       } else {
-        const confirmed =
-          chordValue.status === "manual_confirmed" ||
-          chordValue.status === "source_confirmed";
-        if (chordValue.display_default !== confirmed) {
+        const expectedDisplay = shouldDisplayTeachingCandidate(
+          chordValue.status,
+        );
+        if (chordValue.display_default !== expectedDisplay) {
           addIssue(
             issues,
             `${chordPath}.display_default`,
             "display_status_mismatch",
-            confirmed
-              ? "人工或来源确认和弦必须默认展示"
-              : "自动候选和弦不得默认展示",
+            expectedDisplay
+              ? "可用的确认或自动候选和弦必须默认展示"
+              : "不可用和弦不得默认展示",
           );
         }
       }

@@ -13,7 +13,7 @@
       "bass": "D",
       "beat": 0,
       "confidence": 0.92,
-      "display_default": false,
+      "display_default": true,
       "evidence": [
         "强拍旋律 5 属于 I",
         "乐句起点优先建立主调"
@@ -48,7 +48,7 @@
       "bass": "D",
       "beat": 0,
       "confidence": 0.8500000000000001,
-      "display_default": false,
+      "display_default": true,
       "evidence": [
         "强拍旋律 3 属于 I"
       ],
@@ -82,7 +82,7 @@
       "bass": "E",
       "beat": 0,
       "confidence": 0.92,
-      "display_default": false,
+      "display_default": true,
       "evidence": [
         "强拍旋律 6 属于 IV"
       ],
@@ -116,7 +116,7 @@
       "bass": "G",
       "beat": 0,
       "confidence": 0.92,
-      "display_default": false,
+      "display_default": true,
       "evidence": [
         "强拍旋律 1 属于 I",
         "系统末小节优先落在主和弦"
@@ -151,7 +151,7 @@
       "bass": "G",
       "beat": 0,
       "confidence": 0.92,
-      "display_default": false,
+      "display_default": true,
       "evidence": [
         "强拍旋律 5 属于 I",
         "乐句起点优先建立主调"
@@ -186,7 +186,7 @@
       "bass": "G",
       "beat": 0,
       "confidence": 0.77,
-      "display_default": false,
+      "display_default": true,
       "evidence": [
         "强拍旋律 3 属于 I"
       ],
@@ -220,7 +220,7 @@
       "bass": "G",
       "beat": 0,
       "confidence": 0.8900000000000001,
-      "display_default": false,
+      "display_default": true,
       "evidence": [
         "强拍旋律 3 属于 I"
       ],
@@ -254,7 +254,7 @@
       "bass": "G",
       "beat": 0,
       "confidence": 0.91,
-      "display_default": false,
+      "display_default": true,
       "evidence": [
         "强拍旋律 1 属于 I",
         "系统末小节优先落在主和弦"
@@ -289,7 +289,7 @@
       "bass": "G",
       "beat": 0,
       "confidence": 0.91,
-      "display_default": false,
+      "display_default": true,
       "evidence": [
         "强拍旋律 5 属于 I",
         "乐句起点优先建立主调"
@@ -324,7 +324,7 @@
       "bass": "G",
       "beat": 0,
       "confidence": 0.91,
-      "display_default": false,
+      "display_default": true,
       "evidence": [
         "强拍旋律 3 属于 I"
       ],
@@ -358,7 +358,7 @@
       "bass": "G",
       "beat": 0,
       "confidence": 0.8500000000000001,
-      "display_default": false,
+      "display_default": true,
       "evidence": [
         "强拍旋律 6 属于 IV"
       ],
@@ -392,7 +392,7 @@
       "bass": "G",
       "beat": 0,
       "confidence": 0.92,
-      "display_default": false,
+      "display_default": true,
       "evidence": [
         "强拍旋律 1 属于 I",
         "系统末小节优先落在主和弦"
@@ -427,7 +427,7 @@
       "bass": "G",
       "beat": 0,
       "confidence": 0.91,
-      "display_default": false,
+      "display_default": true,
       "evidence": [
         "强拍旋律 5 属于 I",
         "乐句起点优先建立主调"
@@ -462,7 +462,7 @@
       "bass": "G",
       "beat": 0,
       "confidence": 0.8300000000000001,
-      "display_default": false,
+      "display_default": true,
       "evidence": [
         "强拍旋律 3 属于 I"
       ],
@@ -496,7 +496,7 @@
       "bass": "G",
       "beat": 0,
       "confidence": 0.8900000000000001,
-      "display_default": false,
+      "display_default": true,
       "evidence": [
         "强拍旋律 3 属于 I"
       ],
@@ -530,7 +530,7 @@
       "bass": "G",
       "beat": 0,
       "confidence": 0.91,
-      "display_default": false,
+      "display_default": true,
       "evidence": [
         "强拍旋律 1 属于 I",
         "系统末小节优先落在主和弦"
@@ -558,7 +558,7 @@
       ]
     }
   ],
-  "content_hash": "e593e60dac23f93676f5d17b1e3362a6db37a5c4024b21eb1a178862c4659918",
+  "content_hash": "d46deb102a212c326071299474d67f8f92542105ce34378fb2614eda78007522",
   "ending": {
     "reason": "沿用实际终止进行，比统一套用固定 V7-I 更贴合本曲句法。",
     "status": "auto_candidate",
@@ -1249,6 +1249,14 @@
       "reason": "旋律超出原手位或需要为后续音符预留手指，在此音前整体移动手掌。",
       "to_position_id": "h454-p1-s2-position-3",
       "trigger_event_id": "h454-p1-s2-m1-e5"
+    },
+    {
+      "from_position_id": "h454-p1-s4-position-5",
+      "id": "h454-p1-s4-position-6-move",
+      "instruction": "Move to G Position",
+      "reason": "旋律超出原手位或需要为后续音符预留手指，在此音前整体移动手掌。",
+      "to_position_id": "h454-p1-s4-position-6",
+      "trigger_event_id": "h454-p1-s4-m1-e4"
     }
   ],
   "positions": [
@@ -1318,6 +1326,22 @@
     },
     {
       "confidence": 0.82,
+      "end_event_id": "h454-p1-s4-m1-e3",
+      "finger_notes": {
+        "1": "D",
+        "2": "E",
+        "3": "F♯",
+        "4": "G",
+        "5": "A"
+      },
+      "id": "h454-p1-s4-position-5",
+      "label": "D Position",
+      "reason": "此区段优先保持固定手位，减少看手和临时伸指。",
+      "start_event_id": "h454-p1-s4-m1-e1",
+      "status": "auto_candidate"
+    },
+    {
+      "confidence": 0.82,
       "end_event_id": "h454-p1-s4-m4-e1",
       "finger_notes": {
         "1": "G",
@@ -1326,10 +1350,10 @@
         "4": "C",
         "5": "D"
       },
-      "id": "h454-p1-s4-position-5",
+      "id": "h454-p1-s4-position-6",
       "label": "G Position",
       "reason": "此区段优先保持固定手位，减少看手和临时伸指。",
-      "start_event_id": "h454-p1-s4-m1-e1",
+      "start_event_id": "h454-p1-s4-m1-e4",
       "status": "auto_candidate"
     }
   ],

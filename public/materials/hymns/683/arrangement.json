@@ -1,15 +1,610 @@
 {
   "accompaniment": {
-    "reason": "没有可靠调号时写出实际和弦音名会造成错误教学。",
-    "status": "unavailable",
-    "text": "调号未确认，暂不生成和声与伴奏结论。"
+    "reason": "四拍型在第一、三拍提供方向，避免每拍同样沉重。",
+    "status": "auto_candidate",
+    "text": "低音｜和弦｜经过低音｜和弦"
   },
-  "chords": [],
-  "content_hash": "4e2b818170e46cfa538a50df27e7818641e4d9a5c9864d94306d6d1f7de8af07",
+  "chords": [
+    {
+      "alternatives": [
+        "vi",
+        "IV"
+      ],
+      "bass": "3",
+      "beat": 0,
+      "confidence": 0.73,
+      "display_default": true,
+      "evidence": [
+        "调号未标明，和弦音使用相对级数表达",
+        "强拍旋律 1 属于 I",
+        "乐句起点优先建立主调"
+      ],
+      "function": "I",
+      "id": "h683-p1-s1-m1-chord-1",
+      "inversion": "first",
+      "measure_id": "h683-p1-s1-m1",
+      "reason": "I 覆盖本小节主要旋律音；左手采用 3-5-1 的 first 转位，调号确认后再换算绝对音名。",
+      "status": "auto_candidate",
+      "symbol": "主和弦",
+      "tones": [
+        {
+          "finger": 5,
+          "note": "3"
+        },
+        {
+          "finger": 2,
+          "note": "5"
+        },
+        {
+          "finger": 1,
+          "note": "1"
+        }
+      ]
+    },
+    {
+      "alternatives": [
+        "I",
+        "ii"
+      ],
+      "bass": "2",
+      "beat": 0,
+      "confidence": 0.67,
+      "display_default": true,
+      "evidence": [
+        "调号未标明，和弦音使用相对级数表达",
+        "强拍旋律 4 属于 V7"
+      ],
+      "function": "V7",
+      "id": "h683-p1-s1-m2-chord-1",
+      "inversion": "second",
+      "measure_id": "h683-p1-s1-m2",
+      "reason": "V7 覆盖本小节主要旋律音；左手采用 2-4-5-7 的 second 转位，调号确认后再换算绝对音名。",
+      "status": "auto_candidate",
+      "symbol": "属七和弦",
+      "tones": [
+        {
+          "finger": 5,
+          "note": "2"
+        },
+        {
+          "finger": 3,
+          "note": "4"
+        },
+        {
+          "finger": 2,
+          "note": "5"
+        },
+        {
+          "finger": 1,
+          "note": "7"
+        }
+      ]
+    },
+    {
+      "alternatives": [
+        "ii",
+        "IV"
+      ],
+      "bass": "2",
+      "beat": 0,
+      "confidence": 0.67,
+      "display_default": true,
+      "evidence": [
+        "调号未标明，和弦音使用相对级数表达",
+        "终止前小节优先采用属功能"
+      ],
+      "function": "V7",
+      "id": "h683-p1-s1-m3-chord-1",
+      "inversion": "second",
+      "measure_id": "h683-p1-s1-m3",
+      "reason": "V7 覆盖本小节主要旋律音；左手采用 2-4-5-7 的 second 转位，调号确认后再换算绝对音名。",
+      "status": "auto_candidate",
+      "symbol": "属七和弦",
+      "tones": [
+        {
+          "finger": 5,
+          "note": "2"
+        },
+        {
+          "finger": 3,
+          "note": "4"
+        },
+        {
+          "finger": 2,
+          "note": "5"
+        },
+        {
+          "finger": 1,
+          "note": "7"
+        }
+      ]
+    },
+    {
+      "alternatives": [
+        "V",
+        "V7"
+      ],
+      "bass": "3",
+      "beat": 0,
+      "confidence": 0.77,
+      "display_default": true,
+      "evidence": [
+        "调号未标明，和弦音使用相对级数表达",
+        "系统末小节优先落在主和弦"
+      ],
+      "function": "I",
+      "id": "h683-p1-s1-m4-chord-1",
+      "inversion": "first",
+      "measure_id": "h683-p1-s1-m4",
+      "reason": "I 覆盖本小节主要旋律音；左手采用 3-5-1 的 first 转位，调号确认后再换算绝对音名。",
+      "status": "auto_candidate",
+      "symbol": "主和弦",
+      "tones": [
+        {
+          "finger": 5,
+          "note": "3"
+        },
+        {
+          "finger": 2,
+          "note": "5"
+        },
+        {
+          "finger": 1,
+          "note": "1"
+        }
+      ]
+    },
+    {
+      "alternatives": [
+        "vi",
+        "IV"
+      ],
+      "bass": "3",
+      "beat": 0,
+      "confidence": 0.73,
+      "display_default": true,
+      "evidence": [
+        "调号未标明，和弦音使用相对级数表达",
+        "强拍旋律 1 属于 I",
+        "乐句起点优先建立主调"
+      ],
+      "function": "I",
+      "id": "h683-p1-s2-m1-chord-1",
+      "inversion": "first",
+      "measure_id": "h683-p1-s2-m1",
+      "reason": "I 覆盖本小节主要旋律音；左手采用 3-5-1 的 first 转位，调号确认后再换算绝对音名。",
+      "status": "auto_candidate",
+      "symbol": "主和弦",
+      "tones": [
+        {
+          "finger": 5,
+          "note": "3"
+        },
+        {
+          "finger": 2,
+          "note": "5"
+        },
+        {
+          "finger": 1,
+          "note": "1"
+        }
+      ]
+    },
+    {
+      "alternatives": [
+        "I",
+        "ii"
+      ],
+      "bass": "2",
+      "beat": 0,
+      "confidence": 0.67,
+      "display_default": true,
+      "evidence": [
+        "调号未标明，和弦音使用相对级数表达",
+        "强拍旋律 4 属于 V7"
+      ],
+      "function": "V7",
+      "id": "h683-p1-s2-m2-chord-1",
+      "inversion": "second",
+      "measure_id": "h683-p1-s2-m2",
+      "reason": "V7 覆盖本小节主要旋律音；左手采用 2-4-5-7 的 second 转位，调号确认后再换算绝对音名。",
+      "status": "auto_candidate",
+      "symbol": "属七和弦",
+      "tones": [
+        {
+          "finger": 5,
+          "note": "2"
+        },
+        {
+          "finger": 3,
+          "note": "4"
+        },
+        {
+          "finger": 2,
+          "note": "5"
+        },
+        {
+          "finger": 1,
+          "note": "7"
+        }
+      ]
+    },
+    {
+      "alternatives": [
+        "ii",
+        "IV"
+      ],
+      "bass": "2",
+      "beat": 0,
+      "confidence": 0.67,
+      "display_default": true,
+      "evidence": [
+        "调号未标明，和弦音使用相对级数表达",
+        "终止前小节优先采用属功能"
+      ],
+      "function": "V7",
+      "id": "h683-p1-s2-m3-chord-1",
+      "inversion": "second",
+      "measure_id": "h683-p1-s2-m3",
+      "reason": "V7 覆盖本小节主要旋律音；左手采用 2-4-5-7 的 second 转位，调号确认后再换算绝对音名。",
+      "status": "auto_candidate",
+      "symbol": "属七和弦",
+      "tones": [
+        {
+          "finger": 5,
+          "note": "2"
+        },
+        {
+          "finger": 3,
+          "note": "4"
+        },
+        {
+          "finger": 2,
+          "note": "5"
+        },
+        {
+          "finger": 1,
+          "note": "7"
+        }
+      ]
+    },
+    {
+      "alternatives": [
+        "V",
+        "V7"
+      ],
+      "bass": "3",
+      "beat": 0,
+      "confidence": 0.77,
+      "display_default": true,
+      "evidence": [
+        "调号未标明，和弦音使用相对级数表达",
+        "系统末小节优先落在主和弦"
+      ],
+      "function": "I",
+      "id": "h683-p1-s2-m4-chord-1",
+      "inversion": "first",
+      "measure_id": "h683-p1-s2-m4",
+      "reason": "I 覆盖本小节主要旋律音；左手采用 3-5-1 的 first 转位，调号确认后再换算绝对音名。",
+      "status": "auto_candidate",
+      "symbol": "主和弦",
+      "tones": [
+        {
+          "finger": 5,
+          "note": "3"
+        },
+        {
+          "finger": 2,
+          "note": "5"
+        },
+        {
+          "finger": 1,
+          "note": "1"
+        }
+      ]
+    },
+    {
+      "alternatives": [
+        "V7",
+        "I"
+      ],
+      "bass": "5",
+      "beat": 0,
+      "confidence": 0.73,
+      "display_default": true,
+      "evidence": [
+        "调号未标明，和弦音使用相对级数表达",
+        "强拍旋律 2 属于 V"
+      ],
+      "function": "V",
+      "id": "h683-p1-s3-m1-chord-1",
+      "inversion": "root",
+      "measure_id": "h683-p1-s3-m1",
+      "reason": "V 覆盖本小节主要旋律音；左手采用 5-7-2 的 root 转位，调号确认后再换算绝对音名。",
+      "status": "auto_candidate",
+      "symbol": "属和弦",
+      "tones": [
+        {
+          "finger": 5,
+          "note": "5"
+        },
+        {
+          "finger": 3,
+          "note": "7"
+        },
+        {
+          "finger": 1,
+          "note": "2"
+        }
+      ]
+    },
+    {
+      "alternatives": [
+        "ii",
+        "V"
+      ],
+      "bass": "4",
+      "beat": 0,
+      "confidence": 0.73,
+      "display_default": true,
+      "evidence": [
+        "调号未标明，和弦音使用相对级数表达",
+        "强拍旋律 4 属于 V7"
+      ],
+      "function": "V7",
+      "id": "h683-p1-s3-m2-chord-1",
+      "inversion": "third",
+      "measure_id": "h683-p1-s3-m2",
+      "reason": "V7 覆盖本小节主要旋律音；左手采用 4-5-7-2 的 third 转位，调号确认后再换算绝对音名。",
+      "status": "auto_candidate",
+      "symbol": "属七和弦",
+      "tones": [
+        {
+          "finger": 5,
+          "note": "4"
+        },
+        {
+          "finger": 4,
+          "note": "5"
+        },
+        {
+          "finger": 2,
+          "note": "7"
+        },
+        {
+          "finger": 1,
+          "note": "2"
+        }
+      ]
+    },
+    {
+      "alternatives": [
+        "I",
+        "V"
+      ],
+      "bass": "4",
+      "beat": 0,
+      "confidence": 0.73,
+      "display_default": true,
+      "evidence": [
+        "调号未标明，和弦音使用相对级数表达",
+        "强拍旋律 5 属于 V7",
+        "终止前小节优先采用属功能"
+      ],
+      "function": "V7",
+      "id": "h683-p1-s3-m3-chord-1",
+      "inversion": "third",
+      "measure_id": "h683-p1-s3-m3",
+      "reason": "V7 覆盖本小节主要旋律音；左手采用 4-5-7-2 的 third 转位，调号确认后再换算绝对音名。",
+      "status": "auto_candidate",
+      "symbol": "属七和弦",
+      "tones": [
+        {
+          "finger": 5,
+          "note": "4"
+        },
+        {
+          "finger": 4,
+          "note": "5"
+        },
+        {
+          "finger": 2,
+          "note": "7"
+        },
+        {
+          "finger": 1,
+          "note": "2"
+        }
+      ]
+    },
+    {
+      "alternatives": [
+        "V7",
+        "ii"
+      ],
+      "bass": "3",
+      "beat": 0,
+      "confidence": 0.67,
+      "display_default": true,
+      "evidence": [
+        "调号未标明，和弦音使用相对级数表达",
+        "系统末小节优先落在主和弦"
+      ],
+      "function": "I",
+      "id": "h683-p1-s3-m4-chord-1",
+      "inversion": "first",
+      "measure_id": "h683-p1-s3-m4",
+      "reason": "I 覆盖本小节主要旋律音；左手采用 3-5-1 的 first 转位，调号确认后再换算绝对音名。",
+      "status": "auto_candidate",
+      "symbol": "主和弦",
+      "tones": [
+        {
+          "finger": 5,
+          "note": "3"
+        },
+        {
+          "finger": 2,
+          "note": "5"
+        },
+        {
+          "finger": 1,
+          "note": "1"
+        }
+      ]
+    },
+    {
+      "alternatives": [
+        "IV",
+        "vi"
+      ],
+      "bass": "3",
+      "beat": 0,
+      "confidence": 0.73,
+      "display_default": true,
+      "evidence": [
+        "调号未标明，和弦音使用相对级数表达",
+        "强拍旋律 1 属于 I",
+        "乐句起点优先建立主调"
+      ],
+      "function": "I",
+      "id": "h683-p1-s4-m1-chord-1",
+      "inversion": "first",
+      "measure_id": "h683-p1-s4-m1",
+      "reason": "I 覆盖本小节主要旋律音；左手采用 3-5-1 的 first 转位，调号确认后再换算绝对音名。",
+      "status": "auto_candidate",
+      "symbol": "主和弦",
+      "tones": [
+        {
+          "finger": 5,
+          "note": "3"
+        },
+        {
+          "finger": 2,
+          "note": "5"
+        },
+        {
+          "finger": 1,
+          "note": "1"
+        }
+      ]
+    },
+    {
+      "alternatives": [
+        "I",
+        "ii"
+      ],
+      "bass": "3",
+      "beat": 0,
+      "confidence": 0.63,
+      "display_default": true,
+      "evidence": [
+        "调号未标明，和弦音使用相对级数表达",
+        "强拍旋律 6 属于 vi"
+      ],
+      "function": "vi",
+      "id": "h683-p1-s4-m2-chord-1",
+      "inversion": "second",
+      "measure_id": "h683-p1-s4-m2",
+      "reason": "vi 覆盖本小节主要旋律音；左手采用 3-6-1 的 second 转位，调号确认后再换算绝对音名。",
+      "status": "auto_candidate",
+      "symbol": "六级小和弦",
+      "tones": [
+        {
+          "finger": 5,
+          "note": "3"
+        },
+        {
+          "finger": 3,
+          "note": "6"
+        },
+        {
+          "finger": 1,
+          "note": "1"
+        }
+      ]
+    },
+    {
+      "alternatives": [
+        "V",
+        "ii"
+      ],
+      "bass": "2",
+      "beat": 0,
+      "confidence": 0.78,
+      "display_default": true,
+      "evidence": [
+        "调号未标明，和弦音使用相对级数表达",
+        "强拍旋律 2 属于 V7",
+        "终止前小节优先采用属功能"
+      ],
+      "function": "V7",
+      "id": "h683-p1-s4-m3-chord-1",
+      "inversion": "second",
+      "measure_id": "h683-p1-s4-m3",
+      "reason": "V7 覆盖本小节主要旋律音；左手采用 2-4-5-7 的 second 转位，调号确认后再换算绝对音名。",
+      "status": "auto_candidate",
+      "symbol": "属七和弦",
+      "tones": [
+        {
+          "finger": 5,
+          "note": "2"
+        },
+        {
+          "finger": 3,
+          "note": "4"
+        },
+        {
+          "finger": 2,
+          "note": "5"
+        },
+        {
+          "finger": 1,
+          "note": "7"
+        }
+      ]
+    },
+    {
+      "alternatives": [
+        "vi",
+        "IV"
+      ],
+      "bass": "3",
+      "beat": 0,
+      "confidence": 0.78,
+      "display_default": true,
+      "evidence": [
+        "调号未标明，和弦音使用相对级数表达",
+        "强拍旋律 1 属于 I",
+        "系统末小节优先落在主和弦"
+      ],
+      "function": "I",
+      "id": "h683-p1-s4-m4-chord-1",
+      "inversion": "first",
+      "measure_id": "h683-p1-s4-m4",
+      "reason": "I 覆盖本小节主要旋律音；左手采用 3-5-1 的 first 转位，调号确认后再换算绝对音名。",
+      "status": "auto_candidate",
+      "symbol": "主和弦",
+      "tones": [
+        {
+          "finger": 5,
+          "note": "3"
+        },
+        {
+          "finger": 2,
+          "note": "5"
+        },
+        {
+          "finger": 1,
+          "note": "1"
+        }
+      ]
+    }
+  ],
+  "content_hash": "ed77e5fb7e9c0fb3b7023aa583b5ba95670430fbc33bc673c9da9beccb3ccc72",
   "ending": {
-    "reason": "没有可靠调号时写出实际和弦音名会造成错误教学。",
-    "status": "unavailable",
-    "text": "调号未确认，暂不生成和声与伴奏结论。"
+    "reason": "调号未标明时保留功能进行，不提前伪造绝对和弦音名。",
+    "status": "auto_candidate",
+    "text": "使用最后两个相对功能和弦，并在 I 级主和弦上延长"
   },
   "fingerings": [
     {
@@ -583,14 +1178,14 @@
   ],
   "hymn_key": "683",
   "interlude": {
-    "reason": "没有可靠调号时写出实际和弦音名会造成错误教学。",
-    "status": "unavailable",
-    "text": "调号未确认，暂不生成和声与伴奏结论。"
+    "reason": "使用听过的材料可让段间衔接清楚，不额外增加陌生旋律。",
+    "status": "auto_candidate",
+    "text": "重复末句或副歌入口前 2 小节"
   },
   "intro": {
-    "reason": "没有可靠调号时写出实际和弦音名会造成错误教学。",
-    "status": "unavailable",
-    "text": "调号未确认，暂不生成和声与伴奏结论。"
+    "reason": "末句已包含本曲调性与会众进入所需的旋律线索。",
+    "status": "auto_candidate",
+    "text": "取末句 2 至 4 小节，保留原拍号和主要终止"
   },
   "moves": [
     {

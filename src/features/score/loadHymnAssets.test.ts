@@ -59,7 +59,7 @@ describe("loadHymnAssets", () => {
     expect(fetchImpl).not.toHaveBeenCalled();
   });
 
-  it("存在独立渲染变体的第二调只加载对应 PPT 原版谱", async () => {
+  it("存在独立渲染变体的第二调加载对应原版谱与教学资产", async () => {
     const render = makeRender({ hymn_key: "118" });
     render.variants.push({
       ...render.variants[0],
@@ -75,9 +75,14 @@ describe("loadHymnAssets", () => {
         },
       ],
     });
+    const score = makeScore({ hymn_key: "118" });
+    const arrangement = makeArrangement({
+      hymn_key: "118",
+      score_hash: score.content_hash,
+    });
     const fetchImpl = fetchDocuments(
-      makeScore(),
-      makeArrangement(),
+      score,
+      arrangement,
       render,
     );
     const result = await loadHymnAssets(
@@ -106,12 +111,17 @@ describe("loadHymnAssets", () => {
       status: "faithful",
       render: { hymn_key: "118" },
       renderVariant: 1,
+      score: { hymn_key: "118" },
+      arrangement: { hymn_key: "118" },
     });
-    expect(fetchImpl).toHaveBeenCalledTimes(1);
-    expect(fetchImpl).toHaveBeenCalledWith(
+    expect(fetchImpl).toHaveBeenCalledTimes(3);
+    expect(
+      fetchImpl.mock.calls.map(([url]) => String(url)).sort(),
+    ).toEqual([
+      "/materials/hymns/118/arrangement.json",
       "/materials/hymns/118/render.json",
-      expect.any(Object),
-    );
+      "/materials/hymns/118/score.json",
+    ]);
   });
 
   it("[defect-probing] 校验后返回当前曲目的结构化谱面、编配和忠实渲染", async () => {

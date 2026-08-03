@@ -2,14 +2,17 @@ import {
   Expand,
   Maximize2,
   RotateCw,
+  Settings2,
   ZoomIn,
   ZoomOut,
 } from "lucide-react";
-import { useRef, useState } from "react";
+import { useId, useRef, useState } from "react";
 import type { HymnCatalogItem } from "@/features/hymns/types";
+import type { ScoreDisplayLayer } from "@/features/score/display-preferences";
 import type { HymnAssets } from "@/features/score/loadHymnAssets";
 import { PptScore } from "@/features/score/PptScore";
 import { ScoreSvg } from "@/features/score/ScoreSvg";
+import { useAppStore } from "@/store/useAppStore";
 
 interface ScoreViewerProps {
   hymn: HymnCatalogItem;
@@ -17,6 +20,38 @@ interface ScoreViewerProps {
   onRetry?: () => void;
   onUseImageFallback?: () => void;
 }
+
+const displayOptions: Array<{
+  layer: ScoreDisplayLayer;
+  label: string;
+  description: string;
+}> = [
+  {
+    layer: "positions",
+    label: "手位",
+    description: "显示每句的固定手位与换位提示",
+  },
+  {
+    layer: "fingerings",
+    label: "指法",
+    description: "显示右手逐音指法标记",
+  },
+  {
+    layer: "noteNames",
+    label: "键位",
+    description: "在每个旋律音下显示实际琴键与八度",
+  },
+  {
+    layer: "chords",
+    label: "左手和弦",
+    description: "在对应谱行下显示和弦与左手指法",
+  },
+  {
+    layer: "lyrics",
+    label: "歌词",
+    description: "显示与当前谱行对应的第一段歌词",
+  },
+];
 
 export function ScoreViewer({
   hymn,
@@ -28,7 +63,13 @@ export function ScoreViewer({
   const [rotation, setRotation] = useState(0);
   const [imageFailed, setImageFailed] = useState(false);
   const [imageAttempt, setImageAttempt] = useState(0);
+  const [settingsOpen, setSettingsOpen] = useState(false);
   const viewerRef = useRef<HTMLElement>(null);
+  const settingsId = `score-display-settings-${useId().split(":").join("")}`;
+  const scoreDisplay = useAppStore((state) => state.score_display);
+  const setScoreDisplayLayer = useAppStore(
+    (state) => state.setScoreDisplayLayer,
+  );
 
   const enterFullscreen = () => {
     void viewerRef.current?.requestFullscreen?.();
@@ -41,6 +82,25 @@ export function ScoreViewer({
   const hasFaithfulRender =
     assets.status === "faithful" ||
     (assets.status === "structured" && Boolean(assets.render));
+  const hasTeachingLayers =
+    assets.status === "structured" || assets.status === "faithful";
+  const scoreMetadata =
+    assets.status === "structured" || assets.status === "faithful"
+      ? assets.score
+      : assets.status === "image"
+        ? assets.score
+        : undefined;
+  const metadataPending = assets.status === "loading";
+  const originalKey = metadataPending
+    ? "读取中"
+    : scoreMetadata?.key_signature?.value
+      ? `1 = ${scoreMetadata.key_signature.value}`
+      : "未标明";
+  const originalMeter = metadataPending
+    ? "读取中"
+    : scoreMetadata?.meter?.value
+      ? `${scoreMetadata.meter.value} 拍`
+      : "未标明";
 
   return (
     <section className="score-viewer" ref={viewerRef} aria-label="歌谱查看器">
@@ -57,6 +117,17 @@ export function ScoreViewer({
                 : "图片谱"}{" "}
             · {zoom}%
           </span>
+          <div
+            className="score-viewer__metadata"
+            aria-label="原曲调性与节拍"
+          >
+            <span>
+              原调 <b>{originalKey}</b>
+            </span>
+            <span>
+              节拍 <b>{originalMeter}</b>
+            </span>
+          </div>
         </div>
         <div className="toolbar-actions" aria-label="歌谱显示控制">
           <button
@@ -101,8 +172,55 @@ export function ScoreViewer({
           >
             <Maximize2 size={18} aria-hidden="true" />
           </button>
+          <button
+            className="toolbar-settings-button"
+            type="button"
+            aria-label="教学标记设置"
+            aria-expanded={settingsOpen}
+            aria-controls={settingsId}
+            disabled={!hasTeachingLayers}
+            onClick={() => setSettingsOpen((value) => !value)}
+          >
+            <Settings2 size={18} aria-hidden="true" />
+            <span>标记设置</span>
+          </button>
         </div>
       </header>
+
+      {hasTeachingLayers && settingsOpen && (
+        <fieldset
+          className="score-viewer__settings"
+          id={settingsId}
+        >
+          <legend>教学标记显示</legend>
+          <div className="score-viewer__settings-body">
+            <p>设置会保存在本机，并应用到所有诗歌。</p>
+            <div className="score-display-options">
+              {displayOptions.map(({ layer, label, description }) => (
+                <label className="score-display-option" key={layer}>
+                  <span className="score-display-option__copy">
+                    <strong>{label}</strong>
+                    <small>{description}</small>
+                  </span>
+                  <input
+                    type="checkbox"
+                    role="switch"
+                    aria-label={`显示${label}`}
+                    checked={scoreDisplay[layer]}
+                    onChange={(event) =>
+                      setScoreDisplayLayer(layer, event.currentTarget.checked)
+                    }
+                  />
+                  <span
+                    className="score-display-option__switch"
+                    aria-hidden="true"
+                  />
+                </label>
+              ))}
+            </div>
+          </div>
+        </fieldset>
+      )}
 
       <div className="score-viewer__canvas">
         {assets.status === "loading" && (
@@ -146,12 +264,14 @@ export function ScoreViewer({
                 variantIndex={assets.renderVariant}
                 score={assets.score}
                 arrangement={assets.arrangement}
+                visibility={scoreDisplay}
               />
             ) : (
               <ScoreSvg
                 className="score-svg"
                 score={assets.score}
                 arrangement={assets.arrangement}
+                visibility={scoreDisplay}
               />
             )}
           </div>
@@ -163,6 +283,9 @@ export function ScoreViewer({
               className="score-ppt"
               document={assets.render}
               variantIndex={assets.renderVariant}
+              score={assets.score}
+              arrangement={assets.arrangement}
+              visibility={scoreDisplay}
             />
           </div>
         )}

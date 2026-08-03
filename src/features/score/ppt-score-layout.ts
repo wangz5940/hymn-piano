@@ -1,4 +1,8 @@
 import type { BBox } from "./contracts";
+import {
+  DEFAULT_SCORE_DISPLAY_PREFERENCES,
+  type ScoreDisplayPreferences,
+} from "./display-preferences";
 import type {
   HymnRenderDocument,
   RenderMediaShape,
@@ -11,9 +15,13 @@ export const POINT_TO_CSS_PX = 96 / 72;
 
 const PAGE_TOP = 24;
 const POSITION_TRACK_OFFSET = 4;
-const FINGER_TRACK_OFFSET = 48;
-const SCORE_TRACK_OFFSET = 78;
+const POSITION_TRACK_HEIGHT = 44;
+const FINGER_TRACK_OFFSET = 4;
+const FINGER_TRACK_HEIGHT = 34;
+const NOTE_NAME_TRACK_GAP = 4;
+const NOTE_NAME_TRACK_HEIGHT = 18;
 const LYRIC_TRACK_GAP = 12;
+const CHORD_TRACK_GAP = 10;
 const ROW_GAP = 24;
 
 export interface LyricLine {
@@ -29,8 +37,13 @@ export interface ScoreRowLayout {
   positionY: number;
   fingeringY: number;
   scoreY: number;
+  scoreBottom: number;
+  noteNameY: number;
+  noteNameBottom: number;
   lyricY: number;
   lyricBottom: number;
+  chordY: number;
+  chordBottom: number;
   textShapes: RenderTextShape[];
   mediaShapes: RenderMediaShape[];
   lyricLine?: LyricLine;
@@ -133,6 +146,7 @@ function belongsToScoreRow(
 
 export function buildScoreReflowLayout(
   variant: HymnRenderDocument["variants"][number],
+  visibility: ScoreDisplayPreferences = DEFAULT_SCORE_DISPLAY_PREFERENCES,
 ): ScoreReflowLayout {
   const baseShapes = variant.score_shapes
     .filter((shape) => shape.role === "score")
@@ -162,8 +176,13 @@ export function buildScoreReflowLayout(
       positionY: 0,
       fingeringY: 0,
       scoreY: 0,
+      scoreBottom: 0,
+      noteNameY: 0,
+      noteNameBottom: 0,
       lyricY: 0,
       lyricBottom: 0,
+      chordY: 0,
+      chordBottom: 0,
       textShapes: [shape],
       mediaShapes: [],
     });
@@ -192,10 +211,11 @@ export function buildScoreReflowLayout(
     ).mediaShapes.push(shape);
   });
 
-  const lyricShapes =
-    variant.lyric_versions[0]?.shapes.filter(
-      (shape) => shape.bbox.width > 0 && shape.bbox.height > 0,
-    ) ?? [];
+  const lyricShapes = visibility.lyrics
+    ? variant.lyric_versions[0]?.shapes.filter(
+        (shape) => shape.bbox.width > 0 && shape.bbox.height > 0,
+      ) ?? []
+    : [];
   const lyricLines = lyricShapes.flatMap((shape) => {
     const paragraphStep =
       shape.bbox.height / Math.max(1, shape.paragraphs.length);
@@ -231,9 +251,17 @@ export function buildScoreReflowLayout(
   let cursorY = PAGE_TOP;
 
   for (const row of rows) {
+    const positionTrackHeight = visibility.positions
+      ? POSITION_TRACK_HEIGHT
+      : 0;
+    const fingerTrackHeight = visibility.fingerings
+      ? FINGER_TRACK_HEIGHT
+      : 0;
     row.positionY = cursorY + POSITION_TRACK_OFFSET;
-    row.fingeringY = cursorY + FINGER_TRACK_OFFSET;
-    row.scoreY = cursorY + SCORE_TRACK_OFFSET;
+    row.fingeringY =
+      cursorY + positionTrackHeight + FINGER_TRACK_OFFSET;
+    row.scoreY =
+      cursorY + positionTrackHeight + fingerTrackHeight;
     row.lyricLine = canPairLyrics
       ? selectedLyricLines[row.index]
       : undefined;
@@ -246,7 +274,14 @@ export function buildScoreReflowLayout(
           shape.bbox.height,
       ),
     );
-    row.lyricY = scoreBottom + LYRIC_TRACK_GAP;
+    row.scoreBottom = scoreBottom;
+    row.noteNameY = visibility.noteNames
+      ? scoreBottom + NOTE_NAME_TRACK_GAP + 11
+      : scoreBottom;
+    row.noteNameBottom = visibility.noteNames
+      ? scoreBottom + NOTE_NAME_TRACK_GAP + NOTE_NAME_TRACK_HEIGHT
+      : scoreBottom;
+    row.lyricY = row.noteNameBottom + LYRIC_TRACK_GAP;
     const lyricHeight = row.lyricLine
       ? Math.max(
           48,
@@ -254,6 +289,8 @@ export function buildScoreReflowLayout(
         )
       : 0;
     row.lyricBottom = row.lyricY + lyricHeight;
+    row.chordY = row.noteNameBottom;
+    row.chordBottom = row.chordY;
     cursorY =
       (row.lyricLine ? row.lyricBottom : scoreBottom) + ROW_GAP;
   }
@@ -284,5 +321,49 @@ export function buildScoreReflowLayout(
     rows,
     fallbackLyrics,
     contentHeight: Math.max(variant.page.height, cursorY),
+  };
+}
+
+export function appendChordTracks(
+  layout: ScoreReflowLayout,
+  trackHeights: readonly number[],
+): ScoreReflowLayout {
+  let cumulativeShift = 0;
+  const rows = layout.rows.map((source, index): ScoreRowLayout => {
+    const row: ScoreRowLayout = {
+      ...source,
+      positionY: source.positionY + cumulativeShift,
+      fingeringY: source.fingeringY + cumulativeShift,
+      scoreY: source.scoreY + cumulativeShift,
+      scoreBottom: source.scoreBottom + cumulativeShift,
+      noteNameY: source.noteNameY + cumulativeShift,
+      noteNameBottom: source.noteNameBottom + cumulativeShift,
+      lyricY: source.lyricY + cumulativeShift,
+      lyricBottom: source.lyricBottom + cumulativeShift,
+      chordY: source.chordY + cumulativeShift,
+      chordBottom: source.chordBottom + cumulativeShift,
+    };
+    const trackHeight = Math.max(0, trackHeights[index] ?? 0);
+    if (trackHeight > 0) {
+      const trackShift = CHORD_TRACK_GAP + trackHeight;
+      row.chordY = row.noteNameBottom + CHORD_TRACK_GAP;
+      row.chordBottom = row.chordY + trackHeight;
+      row.lyricY += trackShift;
+      row.lyricBottom += trackShift;
+      cumulativeShift += trackShift;
+    }
+    return row;
+  });
+
+  return {
+    rows,
+    fallbackLyrics: layout.fallbackLyrics.map(({ shape, bbox }) => ({
+      shape,
+      bbox: {
+        ...bbox,
+        y: bbox.y + cumulativeShift,
+      },
+    })),
+    contentHeight: layout.contentHeight + cumulativeShift,
   };
 }

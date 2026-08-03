@@ -11,7 +11,14 @@ import {
 } from "./scripts/score-pipeline/fonts";
 
 const projectRoot = dirname(fileURLToPath(import.meta.url));
-const imageRoot = resolve(projectRoot, "选本诗歌712", "歌谱");
+const imageRootCandidates = [
+  resolve(projectRoot, "选本诗歌712", "歌谱"),
+  resolve(projectRoot, "resource", "歌谱"),
+];
+const imageRoot =
+  imageRootCandidates.find(
+    (candidate) => existsSync(candidate) && statSync(candidate).isDirectory(),
+  ) ?? imageRootCandidates[0];
 const simpMusicFontInspection = inspectSimpMusicFonts({
   projectRoot,
 });
@@ -80,6 +87,7 @@ function hymnImageAssets(): Plugin {
       server.middlewares.use("/歌谱", imageMiddleware());
     },
     closeBundle() {
+      if (!existsSync(imageRoot)) return;
       cpSync(imageRoot, resolve(outputDirectory, "歌谱"), {
         recursive: true,
         force: true,

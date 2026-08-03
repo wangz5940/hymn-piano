@@ -15,6 +15,9 @@ export interface HymnCatalogItem {
   render_asset_url?: string | null;
   render_variant?: number | null;
   fallback_reason?: string | null;
+  key_signature?: string | null;
+  meter?: string | null;
+  position_change_count?: number | null;
 }
 
 export type ParsedHymnFilename = Omit<

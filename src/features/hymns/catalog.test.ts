@@ -73,14 +73,24 @@ describe("诗歌曲库", () => {
             `/materials/hymns/${hymn.key}/render.json` &&
           hymn.render_schema === "shiqin-render/v1" &&
           hymn.render_variant === 0 &&
-          hymn.fallback_reason === null,
+          hymn.fallback_reason === null &&
+          hymn.position_change_count !== null,
       ),
     ).toBe(true);
+    expect(
+      structured.filter((hymn) => hymn.key_signature !== null),
+    ).toHaveLength(666);
+    expect(
+      structured.filter((hymn) => hymn.meter !== null),
+    ).toHaveLength(691);
     expect(
       imageFallbacks.every(
         (hymn) =>
           hymn.score_asset_url === null &&
           hymn.arrangement_asset_url === null &&
+          hymn.key_signature === null &&
+          hymn.meter === null &&
+          hymn.position_change_count === null &&
           Boolean(hymn.fallback_reason),
       ),
     ).toBe(true);

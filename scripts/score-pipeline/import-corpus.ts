@@ -45,6 +45,7 @@ export interface PptxCorpusFile {
   title: string;
   filename: string;
   path: string;
+  sourceFile?: string;
 }
 
 export interface ImageCorpusFile {
@@ -79,6 +80,15 @@ export interface GeneratedHymnCatalogEntry {
   render_asset_url: string | null;
   render_variant: number | null;
   fallback_reason: string | null;
+  key_signature: string | null;
+  meter: string | null;
+  position_change_count: number | null;
+}
+
+export interface GeneratedHymnLearningProfile {
+  key_signature: string | null;
+  meter: string | null;
+  position_change_count: number | null;
 }
 
 export interface HymnImportSummary {
@@ -153,7 +163,11 @@ export interface CorpusImportResult {
   inventory: SimpMusicCorpusInventory;
 }
 
-function parsePptxFilename(filename: string, directory: string): PptxCorpusFile {
+function parsePptxFilename(
+  filename: string,
+  directory: string,
+  sourceFileDirectory?: string,
+): PptxCorpusFile {
   const match = filename.match(/^(\d+)\s+(.+)\.pptx$/iu);
   if (!match) throw new Error(`无法解析 PPTX 文件名：${filename}`);
   const number = Number(match[1]);
@@ -163,6 +177,9 @@ function parsePptxFilename(filename: string, directory: string): PptxCorpusFile 
     title: match[2].trim(),
     filename,
     path: join(directory, filename),
+    sourceFile: sourceFileDirectory
+      ? join(sourceFileDirectory, filename).replace(/\\/gu, "/")
+      : undefined,
   };
 }
 
@@ -194,10 +211,17 @@ function compareCorpusFiles(
 export async function discoverCorpusFiles(options: {
   pptxDirectory: string;
   imageDirectory: string;
+  pptxSourceFileDirectory?: string;
 }): Promise<CorpusFiles> {
   const pptx = (await readdir(options.pptxDirectory))
     .filter((filename) => filename.toLowerCase().endsWith(".pptx"))
-    .map((filename) => parsePptxFilename(filename, options.pptxDirectory))
+    .map((filename) =>
+      parsePptxFilename(
+        filename,
+        options.pptxDirectory,
+        options.pptxSourceFileDirectory,
+      ),
+    )
     .sort(compareCorpusFiles);
   const images = (await readdir(options.imageDirectory))
     .filter((filename) => filename.toLowerCase().endsWith(".jpg"))
@@ -231,6 +255,8 @@ export function buildCatalog(
   structuredKeys: ReadonlySet<string>,
   arrangementKeys: ReadonlySet<string> = new Set(),
   renderVariantCounts: ReadonlyMap<string, number> = new Map(),
+  learningProfiles: ReadonlyMap<string, GeneratedHymnLearningProfile> =
+    new Map(),
 ): {
   catalog: GeneratedHymnCatalogEntry[];
   titleDiagnostics: ImportReport["title_diagnostics"];
@@ -240,6 +266,11 @@ export function buildCatalog(
   );
   const titleDiagnostics: ImportReport["title_diagnostics"] = [];
   const catalog = files.images.map((image): GeneratedHymnCatalogEntry => {
+    const learningProfile = learningProfiles.get(image.key) ?? {
+      key_signature: null,
+      meter: null,
+      position_change_count: null,
+    };
     const pptx = pptxByNumber.get(image.number);
     const baseKey = String(image.number);
     const renderVariantCount = renderVariantCounts.get(baseKey) ?? 0;
@@ -280,6 +311,7 @@ export function buildCatalog(
           renderVariant === null ? null : renderAssetUrl,
         render_variant: renderVariant,
         fallback_reason: "第二调暂无独立 SimpMusic PPTX，使用本版本图片谱。",
+        ...learningProfile,
       };
     }
 
@@ -307,6 +339,7 @@ export function buildCatalog(
         render_variant: null,
         fallback_reason:
           fallback?.reason ?? "PPTX 无可用的结构化 SimpMusic 谱面。",
+        ...learningProfile,
       };
     }
 
@@ -333,6 +366,7 @@ export function buildCatalog(
       render_asset_url: renderAssetUrl,
       render_variant: renderVariantCount > 0 ? 0 : null,
       fallback_reason: null,
+      ...learningProfile,
     };
   });
   return {
@@ -354,7 +388,8 @@ async function readSources(
       const index = cursor;
       cursor += 1;
       documents[index] = await readPptxSource(files[index].path, {
-        sourceFile: `712首-文字/${files[index].filename}`,
+        sourceFile:
+          files[index].sourceFile ?? `712首-文字/${files[index].filename}`,
       });
     }
   }
@@ -376,6 +411,7 @@ function sumGlyphCount(
 export async function importCorpus(options: {
   pptxDirectory: string;
   imageDirectory: string;
+  pptxSourceFileDirectory?: string;
   ocrMetadataPath?: string;
   manualArrangementDirectory?: string;
   concurrency?: number;
@@ -539,6 +575,17 @@ export async function importCorpus(options: {
       [...renders].map(([hymnKey, render]) => [
         hymnKey,
         render.variants.length,
+      ]),
+    ),
+    new Map(
+      [...scores].map(([hymnKey, score]) => [
+        hymnKey,
+        {
+          key_signature: score.key_signature?.value ?? null,
+          meter: score.meter?.value ?? null,
+          position_change_count:
+            arrangements.get(hymnKey)?.moves.length ?? null,
+        },
       ]),
     ),
   );

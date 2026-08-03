@@ -5,6 +5,7 @@ import { useAppStore } from "@/store/useAppStore";
 import {
   createDefaultProgress,
   createDefaultServiceSet,
+  STORAGE_KEYS,
 } from "@/features/progress/storage";
 import {
   makeArrangement,
@@ -48,6 +49,7 @@ beforeEach(() => {
     progress: createDefaultProgress(),
     records: [],
     service_set: createDefaultServiceSet(),
+    sidebar_collapsed: false,
     storage_available: true,
   });
 });
@@ -58,6 +60,40 @@ describe("诗琴应用", () => {
     expect(screen.getByRole("link", { name: "诗琴首页" })).toBeInTheDocument();
     expect(screen.getByRole("navigation", { name: "主导航" })).toBeInTheDocument();
     expect(screen.getByText("认识十根手指")).toBeInTheDocument();
+  });
+
+  it("可收起、展开侧边栏并保存状态", async () => {
+    const user = userEvent.setup();
+    render(<App />);
+    const sidebar = screen.getByRole("complementary", {
+      name: "主侧边栏",
+    });
+    const shell = sidebar.closest(".app-shell");
+
+    await user.click(
+      screen.getByRole("button", { name: "收起侧边栏" }),
+    );
+    expect(shell).toHaveClass("app-shell--sidebar-collapsed");
+    expect(
+      screen.getByRole("button", { name: "展开侧边栏" }),
+    ).toHaveAttribute("aria-expanded", "false");
+    expect(
+      within(screen.getByRole("navigation", { name: "主导航" })).getByRole(
+        "link",
+        { name: "今日" },
+      ),
+    ).toBeInTheDocument();
+    expect(
+      localStorage.getItem(STORAGE_KEYS.sidebarCollapsed),
+    ).toBe("true");
+
+    await user.click(
+      screen.getByRole("button", { name: "展开侧边栏" }),
+    );
+    expect(shell).not.toHaveClass("app-shell--sidebar-collapsed");
+    expect(
+      localStorage.getItem(STORAGE_KEYS.sidebarCollapsed),
+    ).toBe("false");
   });
 
   it("可完成今日任务并保存状态", async () => {
@@ -84,6 +120,48 @@ describe("诗琴应用", () => {
     await user.type(search, "118b");
     expect(await screen.findByText("神的儿子亲爱救主")).toBeInTheDocument();
     expect(screen.getByText("第二调")).toBeInTheDocument();
+  });
+
+  it("可从侧边栏进入由 C 大调起步的难易推荐列表", async () => {
+    const user = userEvent.setup();
+    render(<App />);
+    await user.click(
+      within(screen.getByRole("navigation", { name: "主导航" })).getByRole(
+        "link",
+        { name: "推荐" },
+      ),
+    );
+
+    expect(
+      await screen.findByRole("heading", {
+        name: "先把 C 大调弹熟，再认识其他调",
+      }),
+    ).toBeInTheDocument();
+    const stages = screen.getByRole("tablist", {
+      name: "学习难度阶段",
+    });
+    const firstStage = within(stages).getByRole("tab", {
+      name: /C 调起步 11 首/u,
+    });
+    expect(firstStage).toHaveAttribute("aria-selected", "true");
+
+    const firstPanel = screen.getByRole("tabpanel", {
+      name: "C 大调 · 稳定起步",
+    });
+    expect(within(firstPanel).getByText("4/4 拍 · 0–2 次换位")).toBeInTheDocument();
+    expect(within(firstPanel).getAllByText("C 大调").length).toBeGreaterThan(0);
+    expect(within(firstPanel).getAllByText("4/4 拍").length).toBeGreaterThan(0);
+
+    await user.click(
+      within(stages).getByRole("tab", {
+        name: /C 调换位 12 首/u,
+      }),
+    );
+    expect(
+      screen.getByRole("tabpanel", {
+        name: "C 大调 · 开始换位",
+      }),
+    ).toHaveTextContent("4/4 拍 · 3–4 次换位");
   });
 
   it("可从主导航进入指法与手位专项", async () => {

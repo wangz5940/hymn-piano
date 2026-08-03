@@ -332,15 +332,51 @@ describe("乐谱 SVG 布局", () => {
     ]);
   });
 
-  it("默认谱面不放置自动候选和弦", () => {
+  it("默认谱面放置自动候选和弦并保留候选状态", () => {
+    const arrangement = makeArrangement();
+    arrangement.chords = arrangement.chords.map((chord) => ({
+      ...chord,
+      display_default: true,
+      status: "auto_candidate",
+    }));
+
+    const chords = layoutScore(makeScore(), arrangement).chords;
+    expect(chords).toHaveLength(arrangement.chords.length);
+    expect(
+      chords.every((chord) => chord.chord.status === "auto_candidate"),
+    ).toBe(true);
+  });
+
+  it("不可用和弦不进入默认谱面", () => {
     const arrangement = makeArrangement();
     arrangement.chords = arrangement.chords.map((chord) => ({
       ...chord,
       display_default: false,
-      status: "auto_candidate",
+      status: "unavailable",
     }));
 
     expect(layoutScore(makeScore(), arrangement).chords).toEqual([]);
+  });
+
+  it("关闭教学层时不生成对应布局数据", () => {
+    const layout = layoutScore(
+      makeScore(),
+      makeArrangement(),
+      {
+        positions: false,
+        fingerings: false,
+        noteNames: false,
+        chords: false,
+        lyrics: false,
+      },
+    );
+
+    expect(layout.positions).toEqual([]);
+    expect(layout.moves).toEqual([]);
+    expect(layout.fingers).toEqual([]);
+    expect(layout.chords).toEqual([]);
+    expect(layout.pages[0].systems[0].lyrics).toEqual([]);
+    expect(layout.events.length).toBeGreaterThan(0);
   });
 
   it("拒绝把第二调编配挂到原调谱面", () => {

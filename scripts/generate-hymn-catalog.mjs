@@ -2,13 +2,21 @@ import {
   existsSync,
   readFileSync,
   readdirSync,
+  statSync,
   writeFileSync,
 } from "node:fs";
 import { dirname, join, relative } from "node:path";
 import { fileURLToPath } from "node:url";
 
 const projectRoot = join(dirname(fileURLToPath(import.meta.url)), "..");
-const scoreDirectory = join(projectRoot, "选本诗歌712", "歌谱");
+const scoreDirectoryCandidates = [
+  join(projectRoot, "选本诗歌712", "歌谱"),
+  join(projectRoot, "resource", "歌谱"),
+];
+const scoreDirectory =
+  scoreDirectoryCandidates.find(
+    (candidate) => existsSync(candidate) && statSync(candidate).isDirectory(),
+  ) ?? scoreDirectoryCandidates[0];
 const outputFile = join(projectRoot, "src", "data", "hymns.generated.ts");
 const publicCatalogFile = join(
   projectRoot,
@@ -80,6 +88,9 @@ for (const filename of filenames) {
     render_asset_url: generated?.render_asset_url ?? null,
     render_variant: generated?.render_variant ?? null,
     fallback_reason: generated?.fallback_reason ?? fallbackReason,
+    key_signature: generated?.key_signature ?? null,
+    meter: generated?.meter ?? null,
+    position_change_count: generated?.position_change_count ?? null,
   });
 }
 

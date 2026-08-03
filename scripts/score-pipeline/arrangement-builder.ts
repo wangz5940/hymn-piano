@@ -2,6 +2,7 @@ import { readFile } from "node:fs/promises";
 import {
   ARRANGEMENT_SCHEMA,
   assertArrangementDocument,
+  shouldDisplayTeachingCandidate,
   type ArrangementRecommendation,
   type ChordAssignment,
   type FingerAssignment,
@@ -49,9 +50,7 @@ function mergeChords(
       `${chord.measure_id}:${chord.beat}`,
       {
         ...chord,
-        display_default:
-          chord.status === "manual_confirmed" ||
-          chord.status === "source_confirmed",
+        display_default: shouldDisplayTeachingCandidate(chord.status),
       },
     ]),
   );
@@ -60,9 +59,7 @@ function mergeChords(
     const candidate = byAnchor.get(key);
     byAnchor.set(key, {
       ...chord,
-      display_default:
-        chord.status === "manual_confirmed" ||
-        chord.status === "source_confirmed",
+      display_default: shouldDisplayTeachingCandidate(chord.status),
       evidence: [
         ...chord.evidence,
         ...(candidate
