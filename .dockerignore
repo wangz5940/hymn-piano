@@ -1,0 +1,34 @@
+# 依赖与构建产物（容器内重新安装/构建）
+node_modules
+dist
+dist-ssr
+
+# 日志与临时文件
+logs
+*.log
+.dev-server.pid
+
+# Git 与 IDE
+.git
+.gitignore
+.vscode
+.idea
+.trae
+
+# 文档（运行时不需要）
+doc
+docs
+
+# PPT 源文件（构建不依赖，体积大）
+05 选本新版712首
+
+# 本地 junction（容器内从 dummy-non-existing-folder/歌谱 重建）
+选本诗歌712
+
+# Docker 自身文件
+Dockerfile
+docker-compose.yml
+.dockerignore
+
+# 测试与 lint 配置
+eslint.config.js

@@ -1,0 +1,9 @@
+services:
+  hymn-piano:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      # 绑定 0.0.0.0 使局域网其他设备可访问
+      - "5173:5173"
+    restart: unless-stopped

@@ -51,7 +51,7 @@ export interface LoadHymnAssetsOptions {
   fetch?: typeof fetch;
   fontSet?: FontFaceSetLike | null;
   measureText?: FontMetricsMeasurer | null;
-  hashDocument?: (document: unknown) => Promise<string> | string;
+  hashDocument?: (document: unknown) => Promise<string | null> | string | null;
   signal?: AbortSignal;
 }
 
@@ -136,11 +136,29 @@ function validateRender(
   return render;
 }
 
-async function hashCanonicalContent(document: unknown): Promise<string> {
+// 标记 crypto.subtle 不可用的降级警告是否已输出，避免重复刷屏
+let insecureContextWarned = false;
+
+async function hashCanonicalContent(
+  document: unknown,
+): Promise<string | null> {
+  // crypto.subtle 仅在安全上下文（HTTPS 或 localhost）下可用。
+  // 通过局域网 IP（http://192.168.x.x）访问时为 undefined，此时跳过哈希校验。
+  // 数据由构建过程预生成、同源加载、TCP 保证传输完整性，降级可接受。
+  const subtle = globalThis.crypto?.subtle;
+  if (!subtle) {
+    if (!insecureContextWarned) {
+      insecureContextWarned = true;
+      console.warn(
+        "[hymn] crypto.subtle 不可用（非安全上下文），已跳过谱面内容哈希校验。使用 HTTPS 或 localhost 访问可恢复校验。",
+      );
+    }
+    return null;
+  }
   const bytes = new TextEncoder().encode(
     JSON.stringify(canonicalize(document, true)),
   );
-  const digest = await crypto.subtle.digest("SHA-256", bytes);
+  const digest = await subtle.digest("SHA-256", bytes);
   return Array.from(new Uint8Array(digest))
     .map((byte) => byte.toString(16).padStart(2, "0"))
     .join("");
@@ -247,17 +265,23 @@ export async function loadHymnAssets(
     }
     const arrangement = arrangementRaw as PianoArrangementDocument;
     const render = validateRender(renderRaw, hymn);
-    if ((await hashDocument(score)) !== score.content_hash) {
+    const scoreHash = await hashDocument(score);
+    if (scoreHash !== null && scoreHash !== score.content_hash) {
       throw new HymnAssetError(
         `第 ${hymn.key} 首谱面内容哈希校验失败。`,
       );
     }
-    if ((await hashDocument(arrangement)) !== arrangement.content_hash) {
+    const arrangementHash = await hashDocument(arrangement);
+    if (
+      arrangementHash !== null &&
+      arrangementHash !== arrangement.content_hash
+    ) {
       throw new HymnAssetError(
         `第 ${hymn.key} 首编配内容哈希校验失败。`,
       );
     }
-    if ((await hashDocument(render)) !== render.content_hash) {
+    const renderHash = await hashDocument(render);
+    if (renderHash !== null && renderHash !== render.content_hash) {
       throw new HymnAssetError(
         `第 ${hymn.key} 首渲染内容哈希校验失败。`,
       );
@@ -337,15 +361,18 @@ export async function loadHymnAssets(
   const render = validateRender(renderRaw, hymn);
 
   const scoreHash = await hashDocument(score);
-  if (scoreHash !== score.content_hash) {
+  if (scoreHash !== null && scoreHash !== score.content_hash) {
     throw new HymnAssetError(`第 ${hymn.key} 首谱面内容哈希校验失败。`);
   }
   const arrangementHash = await hashDocument(arrangement);
-  if (arrangementHash !== arrangement.content_hash) {
+  if (
+    arrangementHash !== null &&
+    arrangementHash !== arrangement.content_hash
+  ) {
     throw new HymnAssetError(`第 ${hymn.key} 首编配内容哈希校验失败。`);
   }
   const renderHash = await hashDocument(render);
-  if (renderHash !== render.content_hash) {
+  if (renderHash !== null && renderHash !== render.content_hash) {
     throw new HymnAssetError(`第 ${hymn.key} 首渲染内容哈希校验失败。`);
   }
 
